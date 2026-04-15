@@ -7,21 +7,21 @@
 
 ### Foundation
 
-- [ ] **FND-01**: Project runs on Next.js 16 App Router + React 19 + TypeScript 5 with `npm install && npm run dev`
-- [ ] **FND-02**: Tailwind CSS v4 configured CSS-first in `app/globals.css` via `@import 'tailwindcss'`, `@theme` tokens, and `@utility glass` (no `tailwind.config.ts`)
-- [ ] **FND-03**: `proxy.ts` (not `middleware.ts`) is in repo root and routes locale prefixes via `next-intl`
-- [ ] **FND-04**: `next.config.ts` includes `images.remotePatterns` for `source.unsplash.com`, `images.unsplash.com`, and `*.unsplash.com`
-- [ ] **FND-05**: Environment variables documented in `.env.example`: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_GA_ID`, `NEXT_PUBLIC_YM_ID`
-- [ ] **FND-06**: Fonts loaded via `next/font/google` (Inter + PT Sans, `latin` + `cyrillic` subsets, `display: 'swap'`)
+- [x] **FND-01**: Project runs on Next.js 16 App Router + React 19 + TypeScript 5 with `npm install && npm run dev`
+- [x] **FND-02**: Tailwind CSS v4 configured CSS-first in `app/globals.css` via `@import 'tailwindcss'`, `@theme` tokens, and `@utility glass` (no `tailwind.config.ts`)
+- [x] **FND-03**: `proxy.ts` (not `middleware.ts`) is in repo root and routes locale prefixes via `next-intl`
+- [x] **FND-04**: `next.config.ts` includes `images.remotePatterns` for `source.unsplash.com`, `images.unsplash.com`, and `*.unsplash.com`
+- [x] **FND-05**: Environment variables documented in `.env.example`: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_GA_ID`, `NEXT_PUBLIC_YM_ID`
+- [x] **FND-06**: Fonts loaded via `next/font/google` (Inter + PT Sans, `latin` + `cyrillic` subsets, `display: 'swap'`)
 
 ### i18n
 
-- [ ] **I18N-01**: Three locales configured — `ru` (default), `uz`, `en` — with URL prefixes `/ru/...`, `/uz/...`, `/en/...`
-- [ ] **I18N-02**: Visiting `/` redirects to `/ru`
-- [ ] **I18N-03**: Header contains a working language switcher (with flag icons) that preserves the current pathname
-- [ ] **I18N-04**: All UI labels, nav items, CTAs, and validation messages exist in `/messages/{ru,uz,en}.json`
-- [ ] **I18N-05**: All content (services, doctors, news, reviews, FAQ) is translated into all 3 languages — no Lorem Ipsum, no English in UZ/RU pages
-- [ ] **I18N-06**: `<html lang>` attribute matches the current locale
+- [x] **I18N-01**: Three locales configured — `ru` (default), `uz`, `en` — with URL prefixes `/ru/...`, `/uz/...`, `/en/...`
+- [x] **I18N-02**: Visiting `/` redirects to `/ru`
+- [x] **I18N-03**: Header contains a working language switcher (with flag icons) that preserves the current pathname
+- [x] **I18N-04**: All UI labels, nav items, CTAs, and validation messages exist in `/messages/{ru,uz,en}.json`
+- [x] **I18N-05**: All content (services, doctors, news, reviews, FAQ) is translated into all 3 languages — no Lorem Ipsum, no English in UZ/RU pages
+- [x] **I18N-06**: `<html lang>` attribute matches the current locale
 
 ### Design System
 
@@ -157,13 +157,13 @@
 
 ### Analytics
 
-- [ ] **ANA-01**: GA4 integrated via `@next/third-parties` `<GoogleTagManager>` (or `<GoogleAnalytics>`) non-blocking
-- [ ] **ANA-02**: Yandex Metrika initialised via `instrumentation-client.ts`, non-blocking
+- [x] **ANA-01**: GA4 integrated via `@next/third-parties` `<GoogleTagManager>` (or `<GoogleAnalytics>`) non-blocking
+- [x] **ANA-02**: Yandex Metrika initialised via `instrumentation-client.ts`, non-blocking
 
 ### Delivery
 
 - [ ] **DEL-01**: `README.md` with setup steps, env vars, and Vercel deploy guide
-- [ ] **DEL-02**: `.env.example` with all expected keys (no secrets)
+- [x] **DEL-02**: `.env.example` with all expected keys (no secrets)
 - [ ] **DEL-03**: Project builds (`npm run build`) with no errors on Node 20.9+
 
 ## v2 Requirements (Deferred)
@@ -206,21 +206,21 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FND-01 | Phase 1 | Pending |
-| FND-02 | Phase 1 | Pending |
-| FND-03 | Phase 1 | Pending |
-| FND-04 | Phase 1 | Pending |
-| FND-05 | Phase 1 | Pending |
-| FND-06 | Phase 1 | Pending |
-| I18N-01 | Phase 1 | Pending |
-| I18N-02 | Phase 1 | Pending |
-| I18N-03 | Phase 1 | Pending |
-| I18N-04 | Phase 1 | Pending |
-| I18N-05 | Phase 1 | Pending |
-| I18N-06 | Phase 1 | Pending |
-| ANA-01 | Phase 1 | Pending |
-| ANA-02 | Phase 1 | Pending |
-| DEL-02 | Phase 1 | Pending |
+| FND-01 | Phase 1 | Complete |
+| FND-02 | Phase 1 | Complete |
+| FND-03 | Phase 1 | Complete |
+| FND-04 | Phase 1 | Complete |
+| FND-05 | Phase 1 | Complete |
+| FND-06 | Phase 1 | Complete |
+| I18N-01 | Phase 1 | Complete |
+| I18N-02 | Phase 1 | Complete |
+| I18N-03 | Phase 1 | Complete |
+| I18N-04 | Phase 1 | Complete |
+| I18N-05 | Phase 1 | Complete |
+| I18N-06 | Phase 1 | Complete |
+| ANA-01 | Phase 1 | Complete |
+| ANA-02 | Phase 1 | Complete |
+| DEL-02 | Phase 1 | Complete |
 | DS-01 | Phase 2 | Pending |
 | DS-02 | Phase 2 | Pending |
 | DS-03 | Phase 2 | Pending |

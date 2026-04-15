@@ -30,7 +30,9 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Visiting `/uz` and `/en` renders pages with `<html lang="uz">` and `<html lang="en">` respectively; the language switcher in the Header navigates between them without losing the current path
   4. Inter and PT Sans fonts load with cyrillic subsets; no FOUT; `display: swap` visible in page source
   5. GA4 and Yandex Metrika script tags are present in the rendered HTML and do not block LCP (deferred/non-blocking)
-**Plans**: TBD
+**Plans**: 1 plan
+Plans:
+- [x] 01-01-PLAN.md — Full Phase 1 scaffold: dependencies, next.config.ts, proxy.ts, i18n config, root + locale layouts, fonts, analytics, message skeletons, language switcher
 **UI hint**: no
 
 ### Phase 2: Design System & Shared UI
@@ -92,7 +94,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & i18n Scaffold | 0/TBD | Not started | - |
+| 1. Foundation & i18n Scaffold | 0/1 | Not started | - |
 | 2. Design System & Shared UI | 0/TBD | Not started | - |
 | 3. Content Data Layer & API Backbone | 0/TBD | Not started | - |
 | 4. Marketing Pages | 0/TBD | Not started | - |
