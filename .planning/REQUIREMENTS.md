@@ -204,17 +204,124 @@
 
 ## Traceability
 
-(Populated during roadmap creation.)
-
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| All v1 IDs | TBD | Pending |
+| FND-01 | Phase 1 | Pending |
+| FND-02 | Phase 1 | Pending |
+| FND-03 | Phase 1 | Pending |
+| FND-04 | Phase 1 | Pending |
+| FND-05 | Phase 1 | Pending |
+| FND-06 | Phase 1 | Pending |
+| I18N-01 | Phase 1 | Pending |
+| I18N-02 | Phase 1 | Pending |
+| I18N-03 | Phase 1 | Pending |
+| I18N-04 | Phase 1 | Pending |
+| I18N-05 | Phase 1 | Pending |
+| I18N-06 | Phase 1 | Pending |
+| ANA-01 | Phase 1 | Pending |
+| ANA-02 | Phase 1 | Pending |
+| DEL-02 | Phase 1 | Pending |
+| DS-01 | Phase 2 | Pending |
+| DS-02 | Phase 2 | Pending |
+| DS-03 | Phase 2 | Pending |
+| DS-04 | Phase 2 | Pending |
+| DS-05 | Phase 2 | Pending |
+| DS-06 | Phase 2 | Pending |
+| DS-07 | Phase 2 | Pending |
+| DS-08 | Phase 2 | Pending |
+| DS-09 | Phase 2 | Pending |
+| LAY-01 | Phase 2 | Pending |
+| LAY-02 | Phase 2 | Pending |
+| LAY-03 | Phase 2 | Pending |
+| LAY-04 | Phase 2 | Pending |
+| LAY-06 | Phase 2 | Pending |
+| LAY-07 | Phase 2 | Pending |
+| LAY-08 | Phase 2 | Pending |
+| LAY-09 | Phase 2 | Pending |
+| LAY-10 | Phase 2 | Pending |
+| ANM-01 | Phase 2 | Pending |
+| ANM-08 | Phase 2 | Pending |
+| SRV-01 | Phase 3 | Pending |
+| SRV-02 | Phase 3 | Pending |
+| DOC-01 | Phase 3 | Pending |
+| DOC-02 | Phase 3 | Pending |
+| NWS-01 | Phase 3 | Pending |
+| NWS-02 | Phase 3 | Pending |
+| RVW-01 | Phase 3 | Pending |
+| RVW-02 | Phase 3 | Pending |
+| HOME-09 | Phase 3 | Pending |
+| API-01 | Phase 3 | Pending |
+| API-02 | Phase 3 | Pending |
+| API-03 | Phase 3 | Pending |
+| API-04 | Phase 3 | Pending |
+| API-05 | Phase 3 | Pending |
+| API-06 | Phase 3 | Pending |
+| API-07 | Phase 3 | Pending |
+| LAY-05 | Phase 3 | Pending |
+| HOME-01 | Phase 4 | Pending |
+| HOME-02 | Phase 4 | Pending |
+| HOME-03 | Phase 4 | Pending |
+| HOME-04 | Phase 4 | Pending |
+| HOME-05 | Phase 4 | Pending |
+| HOME-06 | Phase 4 | Pending |
+| HOME-07 | Phase 4 | Pending |
+| HOME-08 | Phase 4 | Pending |
+| HOME-10 | Phase 4 | Pending |
+| HOME-11 | Phase 4 | Pending |
+| SRV-03 | Phase 4 | Pending |
+| SRV-04 | Phase 4 | Pending |
+| SRV-05 | Phase 4 | Pending |
+| SRV-06 | Phase 4 | Pending |
+| DOC-03 | Phase 4 | Pending |
+| DOC-04 | Phase 4 | Pending |
+| DOC-05 | Phase 4 | Pending |
+| DOC-06 | Phase 4 | Pending |
+| NWS-03 | Phase 4 | Pending |
+| NWS-04 | Phase 4 | Pending |
+| NWS-05 | Phase 4 | Pending |
+| NWS-06 | Phase 4 | Pending |
+| RVW-03 | Phase 4 | Pending |
+| RVW-04 | Phase 4 | Pending |
+| RVW-05 | Phase 4 | Pending |
+| GAL-01 | Phase 4 | Pending |
+| GAL-02 | Phase 4 | Pending |
+| GAL-03 | Phase 4 | Pending |
+| CNT-01 | Phase 4 | Pending |
+| CNT-02 | Phase 4 | Pending |
+| CNT-03 | Phase 4 | Pending |
+| CNT-04 | Phase 4 | Pending |
+| CNT-05 | Phase 4 | Pending |
+| LAY-11 | Phase 4 | Pending |
+| PRF-03 | Phase 4 | Pending |
+| PRF-05 | Phase 4 | Pending |
+| SEO-08 | Phase 4 | Pending |
+| SEO-09 | Phase 4 | Pending |
+| SEO-10 | Phase 4 | Pending |
+| ANM-02 | Phase 5 | Pending |
+| ANM-03 | Phase 5 | Pending |
+| ANM-04 | Phase 5 | Pending |
+| ANM-05 | Phase 5 | Pending |
+| ANM-06 | Phase 5 | Pending |
+| ANM-07 | Phase 5 | Pending |
+| SEO-01 | Phase 5 | Pending |
+| SEO-02 | Phase 5 | Pending |
+| SEO-03 | Phase 5 | Pending |
+| SEO-04 | Phase 5 | Pending |
+| SEO-05 | Phase 5 | Pending |
+| SEO-06 | Phase 5 | Pending |
+| SEO-07 | Phase 5 | Pending |
+| PRF-01 | Phase 5 | Pending |
+| PRF-02 | Phase 5 | Pending |
+| PRF-04 | Phase 5 | Pending |
+| PRF-06 | Phase 5 | Pending |
+| DEL-01 | Phase 5 | Pending |
+| DEL-03 | Phase 5 | Pending |
 
 **Coverage:**
-- v1 requirements: 96 total
-- Mapped to phases: 0 (pending roadmap)
-- Unmapped: 96 ⚠️
+- v1 requirements: 110 total
+- Mapped to phases: 110
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-04-15*
-*Last updated: 2026-04-15 after initial definition*
+*Last updated: 2026-04-15 after roadmap creation*
