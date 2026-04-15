@@ -4,13 +4,62 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Phase 2 will add @theme tokens and @utility glass here */
+/* ShaxKlinika design tokens */
+@theme {
+  --color-primary: #4A9EE7;
+  --color-primary-deep: #2B7FCC;
+  --color-primary-deeper: #1A5A94;
+  --color-text-dark: #1F2937;
+  --color-text-gray: #6B7280;
+  --color-mint: #A8E6CF;
+  --color-bg-light: #E8F4FD;
+  --color-bg-lighter: #D1E9FB;
+  --color-bg-lightest: #F0F8FF;
+
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-heading: var(--font-pt-sans), var(--font-inter), sans-serif;
+}
+
+@utility glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px rgba(74, 158, 231, 0.15);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+@utility glass-hover {
+  &:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(74, 158, 231, 0.3);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glass, [class*="glass"] {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    transition: none !important;
+  }
+  .glass-hover:hover {
+    transform: none !important;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
 
 @theme inline {
 
-    --font-heading: var(--font-sans);
+    --font-heading: var(--font-pt-sans), var(--font-inter), sans-serif;
 
-    --font-sans: var(--font-sans);
+    --font-sans: var(--font-inter), system-ui, sans-serif;
 
     --color-sidebar-ring: var(--sidebar-ring);
 
@@ -227,8 +276,18 @@
     }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    color: var(--color-text-dark);
+    background: linear-gradient(180deg, #FFFFFF 0%, var(--color-bg-lightest) 40%, var(--color-bg-light) 100%);
+    min-height: 100vh;
     }
   html {
     @apply font-sans;
+    }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--color-text-dark);
+    text-wrap: balance;
     }
 }
