@@ -1,7 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter, PT_Sans } from 'next/font/google'
+import { Inter, PT_Sans, Geist } from 'next/font/google'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css'
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+
 
 // D-12: Inter with latin + cyrillic subsets, display swap, CSS variable
 const inter = Inter({
@@ -34,7 +38,7 @@ export default function RootLayout({
 }) {
   return (
     // suppressHydrationWarning: locale layout sets lang on html; root layout does not
-    <html className={`${inter.variable} ${ptSans.variable}`} suppressHydrationWarning>
+    <html className={cn(inter.variable, ptSans.variable, "font-sans", geist.variable)} suppressHydrationWarning>
       <body>
         {children}
         {/* D-18: GA4 via @next/third-parties, guarded on env var — non-blocking */}
