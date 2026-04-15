@@ -16,8 +16,8 @@ Convert visitors into booked appointments by presenting the clinic as trustworth
 
 ### Active
 
-- [ ] Next.js 14 (App Router) + TypeScript scaffold with TailwindCSS, Framer Motion, shadcn/ui
-- [ ] next-intl i18n with RU (default), UZ, EN locales; URL-prefixed routes; full content translation
+- [ ] Next.js **16** (App Router) + TypeScript scaffold with Tailwind **v4**, `motion` (ex Framer Motion), shadcn/ui
+- [ ] next-intl i18n via **`proxy.ts`** (renamed from middleware in v16) with RU (default), UZ, EN; URL-prefixed routes; full content translation
 - [ ] Liquid glass design system (colors, typography, `.glass` utility, rounded cards, blob backgrounds)
 - [ ] Home page: hero Swiper slider, about, why-choose-us, popular services, animated stats counter, doctors slider, news cards, reviews slider, CTA
 - [ ] Services page + detail pages: 25+ realistic services across 13 categories, filter by category, UZS pricing
@@ -55,7 +55,7 @@ Convert visitors into booked appointments by presenting the clinic as trustworth
 
 ## Constraints
 
-- **Tech stack**: Next.js 14 App Router, TypeScript, TailwindCSS, Framer Motion, next-intl, Swiper, shadcn/ui, React Hook Form + Zod, next-sitemap, Lucide icons — fixed by TZ.
+- **Tech stack (actual, verified from package.json)**: Next.js **16.2.3** + React **19.2.4** + Tailwind **v4** (TZ said Next 14 but scaffold is v16 — AGENTS.md warning refers to this). TypeScript 5, Node 20.9+. To install: next-intl (v3), `motion` (not framer-motion), Swiper 11, shadcn/ui, React Hook Form + Zod, `schema-dts`, `@next/third-parties`, Lucide icons. **Do not install** `next-sitemap` (native `app/sitemap.ts` instead), `framer-motion` (renamed to `motion`), `@pbe/react-yandex-maps` (React 19 peer issues), `tailwindcss@3`.
 - **i18n**: next-intl with ru/uz/en; RU is default; all content translated; hreflang on every page.
 - **Performance**: Core Web Vitals (LCP<2.5s, CLS<0.1, FID<100ms), Lighthouse 90+.
 - **Content authenticity**: no placeholder/Lorem text; medically accurate, professionally worded, localized names and pricing (UZS).
