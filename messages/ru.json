@@ -1,0 +1,25 @@
+{
+  "home": {
+    "placeholder": "Добро пожаловать в ShaxKlinika — ваша клиника в Ташкенте"
+  },
+  "nav": {
+    "home": "Главная",
+    "services": "Услуги",
+    "doctors": "Врачи",
+    "news": "Новости",
+    "reviews": "Отзывы",
+    "gallery": "Галерея",
+    "contact": "Контакты",
+    "appointment": "Записаться"
+  },
+  "meta": {
+    "siteName": "ShaxKlinika",
+    "defaultTitle": "ShaxKlinika — Частная медицинская клиника в Ташкенте",
+    "defaultDescription": "Современная частная клиника в Ташкенте. Опытные врачи, передовое оборудование, доступные цены."
+  },
+  "common": {
+    "loading": "Загрузка...",
+    "error": "Произошла ошибка",
+    "back": "Назад"
+  }
+}

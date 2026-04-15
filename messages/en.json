@@ -1,0 +1,25 @@
+{
+  "home": {
+    "placeholder": "Welcome to ShaxKlinika — your clinic in Tashkent"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "doctors": "Doctors",
+    "news": "News",
+    "reviews": "Reviews",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "appointment": "Book Appointment"
+  },
+  "meta": {
+    "siteName": "ShaxKlinika",
+    "defaultTitle": "ShaxKlinika — Private Medical Clinic in Tashkent",
+    "defaultDescription": "Modern private clinic in Tashkent, Uzbekistan. Experienced doctors, advanced equipment, affordable prices."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "back": "Back"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "home": {
+    "placeholder": "ShaxKlinika-ga xush kelibsiz — Toshkentdagi shifoxonangiz"
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "services": "Xizmatlar",
+    "doctors": "Shifokorlar",
+    "news": "Yangiliklar",
+    "reviews": "Sharhlar",
+    "gallery": "Galereya",
+    "contact": "Aloqa",
+    "appointment": "Yozilish"
+  },
+  "meta": {
+    "siteName": "ShaxKlinika",
+    "defaultTitle": "ShaxKlinika — Toshkentdagi xususiy tibbiyot klinikasi",
+    "defaultDescription": "Toshkentdagi zamonaviy xususiy klinika. Tajribali shifokorlar, ilg'or uskunalar, qulay narxlar."
+  },
+  "common": {
+    "loading": "Yuklanmoqda...",
+    "error": "Xatolik yuz berdi",
+    "back": "Orqaga"
+  }
+}
