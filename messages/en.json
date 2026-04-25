@@ -9,8 +9,31 @@
     "news": "News",
     "reviews": "Reviews",
     "gallery": "Gallery",
-    "contact": "Contact",
-    "appointment": "Book Appointment"
+    "contacts": "Contacts"
+  },
+  "header": {
+    "ctaBook": "Book",
+    "emergency24h": "Emergency 24/7",
+    "menuOpen": "Open menu",
+    "menuClose": "Close"
+  },
+  "footer": {
+    "aboutBlurb": "A modern multi-specialty clinic in Tashkent — European-level care for your health.",
+    "linksTitle": "Links",
+    "contactsTitle": "Contacts",
+    "socialTitle": "Social",
+    "address": "Tashkent, Amir Temur St. 108",
+    "hours": "Mon-Sat 8:00-20:00 · Sun 9:00-15:00",
+    "rightsReserved": "All rights reserved"
+  },
+  "cookies": {
+    "message": "We use cookies to improve the site. By continuing you agree to our policy.",
+    "accept": "Accept"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The requested page doesn't exist or has been moved.",
+    "backHome": "Back to home"
   },
   "meta": {
     "siteName": "ShaxKlinika",

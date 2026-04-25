@@ -14,7 +14,7 @@ const LOCALE_LABELS: Record<string, string> = {
   en: 'EN',
 }
 
-export default function LanguageSwitcher() {
+export function LanguageSwitcher() {
   const locale = useLocale()
   const router = useRouter()
   const pathname = usePathname()
@@ -24,24 +24,31 @@ export default function LanguageSwitcher() {
   }
 
   return (
-    <nav aria-label="Language switcher" style={{ display: 'flex', gap: '0.5rem' }}>
-      {routing.locales.map((loc) => (
-        <button
-          key={loc}
-          onClick={() => handleLocaleChange(loc)}
-          aria-current={loc === locale ? 'true' : undefined}
-          style={{
-            fontWeight: loc === locale ? 'bold' : 'normal',
-            cursor: loc === locale ? 'default' : 'pointer',
-            background: 'none',
-            border: 'none',
-            padding: '0.25rem 0.5rem',
-            fontSize: '0.875rem',
-          }}
-        >
-          {LOCALE_LABELS[loc] ?? loc.toUpperCase()}
-        </button>
-      ))}
+    <nav
+      aria-label="Language switcher"
+      className="flex items-center gap-1 rounded-full border border-white/40 bg-white/30 px-1 py-0.5 text-xs"
+    >
+      {routing.locales.map((loc) => {
+        const active = loc === locale
+        return (
+          <button
+            key={loc}
+            type="button"
+            onClick={() => handleLocaleChange(loc)}
+            aria-current={active ? 'true' : undefined}
+            className={
+              active
+                ? 'cursor-default rounded-full bg-[var(--color-primary)] px-2 py-0.5 font-semibold text-white'
+                : 'cursor-pointer rounded-full px-2 py-0.5 font-medium text-[var(--color-text-dark)] hover:bg-white/60'
+            }
+          >
+            {LOCALE_LABELS[loc] ?? loc.toUpperCase()}
+          </button>
+        )
+      })}
     </nav>
   )
 }
+
+// Backward compatibility — Phase 1 layout imports default export
+export default LanguageSwitcher

@@ -3,14 +3,37 @@
     "placeholder": "ShaxKlinika-ga xush kelibsiz — Toshkentdagi shifoxonangiz"
   },
   "nav": {
-    "home": "Bosh sahifa",
+    "home": "Asosiy",
     "services": "Xizmatlar",
     "doctors": "Shifokorlar",
     "news": "Yangiliklar",
     "reviews": "Sharhlar",
     "gallery": "Galereya",
-    "contact": "Aloqa",
-    "appointment": "Yozilish"
+    "contacts": "Aloqa"
+  },
+  "header": {
+    "ctaBook": "Yozilish",
+    "emergency24h": "Shoshilinch 24/7",
+    "menuOpen": "Menyuni ochish",
+    "menuClose": "Yopish"
+  },
+  "footer": {
+    "aboutBlurb": "Toshkentdagi zamonaviy ko'p yo'nalishli klinika — sog'lig'ingizga yevropa darajasida g'amxo'rlik.",
+    "linksTitle": "Navigatsiya",
+    "contactsTitle": "Aloqa",
+    "socialTitle": "Ijtimoiy tarmoqlar",
+    "address": "Toshkent sh., Amir Temur ko'chasi, 108",
+    "hours": "Du-Sh 8:00-20:00 · Yak 9:00-15:00",
+    "rightsReserved": "Barcha huquqlar himoyalangan"
+  },
+  "cookies": {
+    "message": "Saytni yaxshilash uchun cookies ishlatamiz. Davom etsangiz, siyosatimizga rozi bo'lasiz.",
+    "accept": "Qabul qilish"
+  },
+  "notFound": {
+    "title": "Sahifa topilmadi",
+    "body": "Afsuski, so'ralgan sahifa mavjud emas yoki ko'chirilgan.",
+    "backHome": "Bosh sahifaga"
   },
   "meta": {
     "siteName": "ShaxKlinika",
