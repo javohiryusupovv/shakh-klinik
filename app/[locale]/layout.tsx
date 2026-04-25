@@ -2,7 +2,13 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
-import LanguageSwitcher from '@/components/shared/LanguageSwitcher'
+import { Header } from '@/components/layout/Header'
+import { Footer } from '@/components/layout/Footer'
+import { Blob } from '@/components/shared/Blob'
+import { AppointmentModalProvider } from '@/components/shared/AppointmentModalProvider'
+import { FloatingCTA } from '@/components/shared/FloatingCTA'
+import { CookieConsent } from '@/components/shared/CookieConsent'
+import { ScrollToTop } from '@/components/shared/ScrollToTop'
 
 // D-11: Lock all 3 locales at build time
 export function generateStaticParams() {
@@ -29,11 +35,15 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
-      {/* Phase 1 Header stub — minimal, replaced in Phase 2 (D-21) */}
-      <header style={{ padding: '1rem', borderBottom: '1px solid #eee' }}>
-        <LanguageSwitcher />
-      </header>
-      <main>{children}</main>
+      <AppointmentModalProvider>
+        <Blob />
+        <Header />
+        <main className="min-h-[calc(100vh-300px)]">{children}</main>
+        <Footer />
+        <FloatingCTA />
+        <CookieConsent />
+        <ScrollToTop />
+      </AppointmentModalProvider>
     </NextIntlClientProvider>
   )
 }
