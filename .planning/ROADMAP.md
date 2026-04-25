@@ -58,7 +58,10 @@ Plans:
   3. Submitting the Appointment modal with valid data (name, phone matching `+998 XX XXX-XX-XX`, service, date) delivers a formatted HTML message to the configured Telegram chat and the form shows a success state
   4. Sending more than 5 requests per minute to `/api/appointment` from the same IP returns HTTP 429
   5. Submitting invalid data (empty name, malformed phone) to any of the three API routes returns HTTP 422 with a `fieldErrors` object matching the Zod schema
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 03-01-PLAN.md — Content & data foundation: lib/data/content.ts (types + 25+ services / 15 doctors / 12 news / 20 reviews / 13 categories / 10-12 departments) + RU/UZ/EN translations for all 4 content domains + FAQ + appointment + form.errors namespaces
+- [ ] 03-02-PLAN.md — Telegram backbone, 3 POST API routes (appointment / contact / review with Zod validation + 5/min rate limit), AppointmentForm (RHF + zodResolver, 4-state machine per UI-SPEC), modal body wire-up
 **UI hint**: yes
 
 ### Phase 4: Marketing Pages
@@ -96,6 +99,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Foundation & i18n Scaffold | 0/1 | Not started | - |
 | 2. Design System & Shared UI | 0/TBD | Not started | - |
-| 3. Content Data Layer & API Backbone | 0/TBD | Not started | - |
+| 3. Content Data Layer & API Backbone | 0/2 | Not started | - |
 | 4. Marketing Pages | 0/TBD | Not started | - |
 | 5. Animations, SEO & Ship | 0/TBD | Not started | - |
