@@ -1,6 +1,43 @@
 {
   "home": {
-    "placeholder": "ShaxKlinika-ga xush kelibsiz — Toshkentdagi shifoxonangiz"
+    "placeholder": "ShaxKlinika-ga xush kelibsiz — Toshkentdagi shifoxonangiz",
+    "faq": {
+      "title": "Ko'p beriladigan savollar",
+      "items": [
+        {
+          "q": "ShaxKlinikaga qanday yozilsa bo'ladi?",
+          "a": "Saytdagi qisqa shaklni to'ldiring — administrator 15 daqiqa ichida qo'ng'iroq qilib, qulay vaqtni kelishadi. Klinika ish soatlarida telefon orqali ham yozilishingiz mumkin: Du–Sh 8:00 dan 20:00 gacha."
+        },
+        {
+          "q": "Tibbiy sug'urta bo'yicha bemorlarni qabul qilasizmi?",
+          "a": "O'zbekistonning aksariyat yirik sug'urta kompaniyalari va ixtiyoriy tibbiy sug'urta bilan ishlaymiz. Tashrifdan oldin administratordan xizmatingiz qoplamaga kirishini aniqlang — kerakli hujjatlarni tayyorlashda yordam beramiz."
+        },
+        {
+          "q": "Birinchi konsultatsiya qancha vaqt davom etadi?",
+          "a": "Terapevt yoki mutaxassisning birinchi qabuli o'rtacha 30–40 daqiqa davom etadi. Bu anamnez to'plash, ko'rik o'tkazish, shikoyatlarni muhokama qilish va tekshirish yoki davolash rejasini tuzish uchun yetarli."
+        },
+        {
+          "q": "Boshqa shifokordan yo'llanma kerakmi?",
+          "a": "Yo'q. ShaxKlinikaning har qanday mutaxassisiga to'g'ridan-to'g'ri, yo'llanmasiz yozilishingiz mumkin. Agar boshqa klinikalardan ko'chirma yoki tahlil natijalaringiz bo'lsa — ularni o'zingiz bilan olib keling, bu tashxis qo'yishni tezlashtiradi."
+        },
+        {
+          "q": "Bolalarni qabul qilasizmi?",
+          "a": "Ha. Bizda tajribali pediatrlar ishlaydi, O'zbekiston Sog'liqni saqlash vazirligi taqvimi bo'yicha rejali emlash o'tkaziladi, shuningdek, bolalar tor mutaxassislari konsultatsiyalari mavjud. Yosh bemorlarni tug'ilganidan boshlab qabul qilamiz."
+        },
+        {
+          "q": "Qaysi to'lov usullarini qabul qilasiz?",
+          "a": "Naqd pul (UZS), Visa va Mastercard bank kartalari, shuningdek, Click va Payme orqali onlayn pul o'tkazmalarini qabul qilamiz. Har bir to'lovdan keyin chek beramiz — u sug'urta qoplamasini olishda kerak bo'ladi."
+        },
+        {
+          "q": "Klinika qachon ishlaydi?",
+          "a": "Asosiy qabul soatlari: dushanba–shanba 8:00 dan 20:00 gacha, yakshanba 9:00 dan 15:00 gacha. Aniq shifokorning jadvali farq qilishi mumkin — yozilish vaqtida aniq vaqtni aniqlang."
+        },
+        {
+          "q": "Sizda 24/7 shoshilinch yordam bormi?",
+          "a": "Sutkalik shoshilinch liniya har kuni ishlaydi — agar shoshilinch konsultatsiya yoki shifokorni uyga chaqirish kerak bo'lsa, qo'ng'iroq qiling. Hayotga xavf soluvchi og'ir holatlarda 103 raqamiga murojaat qiling."
+        }
+      ]
+    }
   },
   "nav": {
     "home": "Asosiy",
@@ -44,5 +81,463 @@
     "loading": "Yuklanmoqda...",
     "error": "Xatolik yuz berdi",
     "back": "Orqaga"
+  },
+  "categories": {
+    "therapy": { "name": "Terapiya" },
+    "cardiology": { "name": "Kardiologiya" },
+    "neurology": { "name": "Nevrologiya" },
+    "gynecology": { "name": "Ginekologiya" },
+    "urology": { "name": "Urologiya" },
+    "pediatrics": { "name": "Pediatriya" },
+    "dermatology": { "name": "Dermatologiya" },
+    "ophthalmology": { "name": "Oftalmologiya" },
+    "dentistry": { "name": "Stomatologiya" },
+    "endocrinology": { "name": "Endokrinologiya" },
+    "gastroenterology": { "name": "Gastroenterologiya" },
+    "orthopedics": { "name": "Ortopediya" },
+    "diagnostics": { "name": "Diagnostika" }
+  },
+  "departments": {
+    "general-medicine": { "name": "Umumiy tibbiyot va pediatriya" },
+    "cardiology-dept": { "name": "Kardiologiya" },
+    "neurology-dept": { "name": "Nevrologiya" },
+    "womens-health": { "name": "Ayollar salomatligi" },
+    "urology-dept": { "name": "Urologiya" },
+    "dermatology-dept": { "name": "Dermatologiya va kosmetologiya" },
+    "eye-clinic": { "name": "Oftalmologiya" },
+    "dental-clinic": { "name": "Stomatologiya" },
+    "endocrinology-dept": { "name": "Endokrinologiya" },
+    "gastro-dept": { "name": "Gastroenterologiya" },
+    "surgery": { "name": "Jarrohlik va ortopediya" },
+    "diagnostics-lab": { "name": "Diagnostika va laboratoriya" }
+  },
+  "services": {
+    "therapy-consultation": {
+      "name": "Terapevt konsultatsiyasi",
+      "description": "ShaxKlinikada terapevtning birinchi qabuli — umumiy salomatlik holatini baholashning asosiy bosqichi. Konsultatsiya davomida shifokor shikoyatlar haqida batafsil so'rab, fizikal ko'rik o'tkazadi, arterial bosim, puls, saturatsiya va haroratni o'lchaydi. Ko'rik natijalariga ko'ra terapevt zarur tahlil yoki instrumental tekshiruvlarni tayinlaydi va keyingi harakatlar bo'yicha individual reja tuzadi. Agar tor mutaxassis konsultatsiyasi kerak bo'lsa, shifokor klinika ichidagi kerakli hamkasbga yo'naltiradi. Qabul har qanday simptomli kattalar bemorlar uchun, shuningdek, profilaktik salomatlik baholash va spravka olish uchun mos keladi. Qabul davomiyligi taxminan 30 daqiqa."
+    },
+    "annual-checkup-comprehensive": {
+      "name": "Kompleks yillik tekshiruv",
+      "description": "Sog'liqqa oldindan g'amxo'rlik qilayotganlar uchun kengaytirilgan tibbiy chek-ap. Dasturga terapevt konsultatsiyasi, qonning va siydikning kengaytirilgan tahlili, biokimyo, EKG, qorin bo'shlig'i va qalqonsimon bez UZI, qand va lipid profilini o'lchash kiradi. Tekshiruv yakunida terapevt barcha natijalarni bitta xulosaga to'playdi, har bir ko'rsatkichni tushuntiradi va shaxsiy tavsiyalar shakllantiradi. Chek-ap ayniqsa 35 yoshdan oshgan bemorlar, irsiy xavfli odamlar yoki uzoq vaqt shifokorga bormaganlar uchun foydali. Butun dasturni o'tish taxminan ikki soat oladi — barcha tekshiruvlar bir tashrifda bajariladi."
+    },
+    "cardiology-consultation": {
+      "name": "Kardiolog konsultatsiyasi",
+      "description": "Kardiolog shifokorining qabuli yurak-qon tomir tizimi shikoyatlarini batafsil ko'rib chiqish bilan: hansirash, yurak ishidagi uzilishlar, yuqori bosim, ko'krak qafasidagi og'riq, shishlar. Kardiolog anamnez to'playdi, yurak va o'pkani auskultatsiya qiladi, ikki qo'lda bosimni o'lchaydi, SCORE va ASCVD shkalalari bo'yicha yurak-qon tomir voqealari xavfini baholaydi. Kerak bo'lsa, o'sha tashrifda EKG bajariladi. Shifokor qo'shimcha tekshiruvlar (ExoKG, holter, yuklama testlari) tayinlaydi va davolash sxemasini tanlaydi. Konsultatsiya profilaktik tashrif uchun ham, allaqachon tashxis qo'yilgan bemorlar uchun ham mos keladi."
+    },
+    "cardiology-ecg": {
+      "name": "EKG va talqini",
+      "description": "Elektrokardiografiya — yurakning elektr faoliyatini 5–10 daqiqa davomida ro'yxatga oluvchi tez va og'riqsiz tekshiruv. Usul ritm buzilishlarini, miokard ishemiyasini, yurak bo'limlari gipertrofiyasi belgilarini aniqlash, shuningdek, antiaritmik terapiya ta'sirini baholash imkonini beradi. Narxga kardiologning yozma xulosa va tavsiyalar bilan talqini allaqachon kiritilgan. Tinch holatdagi EKGni murojaat kuni oldindan tayyorgarliksiz qilamiz. Tekshiruv 35 yoshdan keyin har yili, shuningdek, jarrohlik aralashuvlardan oldin va yurakdan har qanday shikoyatlar paydo bo'lganda tavsiya etiladi."
+    },
+    "cardiology-echo": {
+      "name": "Exokardiografiya (yurak UZI)",
+      "description": "Exokardiografiya — yurakning ultratovushli tekshiruvi bo'lib, yurak kameralari, klapanlar, perikard va katta tomirlarni real vaqtda vizualizatsiya qiladi. ExoKG miokardning qisqaruvchanlik qobiliyatini baholash, otish fraksiyasini o'lchash, klapan nuqsonlari, kardiomiopatiya, o'pka gipertenziyasi va infarktdan keyingi asoratlarni aniqlashga yordam beradi. Protsedura mutlaqo xavfsiz va og'riqsiz, taxminan 30–45 daqiqa davom etadi. Tayyorgarlik talab qilinmaydi. Xulosa tekshiruv kuni barcha asosiy ko'rsatkichlar va kardiolog tavsiyalari bilan beriladi. Kattalar va kardiojarrohlik amaliyotlaridan keyingi bemorlar uchun mos keladi."
+    },
+    "neurology-consultation": {
+      "name": "Nevrolog konsultatsiyasi",
+      "description": "Markaziy va periferik asab tizimi kasalliklarini diagnostika va davolash uchun nevrolog shifokorining qabuli. Nevrolog bosh og'riqlari, bosh aylanishi, uyqu buzilishlari, bel va bo'yin og'rig'i, insult oqibatlari, nevralgiyalar, somatik ko'rinishli tashvish-depressiv buzilishlar bilan shug'ullanadi. Qabul davomida shifokor to'liq nevrologik ko'rik o'tkazadi: reflekslar, mushak tonusi, sezuvchanlik, koordinatsiya va kognitiv funktsiyalarni baholaydi. Yakunda tekshiruv rejasi (MRT, EEG, laboratoriya tahlillari) tuziladi va davolash tayinlanadi. Konsultatsiya davomiyligi — 45 daqiqa, har bir holatni batafsil ko'rib chiqish uchun yetarli."
+    },
+    "neurology-eeg": {
+      "name": "Elektroensefalografiya (EEG)",
+      "description": "EEG — bosh miya bioelektr faoliyatining og'riqsiz va xavfsiz tekshiruvi. Bemor boshiga datchiklar bilan jihozlangan qalpoq kiyiladi va u 30–40 daqiqa davomida po'stloq faoliyatini ro'yxatga oladi. Tekshiruv epilepsiyada, uyqu buzilishlarida, surunkali bosh og'riqlarida, bosh-miya jarohatlaridan keyin, sababi noaniq hushdan ketishlarni diagnostika qilishda qo'llaniladi. Bizning klinikada EEG funktsional sinovlar bilan o'tkaziladi — ko'zlarni ochib-yopish, fotostimulyatsiya, giperventilyatsiya. Xulosani nevrolog shifokori barcha muhim namunalarni tasvirlash va talqini bilan yozadi. Kattalar va besh yoshdan boshlab bolalar uchun mos keladi."
+    },
+    "gynecology-consultation": {
+      "name": "Ginekolog konsultatsiyasi",
+      "description": "Ginekolog shifokorining qabuli ginekologik kresloda ko'rik, flora va sitologiyaga surtmalar olish, ko'rsatmalar bo'yicha kolposkopiya bilan. Konsultatsiya rejali profilaktik tashrif uchun, sikl buzilishlarida, og'riqlar, ajralmalar paytida, homiladorlikni rejalashtirish davrida, shuningdek, kontratseptsiya tanlash uchun mos keladi. Shifokor reproduktiv anamnez haqida batafsil so'raydi, qulay sharoitda ko'rik o'tkazadi va keyingi tekshiruvlar rejasini tuzadi. Aniqlangan o'zgarishlar bo'lsa, davolash taktikasini muhokama qilamiz va kerak bo'lsa, kichik chanoq UZIga yo'naltiramiz. Barcha protseduralar bir martalik steril asboblar bilan o'tkaziladi."
+    },
+    "gynecology-ultrasound": {
+      "name": "Kichik chanoq a'zolari UZI",
+      "description": "Bachadon, tuxumdonlar va qo'shimcha a'zolarning ultratovushli tekshiruvi — ginekologiyada diagnostikaning asosiy usuli. Biz UZIni ikki usulda bajaramiz: transabdominal (oldingi qorin devori orqali) va transvaginal (endometriy va tuxumdonlarni baholash uchun aniqroq usul). Tekshiruv miomalar, kistalar, endometrioz, endometriy patologiyasi, homiladorlik va uning asoratlarini aniqlash, operatsiyalardan keyingi holatni baholash imkonini beradi. Protsedura 20–30 daqiqa davom etadi va transabdominal ko'rik uchun me'yorida to'lgan siydik qopidan tashqari maxsus tayyorgarlik talab qilmaydi. Xulosa darhol batafsil tasvir va tavsiyalar bilan beriladi."
+    },
+    "urology-consultation": {
+      "name": "Urolog konsultatsiyasi",
+      "description": "Erkak va ayollarning siydik-tanosil tizimi kasalliklari bo'yicha urolog shifokorining qabuli. Urolog tsistitlar, prostatitlar, buyrak-tosh kasalligi, siydik tutmaslik, erektil disfunktsiya, prostata bezi adenomasi, jinsiy yo'l bilan yuqadigan infeksiyalarni davolash bilan shug'ullanadi. Qabulda shifokor anamnez to'playdi, qulay sharoitda nozik ko'rik o'tkazadi, kerak bo'lsa, laboratoriya tahlillarini (umumiy siydik tahlili, ekma, erkaklarda PSA), siydik qopi va prostata bezi UZIni tayinlaydi. Konsultatsiya yakunida shifokor davolash rejasini taklif qiladi — konservativ yoki, kerak bo'lsa, operativ."
+    },
+    "urology-uroflowmetry": {
+      "name": "Uroflowmetriya",
+      "description": "Uroflowmetriya — siydik chiqarish tezligi va xarakterini obyektiv o'lchovchi funktsional tekshiruv. Bemor maxsus asbobga siydik chiqaradi, u avtomatik ravishda oqim grafigini quradi. Tekshiruv bir necha daqiqa davom etadi, me'yorida to'lgan siydik qopidan tashqari tayyorgarlik talab qilmaydi va mutlaqo og'riqsiz. Uroflowmetriya prostata adenomasiga, neyrogen siydik qopiga, uretra striktyuralariga shubha qilinganda, shuningdek, shu holatlarni davolash samaradorligini baholash uchun zarur. Xulosani urolog bemorning yoshi, jinsi va qo'shimcha shikoyatlarini hisobga olib talqin qiladi."
+    },
+    "pediatrics-consultation": {
+      "name": "Pediatr konsultatsiyasi",
+      "description": "Tug'ilganidan 17 yoshgacha bo'lgan bolalar uchun tajribali pediatrning qabuli. Konsultatsiya davomida shifokor bolaning jismoniy va asab-ruhiy rivojlanishini baholaydi, ko'rik o'tkazadi, bo'y va vaznni o'lchaydi, ota-onalarni ovqatlantirish, rejim, emlash, mavsumiy infeksiyalardan profilaktika masalalari bo'yicha maslahat beradi. Bola kasal bo'lsa, pediatr tashxis qo'yadi, kerak bo'lsa, laboratoriya tekshiruvlarini tayinlaydi va yoshga xavfsiz davolash tanlaydi. Pediatr xonasi bolaga osonroq mos kelish uchun o'yinchoqlar va materiallar bilan jihozlangan, shifokor esa shoshilmasdan ota-onalar bilan suhbatlashishga vaqt ajratadi."
+    },
+    "pediatrics-vaccination": {
+      "name": "Bolalarni emlash",
+      "description": "Bolani O'zbekiston Milliy emlash kalendari va individual jadvallar bo'yicha rejali emlash. Har bir emlashdan oldin pediatr bolani ko'rib chiqadi, haroratni o'lchaydi va salomatlik holatini baholaydi, kontrindikatsiyalarni istisno qilish uchun. Klinikada sovuq zanjirga rioya qilgan holda saqlanadigan tanilgan ishlab chiqaruvchilarning sertifikatlangan vaksinalari ishlatiladi. Emlashdan keyin bola darhol reaksiyalarni istisno qilish uchun 30 daqiqa kuzatuv ostida qoladi. Narx tanlangan preparatga bog'liq — shifokor barcha variantlarni oldindan ota-onalar bilan muhokama qiladi va eng yaxshi variantni tanlashga yordam beradi."
+    },
+    "dermatology-consultation": {
+      "name": "Dermatolog konsultatsiyasi",
+      "description": "Teri, soch va tirnoqlar kasalliklarini diagnostika va davolash uchun dermatolog shifokorining qabuli. Dermatolog akne, ekzema, psoriaz, zamburug'li shikastlanishlar, allergik dermatitlar, soch to'kilishi, xollar va boshqa o'simtalar bilan shug'ullanadi. Qabulda shifokor zararlangan joylarni dermatoskop bilan ko'rib chiqadi — bu teri tuzilishini ulkanlashtirgan holda ko'rish va aniqroq tashxis qo'yish imkonini beradi. Onkologik jarayonga shubha bo'lsa, shoshilinch biopsiya yo'llanmasi beriladi. Ko'rik natijalariga ko'ra teri turi, hayot tarzi va qo'shimcha holatlarni hisobga olgan holda individual davolash rejasi tanlanadi."
+    },
+    "dermatology-laser": {
+      "name": "Lazer protsedurasi",
+      "description": "Klinikamizda teri muammolarini lazerda davolash zamonaviy uskunalarda sertifikatlangan mutaxassislar tomonidan amalga oshiriladi. Protseduralar ro'yxatiga tomir to'rlari va kapillyarlarni olib tashlash, pigment dog'larini davolash, postakne chandiqlarini silliqlash, lazerda epilyatsiya, papilloma va xavfsiz o'simtalarni olib tashlash kiradi. Protseduradan oldin teri turi va kontrindikatsiyalarni baholash bilan dermatolog konsultatsiyasi shart. Sessiya davomiyligi — sohaga qarab 30 dan 60 daqiqagacha. Protseduradan keyin parvarish bo'yicha batafsil tavsiyalar beramiz: quyosh himoyasi, namlash, cheklovlar. Narx ishlangan sohaning maydoni va kerakli sessiyalar soniga bog'liq."
+    },
+    "ophthalmology-consultation": {
+      "name": "Oftalmolog konsultatsiyasi",
+      "description": "Oftalmolog shifokorining ko'rish o'tkirligini tekshirish, ko'z ichidagi bosimni o'lchash, Goldman linzasi bilan ko'z tubini ko'rish bilan kompleks qabuli. Konsultatsiya ko'rishning yomonlashishi, bosh og'rig'i, ko'zlardagi og'riq, qizarish, yosh oqishi, begona narsa hissi paytida mos keladi. Bizda kattalar va uch yoshdan boshlab bolalar qabul qilinadi. Agar bola o'qish paytida tez charchashdan shikoyat qilsa yoki maktab doskasini yomon ko'rsa — bu profilaktik ko'rikka yozilish sababi. Tekshiruv yakunida shifokor ko'zoynak yoki kontakt linzalar uchun retsept yozadi yoki aniqlangan kasallikni davolash rejasini tuzadi."
+    },
+    "ophthalmology-vision-test": {
+      "name": "Ko'rish o'tkirligini tekshirish",
+      "description": "Korreksiya tanlash bilan asosiy vizometriya — Sivtsev jadvali bo'yicha har bir ko'zning ko'rish o'tkirligini aniqlash, mos ko'zoynaklar uchun turli optik kuchdagi linzalar bilan korreksiyali sinov. Narxga ko'zoynak yoki kontakt linzalar uchun retsept yozish kiradi. Tekshiruv 20–25 daqiqa davom etadi, tayyorgarlik talab qilmaydi, mutlaqo og'riqsiz va 5 yoshdan boshlab bolalar va istalgan yoshdagi kattalar uchun mos keladi. Vizometriya jarayonida oftalmolog o'zgarishlarni sezsa, qo'shimcha tekshiruvlarni (tonometriya, ko'z tubini ko'rish) taklif qiladi. Yiliga bir marta ko'rish tekshiruvini o'tish tavsiya etiladi."
+    },
+    "dental-cleaning": {
+      "name": "Tishlarni professional tozalash",
+      "description": "Og'iz bo'shlig'ining to'liq gigiyenasi uch bosqichda: tish toshini ultratovushli olib tashlash, maxsus kukunli Air Flow apparati bilan kirdan tozalash, finish pasta bilan jilolash va ftorlash. Protsedura qattiq cho'kmalarni, choy, qahva va tamakidan pigment dog'larini olib tashlaydi, emalning tabiiy rangini tiklaydi, karyez va milk kasalliklari xavfini kamaytiradi. Stomatolog-gigienist nozik usullardan foydalanadi — protsedura deyarli og'riqsiz. Qabul yakunida bemor uy parvarishi bo'yicha tavsiyalar oladi: cho'tka, pasta, irrigator tanlash. Tozalashni olti oyda bir marta qilish tavsiya etiladi."
+    },
+    "dental-implant": {
+      "name": "Tish implantatsiyasi",
+      "description": "Dental implant o'rnatish — qo'shni tishlarni randalashsiz yo'qolgan tishni tiklashning zamonaviy usuli. Klinikada biz ishonchli jahon ishlab chiqaruvchilarining (Shveytsariya, Janubiy Koreya, Isroil) implant tizimlari bilan ishlaymiz — aniq markani konsultatsiyada bemor bilan muhokama qilamiz. Bosqichlarga tekshiruv, kompyuter tomografiyasi asosida rejalashtirish, mahalliy og'riqsizlantirish ostida implantni jarrohlik bilan o'rnatish, ildiz otish davri (3–6 oy), keyin toj o'rnatish kiradi. Har bir bosqichda bemor parvarish bo'yicha batafsil ko'rsatmalar oladi. Narx implant tizimi va klinik vaziyat murakkabligiga qarab o'zgaradi."
+    },
+    "dental-whitening": {
+      "name": "Tishlarni oqartirish",
+      "description": "LED chiroq bilan faollashtiriladigan zamonaviy gellardan foydalangan holda klinikada tishlarni professional oqartirish. Protsedura bitta tashrifda taxminan 60 daqiqa davom etadi va emalni 4–8 tonga oqartiradi. Oqartirishdan oldin professional tozalash va stomatolog ko'rigi shart — bu emal holatini baholash, karyezni istisno qilish va gel kontsentratsiyasini tanlash uchun zarur. Protsedura kontrindikatsiyalarga ega (homiladorlik, tishlarning yaqqol giperseziyasi, karyez), shuning uchun konsultatsiya — majburiy bosqich. Oqartirishdan keyin 48 soat davomida \"oq parhez\" tavsiya etamiz: qahva, choy, qizil sharob, mevalarni iste'mol qilmaslik."
+    },
+    "endocrinology-consultation": {
+      "name": "Endokrinolog konsultatsiyasi",
+      "description": "Qalqonsimon bez kasalliklari, qandli diabet, semizlik, gormonal nomutanosiblik fonida menstrual sikl buzilishlari, osteoporozni diagnostika va davolash uchun endokrinolog shifokorining qabuli. Endokrinolog batafsil anamnez to'playdi, ko'rik va qalqonsimon bez palpatsiyasini o'tkazadi, tana massasi indeksi va yog' to'qimasi taqsimotini baholaydi. Konsultatsiya yakunida shifokor gormonal tahlillar (TTG, T4, T3, kortizol, insulin, PGTT) va instrumental tekshiruvlar (qalqonsimon bez UZI, densitometriya) majmuasini tayinlaydi. Natijalarni olgandan so'ng individual davolash va nazorat rejasi tuziladi."
+    },
+    "endocrinology-thyroid-ultrasound": {
+      "name": "Qalqonsimon bez UZI",
+      "description": "Qalqonsimon bez ultratovushli tekshiruvi — bu organni vizualizatsiya qilishning asosiy usuli. UZI bo'lim va isthmus o'lchamlarini baholash, tugunlar, kistalar, yallig'lanish belgilari, struktura o'zgarishlarini aniqlash imkonini beradi. Protsedura 20–30 daqiqa davom etadi, mutlaqo xavfsiz va maxsus tayyorgarlik talab qilmaydi. Natijalarga ko'ra shifokor bezning hajmini o'lchash va TIRADS tizimi bo'yicha har bir tugunni tasvirlash bilan yozma xulosa beradi. Shubhali o'simtalar aniqlansa, endokrinolog tugunning xususiyatini aniqlashtirish uchun nozik igna aspiratsion biopsiyaga yo'naltiradi. UZI bo'yindan har qanday shikoyatlarda va gormonal nomutanosiblikka shubha qilinganda tavsiya etiladi."
+    },
+    "gastro-consultation": {
+      "name": "Gastroenterolog konsultatsiyasi",
+      "description": "Anamnezni batafsil to'plash va qorin bo'shlig'ini ko'rish bilan gastroenterolog shifokorining qabuli. Gastroenterolog gastrit, yara kasalligi, reflyuks-ezofagit, ta'sirlangan ichak sindromi, jigar va o't yo'llari kasalliklari, pankreatit, disbakteriozni davolash bilan shug'ullanadi. Agar bemorda FGDS, qorin bo'shlig'i UZI yoki biokimyo natijalari bo'lsa — shifokor ularni davolash rejasiga integratsiya qiladi. Qabul yakunida individual diyetoterapiya, dori sxemasi va nazorat tekshiruvlar rejasi tuziladi. Konsultatsiya birinchi marta murojaat qilganlar va uzoq vaqt kuzatilayotgan bemorlar uchun mos keladi."
+    },
+    "gastro-fgds": {
+      "name": "FGDS (gastroskopiya)",
+      "description": "Fibrogastroduodenoskopiya — qizilo'ngach, oshqozon va o'n ikki barmoqli ichakning endoskopik tekshiruvi. Kameralı ingichka egiluvchan endoskop og'iz orqali kiritiladi va shilliq qavatni ichkaridan ko'rish imkonini beradi. Protsedura gastrit, yaralar, o'simtalar, qizilo'ngach varikoz tomir kengayishi, reflyuks-ezofagitni aniqlaydi. Ko'rsatmalar bo'yicha biopsiya va Helicobacter pylori testi bajariladi. Klinikamizda FGDS mahalliy og'riqsizlantirish bilan va, bemor xohishiga ko'ra, dori uyqusi bilan o'tkaziladi. Tayyorgarlik oddiy: tekshiruvdan 8 soat oldin yemaslik va ichmaslik. Protseduradan keyin bemor foto- yoki video materiallar va yozma xulosa oladi."
+    },
+    "orthopedics-consultation": {
+      "name": "Ortoped-travmatolog konsultatsiyasi",
+      "description": "Tayanch-harakat apparati kasalliklari va shikastlanishlarini diagnostika qilish uchun ortoped shifokorining qabuli. Ortoped osteoxondroz, umurtqalararo churralar, artrozlar, jarohatlardan keyingi oqibatlar, yassi oyoq, bolalardagi qad-qomat buzilishlari, oyoq deformatsiyalari bilan shug'ullanadi. Qabulda shifokor bo'g'imlardagi harakat hajmi, mushak kuchi, nevrologik holatni baholash bilan ortopedik ko'rik o'tkazadi. Kerak bo'lsa, tashxisni aniqlashtirish uchun rentgenografiya, MRT yoki KTni tayinlaydi. Konsultatsiya sportchilar, bel og'rig'i bo'lgan ofis xodimlari, artrozli keksa bemorlar, qad-qomat va oyoqlarni baholash uchun bolali ota-onalar uchun mos keladi."
+    },
+    "orthopedics-joint-injection": {
+      "name": "Bo'g'im ichiga in'eksiya",
+      "description": "Bo'g'im bo'shlig'iga davolash in'eksiyasi — artrozlar, bursitlar, tendinitlarda yallig'lanish va og'riqni bartaraf etishning samarali usuli. Ko'rsatmalarga qarab gormonal preparatlar, gialuron kislotasi yoki plazmaterapiya ishlatiladi. Protsedura ortoped tomonidan steril sharoitda ignaning aniq kirishi uchun anatomik mo'ljallar yoki ultratovush nazorati ostida bajariladi. Protsedura davomiyligi — 30–45 daqiqa. In'eksiyadan keyin bo'g'imga 24 soat yuklamani cheklash tavsiya etiladi. Effekt asta-sekin 5–10 kun ichida rivojlanadi. Odatda 7–14 kun oraliq bilan 3–5 protseduradan iborat kurs talab etiladi."
+    },
+    "diagnostics-mri": {
+      "name": "MRT tekshiruvi",
+      "description": "Magnit-rezonans tomografiya — yumshoq to'qimalarning aniq vizualizatsiya usuli: bosh va orqa miya, bo'g'imlar, ichki a'zolar, tomirlar. MRT ionlovchi nurlanishni ishlatmaydi, bu uni aksariyat bemorlar uchun xavfsiz qiladi. Tekshiruv sohaga qarab 30–60 daqiqa davom etadi. Bemor tomograf tunnelida harakatsiz yotadi; klaustrofobiya bilan og'rigan odamlar uchun shifokor bilan kelishilgan holda dastlabki sedatsiya mumkin. Talqini rentgenolog shifokori tomonidan oldingi tekshiruvlar bilan taqqoslab batafsil xulosa bilan amalga oshiriladi. Tayyorgarlik tekshiruv sohasiga bog'liq — tafsilotlar yozilish vaqtida aniqlashtiriladi."
+    },
+    "diagnostics-blood-panel-full": {
+      "name": "Kengaytirilgan qon tahlili",
+      "description": "Umumiy salomatlikni baholash uchun kompleks laboratoriya profili. Paketga leykoformula va EChT bilan umumiy qon tahlili, biokimyo (glyukoza, umumiy oqsil, bilirubin, ALT, AST, kreatinin, mochevina, xolesterin va lipid profili), temir almashinuvi ko'rsatkichlari, TTG gormoni kiradi. Qon olish ertalab nahorda, qulay sharoitda malakali hamshira tomonidan amalga oshiriladi. Natijalar bir ish kuni ichida tayyor bo'ladi va elektron pochta yoki shaxsiy kabinetda mavjud. Terapevt talqini iltimosga ko'ra narxga kiradi — shifokor har bir ko'rsatkichni tahlil qiladi va qo'shimcha tekshiruvlar kerakligini aytadi."
+    }
+  },
+  "doctors": {
+    "karimov-sherzod-alisherovich": {
+      "name": "Karimov Sherzod Alisherovich",
+      "specialty": "Oliy toifa kardiologi",
+      "education": "Toshkent tibbiyot akademiyasini 2003 yilda imtiyozli bitirgan. Akademik V.Vohidov nomidagi Respublika ixtisoslashtirilgan ilmiy-amaliy tibbiyot kardiologiya markazida kardiologiya bo'yicha klinik ordinaturani o'tagan. Turkiya va Germaniya klinikalarida muntazam stajirovkalardan o'tib turadi.",
+      "achievements": "Exokardiografiya va noinvaziv diagnostika bo'yicha sertifikatlangan mutaxassis. Yevropa kardiologlar jamiyatining (ESC) xalqaro kongresslari ishtirokchisi. Milliy tibbiyot nashrlarida 15 dan ortiq ilmiy maqolalar muallifi.",
+      "bio": "Sherzod Alisherovich — 22 yillik ish tajribasiga ega kardiolog. Yurakning ishemik kasalligi, arterial gipertenziya, ritm buzilishlari va yurak yetishmovchiligini diagnostika va davolashga ixtisoslashgan. Exokardiografiya texnikasi va holter monitoringini talqin qilishni mukammal biladi. Har bir bemorga alohida e'tibor bilan munosabatda bo'ladi — shikoyatlarni diqqat bilan tinglaydi, tekshiruv natijalarini tushunarli tilda batafsil tushuntiradi va kasallik sababini tushunishga yordam beradi. Ko'p yillik kuzatuvga ega bemorlarni muntazam olib boradi, terapiyani kerak bo'lganda korrektsiya qiladi. Yangi shikoyatli kattalar bemorlarni ham, bosim va yurak ritmini nazorat qilish uchun takroriy qabul kerak bo'lgan odamlarni ham qabul qiladi. Yurak-qon tomir kasalliklari profilaktikasi va bemorlarning holatini mustaqil nazorat qilishga o'rgatishga alohida e'tibor beradi."
+    },
+    "yuldasheva-dilnoza-bahtiyorovna": {
+      "name": "Yuldasheva Dilnoza Bahtiyorovna",
+      "specialty": "Birinchi toifa pediatri",
+      "education": "Toshkent pediatriya tibbiyot institutining pediatriya fakultetini 2008 yilda bitirgan. Pediatriya bo'yicha ordinaturani va bolalar allergologiyasi va immunologiyasi bo'yicha qo'shimcha kurslarni o'tagan. JSST emlash profilaktikasi bo'yicha ta'lim dasturlarida muntazam ishtirok etadi.",
+      "achievements": "O'zbekiston Pediatrlar jamiyati a'zosi. Neonatal nevrologiya bo'yicha sertifikatlangan mutaxassis. Klinikaning emlash va erta yoshdagi bola rivojlanishi mavzusidagi ota-onalar seminarlarining muntazam ma'ruzachisi.",
+      "bio": "Dilnoza Bahtiyorovna — tug'ilganidan o'smirlik yoshigacha bo'lgan bolalar bilan 17 yillik ish tajribasiga ega pediatr. Uning yondashuvidagi asosiy narsa — sabrlik va kichkina bemor hamda uning ota-onalari bilan ishonchli kontakt. Dilnoza Bahtiyorovna bolaning shifokorga ko'nikishi uchun vaqt ajratadi va uni shoshilmasdan qulay sharoitda ko'rib chiqadi. Erta yoshdagi bolalarni olib borish, hayotning birinchi yilida rejali ko'riklar, asab-ruhiy rivojlanishni baholash, ko'krak bilan emizishni va birinchi qo'shimcha ovqat berishni qo'llab-quvvatlashga ixtisoslashgan. Emlash masalalari bilan faol shug'ullanadi, ota-onalarga bola sog'lig'i xususiyatlarini hisobga olgan holda individual emlash jadvalini tuzishga yordam beradi. Atopik dermatit va oziq-ovqat allergiyasi kabi surunkali holatlari bo'lgan bemorlarni olib boradi. Kichkina bemorlarning ota-onalari uchun telefon orqali qo'shimcha konsultatsiyalarni tez-tez o'tkazadi."
+    },
+    "nazarov-alisher-rustamovich": {
+      "name": "Nazarov Alisher Rustamovich",
+      "specialty": "Oliy toifa nevrologi",
+      "education": "Samarqand davlat tibbiyot institutini 1998 yilda bitirgan. Nevrologiya bo'yicha klinik ordinaturani va aspiranturani tomir nevrologiyasi bo'yicha nomzodlik dissertatsiyasini himoya qilish bilan o'tagan. Moskva va Istanbul klinikalarida stajirovkadan o'tgan.",
+      "achievements": "Tibbiyot fanlari nomzodi. O'zbekiston Nevrologlar Assotsiatsiyasi a'zosi. Serebrovaskulyar kasalliklar va surunkali og'riq sindromlarini diagnostika va davolash bo'yicha mutaxassis. Postinsult reabilitatsiyasi bo'yicha bir nechta ilmiy ishlar muallifi.",
+      "bio": "Alisher Rustamovich — 25 yillik klinik tajribaga ega nevrolog. Bosh og'riqlari, bosh aylanishi, uyqu buzilishlari, insult va bosh-miya jarohatlari oqibatlari, bel va bo'yindagi og'riq sindromlarini diagnostika va davolashga ixtisoslashgan. Shifokorning yondashuvi — klinik va isbotlangan: har bir holat to'liq anamnez va nevrologik ko'rikni hisobga olgan holda shablonsiz tahlil qilinadi. Alisher Rustamovich tashxis qo'yish uchun haqiqatan ham zarur bo'lgan tekshiruvlardan tashqari ortiqcha tekshiruvlarni kamdan-kam tayinlaydi. Surunkali migrenli bemorlarni faol olib boradi, ularga samarali profilaktik terapiyani tanlashga yordam beradi. Konferentsiyalarda muntazam ravishda ma'ruza qiladi va klinikaning yosh mutaxassislariga ta'lim beradi. Insultdan keyin bemorlarni reabilitatsiya qilishga alohida e'tibor beradi va individual qayta tiklash dasturlarini ishlab chiqadi."
+    },
+    "tursunova-malika-shavkatovna": {
+      "name": "Tursunova Malika Shavkatovna",
+      "specialty": "Akusher-ginekolog",
+      "education": "Toshkent tibbiyot akademiyasining davolash fakultetini 2010 yilda bitirgan. Respublika perinatal markazida akusherlik va ginekologiya bo'yicha ordinaturani o'tagan. Estetik ginekologiya bo'yicha sertifikatni 2018 yilda olgan.",
+      "achievements": "Ginekologiya va akusherlikda UZI bo'yicha sertifikatlangan mutaxassis. O'zbekiston Akusher-ginekologlar assotsiatsiyasi a'zosi. JSST ayollar reproduktiv salomatligini muhofaza qilish dasturlari bo'yicha ta'lim olgan.",
+      "bio": "Malika Shavkatovna — 14 yillik tajribaga ega akusher-ginekolog. Har qanday yoshdagi ayollarni qabul qiladi — sikl haqida birinchi savollar bilan murojaat qiladigan o'smirlardan tortib menopauza davridagi bemorlargacha. Mavzu bemor uchun qanchalik nozik bo'lishi mumkinligini tushunganligi uchun qabulda iloji boricha qulay va ishonchli muhitni yaratadi. Homiladorlikni olib borish, profilaktik ko'riklar, yallig'lanish kasalliklarini davolash, menstrual sikl buzilishlari, gormonal kontratseptsiyaga ixtisoslashgan. Bachadon bo'yni patologiyasini erta diagnostika qilish va individual kuzatuv rejasini tanlashga alohida e'tibor beradi. Malika Shavkatovna kichik chanoq a'zolari UZIni qabulda bevosita o'tkazadi, bu bemorlarning vaqtini tejaydi. Ayollarni oilani rejalashtirish va homiladorlikka tayyorlanish masalalari bo'yicha faol konsultatsiya beradi."
+    },
+    "ismailov-bobur-uktamovich": {
+      "name": "Ismailov Bobur Uktamovich",
+      "specialty": "Urolog-androlog",
+      "education": "Andijon davlat tibbiyot institutining davolash fakultetini 2005 yilda bitirgan. Urologiya bo'yicha ordinaturani o'tagan. 2015 yilda Olmaotada androlog va reproduktiv tibbiyot sohasida qo'shimcha mutaxassislik olgan.",
+      "achievements": "Yevropa Urologlar Assotsiatsiyasi (EAU) a'zosi. Urodinamika va endoskopik jarrohlik bo'yicha sertifikatlangan mutaxassis. Xalqaro urologik konferentsiyalarning muntazam ishtirokchisi.",
+      "bio": "Bobur Uktamovich — 19 yillik ish tajribasiga ega urolog-androlog. Erkak va ayollarni siydik-tanosil tizimi kasalliklari bilan qabul qiladi — o'tkir infektsiyalardan surunkali holatlargacha. Buyrak-tosh kasalligi, prostatit, prostata bezi adenomasi, erkak bepushtligi, erektil disfunktsiyani davolashga ixtisoslashgan. Shifokorning yondashuvi isbotlangan tibbiyotga asoslangan — u har bir bosqichning zarurligini bemorga tushuntirib, ortiqcha tahlil va tekshiruvlarni tayinlamaydi. Tashrifning psixologik tomoniga alohida e'tibor beradi: ko'p erkaklar uyalganligi uchun urologga borishni kechiktirishini tushunadi, shuning uchun suhbatni nozik va baholashsiz olib boradi. Klinikada Bobur Uktamovich qabulda bevosita uroflowmetriya va UZI-diagnostikani faol qo'llaydi, bu qarorlarni iloji boricha tezroq qabul qilish imkonini beradi."
+    },
+    "rakhimova-zuhra-azizovna": {
+      "name": "Rahimova Zuhra Azizovna",
+      "specialty": "Dermatolog-kosmetolog",
+      "education": "Buxoro davlat tibbiyot institutini 2014 yilda bitirgan. Dermatovenerologiya bo'yicha ordinaturani o'tagan. Estetik dermatologiya va lazer texnologiyalari bo'yicha sertifikatlarni Istanbul va Seulda olgan.",
+      "achievements": "O'zbekiston Dermatologlar jamiyati a'zosi. Dermatoskopiya va in'eksion uslublar bo'yicha sertifikatlangan mutaxassis. Yetakchi koreys va turk dermatologlari qoshida muntazam ta'lim olib turadi.",
+      "bio": "Zuhra Azizovna — 11 yillik tajribaga ega dermatolog-kosmetolog. Klassik dermatologiyani (akne, ekzema, psoriaz, zamburug'li infektsiyalarni davolash) estetik protseduralar bilan birlashtiradi — tomir to'rlari va pigmentatsiyani lazerda davolash, postakne chandiqlarini silliqlash, in'eksion uslublar. Xollar va boshqa teri o'simtalarini dermatoskopik nazorat qilishga alohida e'tibor beradi — bu melanoma va boshqa xavfli o'zgarishlarni erta aniqlash imkonini beradi. Zuhra Azizovna hech qachon zaruratsiz agressiv terapiyani tayinlamaydi — uning yondashuvi bosqichma-bosqich davolash va muntazam nazoratni nazarda tutadi. Surunkali aknesi bor bemorlarni faol olib boradi, ularga toshmalarni barqaror nazorat qilishda yordam beradi. O'smirlar uchun muammoli teri parvarishi bo'yicha o'quv seminarlarini o'tkazadi."
+    },
+    "mirzayev-jasur-saidovich": {
+      "name": "Mirzayev Jasur Saidovich",
+      "specialty": "Oftalmolog shifokori",
+      "education": "Toshkent tibbiyot akademiyasini 2009 yilda bitirgan. Oftalmologiya bo'yicha ordinaturani va Toshkent ko'z kasalliklari ITIda bolalar oftalmologiyasi bo'yicha stajirovkani o'tagan. Xalqaro kurslarda muntazam malaka oshiradi.",
+      "achievements": "Bolalar oftalmologiyasi va ortokeratologik linzalarni tanlash bo'yicha sertifikatlangan mutaxassis. O'zbekiston Oftalmologlar Assotsiatsiyasi a'zosi. Yillik oftalmologik kongressning faol ishtirokchisi.",
+      "bio": "Jasur Saidovich — kattalar va uch yoshdan boshlab bolalar bilan ishlashga ixtisoslashgan 16 yillik tajribaga ega oftalmolog. Maktab miyopiyasini erta diagnostika qilish va uni korreksiya qilish vositalarini — ko'zoynaklar, yumshoq kontakt linzalar, ortokeratologik tungi linzalarni tanlashga alohida e'tibor beradi. Ko'rishning yomonlashishi, bosh og'rig'i, ko'zlardagi quruqlik, allergik reaktsiyalardan shikoyat qiladigan bemorlarni qabul qiladi. Har bir qabulda to'liq ko'rik majmuasini o'tkazadi: korreksiya bilan vizometriya, tonometriya, biomikroskopiya, ko'z tubini ko'rish. Jasur Saidovich bola ko'zini qanday qilib to'g'ri parvarish qilish, qanday yuklamalar ruxsat etilishi va shifokorga shoshilinch murojaat qilish kerakligini ota-onalarga tushunarli tushuntiradi. Shuningdek, ko'rishdagi yoshga oid o'zgarishli bemorlarni olib boradi va progressiv ko'zoynaklar tanlaydi."
+    },
+    "kasymova-feruza-tahirovna": {
+      "name": "Kasimova Feruza Tahirovna",
+      "specialty": "Stomatolog-terapevt",
+      "education": "Toshkent davlat stomatologiya institutining stomatologiya fakultetini 2011 yilda bitirgan. Moskva va Istanbulda estetik restavratsiya va mikroskopik stomatologiya bo'yicha mutaxassislikni o'tagan.",
+      "achievements": "Dental mikroskop bilan ishlash bo'yicha sertifikatlangan mutaxassis. Old tishlarni estetik restavratsiya qilish sohasida ekspert. Bioclear to'g'ridan-to'g'ri restavratsiya tizimlari bo'yicha ta'lim olgan.",
+      "bio": "Feruza Tahirovna — 13 yillik tajribaga ega stomatolog-terapevt, estetik stomatologiya va dental mikroskop bilan ishlash bo'yicha mutaxassis. Karyez va asoratlarini davolaydi, emalning tabiiy anatomiyasi va ranglarini takrorlash bilan old tishlarning badiiy restavratsiyasini bajaradi. Minimal invaziv yondashuvga alohida e'tibor beradi — tishning sog'lom to'qimalarini imkon qadar saqlashga harakat qiladi. Dentofobiyali bemorlar bilan Feruza Tahirovna ayniqsa nozik ishlaydi: har bir bosqichni batafsil tushuntiradi, zamonaviy og'riqsizlantirish usullaridan foydalanadi va shoshiltirmaydi. Tishlarni Air Flow tizimi va ftorlash bilan professional tozalashni amalga oshiradi. Og'iz bo'shlig'i gigiyenasiga va uy parvarishi vositalarini tanlashga alohida e'tibor berib, bemorlarni uzoq muddatli kuzatuvni muntazam olib boradi."
+    },
+    "usmanov-ravshan-makhmudovich": {
+      "name": "Usmanov Ravshan Mahmudovich",
+      "specialty": "Stomatolog-jarroh, implantolog",
+      "education": "Toshkent davlat stomatologiya institutini 2003 yilda bitirgan. Jarrohlik stomatologiyasi bo'yicha klinik ordinaturani va Shveytsariya, Janubiy Koreya hamda Germaniyada implantologiya bo'yicha ko'plab xalqaro kurslarni o'tagan.",
+      "achievements": "Straumann, Osstem va MIS tizimlari bo'yicha sertifikatlangan implantolog. Xalqaro Implantologlar Jamoasi (ITI) a'zosi. Amaliyoti davomida 2000 dan ortiq dental implantni o'rnatgan.",
+      "bio": "Ravshan Mahmudovich — 20 yillik tajribaga ega jarroh-implantolog va klinikaning dental implantatsiya sohasidagi yetakchi mutaxassislaridan biri. Yagona implantlar o'rnatish, jag'ni to'liq tiklash uchun All-on-4 va All-on-6 protokollari, suyak yetishmovchiligida suyak plastikasi va sinus-liftingni amalga oshiradi. Birinchi konsultatsiyada Ravshan Mahmudovich KT tasvirlari va bemorning moliyaviy imkoniyatlarini hisobga olgan holda davolash rejasini batafsil tushuntiradi, mos muqobillar bo'lsa, eng qimmat tizimlarda turib olmaydi. Har bir holatga individual yondashadi: tishlash, yumshoq to'qimalar holati, estetik istaklarni hisobga oladi. Operatsiyadan keyingi kuzatuvga alohida e'tibor beradi — har bir bemor implantatsiyadan keyingi birinchi kunlarda tezkor aloqa uchun shifokorning to'g'ridan-to'g'ri kontaktini oladi."
+    },
+    "nuriddinova-nigora-shavkatovna": {
+      "name": "Nuriddinova Nigora Shavkatovna",
+      "specialty": "Endokrinolog shifokori",
+      "education": "Toshkent tibbiyot akademiyasini 2010 yilda bitirgan. Respublika ixtisoslashtirilgan ilmiy-amaliy tibbiyot endokrinologiya markazida endokrinologiya bo'yicha ordinaturani o'tagan. Xalqaro Diabet Federatsiyasi dasturlari bo'yicha muntazam ta'lim olib turadi.",
+      "achievements": "O'zbekiston Endokrinologiya Assotsiatsiyasi a'zosi. Insulin pompalari va doimiy glyukoza monitoringi tizimlari bilan ishlash bo'yicha sertifikatlangan mutaxassis. Tireoidologiya bo'yicha ekspert.",
+      "bio": "Nigora Shavkatovna — 15 yillik tajribaga ega endokrinolog. 1 va 2 turdagi qandli diabetli bemorlarni, qalqonsimon bez kasalliklarini, yog' almashinuvi buzilishlari va reproduktiv endokrinologiyani olib borishga ixtisoslashgan. O'z vazifasini faqat dorilarni tanlashda emas, balki bemorni kasallikni mustaqil nazorat qilishga o'rgatishda — non birliklarini hisoblash, glyukoza ko'rsatkichlarini talqin qilish, insulinoterapiyani korreksiya qilishda ham ko'radi. Qabulda qalqonsimon bez UZIni mustaqil bajaradi, bu diagnostikani sezilarli darajada tezlashtiradi. Konsultatsiyaning ta'lim qismiga ko'p vaqt ajratadi, biokimyoviy jarayonlarni oddiy tilda tushuntiradi. Gestatsion diabetli homiladorlarga va birinchi marta aniqlangan qandli diabetli bemorlarga alohida e'tibor beradi — bu holatlarda kuzatuvning birinchi oylarida ayniqsa intensiv olib boradi."
+    },
+    "tashpulatov-shokhrukh-bakhtiyorovich": {
+      "name": "Tashpulatov Shohruh Bahtiyorovich",
+      "specialty": "Gastroenterolog-endoskopist",
+      "education": "Toshkent tibbiyot akademiyasining davolash fakultetini 2007 yilda bitirgan. Terapiya bo'yicha ordinaturani va gastroenterologiya bo'yicha mutaxassislikni o'tagan. Endoskopiya bo'yicha stajirovkani Seul Milliy Universitet tibbiyot markazida o'tagan.",
+      "achievements": "Hazm yo'lining endoskopik tekshiruvlari bo'yicha sertifikatlangan mutaxassis. Yevropa Gastrointestinal Endoskopiya Jamiyati (ESGE) a'zosi. Helikobakter infektsiyasini diagnostika va davolash bo'yicha ekspert.",
+      "bio": "Shohruh Bahtiyorovich — 18 yillik tajribaga ega gastroenterolog-endoskopist. Klinik qabulni amaliy endoskopiya bilan birlashtiradi — bu hazm yo'lidagi kasallikning to'liq rasmini birinchi shikoyatdan aniq tashxisgacha ko'rish imkonini beradi. Gastroezofageal reflyuks kasalligi, surunkali gastrit, yara kasalligi, ta'sirlangan ichak sindromi, jigar va o't yo'llari kasalliklari bo'lgan bemorlarni olib borishga ixtisoslashgan. FGDSni biopsiya va helikobakter pilori testi bilan shaxsan bajaradi. Shohruh Bahtiyorovich har bir bemorga tekshiruv natijalarini batafsil tushuntiradi, tasvirlarni ko'rsatadi va u yerda nima ko'rinishini aytib beradi. Diyetik tavsiyalarga alohida e'tibor beradi, gastroenterologiyada muvaffaqiyatning yarmi — ovqatlanish va hayot tarzini korreksiya qilish ekanligini tushunadi."
+    },
+    "khodjayeva-gulchehra-rustamovna": {
+      "name": "Hodjayeva Gulchehra Rustamovna",
+      "specialty": "Oliy toifa terapevti",
+      "education": "Toshkent davlat tibbiyot institutining davolash fakultetini 1996 yilda bitirgan. Terapiya bo'yicha klinik ordinaturani va poytaxtning yirik statsionarlarida ko'p yillik amaliyotni o'tagan. Gerontologiya bo'yicha qo'shimcha mutaxassislikka ega.",
+      "achievements": "O'zbekiston Umumiy amaliyot shifokorlari Assotsiatsiyasi a'zosi. Oilaviy tibbiyot bo'yicha sertifikat. Keksa bemorlarda bir nechta patologiya holatlari bilan ko'p yillik ish tajribasi.",
+      "bio": "Gulchehra Rustamovna — 28 yillik klinik tajribaga ega terapevt shifokori. Klinikaning har qanday yoshdagi kattalar bemorlar bilan ishlash bo'yicha eng tajribali mutaxassislaridan biri. Bir nechta surunkali kasalliklari bo'lgan keksa yoshdagi bemorlarni olib borishga alohida e'tibor beradi — arterial gipertenziya, qandli diabet, IBS, osteoartroz, surunkali obstruktiv o'pka kasalligi. Qabulda har doim bemor qabul qilayotgan har bir preparat haqida batafsil so'raydi va davolash sxemasini optimallashtirishga yordam beradi, takrorlanishlar va istalmagan o'zaro ta'sirlarni istisno qiladi. Boshqa mutaxassislar oralig'ida yurib charchagan bemorlar unga ko'pincha murojaat qilishadi — Gulchehra Rustamovna koordinator rolini o'z zimmasiga oladi va tekshiruvlarning aniq rejasini qurishga yordam beradi. Bemorni hech qachon shoshiltirmaydigan, e'tiborli va xotirjam shifokor sifatida obro'ga ega."
+    },
+    "pulatov-sardor-anvarovich": {
+      "name": "Pulatov Sardor Anvarovich",
+      "specialty": "Ortoped-travmatolog",
+      "education": "Toshkent tibbiyot akademiyasining davolash fakultetini 2000 yilda bitirgan. Respublika ilmiy-amaliy travmatologiya markazida ortopediya va travmatologiya bo'yicha klinik ordinaturani o'tagan. Turkiya va Germaniyada artroskopiya bo'yicha stajirovkadan o'tgan.",
+      "achievements": "Tizza va yelka bo'g'imlari artroskopiyasi bo'yicha sertifikatlangan mutaxassis. O'zbekiston Ortoped-travmatologlar assotsiatsiyasi a'zosi. Katta bo'g'imlarni endoprotezlash bo'yicha ekspert.",
+      "bio": "Sardor Anvarovich — 24 yillik tajribaga ega ortoped-travmatolog, tayanch-harakat apparati kasalliklari va shikastlanishlarini konservativ va jarrohlik davolash bo'yicha mutaxassis. Asosiy ish yo'nalishi — katta bo'g'imlar artrozi, sport jarohatlari oqibatlari, bel va bo'yindagi surunkali og'riq, bolalar va kattalardagi yassi oyoq, qad-qomat buzilishlarini diagnostika va davolash. Qabulda gialuron kislotasi bilan bo'g'im ichi in'eksiyalarini, plazmaterapiya, blokadalarni mustaqil bajaradi. Sardor Anvarovich protseduraning aniqligini oshirish uchun in'eksiyalarda ultratovush navigatsiyasidan faol foydalanadi. Operatsiyani tayinlashdan oldin har doim konservativ davolashning barcha imkoniyatlarini tugatadi va xavf-xatarlar va kutilayotgan natijani bemor bilan batafsil muhokama qiladi. Sportchilar, surunkali bel og'rig'i bo'lgan ofis xodimlari va tizza hamda son-son bo'g'imlarining artrozli keksa bemorlarni qabul qiladi."
+    },
+    "azimova-shahnoza-davronovna": {
+      "name": "Azimova Shahnoza Davronovna",
+      "specialty": "Rentgenolog shifokori, MRT mutaxassisi",
+      "education": "Toshkent tibbiyot akademiyasining davolash fakultetini 2012 yilda bitirgan. Toshkent shifokorlarni takomillashtirish institutida nurli diagnostika bo'yicha ordinaturani o'tagan. Yangi MRT-diagnostika protokollari bo'yicha muntazam ta'lim olib turadi.",
+      "achievements": "Barcha sohalardagi MRT bo'yicha sertifikatlangan mutaxassis. Yevropa Radiologlar Jamiyati (ESR) a'zosi. Neyroradiologiya va tayanch-harakat tizimi bo'yicha ekspert.",
+      "bio": "Shahnoza Davronovna — 12 yillik tajribaga ega rentgenolog shifokori, klinikaning magnit-rezonans tomografiya bo'yicha yetakchi mutaxassisi. Barcha sohalardagi tekshiruvlarni talqin qiladi: bosh va orqa miya, bo'g'imlar, kichik chanoq a'zolari, qorin bo'shlig'i, yumshoq to'qimalar. Neyroradiologik holatlarni — tarqoq skleroz, miya o'simtalari, insult oqibatlarini diagnostika qilishga alohida e'tibor beradi. Har bir tekshiruvga o'ylab yondashadi: anamnezni o'rganadi, oldingi tasvirlar bilan taqqoslaydi, topilmalarni klinik ahamiyatini ko'rsatib, iloji boricha batafsil ta'riflaydi. Shahnoza Davronovna murakkab holatlarda klinikaning davolovchi shifokorlariga faol konsultatsiya beradi va kerak bo'lganda qo'shimcha protokollarni tavsiya qiladi. Qabulda bemorga tasvirlarini har doim ko'rsatadi va aniqlangan o'zgarishlar mohiyatini tushunarli shaklda tushuntiradi."
+    },
+    "qosimov-akmal-tolkinovich": {
+      "name": "Qosimov Akmal Tolkinovich",
+      "specialty": "Terapevt shifokori",
+      "education": "Toshkent tibbiyot akademiyasining davolash fakultetini 2017 yilda bitirgan. Ichki kasalliklar bo'yicha ordinaturani o'tagan. Oilaviy tibbiyot va sport tibbiyoti bo'yicha qo'shimcha mutaxassislikka ega.",
+      "achievements": "Oilaviy tibbiyot bo'yicha sertifikatlangan mutaxassis. Isbotlangan tibbiyot va sport kardiologiyasi bo'yicha xalqaro kurslarni o'tagan. Isbotlangan tibbiyot bo'yicha professional onlayn-jamoatchiliklarning faol ishtirokchisi.",
+      "bio": "Akmal Tolkinovich — 9 yillik tajribaga ega yosh, energiyali terapevt shifokori. Ish yondashuvi — zamonaviy va isbotlangan: xalqaro klinik tavsiyalarga tayanadi va isbotlanmagan samaradorlikka ega preparatlarni tayinlamaydi. Har qanday yoshdagi kattalar bemorlarni qabul qiladi — yozma davolash rejalariga ega batafsil, tuzilgan konsultatsiyalar uchun ayniqsa yosh ishchi odamlar orasida mashhur. Arterial gipertenziya, metabolik sindrom, dislipidemiya, shamollash va mavsumiy kasalliklari bo'lgan bemorlarni olib borishga ixtisoslashgan. Kechqurun soatlarida faol ishlaydi, bu ofis xodimlari uchun qulay. Dorisiz choralar — hayot tarzi, ovqatlanish, jismoniy faollikni modifikatsiya qilishga ko'p e'tibor beradi. Bemorlar bilan hamkorlik munosabatlarini qurib, ularning uzoq muddatli kuzatuvini muntazam olib boradi."
+    }
+  },
+  "news": {
+    "clinic-opens-new-pediatric-wing": {
+      "title": "ShaxKlinika yangilangan bolalar bo'limini ochmoqda",
+      "excerpt": "12 apreldan klinikaning to'liq yangilangan bolalar bo'limi keng o'yin maydoni va uchta pediatr xonasi bilan ishlay boshladi.",
+      "body": "Aprel oyida ShaxKlinikada to'liq yangilangan bolalar bo'limi ochilganini xursand bo'lib xabar qilamiz. Klinikaning ikkinchi qavatida endi uchta keng pediatr xonasi, emlash va qon olish uchun alohida muolajaxona, shuningdek, kitoblar va rivojlantiruvchi o'yinchoqlar bilan jihozlangan kichkina bemorlar uchun katta o'yin maydoni joylashgan.\n\nBo'limni loyihalashda biz ota-onalar va pediatrlarning fikrini hisobga oldik. Xonalar tinch pastel ranglarda bezatilgan, har qanday yoshdagi bolalar uchun zamonaviy bo'y o'lchagichlar va tarozilar bilan jihozlangan, har bir qabulda eng kichik bemorlar uchun maxsus o'rab qo'yish stoli mavjud. Xonalarning tovush izolyatsiyasi ko'krak yoshli bolali ota-onalarning ko'rik vaqtida tinchlik haqida tashvishlanmasligiga imkon beradi.\n\nYangi bo'limda 17 yillik ish tajribasiga ega Yuldasheva Dilnoza Bahtiyorovna kabi tajribali pediatrlar qabul qilishadi. Jamoaga shuningdek, bolalar oftalmologi Mirzayev Jasur Saidovich va taklif qilingan bolalar nevrologi qo'shildi. Bu shuni anglatadiki, ota-onalar klinikalararo ko'chmasdan, bir joyda barcha asosiy ko'riklardan o'tishlari mumkin.\n\nShuningdek, biz \"Bolaning sog'liq kuni\" xizmatini joriy etdik — bir tashrifda bolaning to'liq tekshiruvi, jumladan, pediatr konsultatsiyasi, tor mutaxassislar ko'rigi, laboratoriya tahlillari va qorin bo'shlig'i a'zolari UZIni o'z ichiga oladi. Xizmat ayniqsa o'quv yili boshlanishidan oldin va bolalar bog'chasiga kirishda talabga ega.\n\nYangi bo'limga yozilish allaqachon ochiq. Pediatrlar jadvalini administratorlardan aniqlashtirishingiz yoki sayt orqali qulay vaqtni bron qilishingiz mumkin."
+    },
+    "free-cardio-screening-day": {
+      "title": "Bepul kardioskrining kuni — 28 mart",
+      "excerpt": "Yurak salomatligi oyi doirasida klinika bepul diagnostika kunini o'tkazdi — tekshiruvdan 200 dan ortiq odam o'tdi.",
+      "body": "28 mart shanba kuni ShaxKlinikada Bepul Kardioskrining kuni o'tkazildi. Har bir istovchi yozilishsiz va to'lovsiz yurak-qon tomir tizimining asosiy tekshiruvini o'tishi mumkin edi — arterial bosimni o'lchash, tinch holatdagi EKG va kardiologning natijalarni talqin qilish bilan qisqa konsultatsiyasi.\n\nBir kun davomida tekshiruvdan 200 dan ortiq odam o'tdi. Tashrif buyuruvchilarning sezilarli qismida ilgari aniqlanmagan buzilishlar — yuqori arterial bosim, batafsilroq tekshiruv talab qiladigan alohida ritm buzilishlari aniqlandi. Bunday barcha bemorlarga klinikaning kardiologlari holter monitoringi yoki ExoKG bilan kengaytirilgan takroriy konsultatsiya sanasini bepul tayinladilar.\n\nTadbirni muvofiqlashtirgan oliy toifa kardiologi Karimov Sherzod Alisherovich shunday dedi: \"Ko'p odamlar yillar davomida yuqori bosim bilan yashashadi, bu haqda gumon qilmaydi ham. Gipertenziyani erta aniqlash va etarli terapiyani tanlash — kelajakda insult va miokard infarktini xavfini kamaytirishning to'g'ridan-to'g'ri yo'lidir\". Uning so'zlariga ko'ra, klinika bunday kunlarni muntazam o'tkazishni rejalashtirmoqda — keyingisi kuzga rejalashtirilgan.\n\nBoshqa ish yo'nalishlari orasida — allaqachon tashxis qo'yilgan IBS bilan og'rigan bemorlar uchun ta'lim dasturi. Klinika bemorlarni bosim va pulsni mustaqil nazorat qilish, preparatlarni qabul qilish texnikasi va gipertonik kriz vaqtidagi xatti-harakatlar qoidalariga bepul o'rgatishga tayyor.\n\nIjtimoiy tarmoqlarimizdagi e'lonlarni kuzatib boring — keyingi bepul aktsiya endokrin kasalliklarga bag'ishlanadi va Diabetga qarshi kurash kunida o'tadi."
+    },
+    "winter-flu-prevention-tips": {
+      "title": "Sovuq mavsumda grippdan qanday himoyalanish kerak",
+      "excerpt": "Qish — mavsumiy virus infektsiyalarining cho'qqi davri. ShaxKlinika terapevti gripp va ORVI profilaktikasining ilmiy asoslangan choralari haqida gapiradi.",
+      "body": "Qish mavsumi an'anaviy ravishda gripp va boshqa o'tkir respirator virusli infektsiyalarning ko'payishi bilan birga keladi. Toshkentdagi nisbatan yumshoq qishlarga qaramay, ommaviy tarqalish xavfi yuqoriligicha qolmoqda — ayniqsa jamoat joylarida, transportda, maktablarda va ofislarda.\n\nGrippning maxsus profilaktikasining asosiy usuli — yillik emlash. Zamonaviy vaksinalar virusning to'rt dolzarb shtammini qoplab, emlashdan ikki-uch hafta keyin himoya ta'minlaydi. Vaksinatsiya ayniqsa bolalar, 65 yoshdan oshgan odamlar, homilador ayollar va surunkali kasalliklari bo'lgan bemorlar — diabet, surunkali obstruktiv o'pka kasalligi, yurak yetishmovchiligi bilan tavsiya etiladi. Bizning klinikamizda terapevtning majburiy oldindan ko'rigi bilan sertifikatlangan import preparatlari bilan emlash o'tkaziladi.\n\nMaxsus bo'lmagan himoya choralari kam ahamiyatga ega emas. Bu sovun bilan qo'llarni muntazam yuvish, jamoat joylarida sirtlar bilan kontaktdan keyin antiseptik bilan qo'llarni ishlov berish, xonalarni kuniga bir necha marta shamollatish, xonada havoning qulay namligini ushlab turish. ORVIning birinchi belgilarida — burun oqishi, yo'tal, tomoqdagi qichishish, harorat ko'tarilishida — uyda qolish va atrofdagilarni yuqtirmaslik uchun jamoat joylariga chiqmaslik tavsiya etiladi.\n\nAlohida masala — virusga qarshi preparatlarni qabul qilish. Keng tarqalgan vositalarning aksariyati isbotlangan samaradorlikka ega emas. Grippda haqiqiy foydani faqat neyraminidaza inhibitorlari sinfidagi preparatlar va faqat simptomlar boshlanganidan keyin birinchi 48 soatda berishi mumkin. Bunday preparatlarni shifokor tayinlashi kerak — mustaqil qabul qilish oqlanmagan.\n\nAgar harorat 38,5 darajadan yuqori uch kundan ko'proq saqlansa, hansirash, ko'krak qafasidagi og'riq yoki kuchli zaiflik paydo bo'lsa — darhol shifokorga murojaat qiling. Bular davolashni talab qiladigan asoratlarning belgilari bo'lishi mumkin."
+    },
+    "dental-implant-technology-update": {
+      "title": "Dental implantatsiyada yangi texnologiyalar",
+      "excerpt": "ShaxKlinika aniqlikni oshirish uchun kompyuter tomografiyasi va 3D modellash bilan implantatsiyaning raqamli rejalashtirishni joriy etdi.",
+      "body": "Fevral oyida ShaxKlinika stomatologiya bo'limining jamoasi dental implantatsiyaning yangi raqamli protokolini joriy etishni yakunladi. Endi implantlarni o'rnatish jag'ning kompyuter tomografiyasi va maxsus dasturiy ta'minotda operatsiyaning uch o'lchovli modellash yordamida rejalashtiriladi.\n\nOperatsiyani boshlashdan oldin biz implantatsiya zonasining batafsil KT tasvirini olamiz, uning asosida bemor jag'ining virtual modeli yaratiladi. Jarroh-implantolog nervlar, gaymorit bo'shliqlari va tomir tuzilmalarining joylashishini hisobga olib, har bir implantning optimal holati, qiyalik burchagi va chuqurligini oldindan aniqlashi mumkin. Virtual reja ma'lumotlariga ko'ra individual jarrohlik shabloni tayyorlanishi mumkin — u operatsiya vaqtida jag'ga kiyiladi va asbobni qat'iy rejalashtirilgan trayektoriya bo'yicha yo'naltiradi.\n\nBunday yondashuv bir nechta muhim afzalliklarni beradi. Pastki jag' nervi va boshqa anatomik tuzilmalarning shikastlanish xavfi kamayadi, implantning suyakdagi barqarorligi oshadi, operatsiyaning travmatikligi kamayadi. Bemor uchun bu — yarani tezroq tuzatish, protseduradan keyin shishish kamligi va asoratlar sonining qisqarishini anglatadi.\n\nKlinikaning implantatsiya bo'yicha yetakchi mutaxassisi jarroh-implantolog Usmanov Ravshan Mahmudovich yangi tizim bilan ishlash bo'yicha maxsus ta'lim oldi va o'tgan oy davomida o'ttizdan ortiq holatda qo'lladi. Uning so'zlariga ko'ra, klassik usulga nisbatan implantni joylashtirish aniqligi sezilarli darajada oshdi.\n\nRaqamli rejalashtirish ayniqsa murakkab holatlarda — suyak to'qimasi yetishmasligi zonasida implantlar o'rnatish, All-on-4 va All-on-6 protokollari, sinus-liftingda qimmatli. Bepul birinchi konsultatsiyada sizning holatingiz raqamli rejalashtirishni qanchalik talab qilishini aniqlaymiz va davolashning optimal rejasini taklif qilamiz."
+    },
+    "women-health-week-2026": {
+      "title": "ShaxKlinikada ayollar salomatligi haftasi",
+      "excerpt": "8 dan 14 martgacha klinika ayollar uchun maxsus aktsiya o'tkazadi — UZI va tahlillarda chegirma bilan kompleks tekshiruv.",
+      "body": "Xalqaro xotin-qizlar kuni sharafiga ShaxKlinika 8 dan 14 martgacha Ayollar salomatligi haftasini e'lon qiladi. Hafta davomida ayollar maxsus shartlarda kompleks ginekologik tekshiruvdan o'tishlari mumkin.\n\nAktsiya dasturiga quyidagilar kiritilgan: ginekologik kresloda ko'rik bilan akusher-ginekolog konsultatsiyasi, flora va onkositologiyaga surtmalar olish, kichik chanoq a'zolari UZI, mammolog konsultatsiyasi va sut bezlari UZI. Maxsus narxda shuningdek, homiladorlikni rejalashtirayotgan yoki perimenopauza davridagi ayollar uchun kengaytirilgan gormonal profil mavjud.\n\nKlinikaning yetakchi ginekologi Tursunova Malika Shavkatovna eslatadi: \"Ginekologdan muntazam tekshiruv — eng yaxshi profilaktika. Ayol reproduktiv tizimining jiddiy kasalliklarining aksariyatini erta bosqichda, ular to'liq davolanishi mumkin bo'lganda aniqlash mumkin. Tsitologik tekshiruv onkologiya rivojlanishidan yillar oldin bachadon bo'yni saratonoldi o'zgarishlarini aniqlash imkonini beradi\".\n\nBu yili biz yosh ayollarning reproduktiv salomatligi mavzusiga — o'spirin yoshidan birinchi homiladorlikni rejalashtirishgacha alohida e'tibor beramiz. Malika Shavkatovna va uning hamkasblari shanba va yakshanba kunlari bir qator bepul ta'lim suhbatlarini o'tkazadilar — ularga klinika administratori orqali yozilishingiz mumkin.\n\n40 yoshdan oshgan ayollar uchun dastur qo'shimcha ravishda densitometriya yordamida suyaklar holatini baholash va perimenopauzada gormonal qo'llab-quvvatlash bo'yicha endokrinolog konsultatsiyasini o'z ichiga oladi. Barcha protseduralar ayollar xonalarida iloji boricha qulay sharoitda o'tkaziladi.\n\nAyollar salomatligi haftasi dasturiga yozilish ochiq — qulay vaqtni bron qilishga shoshilaring."
+    },
+    "new-mri-machine-installation": {
+      "title": "Klinikada yangi magnit-rezonans tomograf o'rnatildi",
+      "excerpt": "Dekabrda ShaxKlinika diagnostika bo'limida tasvir sifati yaxshilangan zamonaviy MRT-skaner ishga tushdi.",
+      "body": "Dekabrda ShaxKlinika diagnostika bo'limida 1,5 Tesla maydon kuchlanishiga ega yangi magnit-rezonans tomografning o'rnatish va sozlash ishlari yakunlandi. Yangi tizim oldingi avlod uskunalari o'rniga keldi va bizning diagnostika imkoniyatlarimizni sezilarli darajada kengaytiradi.\n\nYangi apparat yuqori sifatdagi tasvirni ta'minlaydi va tekshiruv vaqtini qisqartiradi — bosh miya yoki umurtqa pog'onasining bir bo'lagining standart MRTsi endi avvalgi 45 daqiqa o'rniga 25–30 daqiqa oladi. Bu ayniqsa klaustrofobiyaga uchragan bemorlar yoki uzoq vaqt harakatsiz holatda bo'lish qiyin bo'lganlar uchun muhimdir. Tomograf tunneli kengroq va qisqaroq bo'ldi, bu tekshiruv vaqtidagi qulaylikni sezilarli darajada oshiradi.\n\nTomograf maxsus MRT protokollarini — insultlarni erta diagnostika qilish uchun diffuzion-vaznli tekshiruvlarni, kontrastsiz MR-xolangiopankreatografiyani, bosh miya va bo'yin tomirlarini baholash uchun MR-angiografiyani o'tkazish imkonini beradi. Shuningdek, tog'ay to'qimasining yuqori detallashtirilishi bilan bo'g'imlar tekshiruvi mavjud, bu artrozning erta bosqichlari va sport jarohatlarini diagnostika qilish uchun muhimdir.\n\nBarcha tekshiruvlarni 12 yillik ish tajribasiga ega rentgenolog Azimova Shahnoza Davronovna talqin qiladi. Xulosa o'sha kuni tayyorlanadi; murakkab holatlarda yoki shoshilinch natija zarurligida bemor tekshiruvdan keyin ikki soat ichida xulosani oladi.\n\nMRTga sayt orqali yoki klinika telefoni orqali yozilishingiz mumkin. Tekshiruvdan oldin metall buyumlarni majburiy ravishda echib qo'ying va implantlar, kardiostimulyatorlar yoki tatuirovkalar borligi haqida xabar bering — bu protseduraning o'tkazilish imkoniyatiga ta'sir qiladi."
+    },
+    "vaccination-schedule-children-2026": {
+      "title": "2026 yil uchun bolalarga emlash kalendari",
+      "excerpt": "Klinika pediatri rejali emlashlarning yangilangan kalendarini va har bir yosh bosqichi uchun tushuntirishlarni tayyorladi.",
+      "body": "Yangi yil bilan ko'plab ota-onalar bolaga qaysi emlashlarni va qaysi yoshda qilish kerakligi haqida savol berishadi. ShaxKlinika pediatri Yuldasheva Dilnoza Bahtiyorovna O'zbekistonning Milliy emlash kalendari va Jahon sog'liqni saqlash tashkiloti tavsiyalariga asoslangan emlashning yangilangan amaliy kalendarini tayyorladi.\n\nYangi tug'ilgan chaqaloqning hayotining birinchi 12 soatida B gepatitiga qarshi emlash qo'yiladi. 3–7 kun yashash davrida — sil kasalligiga qarshi BSJ. Ikki oyga to'lganda bola poliomielit, bo'g'ma, qoqshol, ko'kyo'tal va B turidagi gemofil infektsiyaga qarshi vaksinalarning birinchi dozalarini oladi. Olti oyda B gepatitiga qarshi ikkinchi doza va poliomielitga qarshi uchinchi doza qo'shiladi.\n\nBir yoshda bo'g'ma, qizamiq va parotitga qarshi emlashlar qo'yiladi. 18 oyda — bo'g'ma, qoqshol, ko'kyo'tal va poliomielitga qarshi birinchi qayta vaksinatsiya. Olti yoshda — ikkinchi qayta vaksinatsiya. 14 yoshda bolalar bo'g'ma va qoqsholga qarshi qayta vaksinatsiyani, shuningdek, sil kasalligiga qarshi ikkinchi dozani olishadi.\n\nKalendar emlashlardan tashqari, biz isbotlangan samaradorlikka ega qo'shimcha vaksinalarni tavsiya qilamiz: olti oydan boshlab bolalarga yillik gripp vaksinasini, bir yoshda suvchechakka qarshi vaksinani, ikki oydan boshlab rotavirus infektsiyasiga qarshi, pnevmokokk infektsiyasiga qarshi, 9 yoshdan o'smirlar uchun papilloma virusiga qarshi.\n\nHar bir emlashdan oldin bizning klinikamizda majburiy ravishda pediatr tomonidan bolaning umumiy holatini baholash, haroratni o'lchash va anamnezni tahlil qilish bilan tibbiy ko'rik o'tkaziladi. Emlashdan keyin bola noyob darhol reaktsiyalarni istisno qilish uchun shifokor nazoratida 30 daqiqa qoladi. Biz foydalanadigan barcha vaksinalar sifat sertifikatlariga ega va harorat rejimiga rioya qilgan holda saqlanadi."
+    },
+    "diabetes-awareness-month": {
+      "title": "Noyabr — diabetga qarshi kurash oyi",
+      "excerpt": "Klinika endokrinologi diabetning xavfli simptomlari va kasallikni erta aniqlashning ahamiyati haqida gapiradi.",
+      "body": "Noyabr butun dunyoda qandli diabetga qarshi kurash belgisi ostida o'tadi — millionlab odamlarni qamrab oluvchi va ko'pincha uzoq yillar davomida sezilmaydigan kasallik. ShaxKlinika endokrinologi Nuriddinova Nigora Shavkatovna xavfli simptomlar va o'z vaqtida tekshiruvning ahamiyati haqida eslatadi.\n\n2 turdagi qandli diabet asta-sekin rivojlanadi va ko'p yillar davomida yorqin simptomlar bermasligi mumkin. Tashxis qo'yilgan paytda ko'p bemorlarda allaqachon dastlabki asoratlar — buyrak, ko'z to'r pardasi, oyoqlardagi nervlarning zararlanishi mavjud. Shuning uchun qand darajasini profilaktik nazorat qilish barcha kattalar uchun, ayniqsa ortiqcha vazn, harakatsiz hayot tarzi, irsiy yuklamalar va homiladorlik davrida gestatsion diabetni boshdan kechirgan ayollar uchun juda muhim.\n\nXavfsirashga sabab bo'ladigan belgilar: doimiy chanqoqlik, tez va ko'p siydik chiqarish, oshib ketgan charchoq, mayda yara va kesilishlarning sekin tuzalishi, teri qichishi (ayniqsa tashqi jinsiy a'zolar sohasida), ko'rish o'tkirligining pasayishi, oyoqlarda qichishish yoki sezgi yo'qotish. Ushbu simptomlardan birortasi paydo bo'lganda glyukoza nahorda va glikatlangan gemoglobin tahlilini topshirishni tavsiya qilamiz.\n\nOy doirasida klinika maxsus dasturni o'tkazadi: diabetga shubhalanadigan barcha yangi bemorlar uchun shakar, glikatlangan gemoglobin va asosiy biokimyo o'lchovi bilan endokrinologning birinchi konsultatsiyasi imtiyozli shartlarda taklif qilinadi. Tashxis qo'yilgandan so'ng biz bemorga to'liq sxemani tuzishga yordam beramiz — terapiyani tanlashdan glyukozani mustaqil nazorat qilishga o'rganishgacha.\n\nTa'lim ishlariga alohida e'tibor beramiz. Birinchi marta aniqlangan diabetli bemorlar glyukometrdan foydalanish texnikasi, insulinoterapiya qoidalari (agar u ko'rsatilgan bo'lsa), non birliklarini hisoblash va parhez tamoyillari bo'yicha endokrinolog va hamshira bilan individual sessiyani olishadi. Bu asosiy narsalarni bilish — kasallikni uzoq muddatli nazorat qilishdagi muvaffaqiyatning yarmi."
+    },
+    "eye-health-screen-time-tips": {
+      "title": "Ekranlar davrida ko'z salomatligi",
+      "excerpt": "Klinika oftalmologi kompyuter va smartfon bilan ko'p ishlaydiganlarga ko'rishni himoya qilish bo'yicha amaliy maslahatlar beradi.",
+      "body": "Zamonaviy odam kunining sezilarli qismini kompyuterlar, planshetlar va smartfonlar ekrani oldida o'tkazadi. Bu ko'rish apparatiga yangi yuk, evolyutsiya bizning ko'zlarimizni unga tayyorlamagan. Natija — kompyuter ko'rish sindromi, u ko'zlarda quruqlik va ko'z achishishi, bosh og'rig'i, tasvir noaniqligi va kun oxirida umumiy charchoq bilan namoyon bo'ladi.\n\nShaxKlinika oftalmologi Mirzayev Jasur Saidovich oddiy, lekin samarali \"20-20-20\" qoidasini eslatadi: ekran oldida har yigirma daqiqa ishlash uchun yigirma soniya tanaffus qiling va qarashni taxminan olti metr masofadagi ob'ektga ko'chiring. Bu fokuslashni almashtiradi va ko'z mushaklarini bo'shashtiradi. Ish kuni davomida har soatda to'liq besh daqiqalik tanaffuslar qilishga harakat qiling — turing, stoldan uzoqlashing, derazadan uzoqqa qarang.\n\nIshning jismoniy rejimi ham muhim. Monitorni uning markazi ko'zlar darajasida yoki bir oz pastroq, taxminan cho'zilgan qo'l masofada bo'lishi uchun joylashtiring. Xonadagi yorug'lik yumshoq bo'lishi va ekranda yorug'lik aks etmasligi kerak. Kontrast va yorqinlik atrofdagi muhit fonida ekran juda yorqin ko'rinmasligi uchun moslashtirilishi kerak. Zamonaviy qurilmalar ko'k yorug'likni susaytirish bilan \"ko'rishni himoya qilish\" rejimini taklif qiladi — uni kechqurun ishlatish ayniqsa foydali.\n\nAgar ko'zlar tez-tez quruqlashsa, konservantsiz namlovchi tomchilarni sinab ko'ring. Ekran bilan ishlashda ko'z qovog'ini qoqish chastotasi bir necha barobar kamayadi, shuning uchun ko'z plyonkasi odatdagidan tezroq bug'lanadi. Shuningdek, ish stoli yoniga havo namlovchi qo'yish ham yordam beradi — ayniqsa qishda, isitish xonani quritganda.\n\nBolalar va o'smirlar uchun ekran oldidagi vaqtni cheklash va toza havoga yetarli vaqt ajratish ayniqsa muhim. Zamonaviy tadqiqotlar ko'rsatishicha, kunduzgi yorug'likda yurish bu yoshda miyopiya rivojlanishini sekinlashtiradi. Va majburiy ravishda yiliga bir marta oftalmologdan profilaktik ko'rikdan o'ting — shikoyat bo'lmasa ham, ko'plab muammolar faqat instrumental tekshiruvda aniqlanadi."
+    },
+    "dermatologist-acne-treatment-guide": {
+      "title": "Aknening zamonaviy davolash yondashuvi",
+      "excerpt": "Klinika dermatologi akneni davolash haqidagi afsonalarni rad etadi va muammoga qarshi kurashning isbotlangan usullari haqida gapiradi.",
+      "body": "Akne — eng keng tarqalgan dermatologik kasalliklardan biri bo'lib, nafaqat o'smirlarni, balki kattalarni ham qamrab oladi. Ijtimoiy tarmoqlarda mavzuning mashhurligiga qaramay, akneni haqiqiy davolash bloggerlar maslahatlariga emas, balki isbotlangan tibbiyotga asoslanadi. ShaxKlinika dermatologi Rahimova Zuhra Azizovna muammoga professional qarashni o'rtoqlashadi.\n\nBirinchi va eng muhim afsona — akneni shunchaki ko'proq yuvinish yoki yanada agressivroq vositalardan foydalanish bilan davolash mumkinligi. Aslida haddan tashqari yuvinish terining tabiiy himoya to'sig'ini buzadi va yallig'lanishni kuchaytirishi mumkin. Zamonaviy yondashuv — sulfatsiz yumshoq vosita bilan kuniga bir-ikki marta nozik yuvinish va engil yog'siz kremlar bilan muntazam namlash.\n\nIkkinchi noto'g'ri tushuncha — kattalar uchun aknega o'smirlik aknesi uchun bir xil vositalar kerakligi. Bu noto'g'ri. Kattalardagi akne, ayniqsa ayollarda, ko'pincha gormonal omillar bilan bog'liq va kompleks yondashuvni — gormonal fonni baholashni, ba'zan endokrinolog konsultatsiyasini, individual tanlangan tashqi va tizimli preparatlar sxemasini talab qiladi.\n\nAkneni davolashda isbotlangan samarali usullar tashqi retinoidlarni (adapalen, tretinoin), benzoilperoksid bilan birgalikda tashqi antibiotiklarni, azelain kislotasini, o'rta va og'ir shaklda — kurslarda tizimli antibiotiklar yoki tizimli retinoidlarni (izotretinoin) o'z ichiga oladi. Oxirgilari qat'iy ko'rsatmalarga ko'ra va dermatologning nazorati ostida muntazam laboratoriya tahlillari bilan qo'llaniladi.\n\nAkneni davolash har doim uzoq jarayon ekanligini tushunish muhim. Ko'rinarli yaxshilanishlar odatda tanlangan sxemani muntazam qo'llashdan 4–8 hafta keyin paydo bo'ladi. Yaxshilanishning birinchi belgilarida terapiyani tashlab bo'lmaydi — bu ko'pincha qaytalanishga olib keladi. Postakne chandiqlari va pigmentatsiyani jarayon barqarorlashgandan so'ng lazer protseduralari va mezoterapiya bilan samarali davolash mumkin. Shuning uchun teringizda muammolar bo'lsa — o'z-o'zini davolash bilan shug'ullanmang, dermatolog konsultatsiyasiga yoziling."
+    },
+    "family-medicine-package-launch": {
+      "title": "\"Oilaviy tibbiyot\" paketining ishga tushirilishi",
+      "excerpt": "Klinika belgilangan narx va kengaytirilgan xizmatlar to'plami bilan butun oilaning yillik tibbiy hamrohlik dasturini taqdim etmoqda.",
+      "body": "Fevralda biz yangi dasturni — bir yil davomida oila tibbiy hamrohligi uchun mo'ljallangan \"Oilaviy tibbiyot\" paketini ishga tushiramiz. Dastur bir necha yil davomida ShaxKlinikada salomatlikni boshqarib kelayotgan va klinika bilan o'zaro aloqani soddalashtirishni xohlovchi bemorlarimizning so'rovlarini hisobga olgan holda ishlab chiqilgan.\n\nPaket bir yil davomida oilaviy terapevt-shifokorning cheksiz konsultatsiyalarini, asosiy tahlil va instrumental tekshiruvlar bilan oila barcha a'zolarining yiliga ikki marta profilaktik ko'rigini, tibbiy ko'rsatmalar bo'yicha klinikaning profil mutaxassislari (pediatr, kardiolog, endokrinolog, ginekolog) konsultatsiyalarini qo'shimcha to'lovsiz, sutkaning istalgan vaqtida terapevtning shoshilinch telefon konsultatsiyasini, kalendar bo'yicha bolalar uchun rejali emlashni qoplaydi.\n\nHar bir oilaga shaxsiy oilaviy shifokor biriktiriladi — bu shuni anglatadiki, bir mutaxassis oila barcha a'zolarining tibbiy tarixini biladi, umumiy irsiy xavflarni ko'radi va muvofiqlashtirilgan rejani taklif qila oladi. Dasturni muvofiqlashtirayotgan terapevt Qosimov Akmal Tolkinovich shunday ta'kidlaydi: \"Oilaviy tibbiyot — simptomlarni davolash haqida emas, butun oilaning sog'lig'ini uzoq muddatli saqlash haqida. Men ota-onalarning tarixini bilganimda, men bolaning xavflarini yaxshiroq tushunaman, va aksincha\".\n\nPaket ayniqsa kichkina bolalar, keksa qarindoshlar va muntazam kuzatuvni talab qiladigan surunkali kasalliklari bo'lgan bemorlar bilan oilalarga mos keladi. Narx oilaning tarkibi va a'zolari soniga qarab individual hisoblanadi. Birinchi uchrashuvda oilaviy shifokor dasturning barcha qatnashchilarini kompleks ko'rib chiqadi va profilaktik tadbirlarning yillik rejasini tuzadi.\n\nHali yillik paketga tayyor bo'lmaganlar uchun biz har bir xizmat uchun odatiy narx ro'yxati bo'yicha alohida to'lash imkoniyatini saqlab qolamiz. Dastur bilan bepul tanishish va narxni hisoblash uchun yozilish ochiq — klinika administratoriga yoki sayt orqali murojaat qiling."
+    },
+    "partnership-with-tashkent-medical-academy": {
+      "title": "Toshkent tibbiyot akademiyasi bilan hamkorlik",
+      "excerpt": "Klinika mamlakatning yetakchi tibbiyot oliy o'quv yurti bilan ilmiy-amaliy hamkorlik to'g'risida shartnomani imzoladi.",
+      "body": "Dekabrda ShaxKlinika O'zbekistonning yetakchi tibbiyot oliy o'quv yurtlaridan biri — Toshkent tibbiyot akademiyasi bilan ilmiy-amaliy hamkorlik to'g'risida shartnomani imzoladi. Hamkorlik bir nechta yo'nalishlarni qamrab oladi va tibbiy yordam sifatini oshirish hamda yangi avlod shifokorlarni tayyorlashga qaratilgan.\n\nShartnoma doirasida klinika akademiyaning yuqori kurs talabalari va shifokor-ordinatorlarining bizning tajribali mutaxassislarimiz rahbarligida amaliyot o'tash uchun klinik bazasiga aylanadi. Bu shuni anglatadiki, yosh shifokorlar ilg'or protokollar va uskunalardan foydalangan holda zamonaviy klinik muhitda ishlash imkoniyatini olishadi. O'z navbatida biz mamlakat sog'liqni saqlash tizimi uchun professional kadrlarni tayyorlashda faol ishtirok etish imkoniyatini olamiz.\n\nAlohida yo'nalish — qo'shma ilmiy faoliyat. Biz akademiya o'tkazadigan klinik tadqiqotlarda ishtirok etish, epidemiologik tadqiqotlar uchun shaxsiyatsizlashtirilgan ma'lumotlarni ulashish va qo'shma ilmiy ishlarni nashr etishni rejalashtirmoqdamiz. Tibbiyot fanlari nomzodi, klinika nevrologi Nazarov Alisher Rustamovich ShaxKlinika tomonidan ilmiy dasturning muvofiqlashtiruvchisi sifatida chiqadi.\n\nTa'lim yo'nalishida shahar amaliyotchi shifokorlari uchun qo'shma seminar va davra suhbatlarini o'tkazish rejalashtirilgan. Birinchi tadbirlar mavzulari allaqachon muhokama qilinmoqda — bu metabolik sindromli bemorlarni olib borishning zamonaviy yondashuvlari, antigipertenziv terapiya bo'yicha yangi tavsiyalar, bolalar emlashidagi yangiliklar. Seminarlar boshqa klinikalardagi hamkasblar va birlamchi bo'g'in shifokorlari uchun ochiq bo'ladi.\n\nBemorlarimiz uchun bu hamkorlik murakkab klinik holatlarda akademiyaning yetakchi mutaxassislari konsultatsiyalariga kirishni anglatadi. Agar vaziyat profil ekspertining fikrini talab qilsa, biz murakkab byurokratik tartiblarsiz profil kafedralar professorlari ishtirokida konsiliumni tezkor tashkil qilishimiz mumkin. Shartnoma 1 yanvardan kuchga kirgan va besh yilga mo'ljallangan bo'lib, uzaytirish imkoniyati mavjud."
+    }
+  },
+  "reviews": {
+    "r-001": {
+      "reviewerName": "Sherzod M.",
+      "text": "Yuqori bosim sababli Karimov Sherzod Alisherovichning qabulida bo'ldim. Juda e'tiborli shifokor — batafsil so'rab oldi, bosimni ikki qo'lda o'lchadi, qabulda EKGni qildi. Qaysi tahlillarni topshirish kerakligini va nima uchunligini tushuntirdi. Davolashni tayinladi, ikki haftalik nazoratdan so'ng bosim barqarorlashdi. Klinikaga shunday savodli kardiolog borligi uchun rahmat."
+    },
+    "r-002": {
+      "reviewerName": "Malika A.",
+      "text": "Qizimning tug'ilganidan boshlab Dilnoza Bahtiyorovnaga qatnaymiz, hozir u ikki yoshda. Shifokor ajoyib — sabrli, e'tiborli, bolalar bilan til topa biladi. Qizim shamollaganida, hammasini batafsil tushuntirdi, davolash sxemasini tuzdi, kun o'tib ahvolini bilish uchun qo'ng'iroq qildi. Pullik klinikalar uchun bu kamyob — shunday munosabat."
+    },
+    "r-003": {
+      "reviewerName": "Anna Mihaylovna",
+      "text": "Kasimova Feruza Tahirovnada tishlarni tozalattirdim. Protsedura qulay o'tdi, hech qanday noqulaylik bo'lmadi. Shifokor uyda qaysi vositalardan foydalanish yaxshiroqligini va tish ipi bilan tozalash texnikasini ko'rsatdi. Yagona kamchilik — biroz navbatda kutishga to'g'ri keldi, oldingi bemorda qabul cho'zilgan ko'rinadi. Umuman olganda hammasi yaxshi darajada."
+    },
+    "r-004": {
+      "reviewerName": "Dilfuza K.",
+      "text": "Tursunova Malika Shavkatovnada kichik chanoq UZIda bo'ldim. Shifokor juda nozik va professional, hammasini batafsil tushuntirdi, ekranda ko'rsatdi va nima qanday ko'rinishini aytib berdi. Xulosani darhol oldim. Xonadagi muhit tinch, hech qanday tibbiy konveyer hissi yo'q. Ginekolog izlayotgan ayollarga klinikani tavsiya qilaman."
+    },
+    "r-005": {
+      "reviewerName": "Oleg P.",
+      "text": "Olti oydan ko'proq doimiy bosh og'rig'idan shikoyat qilardim. Nevrolog Nazarov Alisher Rustamovichga yozildim. Shifokor boshqa klinikadagidek bir nechta keraksiz tekshiruvlarni tayinlamadi, balki batafsil ko'rik o'tkazdi, hayot tarzi va ish tartibi haqida so'radi. Tashxis qo'ydi — taranglik bilan migren — va davolashni tanladi. Ikki haftalik preparatlarni qabul qilgandan so'ng holat sezilarli darajada yaxshilandi."
+    },
+    "r-006": {
+      "reviewerName": "Gulnora R.",
+      "text": "Kompyuter oldida uzoq ishlash sababli ko'rishning yomonlashishi tufayli oftalmolog Mirzayev Jasur Saidovichga yozildim. Shifokor to'liq tekshiruv o'tkazdi, ko'rish o'tkirligini, bosimni, ko'z tubini ko'rib chiqdi. Kompyuter ko'rish sindromi haqida tushuntirdi, ish rejimi va ko'z mashqlari bo'yicha tavsiyalar berdi. Ko'zoynak yozdi — zavq bilan kiyaman, haqiqatan yordam berdi."
+    },
+    "r-007": {
+      "reviewerName": "Eldar S.",
+      "text": "Yuzdagi muammoli teri bilan dermatolog Rahimova Zuhra Azizovnaga murojaat qildim. Shifokor batafsil ko'rib chiqdi, xollar dermatoskopiyasini qildi, kosmetika va tizimli preparatlar bilan davolash sxemasini tuzdi. Ikki oy o'tib teri ancha yaxshi bo'ldi. Yagona narsa — avval shifokorning yosh ekanligi biroz ikkilantirdi, lekin tajriba va yondashuv barcha shubhalarni tarqatdi."
+    },
+    "r-008": {
+      "reviewerName": "Zaur B.",
+      "text": "Uchastka shifokori yo'llanmasi bo'yicha kardiolog Karimov Sherzod Alisherovichda ExoKGni qildim. Tekshiruv bir soatdan kam vaqt oldi, hammasi qulay o'tdi. Doktor ekranda yurak kameralarini batafsil ko'rsatdi, barcha ko'rsatkichlarni tushuntirdi va xulosani band-band yozib berdi. Shuningdek, menga avval tayinlangan davolash sxemasini korreksiya qildi. Tashrifdan juda mamnunman."
+    },
+    "r-009": {
+      "reviewerName": "Bahtiyor X.",
+      "text": "Jarroh Usmanov Ravshan Mahmudovichda ikki implant qo'ydirdim. Konsultatsiyada hammasi aniq yozilgan edi — bosqichlar, muddatlar, narx, mumkin bo'lgan xavflar. Operatsiyaning o'zi mahalliy og'riqsizlantirish ostida, og'riqsiz o'tdi. To'rt oydan keyin tojlarni qo'yishdi. Bir yil o'tdi — hech qanday muammo yo'q, xotirjamlik bilan ovqatlanaman va kulaman. Ish uchun shifokorga rahmat."
+    },
+    "r-010": {
+      "reviewerName": "Feruza A.",
+      "text": "Doimiy charchoqdan shikoyat qilib endokrinolog Nuriddinova Nigora Shavkatovnaga keldim. Uning yo'naltirishi bo'yicha tahlillarni topshirdim, qalqonsimon bezda muammolar borligi ma'lum bo'ldi. Shifokor qabulda darhol UZIni qildi, davolashni tanladi. Ikki oydan keyin preparatni qabul qilib o'zimni sezilarli darajada yaxshi his qilyapman. E'tiborli munosabat va aniq tashxis uchun juda minnatdorman."
+    },
+    "r-011": {
+      "reviewerName": "Nodir K.",
+      "text": "Gastroenterolog Tashpulatov Shohruh Bahtiyorovichda FGDSni qildim. Protseduradan oldin juda hayajonlangandim, lekin shifokor har bir bosqichni xotirjam tushuntirdi. Dori uyqusi bilan qildik — uxlab qoldim, bir daqiqadan so'ng uyg'ondim. Tekshiruvdan keyin shifokor tasvirlarni ko'rsatdi va nima qanday ekanligini batafsil aytib berdi. Protsedura yoqimsiz edi, lekin tez va oqibatlarsiz o'tdi."
+    },
+    "r-012": {
+      "reviewerName": "Timur R.",
+      "text": "Urolog Ismailov Bobur Uktamovichning qabulida bo'ldim. Nozik, savodli shifokor, qabulda hech qanday noqulaylik hissi yo'q. Tashxis qo'ydi, davolashni tayinladi. Uch hafta ichida nazorat — hammasi sezilarli darajada yaxshi bo'ldi. Saytda yozilish mumkin, juda qulay. Klinika toza, xodimlar muloyim, umuman yoqimli taassurot."
+    },
+    "r-013": {
+      "reviewerName": "Larisa Viktorovna",
+      "text": "Terapevt Hodjayeva Gulchehra Rustamovnada kompleks yillik tekshiruvdan o'tdim. Juda tajribali va e'tiborli shifokor — men 62 yoshdaman, va u uzoq yillar ichida birinchi marta barcha dorilarimni tahlil qildi va sxemani optimallashtirdi. Avval sakkizta preparatni ichardim, endi faqat beshta, va o'zimni yaxshiroq his qilyapman. Bemor uchun insoniy yondashuv uchun katta rahmat."
+    },
+    "r-014": {
+      "reviewerName": "Alisher T.",
+      "text": "Ortoped Pulatov Sardor Anvarovichda tizza bo'g'imiga ichki in'eksiya qildirdim. Shifokor ko'rik o'tkazdi, mening holatimda nima uchun aynan gialuronka ko'rsatilganini tushuntirdi, hammasini tez va aniq UZI nazorati ostida qildi. In'eksiyadan keyin uchinchi kun og'riqlar deyarli yo'qoldi. Ikki haftadan keyin takroriy protseduraga yozilganman. Natijadan juda mamnunman."
+    },
+    "r-015": {
+      "reviewerName": "Yuliya S.",
+      "text": "Nevrolog yo'llanmasi bo'yicha umurtqaning MRTsini qildirdim. Yozilish tez bo'ldi, xulosani o'sha kuni oldim. Apparatning o'zi zamonaviy, tunneldan boshqa klinikalardagi kabi tor emas edi. Yagona narsa — belgilangan vaqtdan ortiq yigirma daqiqa kutishga to'g'ri keldi. Talqini Azimova doktor tomonidan qilindi, xulosa juda batafsil."
+    },
+    "r-016": {
+      "reviewerName": "Kamila I.",
+      "text": "Oddiy shamollash bilan terapevt Qosimov Akmal Tolkinovichga yozildim. Shifokor yosh, lekin juda dadil — hech qanday foydasiz fufolomitsin yo'q, aniq tavsiyalar, asoslangan tayinlovlar. Bir hafta ichida hammasi o'tib ketdi. Endi unga oilaviy terapevt sifatida yoziladiman. Kechqurun soatlarida qabul qilishi qulay — ishdan keyin ulgurib boraman."
+    },
+    "r-017": {
+      "reviewerName": "Nazokat X.",
+      "text": "Kasimova Feruza Tahirovnada tishlarni oqartirdim. Protseduradan oldin konsultatsiya va tozalashdan o'tdim. Protseduraning o'zi taxminan bir soat oldi, sezgirlik tufayli unchalik qulay emas edi, lekin shifokor tanaffuslar qildi va ahvolim haqida so'radi. Tishlar bir nechta tonga oqardi, samarasi bir necha oydan beri saqlanmoqda. Narx sifatga mos keladi."
+    },
+    "r-018": {
+      "reviewerName": "Svetlana N.",
+      "text": "Qizimga rejali emlashni pediatr Yuldasheva Dilnoza Bahtiyorovnada qo'ydirdik. Emlashdan oldin shifokor bolani ko'rib chiqdi, haroratni o'lchadi, oxirgi haftada ahvoli haqida so'radi. Qizim biroz yig'ladi, lekin shifokor uni tezda tinchlantirdi. Emlashdan keyin yarim soat dahlizda nazorat ostida kutishimizni so'rashdi. Hammasi yaxshi darajada."
+    },
+    "r-019": {
+      "reviewerName": "Rustam D.",
+      "text": "Komandirovkadan oldin kardiolog Karimov Sherzod Alisherovichda EKG qildirdim. Hammasi tez, navbatsiz, doktor o'sha zahoti talqin qildi va xulosa berdi. Kichik o'zgarishlarni payqab qo'shimcha holter qilishni tavsiya qildi — keyingi haftaga yozildim. Tezkorlik va detallarga e'tibor uchun rahmat."
+    },
+    "r-020": {
+      "reviewerName": "Dilshod Hamidov",
+      "text": "Xotinim ginekolog Tursunova Malika Shavkatovnaga bir necha yildan beri qatnaydi. Oxirgi profilaktik qabulda shifokor avval hech kim sezmagan kichik o'zgarishlarni aniqladi. Qo'shimcha tahlillarni tayinladi va nima qilish kerakligini batafsil tushuntirdi. Klinika va shifokorga e'tiborli yondashuv va professionalizm uchun juda minnatdormiz."
+    }
+  },
+  "appointment": {
+    "title": "Qabulga yozilish",
+    "subtitle": "Shaklni to'ldiring — biz 15 daqiqa ichida qo'ng'iroq qilamiz",
+    "fields": {
+      "name": {
+        "label": "Ismingiz",
+        "placeholder": "Sherzod Karimov"
+      },
+      "phone": {
+        "label": "Telefon",
+        "placeholder": "+998 90 123-45-67",
+        "helper": "Format: +998 XX XXX-XX-XX"
+      },
+      "service": {
+        "label": "Xizmat",
+        "placeholder": "Xizmatni tanlang"
+      },
+      "doctor": {
+        "label": "Shifokor (ixtiyoriy)",
+        "placeholder": "Har qanday bo'sh"
+      },
+      "date": {
+        "label": "Istalgan sana",
+        "helper": "Bugun yoki keyinroq tanlashingiz mumkin"
+      }
+    },
+    "submit": {
+      "idle": "Yozilish",
+      "submitting": "Yuborilmoqda…"
+    },
+    "success": {
+      "heading": "So'rov qabul qilindi",
+      "body": "Biz ko'rsatilgan raqamga 15 daqiqa ichida bog'lanamiz. Oyna avtomatik yopiladi.",
+      "closeNow": "Yopish"
+    },
+    "errors": {
+      "general": "So'rovni yuborib bo'lmadi. Ulanishni tekshiring va yana urinib ko'ring.",
+      "rateLimited": "Juda ko'p urinish. Bir daqiqa kuting va yana urinib ko'ring.",
+      "telegramDown": "Xizmat vaqtincha mavjud emas. Bizga +998 90 123-45-67 raqamiga qo'ng'iroq qiling."
+    },
+    "prefillNotice": {
+      "service": "Xizmat: {name}",
+      "doctor": "Yozilish: {name}"
+    }
+  },
+  "form": {
+    "errors": {
+      "required": "Majburiy maydon",
+      "name": {
+        "tooShort": "Ism kamida 2 belgidan iborat bo'lishi kerak",
+        "tooLong": "Ism juda uzun"
+      },
+      "phone": {
+        "invalid": "+998 XX XXX-XX-XX formatida raqam kiriting"
+      },
+      "service": {
+        "required": "Ro'yxatdan xizmatni tanlang"
+      },
+      "date": {
+        "invalid": "To'g'ri sanani tanlang",
+        "past": "Sana o'tmishda bo'lishi mumkin emas"
+      }
+    }
   }
 }
