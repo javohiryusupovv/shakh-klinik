@@ -1,6 +1,43 @@
 {
   "home": {
-    "placeholder": "Welcome to ShaxKlinika — your clinic in Tashkent"
+    "placeholder": "Welcome to ShaxKlinika — your clinic in Tashkent",
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "How do I book an appointment at ShaxKlinika?",
+          "a": "Fill in the short form on the website — our administrator will call you back within 15 minutes to confirm a convenient time. You can also reach us by phone during clinic hours: Monday to Saturday, 8:00 to 20:00."
+        },
+        {
+          "q": "Do you accept patients with medical insurance?",
+          "a": "We work with most major insurance providers in Uzbekistan, including voluntary health insurance plans. Before your visit, please check with our administrator whether your service is covered — we will help you prepare the necessary documentation."
+        },
+        {
+          "q": "How long does an initial consultation last?",
+          "a": "An initial appointment with a therapist or specialist typically lasts 30 to 40 minutes. This is enough time to take a full history, perform an examination, discuss your concerns, and outline a plan for further investigation or treatment."
+        },
+        {
+          "q": "Do I need a referral from another doctor?",
+          "a": "No. You can book an appointment with any ShaxKlinika specialist directly, without a referral. If you already have records or test results from other clinics, please bring them along — this will help speed up diagnosis."
+        },
+        {
+          "q": "Do you see children?",
+          "a": "Yes. We have experienced pediatricians on staff and provide routine vaccinations following the Uzbekistan Ministry of Health schedule, as well as consultations with pediatric specialists. We accept young patients from birth."
+        },
+        {
+          "q": "What payment methods do you accept?",
+          "a": "We accept cash (UZS), Visa and Mastercard bank cards, and online transfers via Click and Payme. A receipt is provided after every payment — you will need it for insurance reimbursement."
+        },
+        {
+          "q": "What are the clinic's working hours?",
+          "a": "Our main reception hours are Monday to Saturday from 8:00 to 20:00, and Sunday from 9:00 to 15:00. Individual doctor schedules may differ — please confirm the exact appointment time when you book."
+        },
+        {
+          "q": "Do you provide 24/7 emergency assistance?",
+          "a": "Our 24-hour emergency line operates every day — call us if you need an urgent consultation or a home visit. For life-threatening emergencies, please dial 103."
+        }
+      ]
+    }
   },
   "nav": {
     "home": "Home",
@@ -44,5 +81,463 @@
     "loading": "Loading...",
     "error": "An error occurred",
     "back": "Back"
+  },
+  "categories": {
+    "therapy": { "name": "General Practice" },
+    "cardiology": { "name": "Cardiology" },
+    "neurology": { "name": "Neurology" },
+    "gynecology": { "name": "Gynecology" },
+    "urology": { "name": "Urology" },
+    "pediatrics": { "name": "Pediatrics" },
+    "dermatology": { "name": "Dermatology" },
+    "ophthalmology": { "name": "Ophthalmology" },
+    "dentistry": { "name": "Dentistry" },
+    "endocrinology": { "name": "Endocrinology" },
+    "gastroenterology": { "name": "Gastroenterology" },
+    "orthopedics": { "name": "Orthopedics" },
+    "diagnostics": { "name": "Diagnostics" }
+  },
+  "departments": {
+    "general-medicine": { "name": "General medicine and pediatrics" },
+    "cardiology-dept": { "name": "Cardiology" },
+    "neurology-dept": { "name": "Neurology" },
+    "womens-health": { "name": "Women's Health" },
+    "urology-dept": { "name": "Urology" },
+    "dermatology-dept": { "name": "Dermatology and Cosmetology" },
+    "eye-clinic": { "name": "Ophthalmology" },
+    "dental-clinic": { "name": "Dentistry" },
+    "endocrinology-dept": { "name": "Endocrinology" },
+    "gastro-dept": { "name": "Gastroenterology" },
+    "surgery": { "name": "Surgery and Orthopedics" },
+    "diagnostics-lab": { "name": "Diagnostics and Laboratory" }
+  },
+  "services": {
+    "therapy-consultation": {
+      "name": "Therapist consultation",
+      "description": "An initial appointment with a general practitioner at ShaxKlinika is the foundational step in assessing your overall health. During the consultation, the doctor will take a detailed history, perform a physical examination, and measure blood pressure, pulse, oxygen saturation, and temperature. Based on the findings, the therapist will order any necessary lab work or imaging studies and outline an individual plan for next steps. If a specialist consultation is needed, the doctor will refer you to the right colleague within the clinic. The appointment is suitable for adult patients with any symptoms, as well as for routine health assessments and medical certificates. Typical duration is around 30 minutes."
+    },
+    "annual-checkup-comprehensive": {
+      "name": "Comprehensive annual check-up",
+      "description": "An extended medical check-up for those who take a proactive approach to their health. The program includes a therapist consultation, full blood and urine panels, biochemistry, ECG, ultrasound of the abdominal organs and thyroid gland, and measurement of glucose and lipid profiles. At the end of the assessment, the therapist consolidates all results into a single report, explains each marker, and provides personalized recommendations. The check-up is particularly valuable for patients over 35, those with hereditary risk factors, or anyone who hasn't seen a doctor in a long time. The full program takes about two hours and is completed in a single visit."
+    },
+    "cardiology-consultation": {
+      "name": "Cardiologist consultation",
+      "description": "A cardiology appointment with a thorough review of cardiovascular complaints — shortness of breath, palpitations, elevated blood pressure, chest pain, swelling. The cardiologist will take a detailed history, perform auscultation of the heart and lungs, measure blood pressure on both arms, and assess cardiovascular risk using the SCORE and ASCVD scales. An ECG can be performed during the same visit if needed. The doctor will order additional studies (echocardiography, Holter monitoring, stress tests) and select an appropriate treatment plan. The consultation is suitable for both preventive visits and patients with established diagnoses."
+    },
+    "cardiology-ecg": {
+      "name": "ECG with interpretation",
+      "description": "Electrocardiography is a quick, painless test that records the electrical activity of the heart over 5 to 10 minutes. The method allows us to detect rhythm abnormalities, signs of myocardial ischemia, chamber hypertrophy, and to evaluate the effect of antiarrhythmic therapy. The price already includes interpretation by a cardiologist with a written report and recommendations. Resting ECG is performed on the day of the visit without any preparation. The test is recommended annually after age 35, before any surgical procedure, and whenever cardiovascular symptoms appear."
+    },
+    "cardiology-echo": {
+      "name": "Echocardiography (heart ultrasound)",
+      "description": "Echocardiography is an ultrasound study of the heart that visualizes the chambers, valves, pericardium, and great vessels in real time. It helps assess myocardial contractility, measure ejection fraction, identify valve disease, cardiomyopathy, pulmonary hypertension, and post-infarction complications. The procedure is completely safe and painless, lasting about 30 to 45 minutes. No preparation is required. The report is provided on the same day with all key measurements and cardiologist recommendations. Suitable for adults and patients after cardiac surgery."
+    },
+    "neurology-consultation": {
+      "name": "Neurologist consultation",
+      "description": "A neurology appointment for the diagnosis and treatment of central and peripheral nervous system disorders. The neurologist treats headaches, dizziness, sleep disorders, neck and back pain, post-stroke conditions, neuralgias, and anxiety-depressive disorders with somatic manifestations. During the visit, the doctor performs a complete neurological exam: reflexes, muscle tone, sensation, coordination, and cognitive function. A plan for further investigation (MRI, EEG, lab tests) and treatment is then drawn up. The consultation lasts 45 minutes — enough time for a thorough discussion of each case."
+    },
+    "neurology-eeg": {
+      "name": "Electroencephalography (EEG)",
+      "description": "EEG is a painless and safe study of the brain's electrical activity. A cap fitted with sensors is placed on the patient's head and records cortical activity over 30 to 40 minutes. The test is used in epilepsy, sleep disorders, chronic headaches, after head trauma, and for diagnosing syncope of unclear origin. At our clinic, EEG is performed with functional stimuli — eye opening and closing, photic stimulation, and hyperventilation. The report is written by a neurologist describing all significant patterns and providing interpretation. Suitable for adults and children from age five."
+    },
+    "gynecology-consultation": {
+      "name": "Gynecologist consultation",
+      "description": "A gynecology appointment with examination on the gynecological chair, sample collection for flora and cytology, and colposcopy when indicated. The consultation is suitable for routine preventive visits, menstrual cycle issues, pain, abnormal discharge, pregnancy planning, and contraception selection. The doctor will take a detailed reproductive history, perform an exam in a comfortable setting, and outline a plan for any further investigation. If changes are identified, we discuss treatment options and refer for pelvic ultrasound when needed. All procedures use single-use sterile instruments."
+    },
+    "gynecology-ultrasound": {
+      "name": "Pelvic ultrasound",
+      "description": "Ultrasound of the uterus, ovaries, and adnexa is the cornerstone of gynecological diagnostics. We perform pelvic ultrasound in two ways: transabdominal (through the lower abdominal wall) and transvaginal (a more accurate method for assessing the endometrium and ovaries). The study can identify fibroids, cysts, endometriosis, endometrial pathology, pregnancy and its complications, and post-surgical changes. The procedure takes 20 to 30 minutes and requires no special preparation other than a moderately full bladder for the transabdominal approach. The report is provided immediately with detailed findings and recommendations."
+    },
+    "urology-consultation": {
+      "name": "Urologist consultation",
+      "description": "A urology appointment for both men and women with disorders of the urinary and reproductive systems. The urologist treats cystitis, prostatitis, urolithiasis, urinary incontinence, erectile dysfunction, benign prostatic hyperplasia, and sexually transmitted infections. The doctor takes a thorough history, performs a discreet exam in a comfortable setting, and orders lab work as needed (urinalysis, cultures, PSA in men), as well as ultrasound of the bladder and prostate. At the end of the consultation, the doctor will propose a treatment plan — conservative or, when needed, surgical."
+    },
+    "urology-uroflowmetry": {
+      "name": "Uroflowmetry",
+      "description": "Uroflowmetry is a functional test that objectively measures the speed and pattern of urination. The patient voids into a specialized device that automatically charts the flow. The study takes only a few minutes, requires no preparation aside from a moderately full bladder, and is completely painless. Uroflowmetry is essential when prostatic hyperplasia, neurogenic bladder, or urethral stricture is suspected, and for evaluating treatment response. The report is interpreted by a urologist with consideration of age, sex, and accompanying symptoms."
+    },
+    "pediatrics-consultation": {
+      "name": "Pediatrician consultation",
+      "description": "An appointment with an experienced pediatrician for children from birth to age 17. During the consultation, the doctor evaluates the child's physical and neuropsychological development, performs an examination, measures height and weight, and counsels parents on feeding, daily routine, vaccinations, and seasonal infection prevention. If the child is unwell, the pediatrician will make a diagnosis, order any necessary lab work, and prescribe age-appropriate treatment. The pediatrician's office is equipped with toys and materials that help children relax, and the doctor takes time to talk with parents without rushing."
+    },
+    "pediatrics-vaccination": {
+      "name": "Children's vaccination",
+      "description": "Routine childhood vaccination according to the National Immunization Schedule of Uzbekistan and individual schedules. Before each immunization, the pediatrician examines the child, checks temperature, and assesses overall health to rule out contraindications. The clinic uses certified vaccines from well-known manufacturers, stored in compliance with cold-chain requirements. After the vaccination, the child is observed for 30 minutes to detect any immediate reactions. The cost depends on the chosen product — the doctor discusses all options with parents in advance and helps select the most suitable one."
+    },
+    "dermatology-consultation": {
+      "name": "Dermatologist consultation",
+      "description": "A dermatology appointment for the diagnosis and treatment of skin, hair, and nail conditions. The dermatologist manages acne, eczema, psoriasis, fungal infections, allergic dermatitis, hair loss, moles, and other lesions. During the exam, the doctor inspects affected areas with a dermatoscope — this allows magnified visualization of the skin's structure and more accurate diagnosis. If a malignant process is suspected, the patient is referred for urgent biopsy. Based on the findings, an individualized treatment plan is selected, taking into account skin type, lifestyle, and any comorbid conditions."
+    },
+    "dermatology-laser": {
+      "name": "Laser procedure",
+      "description": "Laser treatment of skin conditions at our clinic is performed on modern equipment by certified specialists. The list of procedures includes removal of vascular networks and capillaries, treatment of pigmented spots, resurfacing of post-acne scars, laser hair removal, and removal of papillomas and benign skin lesions. A dermatologist consultation with assessment of skin type and contraindications is mandatory before the procedure. Sessions last 30 to 60 minutes depending on the area treated. Detailed aftercare instructions are provided: sun protection, moisturization, and activity restrictions. Pricing depends on the size of the treatment area and the number of sessions required."
+    },
+    "ophthalmology-consultation": {
+      "name": "Ophthalmologist consultation",
+      "description": "A comprehensive appointment with an ophthalmologist including visual acuity testing, intraocular pressure measurement, and fundus examination using a Goldmann lens. The consultation is suitable for vision deterioration, headaches, eye pain, redness, watering, or a foreign-body sensation. We see adults and children from age three. If your child complains of fatigue while reading or struggles to see the school whiteboard — that's a good reason to schedule a preventive exam. Based on the findings, the doctor will write a prescription for glasses or contact lenses, or outline a treatment plan for any condition identified."
+    },
+    "ophthalmology-vision-test": {
+      "name": "Visual acuity test",
+      "description": "Basic visometry with refraction — determination of visual acuity for each eye using a Sivtsev chart, with correction trials using lenses of varying power to identify the appropriate prescription. The price includes a written prescription for glasses or contact lenses. The test takes 20 to 25 minutes, requires no preparation, is completely painless, and is suitable for children from age five and adults of any age. If the ophthalmologist notices changes during the test, additional studies (tonometry, fundus examination) will be offered. We recommend a yearly vision check."
+    },
+    "dental-cleaning": {
+      "name": "Professional teeth cleaning",
+      "description": "Comprehensive oral hygiene in three stages: ultrasonic removal of dental calculus, plaque removal with the Air Flow system using a specialty powder, and a finishing polish with paste and fluoridation. The procedure removes hard deposits and pigment stains from tea, coffee, and tobacco, restores the natural color of the enamel, and reduces the risk of caries and gum disease. The dental hygienist uses gentle techniques — the procedure is virtually painless. After the appointment, the patient receives recommendations on home care, including the choice of brush, paste, and irrigator. Cleaning is recommended every six months."
+    },
+    "dental-implant": {
+      "name": "Dental implantation",
+      "description": "Placement of a dental implant is a modern way to restore a missing tooth without grinding down adjacent teeth. The clinic works with implant systems from trusted global manufacturers (Switzerland, South Korea, Israel) — the specific brand is discussed with the patient at the consultation. The process includes initial assessment, planning based on a CT scan, surgical placement of the implant under local anesthesia, an osseointegration period (3 to 6 months), and finally placement of the crown. At each stage, the patient receives detailed care instructions. Pricing varies depending on the implant system and the complexity of the clinical situation."
+    },
+    "dental-whitening": {
+      "name": "Teeth whitening",
+      "description": "Professional in-office teeth whitening using modern gels activated by an LED lamp. The procedure takes one visit of about 60 minutes and lightens enamel by 4 to 8 shades. Professional cleaning and a dental exam are required prior to whitening — this is essential to assess enamel condition, rule out caries, and select the appropriate gel concentration. The procedure has contraindications (pregnancy, marked tooth sensitivity, untreated caries), making the consultation a mandatory step. After whitening, we recommend a 48-hour \"white diet\": no coffee, tea, red wine, or berries."
+    },
+    "endocrinology-consultation": {
+      "name": "Endocrinologist consultation",
+      "description": "An endocrinology appointment for the diagnosis and treatment of thyroid disease, diabetes mellitus, obesity, hormonal menstrual irregularities, and osteoporosis. The endocrinologist takes a detailed history, performs an examination and palpation of the thyroid, and assesses body mass index and fat distribution. Based on the consultation, the doctor will order a complete hormonal panel (TSH, T4, T3, cortisol, insulin, OGTT) and imaging studies (thyroid ultrasound, densitometry). Once results are available, an individualized treatment and follow-up plan is established."
+    },
+    "endocrinology-thyroid-ultrasound": {
+      "name": "Thyroid ultrasound",
+      "description": "Ultrasound of the thyroid gland is the primary imaging method for this organ. It allows assessment of lobe and isthmus dimensions, detection of nodules, cysts, signs of inflammation, and structural changes. The procedure takes 20 to 30 minutes, is completely safe, and requires no special preparation. The doctor provides a written report measuring gland volume and describing each nodule using the TIRADS system. If suspicious lesions are found, the endocrinologist will refer the patient for fine-needle aspiration biopsy to clarify the nature of the nodule. Ultrasound is recommended for any neck symptoms and when hormonal imbalance is suspected."
+    },
+    "gastro-consultation": {
+      "name": "Gastroenterologist consultation",
+      "description": "A gastroenterology appointment with a detailed history and abdominal examination. The gastroenterologist treats gastritis, peptic ulcer disease, reflux esophagitis, irritable bowel syndrome, hepatobiliary disorders, pancreatitis, and dysbiosis. If the patient already has the results of a gastroscopy, abdominal ultrasound, or biochemistry, the doctor integrates them into the treatment plan. The visit produces an individual diet plan, medication regimen, and follow-up schedule. Suitable for first-time visitors and for patients in long-term follow-up."
+    },
+    "gastro-fgds": {
+      "name": "Gastroscopy (EGD)",
+      "description": "Esophagogastroduodenoscopy is an endoscopic examination of the esophagus, stomach, and duodenum. A thin flexible endoscope with a camera is inserted through the mouth, allowing inspection of the mucosa from inside. The procedure detects gastritis, ulcers, tumors, esophageal varices, and reflux esophagitis. When indicated, biopsy and Helicobacter pylori testing are performed. At our clinic, gastroscopy is done with local anesthesia and, at the patient's request, with sedation. Preparation is straightforward: no food or drink for 8 hours before the procedure. After the procedure, the patient receives photo or video material along with a written report."
+    },
+    "orthopedics-consultation": {
+      "name": "Orthopedic and trauma consultation",
+      "description": "An orthopedic appointment for the diagnosis of musculoskeletal disorders and injuries. The orthopedist treats osteochondrosis, intervertebral disc herniation, osteoarthritis, post-traumatic conditions, flat feet, postural disorders in children, and foot deformities. During the visit, the doctor performs an orthopedic exam assessing joint range of motion, muscle strength, and neurological status. Imaging (X-ray, MRI, or CT) is ordered when needed to clarify the diagnosis. Suitable for athletes, office workers with chronic back pain, elderly patients with arthritis, and parents wanting an assessment of their child's posture and feet."
+    },
+    "orthopedics-joint-injection": {
+      "name": "Intra-articular injection",
+      "description": "An intra-articular injection is an effective way to relieve inflammation and pain in arthritis, bursitis, and tendinitis. Depending on indications, corticosteroids, hyaluronic acid, or platelet-rich plasma may be used. The procedure is performed by an orthopedist under sterile conditions, using anatomical landmarks or ultrasound guidance to ensure accurate needle placement. The procedure takes 30 to 45 minutes. After the injection, joint loading should be limited for 24 hours. The therapeutic effect develops gradually over 5 to 10 days. A course of 3 to 5 injections every 7 to 14 days is typically required."
+    },
+    "diagnostics-mri": {
+      "name": "MRI scan",
+      "description": "Magnetic resonance imaging is a high-precision method for visualizing soft tissues: brain and spinal cord, joints, internal organs, and blood vessels. MRI does not use ionizing radiation, making it safe for most patients. The scan takes 30 to 60 minutes depending on the area examined. The patient lies still inside the scanner; for those with claustrophobia, mild sedation is possible by prior arrangement with the doctor. Reports are produced by a radiologist with detailed findings and comparison with prior studies when available. Preparation depends on the area of the body — details are provided when booking."
+    },
+    "diagnostics-blood-panel-full": {
+      "name": "Comprehensive blood panel",
+      "description": "A comprehensive lab profile to assess overall health. The package includes a complete blood count with differential and ESR, biochemistry (glucose, total protein, bilirubin, ALT, AST, creatinine, urea, cholesterol and lipid profile), iron metabolism markers, and TSH. Blood is drawn in the morning on an empty stomach by a qualified nurse in comfortable conditions. Results are ready within one business day and available by email or in your personal account. Interpretation by a therapist is included on request — the doctor will walk you through each marker and advise whether further investigation is needed."
+    }
+  },
+  "doctors": {
+    "karimov-sherzod-alisherovich": {
+      "name": "Karimov Sherzod Alisherovich",
+      "specialty": "Cardiologist, top category",
+      "education": "Graduated with honors from the Tashkent Medical Academy in 2003. Completed his clinical residency in cardiology at the Republican Specialized Scientific and Practical Medical Center of Cardiology named after Academician V. Vakhidov. Regularly attends clinical fellowships at hospitals in Turkey and Germany.",
+      "achievements": "Certified specialist in echocardiography and non-invasive cardiac diagnostics. Participant of European Society of Cardiology (ESC) congresses. Author of more than 15 scientific publications in national medical journals.",
+      "bio": "Sherzod Alisherovich is a cardiologist with 22 years of clinical experience. He specializes in the diagnosis and management of ischemic heart disease, arterial hypertension, arrhythmias, and heart failure. He is fluent in echocardiography techniques and Holter monitor interpretation. He treats every patient with focused attention — listening carefully to concerns, explaining test results in plain language, and helping patients understand the cause of their condition. He maintains long-term follow-up with many patients, adjusting therapy as needed over the years. He sees both adult patients with new symptoms and those returning for routine review of blood pressure and heart rhythm. He places particular emphasis on cardiovascular prevention and patient education on self-monitoring."
+    },
+    "yuldasheva-dilnoza-bahtiyorovna": {
+      "name": "Yuldasheva Dilnoza Bahtiyorovna",
+      "specialty": "Pediatrician, first category",
+      "education": "Graduated from the pediatrics faculty of the Tashkent Pediatric Medical Institute in 2008. Completed residency in pediatrics and additional courses in pediatric allergy and immunology. Regularly attends WHO educational programs on vaccine prevention.",
+      "achievements": "Member of the Pediatric Society of Uzbekistan. Certified specialist in neonatal neurology. Regular speaker at the clinic's parent seminars on vaccination and early childhood development.",
+      "bio": "Dilnoza Bahtiyorovna is a pediatrician with 17 years of experience caring for children from newborns through adolescence. The cornerstone of her approach is patience and building trust with both the young patient and the parents. She takes the time to let the child get comfortable and examines them in a relaxed, unhurried environment. She specializes in the care of infants and toddlers, first-year well-child checks, neuropsychological development assessments, and support for breastfeeding and the introduction of complementary foods. She is actively involved in vaccination, helping parents build an individual schedule that takes the child's health profile into account. She follows children with chronic conditions such as atopic dermatitis and food allergy, and frequently provides additional consultations by phone for the parents of her younger patients."
+    },
+    "nazarov-alisher-rustamovich": {
+      "name": "Nazarov Alisher Rustamovich",
+      "specialty": "Neurologist, top category",
+      "education": "Graduated from the Samarkand State Medical Institute in 1998. Completed clinical residency in neurology and a postgraduate program with a defended PhD thesis on cerebrovascular disease. Trained at hospitals in Moscow and Istanbul.",
+      "achievements": "PhD in Medicine. Member of the Association of Neurologists of Uzbekistan. Specialist in the diagnosis and treatment of cerebrovascular disease and chronic pain syndromes. Author of several scientific papers on post-stroke rehabilitation.",
+      "bio": "Alisher Rustamovich is a neurologist with 25 years of clinical experience. He specializes in the diagnosis and treatment of headaches, vertigo, sleep disorders, post-stroke and post-traumatic conditions, and chronic neck and back pain syndromes. His approach is clinical and evidence-based: each case is worked up without templates, drawing on a complete history and full neurological exam. Alisher Rustamovich rarely orders \"just-in-case\" investigations — only what is genuinely needed for diagnosis. He actively manages patients with chronic migraine, helping them find effective preventive therapy. He regularly speaks at conferences and mentors the clinic's junior specialists. He pays particular attention to post-stroke rehabilitation, designing individual recovery programs for each patient."
+    },
+    "tursunova-malika-shavkatovna": {
+      "name": "Tursunova Malika Shavkatovna",
+      "specialty": "Obstetrician-gynecologist",
+      "education": "Graduated from the medical faculty of the Tashkent Medical Academy in 2010. Completed residency in obstetrics and gynecology at the Republican Perinatal Center. Earned a certificate in aesthetic gynecology in 2018.",
+      "achievements": "Certified specialist in obstetric and gynecological ultrasound. Member of the Uzbek Association of Obstetricians and Gynecologists. Trained in WHO programs on women's reproductive health.",
+      "bio": "Malika Shavkatovna is an obstetrician-gynecologist with 14 years of experience. She sees women of all ages — from teenagers with their first questions about menstruation to patients in menopause. She creates a comfortable, trusting atmosphere because she understands how sensitive these topics can be. She specializes in pregnancy management, preventive examinations, treatment of inflammatory conditions, menstrual cycle disorders, and hormonal contraception. She places particular emphasis on early detection of cervical pathology and on tailoring follow-up plans to each patient. Malika Shavkatovna performs pelvic ultrasound directly during the appointment, saving patients time. She actively counsels women on family planning and pre-pregnancy preparation."
+    },
+    "ismailov-bobur-uktamovich": {
+      "name": "Ismailov Bobur Uktamovich",
+      "specialty": "Urologist-andrologist",
+      "education": "Graduated from the medical faculty of the Andijan State Medical Institute in 2005. Completed urology residency. In 2015, earned an additional specialization in andrology and reproductive medicine in Almaty.",
+      "achievements": "Member of the European Association of Urology (EAU). Certified specialist in urodynamics and endoscopic surgery. Regular participant in international urology conferences.",
+      "bio": "Bobur Uktamovich is a urologist-andrologist with 19 years of clinical experience. He treats both men and women with disorders of the urinary and reproductive systems — from acute infections to chronic conditions. He specializes in urolithiasis, prostatitis, benign prostatic hyperplasia, male infertility, and erectile dysfunction. His practice is grounded in evidence-based medicine — he avoids unnecessary tests and explains the rationale for each step. He pays particular attention to the psychological side of the visit: he understands that many men delay urological care because of embarrassment, so he keeps the conversation tactful and non-judgmental. In the clinic, Bobur Uktamovich actively uses uroflowmetry and ultrasound diagnostics during the appointment itself, allowing decisions to be made promptly."
+    },
+    "rakhimova-zuhra-azizovna": {
+      "name": "Rakhimova Zuhra Azizovna",
+      "specialty": "Dermatologist-cosmetologist",
+      "education": "Graduated from the Bukhara State Medical Institute in 2014. Completed residency in dermatology and venereology. Earned certificates in aesthetic dermatology and laser technologies in Istanbul and Seoul.",
+      "achievements": "Member of the Uzbek Society of Dermatologists. Certified specialist in dermatoscopy and injectable techniques. Regularly trains under leading Korean and Turkish dermatologists.",
+      "bio": "Zuhra Azizovna is a dermatologist-cosmetologist with 11 years of experience. She combines classical dermatology (treatment of acne, eczema, psoriasis, fungal infections) with aesthetic procedures — laser treatment of vascular networks and pigmentation, post-acne scar resurfacing, and injectable techniques. She places particular emphasis on dermatoscopic monitoring of moles and other skin lesions, allowing early detection of melanoma and other malignant changes. Zuhra Azizovna never prescribes aggressive therapy when it is not warranted — her approach favors stepwise treatment with regular review. She actively manages patients with chronic acne, helping them achieve stable control of breakouts. She also runs educational sessions for teenagers on caring for problematic skin."
+    },
+    "mirzayev-jasur-saidovich": {
+      "name": "Mirzayev Jasur Saidovich",
+      "specialty": "Ophthalmologist",
+      "education": "Graduated from the Tashkent Medical Academy in 2009. Completed residency in ophthalmology and a fellowship in pediatric ophthalmology at the Tashkent Research Institute of Eye Diseases. Regularly takes refresher courses internationally.",
+      "achievements": "Certified specialist in pediatric ophthalmology and orthokeratology lens fitting. Member of the Association of Ophthalmologists of Uzbekistan. Active participant in the annual ophthalmology congress.",
+      "bio": "Jasur Saidovich is an ophthalmologist with 16 years of experience, working with adults and children from age three. He pays particular attention to the early diagnosis of school-age myopia and to selecting the right correction options — glasses, soft contact lenses, or overnight orthokeratology lenses. He sees patients with vision deterioration, headaches, eye dryness, and allergic reactions. Each appointment includes a full exam: visual acuity with refraction, tonometry, slit-lamp biomicroscopy, and fundus examination. Jasur Saidovich explains in simple terms how parents can protect their child's vision, what visual loads are appropriate, and when urgent care is warranted. He also follows patients with age-related vision changes and fits progressive lenses."
+    },
+    "kasymova-feruza-tahirovna": {
+      "name": "Kasymova Feruza Tahirovna",
+      "specialty": "General dentist",
+      "education": "Graduated from the dental faculty of the Tashkent State Dental Institute in 2011. Completed specialization in aesthetic restoration and microscopic dentistry in Moscow and Istanbul.",
+      "achievements": "Certified specialist in dental microscope work. Expert in aesthetic restoration of anterior teeth. Trained in Bioclear direct restoration systems.",
+      "bio": "Feruza Tahirovna is a general dentist with 13 years of experience, specializing in aesthetic dentistry and dental-microscope work. She treats caries and its complications and performs artistic restorations of anterior teeth that reproduce the natural anatomy and shade of enamel. She places particular emphasis on a minimally invasive approach — preserving as much healthy tooth tissue as possible. She is especially careful with patients who have dental anxiety: she explains every step in detail, uses modern anesthesia techniques, and never rushes. She performs professional cleanings with the Air Flow system and fluoridation. She regularly maintains long-term follow-up with patients, with particular attention to oral hygiene and the selection of home-care products."
+    },
+    "usmanov-ravshan-makhmudovich": {
+      "name": "Usmanov Ravshan Makhmudovich",
+      "specialty": "Oral surgeon, implantologist",
+      "education": "Graduated from the Tashkent State Dental Institute in 2003. Completed clinical residency in oral surgery and numerous international courses in implantology in Switzerland, South Korea, and Germany.",
+      "achievements": "Certified implantologist for the Straumann, Osstem, and MIS systems. Member of the International Team for Implantology (ITI). Has placed more than 2,000 dental implants in his career.",
+      "bio": "Ravshan Makhmudovich is an oral surgeon and implantologist with 20 years of experience and one of the clinic's leading specialists in dental implantation. He places single implants, performs All-on-4 and All-on-6 protocols for full-arch restoration, and carries out bone augmentation and sinus lifting when bone volume is insufficient. At the initial consultation, Ravshan Makhmudovich explains the treatment plan in detail based on CT imaging and the patient's budget, and he does not insist on the most expensive systems when suitable alternatives exist. He treats every case individually, taking occlusion, soft-tissue condition, and aesthetic preferences into account. He pays particular attention to postoperative follow-up — every patient receives the doctor's direct contact for prompt communication during the early days after implantation."
+    },
+    "nuriddinova-nigora-shavkatovna": {
+      "name": "Nuriddinova Nigora Shavkatovna",
+      "specialty": "Endocrinologist",
+      "education": "Graduated from the Tashkent Medical Academy in 2010. Completed residency in endocrinology at the Republican Specialized Scientific and Practical Medical Center of Endocrinology. Regularly trains under International Diabetes Federation programs.",
+      "achievements": "Member of the Endocrinology Association of Uzbekistan. Certified specialist in insulin pumps and continuous glucose monitoring systems. Expert in thyroidology.",
+      "bio": "Nigora Shavkatovna is an endocrinologist with 15 years of experience. She specializes in the management of patients with type 1 and type 2 diabetes, thyroid disease, lipid metabolism disorders, and reproductive endocrinology. She sees her role not only as choosing medications, but as teaching patients to manage their condition independently — counting carbohydrate units, interpreting glucose readings, and adjusting insulin therapy. During the appointment, she performs thyroid ultrasound herself, which significantly speeds up diagnosis. She devotes considerable time to the educational part of the consultation, explaining biochemical processes in simple language. She pays particular attention to pregnant women with gestational diabetes and to patients with newly diagnosed diabetes — she follows these cases especially closely during the first months of care."
+    },
+    "tashpulatov-shokhrukh-bakhtiyorovich": {
+      "name": "Tashpulatov Shokhrukh Bakhtiyorovich",
+      "specialty": "Gastroenterologist-endoscopist",
+      "education": "Graduated from the medical faculty of the Tashkent Medical Academy in 2007. Completed residency in internal medicine and specialization in gastroenterology. Completed a fellowship in endoscopy at Seoul National University Hospital.",
+      "achievements": "Certified specialist in endoscopic studies of the digestive tract. Member of the European Society of Gastrointestinal Endoscopy (ESGE). Expert in the diagnosis and treatment of Helicobacter pylori infection.",
+      "bio": "Shokhrukh Bakhtiyorovich is a gastroenterologist-endoscopist with 18 years of experience. He combines a clinical practice with hands-on endoscopy — this lets him see the whole picture of a digestive condition from the first complaint to the final diagnosis. He specializes in the management of gastroesophageal reflux disease, chronic gastritis, peptic ulcer disease, irritable bowel syndrome, and hepatobiliary conditions. He personally performs gastroscopy with biopsy and Helicobacter pylori testing. Shokhrukh Bakhtiyorovich explains examination findings to each patient in detail, showing the images and pointing out what they reveal. He places particular emphasis on dietary recommendations, knowing that half of the success in gastroenterology lies in adjusting nutrition and lifestyle."
+    },
+    "khodjayeva-gulchehra-rustamovna": {
+      "name": "Khodjayeva Gulchehra Rustamovna",
+      "specialty": "Therapist, top category",
+      "education": "Graduated from the medical faculty of the Tashkent State Medical Institute in 1996. Completed clinical residency in internal medicine and many years of practice at major hospitals in the capital. Holds an additional specialization in geriatrics.",
+      "achievements": "Member of the Association of General Practitioners of Uzbekistan. Certified in family medicine. Many years of experience managing complex multimorbid cases in elderly patients.",
+      "bio": "Gulchehra Rustamovna is a general practitioner with 28 years of clinical experience. She is one of the clinic's most experienced specialists in adult medicine across all age groups. She pays particular attention to the management of older patients with multiple chronic conditions — arterial hypertension, diabetes, ischemic heart disease, osteoarthritis, and COPD. At each appointment, she reviews every medication the patient is taking and helps optimize the regimen, eliminating duplications and unwanted interactions. Patients who are tired of being shuttled between specialists often turn to her — Gulchehra Rustamovna takes on the coordinator role and helps build a clear plan of investigation. She has a reputation as an attentive, calm doctor who never rushes a patient."
+    },
+    "pulatov-sardor-anvarovich": {
+      "name": "Pulatov Sardor Anvarovich",
+      "specialty": "Orthopedic and trauma surgeon",
+      "education": "Graduated from the medical faculty of the Tashkent Medical Academy in 2000. Completed clinical residency in orthopedics and trauma surgery at the Republican Scientific and Practical Center of Traumatology. Trained in arthroscopy in Turkey and Germany.",
+      "achievements": "Certified specialist in knee and shoulder arthroscopy. Member of the Uzbek Association of Orthopedic and Trauma Surgeons. Expert in major-joint endoprosthetics.",
+      "bio": "Sardor Anvarovich is an orthopedic and trauma surgeon with 24 years of experience, specializing in both conservative and surgical management of musculoskeletal disorders and injuries. His main areas are diagnosis and treatment of large-joint osteoarthritis, sequelae of sports injuries, chronic neck and back pain, flat feet in children and adults, and postural disorders. During appointments, he personally performs intra-articular injections with hyaluronic acid, platelet-rich plasma therapy, and nerve blocks. Sardor Anvarovich actively uses ultrasound guidance for injections to improve accuracy. Before recommending surgery, he always exhausts the conservative options and discusses risks and expected outcomes with the patient in detail. He treats athletes, office workers with chronic low-back pain, and elderly patients with knee and hip osteoarthritis."
+    },
+    "azimova-shahnoza-davronovna": {
+      "name": "Azimova Shahnoza Davronovna",
+      "specialty": "Radiologist, MRI specialist",
+      "education": "Graduated from the medical faculty of the Tashkent Medical Academy in 2012. Completed residency in radiology at the Tashkent Institute of Postgraduate Medical Education. Regularly trains in new MRI protocols.",
+      "achievements": "Certified specialist in MRI of all body areas. Member of the European Society of Radiology (ESR). Expert in neuroradiology and musculoskeletal imaging.",
+      "bio": "Shahnoza Davronovna is a radiologist with 12 years of experience and the clinic's leading specialist in magnetic resonance imaging. She reports studies of all areas: brain and spinal cord, joints, pelvis, abdomen, and soft tissues. She places particular emphasis on the diagnosis of neuroradiological conditions — multiple sclerosis, brain tumors, and post-stroke changes. She approaches each study thoughtfully: reviewing the history, comparing with prior imaging, and describing findings in detail with their clinical relevance. Shahnoza Davronovna actively consults with the clinic's referring doctors on complex cases and recommends additional protocols when needed. During appointments, she always shows the patient their images and explains the findings in plain terms."
+    },
+    "qosimov-akmal-tolkinovich": {
+      "name": "Qosimov Akmal Tolkinovich",
+      "specialty": "General practitioner",
+      "education": "Graduated from the medical faculty of the Tashkent Medical Academy in 2017. Completed residency in internal medicine. Holds additional specializations in family medicine and sports medicine.",
+      "achievements": "Certified specialist in family medicine. Completed international courses in evidence-based medicine and sports cardiology. Active participant in professional online communities focused on evidence-based medicine.",
+      "bio": "Akmal Tolkinovich is a young, energetic general practitioner with 9 years of clinical experience. His approach is modern and evidence-based: he relies on international clinical guidelines and avoids prescribing medications without proven efficacy. He sees adult patients of all ages and is particularly popular with young working professionals for his structured, detailed consultations and written treatment plans. He specializes in the management of arterial hypertension, metabolic syndrome, dyslipidemia, and seasonal infections. He actively works evening hours, which is convenient for office workers who come in after work. He devotes significant time to non-pharmacological measures — lifestyle modification, nutrition, and physical activity. He builds long-term partnerships with his patients through regular follow-up."
+    }
+  },
+  "news": {
+    "clinic-opens-new-pediatric-wing": {
+      "title": "ShaxKlinika opens its renovated pediatric wing",
+      "excerpt": "Starting April 12, the clinic's fully renovated pediatric wing opened with a spacious play area and three pediatrician offices.",
+      "body": "We are pleased to announce that the fully renovated pediatric wing of ShaxKlinika opened this April. The clinic's second floor now hosts three spacious pediatrician offices, a separate procedure room for vaccinations and blood draws, and a large play area for our young patients with books and educational toys.\n\nWhen designing the wing, we took the input of parents and pediatricians into account. The offices are decorated in calm pastel tones and equipped with modern stadiometers and scales for children of all ages, and every appointment offers a dedicated changing table for our smallest patients. Sound insulation in the rooms means parents with infants don't have to worry about keeping things quiet during exams.\n\nAppointments in the new wing are run by experienced pediatricians, including Yuldasheva Dilnoza Bahtiyorovna with 17 years of clinical experience. The team also welcomes pediatric ophthalmologist Mirzayev Jasur Saidovich and a visiting pediatric neurologist. This means parents can complete all the main check-ups in one place, without travelling between clinics.\n\nWe have also introduced a \"Children's Health Day\" service — a complete pediatric assessment in a single visit, including a pediatrician consultation, examinations by specialists, lab work, and abdominal ultrasound. The service is especially popular before the start of the school year and ahead of nursery enrollment.\n\nBookings for the new wing are now open. The pediatricians' schedules can be confirmed with the receptionists or a convenient slot can be reserved through the form on our website."
+    },
+    "free-cardio-screening-day": {
+      "title": "Free cardio screening day — March 28",
+      "excerpt": "As part of Heart Health Month, the clinic ran a free diagnostic day — over 200 people attended.",
+      "body": "On Saturday, March 28, ShaxKlinika held a Free Cardiac Screening Day. Anyone could walk in without an appointment or fee for a basic cardiovascular check — blood pressure measurement, a resting ECG, and a brief cardiologist consultation with interpretation of the results.\n\nMore than 200 people were screened over the course of the day. A significant portion of visitors had previously undiagnosed conditions — elevated blood pressure or specific arrhythmias requiring further investigation. All such patients received a free follow-up appointment with our cardiologists for a more detailed evaluation, including Holter monitoring or echocardiography.\n\nKarimov Sherzod Alisherovich, top-category cardiologist and the event's coordinator, noted: \"Many people live with high blood pressure for years without knowing it. Early detection of hypertension and choosing the right therapy is a direct path to reducing the risk of stroke and heart attack down the line.\" He added that the clinic plans to make these screening days a regular event — the next is scheduled for the autumn.\n\nAmong our other initiatives is an educational program for patients with established ischemic heart disease. The clinic is ready to teach patients, free of charge, how to monitor their own blood pressure and pulse, the proper technique for taking medications, and how to act during a hypertensive crisis.\n\nFollow our social media for upcoming announcements — the next free initiative will focus on endocrine disease and will take place on World Diabetes Day."
+    },
+    "winter-flu-prevention-tips": {
+      "title": "How to protect yourself from the flu this winter",
+      "excerpt": "Winter is peak season for viral respiratory infections. ShaxKlinika's general practitioner shares evidence-based ways to prevent flu and other respiratory illnesses.",
+      "body": "Winter is traditionally accompanied by a rise in cases of influenza and other acute respiratory viral infections. Despite Tashkent's relatively mild winters, the risk of widespread outbreaks remains high — especially in public places, transport, schools, and offices.\n\nThe primary specific prevention method is annual vaccination. Modern flu vaccines cover four currently circulating virus strains and provide protection two to three weeks after the shot. Vaccination is particularly recommended for children, adults over 65, pregnant women, and patients with chronic conditions such as diabetes, COPD, and heart failure. At our clinic, vaccinations use certified imported preparations and are always preceded by a mandatory examination by a general practitioner.\n\nNon-specific protective measures matter just as much. These include regular hand washing with soap, hand sanitizer after touching surfaces in public spaces, ventilating rooms several times a day, and maintaining comfortable indoor humidity. At the first symptoms of a respiratory infection — runny nose, cough, sore throat, fever — it's best to stay home and avoid public places to prevent spreading the virus.\n\nAntiviral medications are a separate topic. Most heavily advertised products lack proven efficacy. Genuine benefit during the flu comes only from neuraminidase inhibitors, and only when started within the first 48 hours of symptoms. These should be prescribed by a doctor — self-prescription is not justified.\n\nIf your fever exceeds 38.5 °C for more than three days, or if you develop shortness of breath, chest pain, or severe weakness, seek medical care immediately. These can be signs of complications that require active treatment."
+    },
+    "dental-implant-technology-update": {
+      "title": "New technologies in dental implantation",
+      "excerpt": "ShaxKlinika has implemented digital implant planning with CT imaging and 3D modelling for greater accuracy.",
+      "body": "In February, the dental team at ShaxKlinika completed the rollout of a new digital protocol for dental implantation. Implant placement is now planned using CT imaging of the jaw and three-dimensional surgical modelling on specialized software.\n\nBefore the procedure, we obtain a detailed CT scan of the implant zone, which is used to build a virtual model of the patient's jaw. The implant surgeon can determine the optimal position, angle, and depth of each implant in advance, taking into account the location of nerves, maxillary sinuses, and vascular structures. From the virtual plan, an individualized surgical guide can be fabricated — fitted onto the jaw during the procedure, it directs the instrument along the precise planned trajectory.\n\nThis approach offers several important advantages. The risk of damage to the inferior alveolar nerve and other anatomical structures is reduced, implant stability in bone is improved, and the surgical trauma is minimized. For the patient, this means faster healing, less swelling after the procedure, and fewer complications.\n\nUsmanov Ravshan Makhmudovich, the clinic's leading implantologist, has completed dedicated training on the new system and has already used it in more than fifty cases over the past month. According to him, implant positioning accuracy has improved substantially compared with the classical technique.\n\nDigital planning is especially valuable in complex cases — implant placement in zones with insufficient bone, All-on-4 and All-on-6 protocols, and sinus lifting. At the free initial consultation, we determine how much your case will benefit from digital planning and propose the optimal treatment plan."
+    },
+    "women-health-week-2026": {
+      "title": "Women's Health Week at ShaxKlinika",
+      "excerpt": "From March 8 to 14 the clinic is running a special initiative for women — comprehensive screening with discounts on ultrasound and lab work.",
+      "body": "To mark International Women's Day, ShaxKlinika is announcing Women's Health Week from March 8 to 14. Throughout the week, women can undergo a comprehensive gynecological screening on special terms.\n\nThe program includes: an obstetrician-gynecologist consultation with examination on the gynecological chair, sample collection for flora and oncocytology, pelvic ultrasound, a mammologist consultation, and breast ultrasound. An extended hormonal panel is also available at a special price for women planning pregnancy or in perimenopause.\n\nThe clinic's lead gynecologist Tursunova Malika Shavkatovna reminds us: \"Regular gynecological screening is the best form of prevention. The majority of serious conditions of the female reproductive system can be caught at an early, fully treatable stage. Cytological testing in particular can reveal pre-cancerous changes in the cervix years before they develop into cancer.\"\n\nThis year we are placing particular emphasis on the reproductive health of younger women — from adolescence through pregnancy planning. Malika Shavkatovna and her colleagues will run a series of free educational talks on Saturday and Sunday — registration is open through the clinic's reception.\n\nFor women over 40 the program additionally includes bone densitometry and an endocrinology consultation on hormonal support during perimenopause. All procedures take place in our women-only consulting rooms in the most comfortable setting possible.\n\nRegistration for Women's Health Week is now open — secure your preferred slot early."
+    },
+    "new-mri-machine-installation": {
+      "title": "A new MRI scanner has been installed at the clinic",
+      "excerpt": "In December a modern MRI scanner with improved image quality went online in ShaxKlinika's diagnostic department.",
+      "body": "In December, ShaxKlinika's diagnostic department completed the installation and commissioning of a new 1.5 Tesla MRI scanner. The new system replaces previous-generation equipment and significantly broadens our diagnostic capabilities.\n\nThe new scanner produces higher-quality images and shortens scan times — a standard brain MRI or single-region spine study now takes 25 to 30 minutes instead of the previous 45. This is especially important for patients with claustrophobia or those who find it difficult to remain still for long periods. The bore of the scanner is wider and shorter, noticeably improving comfort during the exam.\n\nThe scanner enables specialized MRI protocols — diffusion-weighted imaging for the early diagnosis of stroke, MR cholangiopancreatography without contrast, and MR angiography for assessment of brain and neck vessels. Joint imaging with high cartilage detail is also available, which is critical for diagnosing early-stage osteoarthritis and sports injuries.\n\nAll studies are reported by radiologist Azimova Shahnoza Davronovna, who has 12 years of clinical experience. The report is delivered the same day; in complex cases or where an urgent result is needed, the report is provided within two hours of the scan.\n\nMRI appointments can be booked through the website or by calling the clinic. Before the scan, please remove all metal items and inform us about any implants, pacemakers, or tattoos — these may affect whether the procedure can be performed."
+    },
+    "vaccination-schedule-children-2026": {
+      "title": "Children's vaccination schedule for 2026",
+      "excerpt": "Our pediatrician has prepared an updated routine vaccination calendar with notes for each age stage.",
+      "body": "With the new year, many parents wonder which vaccines a child needs and at what age. ShaxKlinika pediatrician Yuldasheva Dilnoza Bahtiyorovna has prepared an updated practical immunization calendar based on Uzbekistan's National Immunization Schedule and World Health Organization recommendations.\n\nWithin the first 12 hours of life, the newborn receives a hepatitis B vaccine. Between days 3 and 7, the BCG vaccine for tuberculosis is given. By two months of age, the child receives the first doses of vaccines against polio, diphtheria, tetanus, pertussis, and Haemophilus influenzae type B. At six months, the second dose of hepatitis B and the third dose of polio are added.\n\nAt one year of age, vaccines for measles, rubella, and mumps are administered. At 18 months — the first booster against diphtheria, tetanus, pertussis, and polio. At six years — the second booster. At 14 years, children receive a booster against diphtheria and tetanus, as well as the second BCG dose.\n\nIn addition to the calendar vaccines, we recommend further vaccines with proven efficacy: yearly influenza vaccination from six months of age, varicella vaccine at one year, rotavirus vaccine starting at two months, pneumococcal vaccine, and human papillomavirus vaccine for adolescents from age 9.\n\nBefore every vaccination at our clinic, the pediatrician performs a mandatory examination assessing the child's general condition, taking the temperature, and reviewing recent history. After the shot, the child stays under the doctor's observation for 30 minutes to rule out the rare immediate reactions. All vaccines we use are quality-certified and stored under strict temperature control."
+    },
+    "diabetes-awareness-month": {
+      "title": "November — Diabetes Awareness Month",
+      "excerpt": "Our endocrinologist talks about the warning signs of diabetes and the importance of early detection.",
+      "body": "November is observed worldwide as a month dedicated to combating diabetes mellitus — a condition affecting millions and often going unnoticed for years. ShaxKlinika endocrinologist Nuriddinova Nigora Shavkatovna reminds us of the warning signs and the importance of timely screening.\n\nType 2 diabetes develops gradually and may produce no clear symptoms for many years. By the time of diagnosis, many patients already have early complications — kidney involvement, retinal changes, or peripheral nerve damage. That's why preventive blood-sugar testing is essential for all adults, especially those with overweight, a sedentary lifestyle, a family history of diabetes, or women who had gestational diabetes during pregnancy.\n\nWarning signs to watch for: persistent thirst, frequent and copious urination, increased fatigue, slow healing of small cuts and wounds, itchy skin (especially in the genital area), reduced visual acuity, and numbness or tingling in the feet. If any of these appear, we recommend testing fasting glucose and glycated hemoglobin (HbA1c).\n\nDuring this awareness month, the clinic is running a special program: for all new patients with suspected diabetes, an initial endocrinology consultation including blood glucose, HbA1c, and basic biochemistry is offered on preferential terms. After diagnosis, we help patients build a complete plan — from selecting therapy to learning self-monitoring of blood sugar.\n\nWe place particular emphasis on patient education. Patients with newly diagnosed diabetes receive an individual session with the endocrinologist and nurse covering glucometer technique, insulin therapy rules (where indicated), carbohydrate counting, and dietary principles. Knowing these basics is half the battle in long-term management of the disease."
+    },
+    "eye-health-screen-time-tips": {
+      "title": "Eye health in the age of screens",
+      "excerpt": "Our ophthalmologist shares practical tips for protecting your vision when you spend a lot of time on computers and smartphones.",
+      "body": "The modern person spends a significant portion of the day looking at the screens of computers, tablets, and smartphones. This places a new kind of strain on our visual system, one that evolution did not prepare us for. The result is computer vision syndrome, which manifests as eye dryness and irritation, headaches, blurred vision, and general fatigue by the end of the day.\n\nShaxKlinika ophthalmologist Mirzayev Jasur Saidovich reminds us of the simple but effective \"20-20-20\" rule: every twenty minutes of screen work, take a twenty-second break and look at an object about six metres away. This shifts focus and relaxes the eye muscles. Throughout the working day, try to take full five-minute breaks every hour — get up, step away from your desk, and look out the window into the distance.\n\nThe physical setup matters too. Position your monitor so that its centre is at or just below eye level, about an arm's length away. Lighting in the room should be soft and produce no glare on the screen. Adjust contrast and brightness so that the screen does not appear excessively bright relative to the surrounding environment. Modern devices offer an \"eye protection\" mode that reduces blue light — particularly useful in the evening.\n\nIf your eyes often feel dry, try preservative-free moisturizing drops. Blinking frequency drops several times when working at a screen, so the tear film evaporates faster than usual. A small humidifier near your desk also helps — especially in winter, when central heating dries out the air.\n\nFor children and teenagers it is especially important to limit screen time and ensure plenty of time outdoors. Daylight walks, as modern research shows, slow the progression of myopia at this age. And do schedule a yearly preventive ophthalmology exam — even without symptoms, many issues are only revealed by instrumental testing."
+    },
+    "dermatologist-acne-treatment-guide": {
+      "title": "A modern approach to acne treatment",
+      "excerpt": "Our dermatologist debunks myths about acne and explains evidence-based ways to manage the condition.",
+      "body": "Acne is one of the most common dermatological conditions, affecting not only teenagers but adults as well. Despite the topic's popularity on social media, real acne treatment is grounded in evidence-based medicine, not in advice from influencers. ShaxKlinika dermatologist Rakhimova Zuhra Azizovna shares a professional perspective on the problem.\n\nThe first and most important myth is that acne can be cured simply by washing more often or using more aggressive products. In fact, excessive washing damages the skin's natural protective barrier and can worsen inflammation. The modern approach is gentle cleansing once or twice a day with a mild sulfate-free cleanser and regular moisturization with light, oil-free creams.\n\nThe second misconception is that adult acne calls for the same products as teenage acne. Not so. Adult acne, particularly in women, is often hormonally driven and requires a comprehensive approach — assessment of hormonal status, sometimes a referral to an endocrinologist, and an individualized regimen of topical and systemic treatments.\n\nEvidence-based methods for treating acne include topical retinoids (adapalene, tretinoin), topical antibiotics combined with benzoyl peroxide, azelaic acid, and for moderate-to-severe disease, courses of systemic antibiotics or systemic retinoids (isotretinoin). The latter are used under strict indications and under dermatologist supervision with regular lab monitoring.\n\nIt's important to understand that treating acne is always a long process. Visible improvements typically appear after 4 to 8 weeks of consistent use of the chosen regimen. Stopping treatment at the first sign of improvement is not a good idea — this often leads to relapse. Post-acne scarring and pigmentation, once the inflammatory process is stable, can be effectively treated with laser procedures and mesotherapy. So if your skin is troubling you, don't self-treat — book a dermatology consultation."
+    },
+    "family-medicine-package-launch": {
+      "title": "Launch of the \"Family Medicine\" package",
+      "excerpt": "The clinic introduces a year-long family medical-care program with a fixed price and an extended set of services.",
+      "body": "In February we are launching a new program — the \"Family Medicine\" package, designed for year-round medical care of an entire family. The program was developed in response to requests from patients who have been managing their health at ShaxKlinika for several years and would like a simpler way to interact with the clinic.\n\nThe package covers unlimited consultations with the family general practitioner for one year, two preventive examinations per year for every member of the family with basic lab work and imaging studies, consultations with the clinic's specialists (pediatrician, cardiologist, endocrinologist, gynecologist) when medically indicated at no additional charge, an emergency telephone consultation with the family doctor at any time of day, and routine childhood vaccinations.\n\nEach family is assigned a personal family doctor — meaning a single specialist knows the medical history of all family members, sees the shared hereditary risks, and can offer a coordinated plan. General practitioner Qosimov Akmal Tolkinovich, who is coordinating the program, notes: \"Family medicine is not about treating symptoms — it's about preserving the long-term health of the whole family. When I know the parents' history, I better understand the child's risks, and vice versa.\"\n\nThe package is particularly suited to families with young children, elderly relatives, or patients with chronic conditions requiring regular follow-up. The price is calculated individually based on family composition and the number of members. At the first meeting, the family doctor performs a comprehensive examination of every participant and prepares a yearly preventive-care plan.\n\nFor those not yet ready for an annual package, we continue to offer pay-per-service options under our standard price list. Registration for a free orientation meeting and price calculation is open — please contact the clinic's receptionist or use the form on our website."
+    },
+    "partnership-with-tashkent-medical-academy": {
+      "title": "Partnership with the Tashkent Medical Academy",
+      "excerpt": "The clinic has signed a scientific and clinical cooperation agreement with one of the country's leading medical universities.",
+      "body": "In December, ShaxKlinika signed an agreement on scientific and clinical cooperation with the Tashkent Medical Academy — one of Uzbekistan's leading medical universities. The partnership covers several directions and aims to improve the quality of medical care and to support the training of the next generation of doctors.\n\nUnder the agreement, the clinic becomes a teaching site for senior students and resident physicians from the academy, working under the supervision of our experienced specialists. This means young doctors gain the opportunity to work in a modern clinical environment using up-to-date protocols and equipment. For our part, we have a meaningful chance to participate in training the country's healthcare workforce.\n\nA separate strand is joint scientific work. We plan to take part in clinical studies run by the academy, share de-identified data for epidemiological research, and publish joint scientific papers. Neurologist Nazarov Alisher Rustamovich, PhD, will serve as ShaxKlinika's coordinator for the scientific program.\n\nIn the educational direction, joint seminars and roundtables for practicing city doctors are planned. Topics for the first events are already being discussed — modern approaches to managing patients with metabolic syndrome, new antihypertensive guidelines, and updates in pediatric vaccination. The seminars will be open to colleagues from other clinics and to primary-care physicians.\n\nFor our patients, this partnership means access to consultations with the academy's leading specialists in difficult clinical cases. If a situation calls for the opinion of an academic expert, we can quickly arrange a consultation with professors from the relevant departments without administrative red tape. The agreement enters into force on January 1 and is set for five years, with an option to extend."
+    }
+  },
+  "reviews": {
+    "r-001": {
+      "reviewerName": "Sherzod M.",
+      "text": "I saw Karimov Sherzod Alisherovich about high blood pressure. A very attentive doctor — he asked detailed questions, took my pressure on both arms, and did an ECG right there in the appointment. He explained which tests I needed to take and why. He prescribed treatment, and after two weeks of follow-up my pressure stabilized. Many thanks to the clinic for having such a competent cardiologist."
+    },
+    "r-002": {
+      "reviewerName": "Malika A.",
+      "text": "We've been seeing Dilnoza Bahtiyorovna since my daughter was born — she's two now. The doctor is wonderful — patient, attentive, and great with kids. When my daughter caught a cold, she explained everything in detail, wrote out the treatment plan, and called the next day to check how she was doing. That kind of follow-up is rare for a private clinic."
+    },
+    "r-003": {
+      "reviewerName": "Anna Mikhaylovna",
+      "text": "I had my teeth cleaned by Kasymova Feruza Tahirovna. The procedure was comfortable, with no discomfort. The doctor told me which products to use at home and showed me proper flossing technique. The only minor thing — I had to wait a bit because the previous appointment ran over. Overall a good experience."
+    },
+    "r-004": {
+      "reviewerName": "Dilfuza K.",
+      "text": "I had a pelvic ultrasound with Tursunova Malika Shavkatovna. The doctor is very tactful and professional, she explained everything thoroughly, showed it on the screen, and described what each thing was. The report was given immediately. The atmosphere in the room is calm — no feeling of being on a medical conveyor belt. I recommend the clinic to women looking for a gynecologist."
+    },
+    "r-005": {
+      "reviewerName": "Oleg P.",
+      "text": "I had been complaining of constant headaches for over six months. I booked with neurologist Nazarov Alisher Rustamovich. The doctor didn't order a pile of unnecessary tests like the previous clinic — he did a thorough exam, asked about lifestyle and work hours. He diagnosed me with tension-type migraine and selected treatment. Two weeks into the medications, my condition is significantly better."
+    },
+    "r-006": {
+      "reviewerName": "Gulnora R.",
+      "text": "I booked with ophthalmologist Mirzayev Jasur Saidovich because my eyes were getting worse after long hours at the computer. He did a complete exam — visual acuity, intraocular pressure, fundus check. He explained computer vision syndrome and gave me practical tips on work routine and eye exercises. He prescribed glasses — I wear them with pleasure, they really helped."
+    },
+    "r-007": {
+      "reviewerName": "Eldar S.",
+      "text": "I went to dermatologist Rakhimova Zuhra Azizovna with problem skin on my face. She did a careful exam, performed dermatoscopy of my moles, and laid out a regimen with topical care and systemic medications. Two months later my skin is much better. The only thing — at first I was a bit thrown off by how young the doctor looked, but her experience and approach won me over."
+    },
+    "r-008": {
+      "reviewerName": "Zaur B.",
+      "text": "I had an echocardiogram with cardiologist Karimov Sherzod Alisherovich on referral from my district doctor. The exam took less than an hour and was very comfortable. He showed me the heart chambers on the screen, explained every measurement, and wrote out the report point by point. He also adjusted the treatment plan I had been on previously. Very satisfied with the visit."
+    },
+    "r-009": {
+      "reviewerName": "Bakhtiyor Kh.",
+      "text": "I had two implants placed by surgeon Usmanov Ravshan Makhmudovich. At the consultation everything was clearly laid out — stages, timing, cost, possible risks. The surgery itself was done under local anesthesia, no pain. Crowns were placed four months later. A year has passed — no problems at all, I eat and smile without worry. Thank you to the doctor for his work."
+    },
+    "r-010": {
+      "reviewerName": "Feruza A.",
+      "text": "I went to endocrinologist Nuriddinova Nigora Shavkatovna complaining of constant fatigue. I did the labs she ordered, and it turned out my thyroid was the issue. She did the ultrasound right there in the office and prescribed treatment. Two months on the medication and I feel significantly better. Very grateful for her attentive approach and accurate diagnosis."
+    },
+    "r-011": {
+      "reviewerName": "Nodir K.",
+      "text": "I had a gastroscopy with gastroenterologist Tashpulatov Shokhrukh Bakhtiyorovich. I was very worried before the procedure, but the doctor calmly explained every step. We did it with sedation — I fell asleep, and a minute later I was awake. After the exam he showed me the images and walked me through what was what. The procedure was unpleasant but quick and without aftereffects."
+    },
+    "r-012": {
+      "reviewerName": "Timur R.",
+      "text": "I saw urologist Ismailov Bobur Uktamovich. A tactful, knowledgeable doctor — there was no awkwardness during the appointment. He made a diagnosis, prescribed treatment. Three weeks later at follow-up everything was significantly better. You can book online, very convenient. The clinic is clean, the staff are polite — overall a pleasant impression."
+    },
+    "r-013": {
+      "reviewerName": "Larisa Viktorovna",
+      "text": "I had a comprehensive annual check-up with general practitioner Khodjayeva Gulchehra Rustamovna. A very experienced and attentive doctor — I'm 62, and for the first time in many years she went through all my medications and optimized the regimen. I used to take eight, now only five, and I feel better. Huge thanks for treating the patient as a person."
+    },
+    "r-014": {
+      "reviewerName": "Alisher T.",
+      "text": "I had an intra-articular injection in my knee with orthopedist Pulatov Sardor Anvarovich. He did the exam, explained why hyaluronic acid was right for my case, and did the injection quickly and accurately under ultrasound guidance. By the third day after the injection the pain was almost gone. I'm scheduled for the next session in two weeks. Very pleased with the result."
+    },
+    "r-015": {
+      "reviewerName": "Yuliya S.",
+      "text": "I had a spine MRI on referral from a neurologist. Booking was quick, and I got the report the same day. The scanner itself is modern, and the bore was less cramped than at other clinics I've been to. The only thing — I had to wait about twenty minutes past my appointment time. Dr. Azimova produced the report, very detailed."
+    },
+    "r-016": {
+      "reviewerName": "Kamila I.",
+      "text": "I booked with general practitioner Qosimov Akmal Tolkinovich for a basic cold. The doctor is young but very switched-on — no useless filler medications, clear recommendations, justified prescriptions. A week later it had cleared up. I'm signing up with him as my family GP. It's convenient that he works evenings — I can fit him in after work."
+    },
+    "r-017": {
+      "reviewerName": "Nazokat Kh.",
+      "text": "I had teeth whitening with Kasymova Feruza Tahirovna. Before the procedure I went through a consultation and a cleaning. The procedure itself took about an hour, and it was a bit uncomfortable due to tooth sensitivity, but the doctor took breaks and checked in with me. My teeth lightened by several shades and the effect has held for several months now. The price matches the quality."
+    },
+    "r-018": {
+      "reviewerName": "Svetlana N.",
+      "text": "We had my daughter's routine vaccination with pediatrician Yuldasheva Dilnoza Bahtiyorovna. Before the shot, the doctor examined her, took her temperature, and asked how she'd been over the past week. My daughter cried a little, but the doctor calmed her down quickly. After the shot they asked us to wait half an hour in the corridor under observation. Everything to a high standard."
+    },
+    "r-019": {
+      "reviewerName": "Rustam D.",
+      "text": "I had an ECG with cardiologist Karimov Sherzod Alisherovich before a business trip. Quick, no queue, the doctor interpreted it on the spot and gave me the report. He noticed minor changes and recommended a Holter as a follow-up — I'm booked for next week. Thanks for the responsiveness and attention to detail."
+    },
+    "r-020": {
+      "reviewerName": "Dilshod Hamidov",
+      "text": "My wife has been seeing gynecologist Tursunova Malika Shavkatovna for several years now. At her last preventive visit the doctor caught small changes that nobody had noticed before. She ordered additional tests and explained in detail what needed to be done. We are very grateful to the clinic and the doctor for the attentive approach and professionalism."
+    }
+  },
+  "appointment": {
+    "title": "Book an appointment",
+    "subtitle": "Fill out the form — we'll call you back within 15 minutes",
+    "fields": {
+      "name": {
+        "label": "Your name",
+        "placeholder": "Sherzod Karimov"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "+998 90 123-45-67",
+        "helper": "Format: +998 XX XXX-XX-XX"
+      },
+      "service": {
+        "label": "Service",
+        "placeholder": "Select a service"
+      },
+      "doctor": {
+        "label": "Doctor (optional)",
+        "placeholder": "Any available"
+      },
+      "date": {
+        "label": "Preferred date",
+        "helper": "You can choose today or later"
+      }
+    },
+    "submit": {
+      "idle": "Book now",
+      "submitting": "Sending…"
+    },
+    "success": {
+      "heading": "Request received",
+      "body": "We will call you back within 15 minutes at the number provided. This window will close automatically.",
+      "closeNow": "Close"
+    },
+    "errors": {
+      "general": "Couldn't send the request. Please check your connection and try again.",
+      "rateLimited": "Too many attempts. Please wait a minute and try again.",
+      "telegramDown": "The service is temporarily unavailable. Please call us at +998 90 123-45-67."
+    },
+    "prefillNotice": {
+      "service": "Service: {name}",
+      "doctor": "Booking with: {name}"
+    }
+  },
+  "form": {
+    "errors": {
+      "required": "Required field",
+      "name": {
+        "tooShort": "Name must be at least 2 characters",
+        "tooLong": "Name is too long"
+      },
+      "phone": {
+        "invalid": "Enter a number in the format +998 XX XXX-XX-XX"
+      },
+      "service": {
+        "required": "Please select a service from the list"
+      },
+      "date": {
+        "invalid": "Please select a valid date",
+        "past": "Date cannot be in the past"
+      }
+    }
   }
 }
