@@ -1,8 +1,5 @@
-// Sticky glass Header — RSC. Translations resolved server-side via getTranslations.
-// Uses LanguageSwitcher (client) and BookCTAButton (client) — both are client islands
-// inside an otherwise server-rendered shell (PITFALLS §11 — glass selective).
 import { getTranslations } from 'next-intl/server'
-import { Phone } from 'lucide-react'
+import { Phone, MapPin, Menu } from 'lucide-react'
 import { Link } from '@/i18n/navigation'
 import { LanguageSwitcher } from '@/components/shared/LanguageSwitcher'
 import { BookCTAButton } from '@/components/shared/BookCTAButton'
@@ -13,9 +10,7 @@ const NAV_KEYS = [
   { key: 'services', href: '/services' },
   { key: 'doctors', href: '/doctors' },
   { key: 'news', href: '/news' },
-  { key: 'reviews', href: '/reviews' },
-  { key: 'gallery', href: '/gallery' },
-  { key: 'contacts', href: '/contacts' },
+  { key: 'contacts', href: '/contact' },
 ] as const
 
 export async function Header() {
@@ -24,14 +19,16 @@ export async function Header() {
 
   return (
     <header className="glass sticky top-0 z-50 mx-2 mt-2 rounded-2xl md:mx-4 md:mt-4">
-      <div className="container mx-auto flex h-[60px] items-center gap-4 px-4 md:h-[72px]">
-        {/* Logo wordmark */}
+      <div className="container mx-auto flex h-[64px] items-center gap-4 px-4">
+        {/* Logo */}
         <Link
           href="/"
-          className="font-heading text-xl font-bold tracking-tight text-[var(--color-text-dark)] md:text-2xl"
-          aria-label="ShaxKlinika"
+          className="font-heading text-xl font-bold tracking-tight text-[#1F2937] md:text-2xl flex items-center gap-2"
         >
-          Shax<span className="text-[var(--color-mint)]">Klinika</span>
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#4A9EE7] to-[#A8E6CF] flex items-center justify-center">
+            <span className="text-white text-xs font-bold">S</span>
+          </div>
+          Shax<span className="text-[#4A9EE7]">Klinika</span>
         </Link>
 
         {/* Desktop nav */}
@@ -40,7 +37,7 @@ export async function Header() {
             <Link
               key={key}
               href={href}
-              className="rounded-lg px-3 py-2 text-sm font-medium text-[var(--color-text-dark)] transition-colors hover:bg-white/60 hover:text-[var(--color-primary-deep)]"
+              className="px-4 py-2 text-sm font-medium text-[#1F2937] rounded-full transition-all hover:bg-[#4A9EE7]/10 hover:text-[#4A9EE7]"
             >
               {tNav(key)}
             </Link>
@@ -48,14 +45,13 @@ export async function Header() {
         </nav>
 
         {/* Right cluster */}
-        <div className="ml-auto flex items-center gap-2 md:gap-3">
-          {/* Emergency phone — desktop only */}
+        <div className="ml-auto flex items-center gap-3">
+          {/* Emergency phone */}
           <a
             href="tel:+998901234567"
-            aria-label={`${tHeader('emergency24h')} +998 90 123-45-67`}
-            className="hidden items-center gap-2 rounded-full bg-red-50 px-3 py-1.5 text-xs font-semibold text-red-700 ring-1 ring-red-200 transition-colors hover:bg-red-100 lg:inline-flex"
+            className="hidden lg:flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 text-red-600 text-sm font-semibold"
           >
-            <Phone className="h-3.5 w-3.5" />
+            <Phone className="w-4 h-4" />
             <span>+998 90 123-45-67</span>
           </a>
 
@@ -67,7 +63,6 @@ export async function Header() {
             <BookCTAButton />
           </div>
 
-          {/* Hamburger — mobile only (component is md:hidden internally) */}
           <MobileMenu />
         </div>
       </div>
