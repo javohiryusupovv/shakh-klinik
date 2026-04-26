@@ -1,8 +1,5 @@
 'use client'
 
-// Floating bottom-right column: Telegram + WhatsApp always; mobile-only booking FAB.
-// Uses lucide `Send` for Telegram + `MessageCircle` for WhatsApp (no brand icon
-// in lucide-react@1.8.0 — MessageCircle is a reasonable visual proxy).
 import { Send, MessageCircle } from 'lucide-react'
 import { BookCTAButton } from './BookCTAButton'
 
@@ -31,7 +28,7 @@ export function FloatingCTA() {
         <MessageCircle className="h-5 w-5" />
       </a>
       <div className="md:hidden">
-        <BookCTAButton variant="fab" className="h-12 px-5 shadow-lg" />
+        <BookCTAButton className="h-12 px-5 shadow-lg" />
       </div>
     </div>
   )

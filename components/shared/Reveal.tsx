@@ -1,25 +1,61 @@
 'use client'
-// motion imports only in 'use client' files (PITFALLS §5)
-import { motion, useReducedMotion } from 'motion/react'
 
-export function Reveal({
-  children,
-  delay = 0,
-}: {
-  children: React.ReactNode
+import { useEffect, useState, useRef, ReactNode } from 'react'
+import { useInView } from 'framer-motion'
+
+interface RevealProps {
+  children: ReactNode
+  className?: string
   delay?: number
-}) {
-  const reduced = useReducedMotion()
-  // PITFALLS §13 — if reduced-motion preferred, skip animation entirely
-  if (reduced) return <>{children}</>
+}
+
+export function Reveal({ children, className = '', delay = 0 }: RevealProps) {
+  const [isVisible, setIsVisible] = useState(false)
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
+
+  useEffect(() => {
+    if (isInView) {
+      setIsVisible(true)
+    }
+  }, [isInView])
+
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.5, delay }}
+    <div
+      ref={ref}
+      className={`transform transition-all duration-700 ease-out ${className}`}
+      style={{
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+        transitionDelay: `${delay}ms`,
+      }}
     >
       {children}
-    </motion.div>
+    </div>
   )
+}
+
+// Simple scroll-triggered animation hook
+export function useScrollReveal(threshold = 0.1) {
+  const [isVisible, setIsVisible] = useState(false)
+  const ref = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true)
+        }
+      },
+      { threshold }
+    )
+
+    if (ref.current) {
+      observer.observe(ref.current)
+    }
+
+    return () => observer.disconnect()
+  }, [threshold])
+
+  return { ref, isVisible }
 }
