@@ -103,6 +103,40 @@
   100% { left: 100%; }
 }
 
+/* Splash screen — light sweep across logo text */
+.splash-text {
+  background: linear-gradient(
+    110deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0.18) 38%,
+    #ffffff 50%,
+    rgba(255, 255, 255, 0.18) 62%,
+    rgba(255, 255, 255, 0.18) 100%
+  );
+  background-size: 250% 100%;
+  background-position: 120% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: splash-sweep 3.6s cubic-bezier(0.45, 0, 0.55, 1) 0.3s forwards;
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0.15);
+}
+
+@keyframes splash-sweep {
+  0% { background-position: 120% 0; }
+  100% { background-position: -120% 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .splash-text {
+    animation: none;
+    color: #ffffff;
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+  }
+}
+
 /* Glow effects */
 .glow-primary {
   box-shadow: 0 0 40px rgba(74, 158, 231, 0.3);

@@ -37,9 +37,10 @@ const heroSlides = [
 
 export function Hero() {
   const [loaded, setLoaded] = useState(false)
-  
+
   useEffect(() => {
-    setLoaded(true)
+    const timer = setTimeout(() => setLoaded(true), 100)
+    return () => clearTimeout(timer)
   }, [])
 
   return (

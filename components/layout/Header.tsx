@@ -1,5 +1,8 @@
-import { getTranslations } from 'next-intl/server'
-import { Phone, MapPin, Menu } from 'lucide-react'
+'use client'
+
+import { useState, useEffect } from 'react'
+import { useTranslations } from 'next-intl'
+import { Phone } from 'lucide-react'
 import { Link } from '@/i18n/navigation'
 import { LanguageSwitcher } from '@/components/shared/LanguageSwitcher'
 import { BookCTAButton } from '@/components/shared/BookCTAButton'
@@ -13,57 +16,66 @@ const NAV_KEYS = [
   { key: 'contacts', href: '/contact' },
 ] as const
 
-export async function Header() {
-  const tNav = await getTranslations('nav')
-  const tHeader = await getTranslations('header')
+export function Header() {
+  const tNav = useTranslations('nav')
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20)
+    }
+    window.addEventListener('scroll', handleScroll)
+    handleScroll()
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <header className="glass sticky top-0 z-50 mx-2 mt-2 rounded-2xl md:mx-4 md:mt-4">
-      <div className="container mx-auto flex h-[64px] items-center gap-4 px-4">
-        {/* Logo */}
-        <Link
-          href="/"
-          className="font-heading text-xl font-bold tracking-tight text-[#1F2937] md:text-2xl flex items-center gap-2"
-        >
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#4A9EE7] to-[#A8E6CF] flex items-center justify-center">
-            <span className="text-white text-xs font-bold">S</span>
-          </div>
-          Shax<span className="text-[#4A9EE7]">Klinika</span>
-        </Link>
-
-        {/* Desktop nav */}
-        <nav className="ml-6 hidden items-center gap-1 md:flex">
-          {NAV_KEYS.map(({ key, href }) => (
-            <Link
-              key={key}
-              href={href}
-              className="px-4 py-2 text-sm font-medium text-[#1F2937] rounded-full transition-all hover:bg-[#4A9EE7]/10 hover:text-[#4A9EE7]"
-            >
-              {tNav(key)}
+    <header className={`sticky top-0 z-50 mx-2 mt-2 transition-all duration-300 ${scrolled ? 'top-4' : 'mt-2'}`}>
+      <div className="container mx-auto">
+        <div className={`relative rounded-full transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-xl shadow-lg border border-white/20' : 'bg-transparent border-transparent'}`}>
+          <div className="flex items-center justify-between h-14 px-4">
+            {/* Logo */}
+            <Link href="/" className="flex items-center gap-2">
+              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#4A9EE7] to-[#2B7FCC] flex items-center justify-center shadow-md">
+                <span className="text-white font-bold text-xs">S</span>
+              </div>
+              <span className="font-heading text-lg font-bold text-[#1F2937] hidden sm:block">
+                Shakh <span className="text-[#4A9EE7]">Clinic</span>
+              </span>
             </Link>
-          ))}
-        </nav>
 
-        {/* Right cluster */}
-        <div className="ml-auto flex items-center gap-3">
-          {/* Emergency phone */}
-          <a
-            href="tel:+998901234567"
-            className="hidden lg:flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 text-red-600 text-sm font-semibold"
-          >
-            <Phone className="w-4 h-4" />
-            <span>+998 90 123-45-67</span>
-          </a>
+            {/* Desktop nav */}
+            <nav className="hidden lg:flex items-center gap-0.5">
+              {NAV_KEYS.map(({ key, href }) => (
+                <Link
+                  key={key}
+                  href={href}
+                  className="px-3 py-1.5 text-sm font-medium text-[#6B7280] hover:text-[#4A9EE7] hover:bg-[#4A9EE7]/10 rounded-full transition-all"
+                >
+                  {tNav(key)}
+                </Link>
+              ))}
+            </nav>
 
-          <div className="hidden md:block">
-            <LanguageSwitcher />
+            {/* Right side */}
+            <div className="flex items-center gap-2 flex-nowrap shrink-0">
+              <a
+                href="tel:+998901234567"
+                className="hidden xl:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-red-500 text-white text-xs font-semibold shrink-0"
+              >
+                <Phone className="w-3.5 h-3.5" />
+                <span className="hidden 2xl:inline">+998 90 123-45-67</span>
+              </a>
+
+              <div className="hidden md:block shrink-0">
+                <LanguageSwitcher />
+              </div>
+              <div className="shrink-0">
+                <BookCTAButton />
+              </div>
+              <MobileMenu />
+            </div>
           </div>
-
-          <div className="hidden md:block">
-            <BookCTAButton />
-          </div>
-
-          <MobileMenu />
         </div>
       </div>
     </header>

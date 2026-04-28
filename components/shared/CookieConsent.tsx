@@ -10,13 +10,14 @@ const STORAGE_KEY = 'shax.cookieAccepted'
 
 export function CookieConsent() {
   const t = useTranslations('cookies')
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(true)
 
   useEffect(() => {
     try {
-      setShow(localStorage.getItem(STORAGE_KEY) !== '1')
+      const accepted = localStorage.getItem(STORAGE_KEY) === '1'
+      setShow(!accepted)
     } catch {
-      // localStorage unavailable (private mode etc.) — silently skip
+      setShow(false)
     }
   }, [])
 

@@ -1,10 +1,11 @@
+'use client'
+
 import { useTranslations } from 'next-intl'
 import { GlassCard } from '@/components/shared/GlassCard'
 import { BookCTAButton } from '@/components/shared/BookCTAButton'
 import { MapPin, Phone, Clock, Mail } from 'lucide-react'
 
 export default function ContactPage() {
-  const t = useTranslations('home')
   const tFooter = useTranslations('footer')
   
   return (
@@ -57,8 +58,15 @@ export default function ContactPage() {
         <div>
           <GlassCard className="p-8">
             <h2 className="text-2xl font-semibold mb-6">Мы на карте</h2>
-            <div className="bg-gray-200 rounded-xl h-80 flex items-center justify-center">
-              <p className="text-gray-500">Yandex Maps iframe</p>
+            <div className="rounded-xl overflow-hidden h-80">
+              <iframe
+                src="https://yandex.ru/maps-widget/v1/?ll=37.550379%2C55.878245&mode=search&text=%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD%20%D0%A8%D0%B0%D0%BA%D1%81%D0%B8%D1%82&z=16"
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                className="w-full h-full"
+                allowFullScreen
+              />
             </div>
           </GlassCard>
         </div>

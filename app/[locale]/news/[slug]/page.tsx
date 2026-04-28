@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { getNewsBySlug, getAllNews } from '@/lib/services'
 import { GlassCard } from '@/components/shared/GlassCard'
@@ -20,7 +20,7 @@ export default async function NewsDetailPage({ params }: Props) {
     notFound()
   }
   
-  const t = useTranslations('news.' + slug)
+  const t = await getTranslations('news.' + slug)
 
   return (
     <main className="container mx-auto px-6 py-12 max-w-3xl">

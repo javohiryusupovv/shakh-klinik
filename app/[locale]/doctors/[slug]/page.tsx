@@ -1,7 +1,7 @@
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { getDoctorBySlug, getAllDoctors } from '@/lib/services'
-import { useAppointmentModal } from '@/components/shared/AppointmentModalProvider'
+import { AppointmentButton } from '@/components/shared/AppointmentButton'
 import { GlassCard } from '@/components/shared/GlassCard'
 
 interface Props {
@@ -21,8 +21,7 @@ export default async function DoctorDetailPage({ params }: Props) {
     notFound()
   }
   
-  const t = useTranslations('doctors.' + slug)
-  const { open } = useAppointmentModal()
+  const t = await getTranslations('doctors.' + slug)
 
   return (
     <main className="container mx-auto px-6 py-12 max-w-3xl">
@@ -55,12 +54,7 @@ export default async function DoctorDetailPage({ params }: Props) {
         <p className="text-lg">{doctor.workingHours}</p>
       </GlassCard>
 
-      <button 
-        onClick={() => open({ doctorSlug: slug })}
-        className="w-full md:w-auto px-8 py-4 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-deep)] text-white rounded-full text-lg font-semibold hover:opacity-90 transition-opacity"
-      >
-        Записаться на приём
-      </button>
+      <AppointmentButton doctorSlug={slug} />
     </main>
   )
 }

@@ -82,7 +82,7 @@ export async function Footer() {
         {/* Column 1 — About */}
         <div className="space-y-3">
           <p className="font-heading text-xl font-bold tracking-tight">
-            Shax<span className="text-[var(--color-mint)]">Klinika</span>
+            Shakh <span className="text-[var(--color-mint)]">Clinic</span>
           </p>
           <p className="text-sm leading-relaxed text-white/80">
             {tFooter('aboutBlurb')}
