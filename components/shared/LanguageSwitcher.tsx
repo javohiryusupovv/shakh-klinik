@@ -20,7 +20,12 @@ const LOCALE_NAMES: Record<string, string> = {
   en: 'English',
 }
 
-export function LanguageSwitcher() {
+type LanguageSwitcherProps = {
+  direction?: 'down' | 'up'
+  align?: 'left' | 'right' | 'center'
+}
+
+export function LanguageSwitcher({ direction = 'down', align = 'right' }: LanguageSwitcherProps = {}) {
   const locale = useLocale()
   const router = useRouter()
   const pathname = usePathname()
@@ -31,6 +36,11 @@ export function LanguageSwitcher() {
     setIsOpen(false)
   }
 
+  const positionClass = [
+    direction === 'up' ? 'bottom-full mb-2' : 'top-full mt-2',
+    align === 'right' ? 'right-0' : align === 'left' ? 'left-0' : 'left-1/2 -translate-x-1/2',
+  ].join(' ')
+
   return (
     <div className="relative">
       <button
@@ -39,13 +49,19 @@ export function LanguageSwitcher() {
       >
         <Globe2 className="w-4 h-4 text-[#4A9EE7]" />
         <span>{LOCALE_FLAGS[locale]}</span>
-        <ChevronDown className={`w-3 h-3 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+        <ChevronDown
+          className={`w-3 h-3 transition-transform ${
+            direction === 'up'
+              ? isOpen ? '' : 'rotate-180'
+              : isOpen ? 'rotate-180' : ''
+          }`}
+        />
       </button>
 
       {isOpen && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
-          <div className="absolute right-0 top-full -mt-56 py-2 w-52 rounded-2xl bg-white/80 backdrop-blur-xl border border-white/40 shadow-xl z-50 overflow-hidden">
+          <div className={`absolute ${positionClass} py-2 w-52 rounded-2xl bg-white/95 backdrop-blur-xl border border-white/40 shadow-xl z-50 overflow-hidden`}>
             {routing.locales.map((loc) => {
               const active = loc === locale
               return (
