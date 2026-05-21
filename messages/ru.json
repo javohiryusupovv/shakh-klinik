@@ -742,11 +742,16 @@
     "educationHeading": "Образование",
     "achievementsHeading": "Достижения",
     "bioHeading": "О враче",
-    "workingHoursHeading": "График работы"
+    "workingHoursHeading": "График работы",
+    "backToDoctors": "К врачам"
   },
   "servicesDetail": {
     "priceLabel": "Стоимость",
     "durationLabel": "Длительность",
-    "minutesShort": "мин"
+    "minutesShort": "мин",
+    "backToServices": "К услугам"
+  },
+  "newsDetail": {
+    "backToNews": "К новостям"
   }
 }

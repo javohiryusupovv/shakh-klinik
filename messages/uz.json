@@ -742,11 +742,16 @@
     "educationHeading": "Ta'lim",
     "achievementsHeading": "Yutuqlar",
     "bioHeading": "Shifokor haqida",
-    "workingHoursHeading": "Ish jadvali"
+    "workingHoursHeading": "Ish jadvali",
+    "backToDoctors": "Shifokorlarga"
   },
   "servicesDetail": {
     "priceLabel": "Narxi",
     "durationLabel": "Davomiyligi",
-    "minutesShort": "daq"
+    "minutesShort": "daq",
+    "backToServices": "Xizmatlarga"
+  },
+  "newsDetail": {
+    "backToNews": "Yangiliklarga"
   }
 }

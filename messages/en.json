@@ -742,11 +742,16 @@
     "educationHeading": "Education",
     "achievementsHeading": "Achievements",
     "bioHeading": "About the doctor",
-    "workingHoursHeading": "Working hours"
+    "workingHoursHeading": "Working hours",
+    "backToDoctors": "Back to doctors"
   },
   "servicesDetail": {
     "priceLabel": "Price",
     "durationLabel": "Duration",
-    "minutesShort": "min"
+    "minutesShort": "min",
+    "backToServices": "Back to services"
+  },
+  "newsDetail": {
+    "backToNews": "Back to news"
   }
 }
