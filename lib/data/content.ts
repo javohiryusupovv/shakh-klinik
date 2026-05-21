@@ -55,7 +55,6 @@ export interface Doctor {
   slug: string;
   departmentId: DepartmentId;
   experienceYears: number;
-  workingHours: string;
   photoQuery: string;
 }
 
@@ -395,105 +394,90 @@ export const DOCTORS: Doctor[] = [
     slug: 'karimov-sherzod-alisherovich',
     departmentId: 'cardiology-dept',
     experienceYears: 22,
-    workingHours: 'Пн-Пт 9:00-18:00, Сб 9:00-13:00',
     photoQuery: 'uzbek male cardiologist white coat',
   },
   {
     slug: 'yuldasheva-dilnoza-bahtiyorovna',
     departmentId: 'general-medicine',
     experienceYears: 17,
-    workingHours: 'Пн-Сб 8:30-15:00',
     photoQuery: 'female pediatrician portrait smiling',
   },
   {
     slug: 'nazarov-alisher-rustamovich',
     departmentId: 'neurology-dept',
     experienceYears: 25,
-    workingHours: 'Пн, Ср, Пт 10:00-17:00',
     photoQuery: 'senior male neurologist portrait',
   },
   {
     slug: 'tursunova-malika-shavkatovna',
     departmentId: 'womens-health',
     experienceYears: 14,
-    workingHours: 'Пн-Пт 9:00-17:00, Сб 9:00-13:00',
     photoQuery: 'female gynecologist portrait',
   },
   {
     slug: 'ismailov-bobur-uktamovich',
     departmentId: 'urology-dept',
     experienceYears: 19,
-    workingHours: 'Пн-Пт 10:00-18:00',
     photoQuery: 'male urologist white coat portrait',
   },
   {
     slug: 'rakhimova-zuhra-azizovna',
     departmentId: 'dermatology-dept',
     experienceYears: 11,
-    workingHours: 'Вт-Сб 10:00-18:00',
     photoQuery: 'female dermatologist portrait',
   },
   {
     slug: 'mirzayev-jasur-saidovich',
     departmentId: 'eye-clinic',
     experienceYears: 16,
-    workingHours: 'Пн-Пт 9:00-17:00',
     photoQuery: 'male ophthalmologist portrait',
   },
   {
     slug: 'kasymova-feruza-tahirovna',
     departmentId: 'dental-clinic',
     experienceYears: 13,
-    workingHours: 'Пн-Сб 9:00-19:00',
     photoQuery: 'female dentist portrait professional',
   },
   {
     slug: 'usmanov-ravshan-makhmudovich',
     departmentId: 'dental-clinic',
     experienceYears: 20,
-    workingHours: 'Пн-Пт 10:00-19:00',
     photoQuery: 'male dental surgeon portrait',
   },
   {
     slug: 'nuriddinova-nigora-shavkatovna',
     departmentId: 'endocrinology-dept',
     experienceYears: 15,
-    workingHours: 'Пн, Ср, Пт 9:00-16:00',
     photoQuery: 'female endocrinologist portrait',
   },
   {
     slug: 'tashpulatov-shokhrukh-bakhtiyorovich',
     departmentId: 'gastro-dept',
     experienceYears: 18,
-    workingHours: 'Пн-Пт 9:00-17:00',
     photoQuery: 'male gastroenterologist portrait',
   },
   {
     slug: 'khodjayeva-gulchehra-rustamovna',
     departmentId: 'general-medicine',
     experienceYears: 28,
-    workingHours: 'Пн-Сб 8:00-14:00',
     photoQuery: 'senior female therapist portrait',
   },
   {
     slug: 'pulatov-sardor-anvarovich',
     departmentId: 'surgery',
     experienceYears: 24,
-    workingHours: 'Пн-Пт 8:00-15:00',
     photoQuery: 'male orthopedic surgeon portrait',
   },
   {
     slug: 'azimova-shahnoza-davronovna',
     departmentId: 'diagnostics-lab',
     experienceYears: 12,
-    workingHours: 'Пн-Сб 8:00-16:00',
     photoQuery: 'female radiologist portrait',
   },
   {
     slug: 'qosimov-akmal-tolkinovich',
     departmentId: 'general-medicine',
     experienceYears: 9,
-    workingHours: 'Пн-Пт 14:00-20:00, Сб 9:00-14:00',
     photoQuery: 'young male doctor portrait',
   },
 ];
