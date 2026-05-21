@@ -37,6 +37,105 @@
           "a": "Sutkalik shoshilinch liniya har kuni ishlaydi — agar shoshilinch konsultatsiya yoki shifokorni uyga chaqirish kerak bo'lsa, qo'ng'iroq qiling. Hayotga xavf soluvchi og'ir holatlarda 103 raqamiga murojaat qiling."
         }
       ]
+    },
+    "hero": {
+      "slides": [
+        {
+          "title": "Butun oila uchun sifatli tibbiyot",
+          "subtitle": "Zamonaviy uskunalar va tajribali shifokorlar",
+          "cta": "Yozilish"
+        },
+        {
+          "title": "Yangi avlod diagnostikasi",
+          "subtitle": "Aniq natijalar qisqa vaqt ichida",
+          "cta": "Batafsil"
+        },
+        {
+          "title": "Bemorga g'amxo'rlik va qulaylik",
+          "subtitle": "Navbatlarsiz va kutishsiz",
+          "cta": "Xizmatni tanlash"
+        },
+        {
+          "title": "Sog'lig'ingiz — bizning ustuvorligimiz",
+          "subtitle": "Har bir bemorga alohida yondashuv",
+          "cta": "Konsultatsiya"
+        }
+      ]
+    },
+    "about": {
+      "heading": "ShaxKlinika haqida",
+      "body": "Biz butun oila uchun sifatli tibbiy xizmatlar taqdim etamiz. Klinikamiz zamonaviy uskunalar bilan jihozlangan, shifokorlarimiz esa ko'p yillik ish tajribasiga ega. Har bir bemorga g'amxo'rlik qilamiz va qulay muhitda samarali davolanishni ta'minlashga intilamiz."
+    },
+    "cta": {
+      "heading": "Bugundan boshlab sog'lig'ingizga g'amxo'rlik qiling",
+      "body": "Hoziroq konsultatsiyaga yoziling va 20% chegirma bilan to'liq tibbiy ko'rikni oling"
+    },
+    "stats": {
+      "items": [
+        {
+          "value": 15000,
+          "suffix": "+",
+          "label": "Bemor"
+        },
+        {
+          "value": 15,
+          "suffix": " yil",
+          "label": "Tajriba"
+        },
+        {
+          "value": 28,
+          "suffix": "+",
+          "label": "Xizmat"
+        },
+        {
+          "value": 15,
+          "suffix": "",
+          "label": "Shifokor"
+        }
+      ]
+    },
+    "latestNews": {
+      "heading": "Klinika yangiliklari"
+    },
+    "popularServices": {
+      "heading": "Mashhur xizmatlar"
+    },
+    "whyChooseUs": {
+      "heading": "Nima uchun bizni tanlaydilar",
+      "subheading": "Biz har bir bemorga g'amxo'rlik qilamiz va sifatli tibbiy xizmatlar ko'rsatamiz",
+      "items": [
+        {
+          "title": "Zamonaviy uskunalar",
+          "desc": "Ekspert darajadagi diagnostika va davolash"
+        },
+        {
+          "title": "Tajribali shifokorlar",
+          "desc": "10 yildan ortiq tajriba, muntazam malaka oshirish"
+        },
+        {
+          "title": "Qulay ish vaqti",
+          "desc": "Dam olishsiz 8:00 dan 20:00 gacha ishlaymiz"
+        },
+        {
+          "title": "Sifatli dorilar",
+          "desc": "Faqat sertifikatlangan dori-darmonlar"
+        },
+        {
+          "title": "Onlayn yozilish",
+          "desc": "Sayt orqali istalgan vaqtda yozilishingiz mumkin"
+        },
+        {
+          "title": "To'liq xizmatlar majmuasi",
+          "desc": "Diagnostikadan reabilitatsiyagacha"
+        }
+      ],
+      "allServicesCta": "Barcha xizmatlar"
+    },
+    "featuredDoctors": {
+      "heading": "Bizning mutaxassislarimiz"
+    },
+    "reviews": {
+      "heading": "Bemorlar sharhlari"
     }
   },
   "nav": {
@@ -80,36 +179,87 @@
   "common": {
     "loading": "Yuklanmoqda...",
     "error": "Xatolik yuz berdi",
-    "back": "Orqaga"
+    "back": "Orqaga",
+    "allFilter": "Hammasi"
   },
   "categories": {
-    "therapy": { "name": "Terapiya" },
-    "cardiology": { "name": "Kardiologiya" },
-    "neurology": { "name": "Nevrologiya" },
-    "gynecology": { "name": "Ginekologiya" },
-    "urology": { "name": "Urologiya" },
-    "pediatrics": { "name": "Pediatriya" },
-    "dermatology": { "name": "Dermatologiya" },
-    "ophthalmology": { "name": "Oftalmologiya" },
-    "dentistry": { "name": "Stomatologiya" },
-    "endocrinology": { "name": "Endokrinologiya" },
-    "gastroenterology": { "name": "Gastroenterologiya" },
-    "orthopedics": { "name": "Ortopediya" },
-    "diagnostics": { "name": "Diagnostika" }
+    "therapy": {
+      "name": "Terapiya"
+    },
+    "cardiology": {
+      "name": "Kardiologiya"
+    },
+    "neurology": {
+      "name": "Nevrologiya"
+    },
+    "gynecology": {
+      "name": "Ginekologiya"
+    },
+    "urology": {
+      "name": "Urologiya"
+    },
+    "pediatrics": {
+      "name": "Pediatriya"
+    },
+    "dermatology": {
+      "name": "Dermatologiya"
+    },
+    "ophthalmology": {
+      "name": "Oftalmologiya"
+    },
+    "dentistry": {
+      "name": "Stomatologiya"
+    },
+    "endocrinology": {
+      "name": "Endokrinologiya"
+    },
+    "gastroenterology": {
+      "name": "Gastroenterologiya"
+    },
+    "orthopedics": {
+      "name": "Ortopediya"
+    },
+    "diagnostics": {
+      "name": "Diagnostika"
+    }
   },
   "departments": {
-    "general-medicine": { "name": "Umumiy tibbiyot va pediatriya" },
-    "cardiology-dept": { "name": "Kardiologiya" },
-    "neurology-dept": { "name": "Nevrologiya" },
-    "womens-health": { "name": "Ayollar salomatligi" },
-    "urology-dept": { "name": "Urologiya" },
-    "dermatology-dept": { "name": "Dermatologiya va kosmetologiya" },
-    "eye-clinic": { "name": "Oftalmologiya" },
-    "dental-clinic": { "name": "Stomatologiya" },
-    "endocrinology-dept": { "name": "Endokrinologiya" },
-    "gastro-dept": { "name": "Gastroenterologiya" },
-    "surgery": { "name": "Jarrohlik va ortopediya" },
-    "diagnostics-lab": { "name": "Diagnostika va laboratoriya" }
+    "general-medicine": {
+      "name": "Umumiy tibbiyot va pediatriya"
+    },
+    "cardiology-dept": {
+      "name": "Kardiologiya"
+    },
+    "neurology-dept": {
+      "name": "Nevrologiya"
+    },
+    "womens-health": {
+      "name": "Ayollar salomatligi"
+    },
+    "urology-dept": {
+      "name": "Urologiya"
+    },
+    "dermatology-dept": {
+      "name": "Dermatologiya va kosmetologiya"
+    },
+    "eye-clinic": {
+      "name": "Oftalmologiya"
+    },
+    "dental-clinic": {
+      "name": "Stomatologiya"
+    },
+    "endocrinology-dept": {
+      "name": "Endokrinologiya"
+    },
+    "gastro-dept": {
+      "name": "Gastroenterologiya"
+    },
+    "surgery": {
+      "name": "Jarrohlik va ortopediya"
+    },
+    "diagnostics-lab": {
+      "name": "Diagnostika va laboratoriya"
+    }
   },
   "services": {
     "therapy-consultation": {
@@ -231,105 +381,120 @@
       "specialty": "Oliy toifa kardiologi",
       "education": "Toshkent tibbiyot akademiyasini 2003 yilda imtiyozli bitirgan. Akademik V.Vohidov nomidagi Respublika ixtisoslashtirilgan ilmiy-amaliy tibbiyot kardiologiya markazida kardiologiya bo'yicha klinik ordinaturani o'tagan. Turkiya va Germaniya klinikalarida muntazam stajirovkalardan o'tib turadi.",
       "achievements": "Exokardiografiya va noinvaziv diagnostika bo'yicha sertifikatlangan mutaxassis. Yevropa kardiologlar jamiyatining (ESC) xalqaro kongresslari ishtirokchisi. Milliy tibbiyot nashrlarida 15 dan ortiq ilmiy maqolalar muallifi.",
-      "bio": "Sherzod Alisherovich — 22 yillik ish tajribasiga ega kardiolog. Yurakning ishemik kasalligi, arterial gipertenziya, ritm buzilishlari va yurak yetishmovchiligini diagnostika va davolashga ixtisoslashgan. Exokardiografiya texnikasi va holter monitoringini talqin qilishni mukammal biladi. Har bir bemorga alohida e'tibor bilan munosabatda bo'ladi — shikoyatlarni diqqat bilan tinglaydi, tekshiruv natijalarini tushunarli tilda batafsil tushuntiradi va kasallik sababini tushunishga yordam beradi. Ko'p yillik kuzatuvga ega bemorlarni muntazam olib boradi, terapiyani kerak bo'lganda korrektsiya qiladi. Yangi shikoyatli kattalar bemorlarni ham, bosim va yurak ritmini nazorat qilish uchun takroriy qabul kerak bo'lgan odamlarni ham qabul qiladi. Yurak-qon tomir kasalliklari profilaktikasi va bemorlarning holatini mustaqil nazorat qilishga o'rgatishga alohida e'tibor beradi."
+      "bio": "Sherzod Alisherovich — 22 yillik ish tajribasiga ega kardiolog. Yurakning ishemik kasalligi, arterial gipertenziya, ritm buzilishlari va yurak yetishmovchiligini diagnostika va davolashga ixtisoslashgan. Exokardiografiya texnikasi va holter monitoringini talqin qilishni mukammal biladi. Har bir bemorga alohida e'tibor bilan munosabatda bo'ladi — shikoyatlarni diqqat bilan tinglaydi, tekshiruv natijalarini tushunarli tilda batafsil tushuntiradi va kasallik sababini tushunishga yordam beradi. Ko'p yillik kuzatuvga ega bemorlarni muntazam olib boradi, terapiyani kerak bo'lganda korrektsiya qiladi. Yangi shikoyatli kattalar bemorlarni ham, bosim va yurak ritmini nazorat qilish uchun takroriy qabul kerak bo'lgan odamlarni ham qabul qiladi. Yurak-qon tomir kasalliklari profilaktikasi va bemorlarning holatini mustaqil nazorat qilishga o'rgatishga alohida e'tibor beradi.",
+      "workingHours": "Du-Ju 9:00-18:00, Sh 9:00-13:00"
     },
     "yuldasheva-dilnoza-bahtiyorovna": {
       "name": "Yuldasheva Dilnoza Bahtiyorovna",
       "specialty": "Birinchi toifa pediatri",
       "education": "Toshkent pediatriya tibbiyot institutining pediatriya fakultetini 2008 yilda bitirgan. Pediatriya bo'yicha ordinaturani va bolalar allergologiyasi va immunologiyasi bo'yicha qo'shimcha kurslarni o'tagan. JSST emlash profilaktikasi bo'yicha ta'lim dasturlarida muntazam ishtirok etadi.",
       "achievements": "O'zbekiston Pediatrlar jamiyati a'zosi. Neonatal nevrologiya bo'yicha sertifikatlangan mutaxassis. Klinikaning emlash va erta yoshdagi bola rivojlanishi mavzusidagi ota-onalar seminarlarining muntazam ma'ruzachisi.",
-      "bio": "Dilnoza Bahtiyorovna — tug'ilganidan o'smirlik yoshigacha bo'lgan bolalar bilan 17 yillik ish tajribasiga ega pediatr. Uning yondashuvidagi asosiy narsa — sabrlik va kichkina bemor hamda uning ota-onalari bilan ishonchli kontakt. Dilnoza Bahtiyorovna bolaning shifokorga ko'nikishi uchun vaqt ajratadi va uni shoshilmasdan qulay sharoitda ko'rib chiqadi. Erta yoshdagi bolalarni olib borish, hayotning birinchi yilida rejali ko'riklar, asab-ruhiy rivojlanishni baholash, ko'krak bilan emizishni va birinchi qo'shimcha ovqat berishni qo'llab-quvvatlashga ixtisoslashgan. Emlash masalalari bilan faol shug'ullanadi, ota-onalarga bola sog'lig'i xususiyatlarini hisobga olgan holda individual emlash jadvalini tuzishga yordam beradi. Atopik dermatit va oziq-ovqat allergiyasi kabi surunkali holatlari bo'lgan bemorlarni olib boradi. Kichkina bemorlarning ota-onalari uchun telefon orqali qo'shimcha konsultatsiyalarni tez-tez o'tkazadi."
+      "bio": "Dilnoza Bahtiyorovna — tug'ilganidan o'smirlik yoshigacha bo'lgan bolalar bilan 17 yillik ish tajribasiga ega pediatr. Uning yondashuvidagi asosiy narsa — sabrlik va kichkina bemor hamda uning ota-onalari bilan ishonchli kontakt. Dilnoza Bahtiyorovna bolaning shifokorga ko'nikishi uchun vaqt ajratadi va uni shoshilmasdan qulay sharoitda ko'rib chiqadi. Erta yoshdagi bolalarni olib borish, hayotning birinchi yilida rejali ko'riklar, asab-ruhiy rivojlanishni baholash, ko'krak bilan emizishni va birinchi qo'shimcha ovqat berishni qo'llab-quvvatlashga ixtisoslashgan. Emlash masalalari bilan faol shug'ullanadi, ota-onalarga bola sog'lig'i xususiyatlarini hisobga olgan holda individual emlash jadvalini tuzishga yordam beradi. Atopik dermatit va oziq-ovqat allergiyasi kabi surunkali holatlari bo'lgan bemorlarni olib boradi. Kichkina bemorlarning ota-onalari uchun telefon orqali qo'shimcha konsultatsiyalarni tez-tez o'tkazadi.",
+      "workingHours": "Du-Sh 8:30-15:00"
     },
     "nazarov-alisher-rustamovich": {
       "name": "Nazarov Alisher Rustamovich",
       "specialty": "Oliy toifa nevrologi",
       "education": "Samarqand davlat tibbiyot institutini 1998 yilda bitirgan. Nevrologiya bo'yicha klinik ordinaturani va aspiranturani tomir nevrologiyasi bo'yicha nomzodlik dissertatsiyasini himoya qilish bilan o'tagan. Moskva va Istanbul klinikalarida stajirovkadan o'tgan.",
       "achievements": "Tibbiyot fanlari nomzodi. O'zbekiston Nevrologlar Assotsiatsiyasi a'zosi. Serebrovaskulyar kasalliklar va surunkali og'riq sindromlarini diagnostika va davolash bo'yicha mutaxassis. Postinsult reabilitatsiyasi bo'yicha bir nechta ilmiy ishlar muallifi.",
-      "bio": "Alisher Rustamovich — 25 yillik klinik tajribaga ega nevrolog. Bosh og'riqlari, bosh aylanishi, uyqu buzilishlari, insult va bosh-miya jarohatlari oqibatlari, bel va bo'yindagi og'riq sindromlarini diagnostika va davolashga ixtisoslashgan. Shifokorning yondashuvi — klinik va isbotlangan: har bir holat to'liq anamnez va nevrologik ko'rikni hisobga olgan holda shablonsiz tahlil qilinadi. Alisher Rustamovich tashxis qo'yish uchun haqiqatan ham zarur bo'lgan tekshiruvlardan tashqari ortiqcha tekshiruvlarni kamdan-kam tayinlaydi. Surunkali migrenli bemorlarni faol olib boradi, ularga samarali profilaktik terapiyani tanlashga yordam beradi. Konferentsiyalarda muntazam ravishda ma'ruza qiladi va klinikaning yosh mutaxassislariga ta'lim beradi. Insultdan keyin bemorlarni reabilitatsiya qilishga alohida e'tibor beradi va individual qayta tiklash dasturlarini ishlab chiqadi."
+      "bio": "Alisher Rustamovich — 25 yillik klinik tajribaga ega nevrolog. Bosh og'riqlari, bosh aylanishi, uyqu buzilishlari, insult va bosh-miya jarohatlari oqibatlari, bel va bo'yindagi og'riq sindromlarini diagnostika va davolashga ixtisoslashgan. Shifokorning yondashuvi — klinik va isbotlangan: har bir holat to'liq anamnez va nevrologik ko'rikni hisobga olgan holda shablonsiz tahlil qilinadi. Alisher Rustamovich tashxis qo'yish uchun haqiqatan ham zarur bo'lgan tekshiruvlardan tashqari ortiqcha tekshiruvlarni kamdan-kam tayinlaydi. Surunkali migrenli bemorlarni faol olib boradi, ularga samarali profilaktik terapiyani tanlashga yordam beradi. Konferentsiyalarda muntazam ravishda ma'ruza qiladi va klinikaning yosh mutaxassislariga ta'lim beradi. Insultdan keyin bemorlarni reabilitatsiya qilishga alohida e'tibor beradi va individual qayta tiklash dasturlarini ishlab chiqadi.",
+      "workingHours": "Du, Ch, Ju 10:00-17:00"
     },
     "tursunova-malika-shavkatovna": {
       "name": "Tursunova Malika Shavkatovna",
       "specialty": "Akusher-ginekolog",
       "education": "Toshkent tibbiyot akademiyasining davolash fakultetini 2010 yilda bitirgan. Respublika perinatal markazida akusherlik va ginekologiya bo'yicha ordinaturani o'tagan. Estetik ginekologiya bo'yicha sertifikatni 2018 yilda olgan.",
       "achievements": "Ginekologiya va akusherlikda UZI bo'yicha sertifikatlangan mutaxassis. O'zbekiston Akusher-ginekologlar assotsiatsiyasi a'zosi. JSST ayollar reproduktiv salomatligini muhofaza qilish dasturlari bo'yicha ta'lim olgan.",
-      "bio": "Malika Shavkatovna — 14 yillik tajribaga ega akusher-ginekolog. Har qanday yoshdagi ayollarni qabul qiladi — sikl haqida birinchi savollar bilan murojaat qiladigan o'smirlardan tortib menopauza davridagi bemorlargacha. Mavzu bemor uchun qanchalik nozik bo'lishi mumkinligini tushunganligi uchun qabulda iloji boricha qulay va ishonchli muhitni yaratadi. Homiladorlikni olib borish, profilaktik ko'riklar, yallig'lanish kasalliklarini davolash, menstrual sikl buzilishlari, gormonal kontratseptsiyaga ixtisoslashgan. Bachadon bo'yni patologiyasini erta diagnostika qilish va individual kuzatuv rejasini tanlashga alohida e'tibor beradi. Malika Shavkatovna kichik chanoq a'zolari UZIni qabulda bevosita o'tkazadi, bu bemorlarning vaqtini tejaydi. Ayollarni oilani rejalashtirish va homiladorlikka tayyorlanish masalalari bo'yicha faol konsultatsiya beradi."
+      "bio": "Malika Shavkatovna — 14 yillik tajribaga ega akusher-ginekolog. Har qanday yoshdagi ayollarni qabul qiladi — sikl haqida birinchi savollar bilan murojaat qiladigan o'smirlardan tortib menopauza davridagi bemorlargacha. Mavzu bemor uchun qanchalik nozik bo'lishi mumkinligini tushunganligi uchun qabulda iloji boricha qulay va ishonchli muhitni yaratadi. Homiladorlikni olib borish, profilaktik ko'riklar, yallig'lanish kasalliklarini davolash, menstrual sikl buzilishlari, gormonal kontratseptsiyaga ixtisoslashgan. Bachadon bo'yni patologiyasini erta diagnostika qilish va individual kuzatuv rejasini tanlashga alohida e'tibor beradi. Malika Shavkatovna kichik chanoq a'zolari UZIni qabulda bevosita o'tkazadi, bu bemorlarning vaqtini tejaydi. Ayollarni oilani rejalashtirish va homiladorlikka tayyorlanish masalalari bo'yicha faol konsultatsiya beradi.",
+      "workingHours": "Du-Ju 9:00-17:00, Sh 9:00-13:00"
     },
     "ismailov-bobur-uktamovich": {
       "name": "Ismailov Bobur Uktamovich",
       "specialty": "Urolog-androlog",
       "education": "Andijon davlat tibbiyot institutining davolash fakultetini 2005 yilda bitirgan. Urologiya bo'yicha ordinaturani o'tagan. 2015 yilda Olmaotada androlog va reproduktiv tibbiyot sohasida qo'shimcha mutaxassislik olgan.",
       "achievements": "Yevropa Urologlar Assotsiatsiyasi (EAU) a'zosi. Urodinamika va endoskopik jarrohlik bo'yicha sertifikatlangan mutaxassis. Xalqaro urologik konferentsiyalarning muntazam ishtirokchisi.",
-      "bio": "Bobur Uktamovich — 19 yillik ish tajribasiga ega urolog-androlog. Erkak va ayollarni siydik-tanosil tizimi kasalliklari bilan qabul qiladi — o'tkir infektsiyalardan surunkali holatlargacha. Buyrak-tosh kasalligi, prostatit, prostata bezi adenomasi, erkak bepushtligi, erektil disfunktsiyani davolashga ixtisoslashgan. Shifokorning yondashuvi isbotlangan tibbiyotga asoslangan — u har bir bosqichning zarurligini bemorga tushuntirib, ortiqcha tahlil va tekshiruvlarni tayinlamaydi. Tashrifning psixologik tomoniga alohida e'tibor beradi: ko'p erkaklar uyalganligi uchun urologga borishni kechiktirishini tushunadi, shuning uchun suhbatni nozik va baholashsiz olib boradi. Klinikada Bobur Uktamovich qabulda bevosita uroflowmetriya va UZI-diagnostikani faol qo'llaydi, bu qarorlarni iloji boricha tezroq qabul qilish imkonini beradi."
+      "bio": "Bobur Uktamovich — 19 yillik ish tajribasiga ega urolog-androlog. Erkak va ayollarni siydik-tanosil tizimi kasalliklari bilan qabul qiladi — o'tkir infektsiyalardan surunkali holatlargacha. Buyrak-tosh kasalligi, prostatit, prostata bezi adenomasi, erkak bepushtligi, erektil disfunktsiyani davolashga ixtisoslashgan. Shifokorning yondashuvi isbotlangan tibbiyotga asoslangan — u har bir bosqichning zarurligini bemorga tushuntirib, ortiqcha tahlil va tekshiruvlarni tayinlamaydi. Tashrifning psixologik tomoniga alohida e'tibor beradi: ko'p erkaklar uyalganligi uchun urologga borishni kechiktirishini tushunadi, shuning uchun suhbatni nozik va baholashsiz olib boradi. Klinikada Bobur Uktamovich qabulda bevosita uroflowmetriya va UZI-diagnostikani faol qo'llaydi, bu qarorlarni iloji boricha tezroq qabul qilish imkonini beradi.",
+      "workingHours": "Du-Ju 10:00-18:00"
     },
     "rakhimova-zuhra-azizovna": {
       "name": "Rahimova Zuhra Azizovna",
       "specialty": "Dermatolog-kosmetolog",
       "education": "Buxoro davlat tibbiyot institutini 2014 yilda bitirgan. Dermatovenerologiya bo'yicha ordinaturani o'tagan. Estetik dermatologiya va lazer texnologiyalari bo'yicha sertifikatlarni Istanbul va Seulda olgan.",
       "achievements": "O'zbekiston Dermatologlar jamiyati a'zosi. Dermatoskopiya va in'eksion uslublar bo'yicha sertifikatlangan mutaxassis. Yetakchi koreys va turk dermatologlari qoshida muntazam ta'lim olib turadi.",
-      "bio": "Zuhra Azizovna — 11 yillik tajribaga ega dermatolog-kosmetolog. Klassik dermatologiyani (akne, ekzema, psoriaz, zamburug'li infektsiyalarni davolash) estetik protseduralar bilan birlashtiradi — tomir to'rlari va pigmentatsiyani lazerda davolash, postakne chandiqlarini silliqlash, in'eksion uslublar. Xollar va boshqa teri o'simtalarini dermatoskopik nazorat qilishga alohida e'tibor beradi — bu melanoma va boshqa xavfli o'zgarishlarni erta aniqlash imkonini beradi. Zuhra Azizovna hech qachon zaruratsiz agressiv terapiyani tayinlamaydi — uning yondashuvi bosqichma-bosqich davolash va muntazam nazoratni nazarda tutadi. Surunkali aknesi bor bemorlarni faol olib boradi, ularga toshmalarni barqaror nazorat qilishda yordam beradi. O'smirlar uchun muammoli teri parvarishi bo'yicha o'quv seminarlarini o'tkazadi."
+      "bio": "Zuhra Azizovna — 11 yillik tajribaga ega dermatolog-kosmetolog. Klassik dermatologiyani (akne, ekzema, psoriaz, zamburug'li infektsiyalarni davolash) estetik protseduralar bilan birlashtiradi — tomir to'rlari va pigmentatsiyani lazerda davolash, postakne chandiqlarini silliqlash, in'eksion uslublar. Xollar va boshqa teri o'simtalarini dermatoskopik nazorat qilishga alohida e'tibor beradi — bu melanoma va boshqa xavfli o'zgarishlarni erta aniqlash imkonini beradi. Zuhra Azizovna hech qachon zaruratsiz agressiv terapiyani tayinlamaydi — uning yondashuvi bosqichma-bosqich davolash va muntazam nazoratni nazarda tutadi. Surunkali aknesi bor bemorlarni faol olib boradi, ularga toshmalarni barqaror nazorat qilishda yordam beradi. O'smirlar uchun muammoli teri parvarishi bo'yicha o'quv seminarlarini o'tkazadi.",
+      "workingHours": "Se-Sh 10:00-18:00"
     },
     "mirzayev-jasur-saidovich": {
       "name": "Mirzayev Jasur Saidovich",
       "specialty": "Oftalmolog shifokori",
       "education": "Toshkent tibbiyot akademiyasini 2009 yilda bitirgan. Oftalmologiya bo'yicha ordinaturani va Toshkent ko'z kasalliklari ITIda bolalar oftalmologiyasi bo'yicha stajirovkani o'tagan. Xalqaro kurslarda muntazam malaka oshiradi.",
       "achievements": "Bolalar oftalmologiyasi va ortokeratologik linzalarni tanlash bo'yicha sertifikatlangan mutaxassis. O'zbekiston Oftalmologlar Assotsiatsiyasi a'zosi. Yillik oftalmologik kongressning faol ishtirokchisi.",
-      "bio": "Jasur Saidovich — kattalar va uch yoshdan boshlab bolalar bilan ishlashga ixtisoslashgan 16 yillik tajribaga ega oftalmolog. Maktab miyopiyasini erta diagnostika qilish va uni korreksiya qilish vositalarini — ko'zoynaklar, yumshoq kontakt linzalar, ortokeratologik tungi linzalarni tanlashga alohida e'tibor beradi. Ko'rishning yomonlashishi, bosh og'rig'i, ko'zlardagi quruqlik, allergik reaktsiyalardan shikoyat qiladigan bemorlarni qabul qiladi. Har bir qabulda to'liq ko'rik majmuasini o'tkazadi: korreksiya bilan vizometriya, tonometriya, biomikroskopiya, ko'z tubini ko'rish. Jasur Saidovich bola ko'zini qanday qilib to'g'ri parvarish qilish, qanday yuklamalar ruxsat etilishi va shifokorga shoshilinch murojaat qilish kerakligini ota-onalarga tushunarli tushuntiradi. Shuningdek, ko'rishdagi yoshga oid o'zgarishli bemorlarni olib boradi va progressiv ko'zoynaklar tanlaydi."
+      "bio": "Jasur Saidovich — kattalar va uch yoshdan boshlab bolalar bilan ishlashga ixtisoslashgan 16 yillik tajribaga ega oftalmolog. Maktab miyopiyasini erta diagnostika qilish va uni korreksiya qilish vositalarini — ko'zoynaklar, yumshoq kontakt linzalar, ortokeratologik tungi linzalarni tanlashga alohida e'tibor beradi. Ko'rishning yomonlashishi, bosh og'rig'i, ko'zlardagi quruqlik, allergik reaktsiyalardan shikoyat qiladigan bemorlarni qabul qiladi. Har bir qabulda to'liq ko'rik majmuasini o'tkazadi: korreksiya bilan vizometriya, tonometriya, biomikroskopiya, ko'z tubini ko'rish. Jasur Saidovich bola ko'zini qanday qilib to'g'ri parvarish qilish, qanday yuklamalar ruxsat etilishi va shifokorga shoshilinch murojaat qilish kerakligini ota-onalarga tushunarli tushuntiradi. Shuningdek, ko'rishdagi yoshga oid o'zgarishli bemorlarni olib boradi va progressiv ko'zoynaklar tanlaydi.",
+      "workingHours": "Du-Ju 9:00-17:00"
     },
     "kasymova-feruza-tahirovna": {
       "name": "Kasimova Feruza Tahirovna",
       "specialty": "Stomatolog-terapevt",
       "education": "Toshkent davlat stomatologiya institutining stomatologiya fakultetini 2011 yilda bitirgan. Moskva va Istanbulda estetik restavratsiya va mikroskopik stomatologiya bo'yicha mutaxassislikni o'tagan.",
       "achievements": "Dental mikroskop bilan ishlash bo'yicha sertifikatlangan mutaxassis. Old tishlarni estetik restavratsiya qilish sohasida ekspert. Bioclear to'g'ridan-to'g'ri restavratsiya tizimlari bo'yicha ta'lim olgan.",
-      "bio": "Feruza Tahirovna — 13 yillik tajribaga ega stomatolog-terapevt, estetik stomatologiya va dental mikroskop bilan ishlash bo'yicha mutaxassis. Karyez va asoratlarini davolaydi, emalning tabiiy anatomiyasi va ranglarini takrorlash bilan old tishlarning badiiy restavratsiyasini bajaradi. Minimal invaziv yondashuvga alohida e'tibor beradi — tishning sog'lom to'qimalarini imkon qadar saqlashga harakat qiladi. Dentofobiyali bemorlar bilan Feruza Tahirovna ayniqsa nozik ishlaydi: har bir bosqichni batafsil tushuntiradi, zamonaviy og'riqsizlantirish usullaridan foydalanadi va shoshiltirmaydi. Tishlarni Air Flow tizimi va ftorlash bilan professional tozalashni amalga oshiradi. Og'iz bo'shlig'i gigiyenasiga va uy parvarishi vositalarini tanlashga alohida e'tibor berib, bemorlarni uzoq muddatli kuzatuvni muntazam olib boradi."
+      "bio": "Feruza Tahirovna — 13 yillik tajribaga ega stomatolog-terapevt, estetik stomatologiya va dental mikroskop bilan ishlash bo'yicha mutaxassis. Karyez va asoratlarini davolaydi, emalning tabiiy anatomiyasi va ranglarini takrorlash bilan old tishlarning badiiy restavratsiyasini bajaradi. Minimal invaziv yondashuvga alohida e'tibor beradi — tishning sog'lom to'qimalarini imkon qadar saqlashga harakat qiladi. Dentofobiyali bemorlar bilan Feruza Tahirovna ayniqsa nozik ishlaydi: har bir bosqichni batafsil tushuntiradi, zamonaviy og'riqsizlantirish usullaridan foydalanadi va shoshiltirmaydi. Tishlarni Air Flow tizimi va ftorlash bilan professional tozalashni amalga oshiradi. Og'iz bo'shlig'i gigiyenasiga va uy parvarishi vositalarini tanlashga alohida e'tibor berib, bemorlarni uzoq muddatli kuzatuvni muntazam olib boradi.",
+      "workingHours": "Du-Sh 9:00-19:00"
     },
     "usmanov-ravshan-makhmudovich": {
       "name": "Usmanov Ravshan Mahmudovich",
       "specialty": "Stomatolog-jarroh, implantolog",
       "education": "Toshkent davlat stomatologiya institutini 2003 yilda bitirgan. Jarrohlik stomatologiyasi bo'yicha klinik ordinaturani va Shveytsariya, Janubiy Koreya hamda Germaniyada implantologiya bo'yicha ko'plab xalqaro kurslarni o'tagan.",
       "achievements": "Straumann, Osstem va MIS tizimlari bo'yicha sertifikatlangan implantolog. Xalqaro Implantologlar Jamoasi (ITI) a'zosi. Amaliyoti davomida 2000 dan ortiq dental implantni o'rnatgan.",
-      "bio": "Ravshan Mahmudovich — 20 yillik tajribaga ega jarroh-implantolog va klinikaning dental implantatsiya sohasidagi yetakchi mutaxassislaridan biri. Yagona implantlar o'rnatish, jag'ni to'liq tiklash uchun All-on-4 va All-on-6 protokollari, suyak yetishmovchiligida suyak plastikasi va sinus-liftingni amalga oshiradi. Birinchi konsultatsiyada Ravshan Mahmudovich KT tasvirlari va bemorning moliyaviy imkoniyatlarini hisobga olgan holda davolash rejasini batafsil tushuntiradi, mos muqobillar bo'lsa, eng qimmat tizimlarda turib olmaydi. Har bir holatga individual yondashadi: tishlash, yumshoq to'qimalar holati, estetik istaklarni hisobga oladi. Operatsiyadan keyingi kuzatuvga alohida e'tibor beradi — har bir bemor implantatsiyadan keyingi birinchi kunlarda tezkor aloqa uchun shifokorning to'g'ridan-to'g'ri kontaktini oladi."
+      "bio": "Ravshan Mahmudovich — 20 yillik tajribaga ega jarroh-implantolog va klinikaning dental implantatsiya sohasidagi yetakchi mutaxassislaridan biri. Yagona implantlar o'rnatish, jag'ni to'liq tiklash uchun All-on-4 va All-on-6 protokollari, suyak yetishmovchiligida suyak plastikasi va sinus-liftingni amalga oshiradi. Birinchi konsultatsiyada Ravshan Mahmudovich KT tasvirlari va bemorning moliyaviy imkoniyatlarini hisobga olgan holda davolash rejasini batafsil tushuntiradi, mos muqobillar bo'lsa, eng qimmat tizimlarda turib olmaydi. Har bir holatga individual yondashadi: tishlash, yumshoq to'qimalar holati, estetik istaklarni hisobga oladi. Operatsiyadan keyingi kuzatuvga alohida e'tibor beradi — har bir bemor implantatsiyadan keyingi birinchi kunlarda tezkor aloqa uchun shifokorning to'g'ridan-to'g'ri kontaktini oladi.",
+      "workingHours": "Du-Ju 10:00-19:00"
     },
     "nuriddinova-nigora-shavkatovna": {
       "name": "Nuriddinova Nigora Shavkatovna",
       "specialty": "Endokrinolog shifokori",
       "education": "Toshkent tibbiyot akademiyasini 2010 yilda bitirgan. Respublika ixtisoslashtirilgan ilmiy-amaliy tibbiyot endokrinologiya markazida endokrinologiya bo'yicha ordinaturani o'tagan. Xalqaro Diabet Federatsiyasi dasturlari bo'yicha muntazam ta'lim olib turadi.",
       "achievements": "O'zbekiston Endokrinologiya Assotsiatsiyasi a'zosi. Insulin pompalari va doimiy glyukoza monitoringi tizimlari bilan ishlash bo'yicha sertifikatlangan mutaxassis. Tireoidologiya bo'yicha ekspert.",
-      "bio": "Nigora Shavkatovna — 15 yillik tajribaga ega endokrinolog. 1 va 2 turdagi qandli diabetli bemorlarni, qalqonsimon bez kasalliklarini, yog' almashinuvi buzilishlari va reproduktiv endokrinologiyani olib borishga ixtisoslashgan. O'z vazifasini faqat dorilarni tanlashda emas, balki bemorni kasallikni mustaqil nazorat qilishga o'rgatishda — non birliklarini hisoblash, glyukoza ko'rsatkichlarini talqin qilish, insulinoterapiyani korreksiya qilishda ham ko'radi. Qabulda qalqonsimon bez UZIni mustaqil bajaradi, bu diagnostikani sezilarli darajada tezlashtiradi. Konsultatsiyaning ta'lim qismiga ko'p vaqt ajratadi, biokimyoviy jarayonlarni oddiy tilda tushuntiradi. Gestatsion diabetli homiladorlarga va birinchi marta aniqlangan qandli diabetli bemorlarga alohida e'tibor beradi — bu holatlarda kuzatuvning birinchi oylarida ayniqsa intensiv olib boradi."
+      "bio": "Nigora Shavkatovna — 15 yillik tajribaga ega endokrinolog. 1 va 2 turdagi qandli diabetli bemorlarni, qalqonsimon bez kasalliklarini, yog' almashinuvi buzilishlari va reproduktiv endokrinologiyani olib borishga ixtisoslashgan. O'z vazifasini faqat dorilarni tanlashda emas, balki bemorni kasallikni mustaqil nazorat qilishga o'rgatishda — non birliklarini hisoblash, glyukoza ko'rsatkichlarini talqin qilish, insulinoterapiyani korreksiya qilishda ham ko'radi. Qabulda qalqonsimon bez UZIni mustaqil bajaradi, bu diagnostikani sezilarli darajada tezlashtiradi. Konsultatsiyaning ta'lim qismiga ko'p vaqt ajratadi, biokimyoviy jarayonlarni oddiy tilda tushuntiradi. Gestatsion diabetli homiladorlarga va birinchi marta aniqlangan qandli diabetli bemorlarga alohida e'tibor beradi — bu holatlarda kuzatuvning birinchi oylarida ayniqsa intensiv olib boradi.",
+      "workingHours": "Du, Ch, Ju 9:00-16:00"
     },
     "tashpulatov-shokhrukh-bakhtiyorovich": {
       "name": "Tashpulatov Shohruh Bahtiyorovich",
       "specialty": "Gastroenterolog-endoskopist",
       "education": "Toshkent tibbiyot akademiyasining davolash fakultetini 2007 yilda bitirgan. Terapiya bo'yicha ordinaturani va gastroenterologiya bo'yicha mutaxassislikni o'tagan. Endoskopiya bo'yicha stajirovkani Seul Milliy Universitet tibbiyot markazida o'tagan.",
       "achievements": "Hazm yo'lining endoskopik tekshiruvlari bo'yicha sertifikatlangan mutaxassis. Yevropa Gastrointestinal Endoskopiya Jamiyati (ESGE) a'zosi. Helikobakter infektsiyasini diagnostika va davolash bo'yicha ekspert.",
-      "bio": "Shohruh Bahtiyorovich — 18 yillik tajribaga ega gastroenterolog-endoskopist. Klinik qabulni amaliy endoskopiya bilan birlashtiradi — bu hazm yo'lidagi kasallikning to'liq rasmini birinchi shikoyatdan aniq tashxisgacha ko'rish imkonini beradi. Gastroezofageal reflyuks kasalligi, surunkali gastrit, yara kasalligi, ta'sirlangan ichak sindromi, jigar va o't yo'llari kasalliklari bo'lgan bemorlarni olib borishga ixtisoslashgan. FGDSni biopsiya va helikobakter pilori testi bilan shaxsan bajaradi. Shohruh Bahtiyorovich har bir bemorga tekshiruv natijalarini batafsil tushuntiradi, tasvirlarni ko'rsatadi va u yerda nima ko'rinishini aytib beradi. Diyetik tavsiyalarga alohida e'tibor beradi, gastroenterologiyada muvaffaqiyatning yarmi — ovqatlanish va hayot tarzini korreksiya qilish ekanligini tushunadi."
+      "bio": "Shohruh Bahtiyorovich — 18 yillik tajribaga ega gastroenterolog-endoskopist. Klinik qabulni amaliy endoskopiya bilan birlashtiradi — bu hazm yo'lidagi kasallikning to'liq rasmini birinchi shikoyatdan aniq tashxisgacha ko'rish imkonini beradi. Gastroezofageal reflyuks kasalligi, surunkali gastrit, yara kasalligi, ta'sirlangan ichak sindromi, jigar va o't yo'llari kasalliklari bo'lgan bemorlarni olib borishga ixtisoslashgan. FGDSni biopsiya va helikobakter pilori testi bilan shaxsan bajaradi. Shohruh Bahtiyorovich har bir bemorga tekshiruv natijalarini batafsil tushuntiradi, tasvirlarni ko'rsatadi va u yerda nima ko'rinishini aytib beradi. Diyetik tavsiyalarga alohida e'tibor beradi, gastroenterologiyada muvaffaqiyatning yarmi — ovqatlanish va hayot tarzini korreksiya qilish ekanligini tushunadi.",
+      "workingHours": "Du-Ju 9:00-17:00"
     },
     "khodjayeva-gulchehra-rustamovna": {
       "name": "Hodjayeva Gulchehra Rustamovna",
       "specialty": "Oliy toifa terapevti",
       "education": "Toshkent davlat tibbiyot institutining davolash fakultetini 1996 yilda bitirgan. Terapiya bo'yicha klinik ordinaturani va poytaxtning yirik statsionarlarida ko'p yillik amaliyotni o'tagan. Gerontologiya bo'yicha qo'shimcha mutaxassislikka ega.",
       "achievements": "O'zbekiston Umumiy amaliyot shifokorlari Assotsiatsiyasi a'zosi. Oilaviy tibbiyot bo'yicha sertifikat. Keksa bemorlarda bir nechta patologiya holatlari bilan ko'p yillik ish tajribasi.",
-      "bio": "Gulchehra Rustamovna — 28 yillik klinik tajribaga ega terapevt shifokori. Klinikaning har qanday yoshdagi kattalar bemorlar bilan ishlash bo'yicha eng tajribali mutaxassislaridan biri. Bir nechta surunkali kasalliklari bo'lgan keksa yoshdagi bemorlarni olib borishga alohida e'tibor beradi — arterial gipertenziya, qandli diabet, IBS, osteoartroz, surunkali obstruktiv o'pka kasalligi. Qabulda har doim bemor qabul qilayotgan har bir preparat haqida batafsil so'raydi va davolash sxemasini optimallashtirishga yordam beradi, takrorlanishlar va istalmagan o'zaro ta'sirlarni istisno qiladi. Boshqa mutaxassislar oralig'ida yurib charchagan bemorlar unga ko'pincha murojaat qilishadi — Gulchehra Rustamovna koordinator rolini o'z zimmasiga oladi va tekshiruvlarning aniq rejasini qurishga yordam beradi. Bemorni hech qachon shoshiltirmaydigan, e'tiborli va xotirjam shifokor sifatida obro'ga ega."
+      "bio": "Gulchehra Rustamovna — 28 yillik klinik tajribaga ega terapevt shifokori. Klinikaning har qanday yoshdagi kattalar bemorlar bilan ishlash bo'yicha eng tajribali mutaxassislaridan biri. Bir nechta surunkali kasalliklari bo'lgan keksa yoshdagi bemorlarni olib borishga alohida e'tibor beradi — arterial gipertenziya, qandli diabet, IBS, osteoartroz, surunkali obstruktiv o'pka kasalligi. Qabulda har doim bemor qabul qilayotgan har bir preparat haqida batafsil so'raydi va davolash sxemasini optimallashtirishga yordam beradi, takrorlanishlar va istalmagan o'zaro ta'sirlarni istisno qiladi. Boshqa mutaxassislar oralig'ida yurib charchagan bemorlar unga ko'pincha murojaat qilishadi — Gulchehra Rustamovna koordinator rolini o'z zimmasiga oladi va tekshiruvlarning aniq rejasini qurishga yordam beradi. Bemorni hech qachon shoshiltirmaydigan, e'tiborli va xotirjam shifokor sifatida obro'ga ega.",
+      "workingHours": "Du-Sh 8:00-14:00"
     },
     "pulatov-sardor-anvarovich": {
       "name": "Pulatov Sardor Anvarovich",
       "specialty": "Ortoped-travmatolog",
       "education": "Toshkent tibbiyot akademiyasining davolash fakultetini 2000 yilda bitirgan. Respublika ilmiy-amaliy travmatologiya markazida ortopediya va travmatologiya bo'yicha klinik ordinaturani o'tagan. Turkiya va Germaniyada artroskopiya bo'yicha stajirovkadan o'tgan.",
       "achievements": "Tizza va yelka bo'g'imlari artroskopiyasi bo'yicha sertifikatlangan mutaxassis. O'zbekiston Ortoped-travmatologlar assotsiatsiyasi a'zosi. Katta bo'g'imlarni endoprotezlash bo'yicha ekspert.",
-      "bio": "Sardor Anvarovich — 24 yillik tajribaga ega ortoped-travmatolog, tayanch-harakat apparati kasalliklari va shikastlanishlarini konservativ va jarrohlik davolash bo'yicha mutaxassis. Asosiy ish yo'nalishi — katta bo'g'imlar artrozi, sport jarohatlari oqibatlari, bel va bo'yindagi surunkali og'riq, bolalar va kattalardagi yassi oyoq, qad-qomat buzilishlarini diagnostika va davolash. Qabulda gialuron kislotasi bilan bo'g'im ichi in'eksiyalarini, plazmaterapiya, blokadalarni mustaqil bajaradi. Sardor Anvarovich protseduraning aniqligini oshirish uchun in'eksiyalarda ultratovush navigatsiyasidan faol foydalanadi. Operatsiyani tayinlashdan oldin har doim konservativ davolashning barcha imkoniyatlarini tugatadi va xavf-xatarlar va kutilayotgan natijani bemor bilan batafsil muhokama qiladi. Sportchilar, surunkali bel og'rig'i bo'lgan ofis xodimlari va tizza hamda son-son bo'g'imlarining artrozli keksa bemorlarni qabul qiladi."
+      "bio": "Sardor Anvarovich — 24 yillik tajribaga ega ortoped-travmatolog, tayanch-harakat apparati kasalliklari va shikastlanishlarini konservativ va jarrohlik davolash bo'yicha mutaxassis. Asosiy ish yo'nalishi — katta bo'g'imlar artrozi, sport jarohatlari oqibatlari, bel va bo'yindagi surunkali og'riq, bolalar va kattalardagi yassi oyoq, qad-qomat buzilishlarini diagnostika va davolash. Qabulda gialuron kislotasi bilan bo'g'im ichi in'eksiyalarini, plazmaterapiya, blokadalarni mustaqil bajaradi. Sardor Anvarovich protseduraning aniqligini oshirish uchun in'eksiyalarda ultratovush navigatsiyasidan faol foydalanadi. Operatsiyani tayinlashdan oldin har doim konservativ davolashning barcha imkoniyatlarini tugatadi va xavf-xatarlar va kutilayotgan natijani bemor bilan batafsil muhokama qiladi. Sportchilar, surunkali bel og'rig'i bo'lgan ofis xodimlari va tizza hamda son-son bo'g'imlarining artrozli keksa bemorlarni qabul qiladi.",
+      "workingHours": "Du-Ju 8:00-15:00"
     },
     "azimova-shahnoza-davronovna": {
       "name": "Azimova Shahnoza Davronovna",
       "specialty": "Rentgenolog shifokori, MRT mutaxassisi",
       "education": "Toshkent tibbiyot akademiyasining davolash fakultetini 2012 yilda bitirgan. Toshkent shifokorlarni takomillashtirish institutida nurli diagnostika bo'yicha ordinaturani o'tagan. Yangi MRT-diagnostika protokollari bo'yicha muntazam ta'lim olib turadi.",
       "achievements": "Barcha sohalardagi MRT bo'yicha sertifikatlangan mutaxassis. Yevropa Radiologlar Jamiyati (ESR) a'zosi. Neyroradiologiya va tayanch-harakat tizimi bo'yicha ekspert.",
-      "bio": "Shahnoza Davronovna — 12 yillik tajribaga ega rentgenolog shifokori, klinikaning magnit-rezonans tomografiya bo'yicha yetakchi mutaxassisi. Barcha sohalardagi tekshiruvlarni talqin qiladi: bosh va orqa miya, bo'g'imlar, kichik chanoq a'zolari, qorin bo'shlig'i, yumshoq to'qimalar. Neyroradiologik holatlarni — tarqoq skleroz, miya o'simtalari, insult oqibatlarini diagnostika qilishga alohida e'tibor beradi. Har bir tekshiruvga o'ylab yondashadi: anamnezni o'rganadi, oldingi tasvirlar bilan taqqoslaydi, topilmalarni klinik ahamiyatini ko'rsatib, iloji boricha batafsil ta'riflaydi. Shahnoza Davronovna murakkab holatlarda klinikaning davolovchi shifokorlariga faol konsultatsiya beradi va kerak bo'lganda qo'shimcha protokollarni tavsiya qiladi. Qabulda bemorga tasvirlarini har doim ko'rsatadi va aniqlangan o'zgarishlar mohiyatini tushunarli shaklda tushuntiradi."
+      "bio": "Shahnoza Davronovna — 12 yillik tajribaga ega rentgenolog shifokori, klinikaning magnit-rezonans tomografiya bo'yicha yetakchi mutaxassisi. Barcha sohalardagi tekshiruvlarni talqin qiladi: bosh va orqa miya, bo'g'imlar, kichik chanoq a'zolari, qorin bo'shlig'i, yumshoq to'qimalar. Neyroradiologik holatlarni — tarqoq skleroz, miya o'simtalari, insult oqibatlarini diagnostika qilishga alohida e'tibor beradi. Har bir tekshiruvga o'ylab yondashadi: anamnezni o'rganadi, oldingi tasvirlar bilan taqqoslaydi, topilmalarni klinik ahamiyatini ko'rsatib, iloji boricha batafsil ta'riflaydi. Shahnoza Davronovna murakkab holatlarda klinikaning davolovchi shifokorlariga faol konsultatsiya beradi va kerak bo'lganda qo'shimcha protokollarni tavsiya qiladi. Qabulda bemorga tasvirlarini har doim ko'rsatadi va aniqlangan o'zgarishlar mohiyatini tushunarli shaklda tushuntiradi.",
+      "workingHours": "Du-Sh 8:00-16:00"
     },
     "qosimov-akmal-tolkinovich": {
       "name": "Qosimov Akmal Tolkinovich",
       "specialty": "Terapevt shifokori",
       "education": "Toshkent tibbiyot akademiyasining davolash fakultetini 2017 yilda bitirgan. Ichki kasalliklar bo'yicha ordinaturani o'tagan. Oilaviy tibbiyot va sport tibbiyoti bo'yicha qo'shimcha mutaxassislikka ega.",
       "achievements": "Oilaviy tibbiyot bo'yicha sertifikatlangan mutaxassis. Isbotlangan tibbiyot va sport kardiologiyasi bo'yicha xalqaro kurslarni o'tagan. Isbotlangan tibbiyot bo'yicha professional onlayn-jamoatchiliklarning faol ishtirokchisi.",
-      "bio": "Akmal Tolkinovich — 9 yillik tajribaga ega yosh, energiyali terapevt shifokori. Ish yondashuvi — zamonaviy va isbotlangan: xalqaro klinik tavsiyalarga tayanadi va isbotlanmagan samaradorlikka ega preparatlarni tayinlamaydi. Har qanday yoshdagi kattalar bemorlarni qabul qiladi — yozma davolash rejalariga ega batafsil, tuzilgan konsultatsiyalar uchun ayniqsa yosh ishchi odamlar orasida mashhur. Arterial gipertenziya, metabolik sindrom, dislipidemiya, shamollash va mavsumiy kasalliklari bo'lgan bemorlarni olib borishga ixtisoslashgan. Kechqurun soatlarida faol ishlaydi, bu ofis xodimlari uchun qulay. Dorisiz choralar — hayot tarzi, ovqatlanish, jismoniy faollikni modifikatsiya qilishga ko'p e'tibor beradi. Bemorlar bilan hamkorlik munosabatlarini qurib, ularning uzoq muddatli kuzatuvini muntazam olib boradi."
+      "bio": "Akmal Tolkinovich — 9 yillik tajribaga ega yosh, energiyali terapevt shifokori. Ish yondashuvi — zamonaviy va isbotlangan: xalqaro klinik tavsiyalarga tayanadi va isbotlanmagan samaradorlikka ega preparatlarni tayinlamaydi. Har qanday yoshdagi kattalar bemorlarni qabul qiladi — yozma davolash rejalariga ega batafsil, tuzilgan konsultatsiyalar uchun ayniqsa yosh ishchi odamlar orasida mashhur. Arterial gipertenziya, metabolik sindrom, dislipidemiya, shamollash va mavsumiy kasalliklari bo'lgan bemorlarni olib borishga ixtisoslashgan. Kechqurun soatlarida faol ishlaydi, bu ofis xodimlari uchun qulay. Dorisiz choralar — hayot tarzi, ovqatlanish, jismoniy faollikni modifikatsiya qilishga ko'p e'tibor beradi. Bemorlar bilan hamkorlik munosabatlarini qurib, ularning uzoq muddatli kuzatuvini muntazam olib boradi.",
+      "workingHours": "Du-Ju 14:00-20:00, Sh 9:00-14:00"
     }
   },
   "news": {
@@ -519,7 +684,8 @@
     "prefillNotice": {
       "service": "Xizmat: {name}",
       "doctor": "Yozilish: {name}"
-    }
+    },
+    "buttonDefault": "Qabulga yozilish"
   },
   "form": {
     "errors": {
@@ -539,5 +705,48 @@
         "past": "Sana o'tmishda bo'lishi mumkin emas"
       }
     }
+  },
+  "contact": {
+    "title": "Aloqa",
+    "infoHeading": "Ma'lumot",
+    "addressLabel": "Manzil",
+    "addressValue": "Toshkent sh., Sergeli tumani, Lutfullo Kamoliddinov ko'chasi, 45",
+    "phonesLabel": "Telefonlar",
+    "emergencyPrefix": "Sutkalik",
+    "hoursLabel": "Ish vaqti",
+    "hoursWeekdays": "Du-Sh: 8:00 - 20:00",
+    "hoursSunday": "Yak: 9:00 - 17:00",
+    "emailLabel": "Email",
+    "mapHeading": "Bizning joylashuvimiz",
+    "consultationHeading": "Konsultatsiyaga yoziling",
+    "consultationBlurb": "Mutaxassislarimiz barcha savollaringizga javob beradi"
+  },
+  "pages": {
+    "news": {
+      "title": "Yangiliklar"
+    },
+    "doctors": {
+      "title": "Shifokorlar",
+      "experienceSuffix": "yillik tajriba"
+    },
+    "services": {
+      "title": "Bizning xizmatlarimiz",
+      "subtitle": "Sizga qulay vaqtda butun oila uchun professional tibbiy yordam",
+      "allCategories": "Barcha xizmatlar",
+      "empty": "Bu kategoriyada xizmatlar topilmadi",
+      "minutesShort": "daq"
+    }
+  },
+  "doctorsDetail": {
+    "experienceSuffix": "yillik tajriba",
+    "educationHeading": "Ta'lim",
+    "achievementsHeading": "Yutuqlar",
+    "bioHeading": "Shifokor haqida",
+    "workingHoursHeading": "Ish jadvali"
+  },
+  "servicesDetail": {
+    "priceLabel": "Narxi",
+    "durationLabel": "Davomiyligi",
+    "minutesShort": "daq"
   }
 }
