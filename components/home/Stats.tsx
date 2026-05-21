@@ -1,14 +1,10 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { GlassCard } from '@/components/shared/GlassCard'
 
-const stats = [
-  { value: 15000, suffix: '+', label: 'Пациентов' },
-  { value: 15, suffix: ' лет', label: 'Опыта' },
-  { value: 28, suffix: '+', label: 'Услуг' },
-  { value: 15, suffix: '', label: 'Врачей' },
-]
+type Stat = { value: number; suffix: string; label: string }
 
 function AnimatedNumber({ value, suffix }: { value: number; suffix: string }) {
   const [count, setCount] = useState(0)
@@ -36,6 +32,9 @@ function AnimatedNumber({ value, suffix }: { value: number; suffix: string }) {
 }
 
 export function Stats() {
+  const t = useTranslations('home.stats')
+  const stats = t.raw('items') as Stat[]
+
   return (
     <section className="py-16 bg-gradient-to-r from-[var(--color-primary)]/10 to-[var(--color-mint)]/10">
       <div className="container mx-auto px-6">

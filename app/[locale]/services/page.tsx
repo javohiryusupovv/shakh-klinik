@@ -24,7 +24,8 @@ function formatPrice(min: number, max: number): string {
 
 function ServiceCard({ service }: ServiceCardProps) {
   const t = useTranslations('services')
-  
+  const tPages = useTranslations('pages.services')
+
   return (
     <Link href={`/services/${service.slug}`}>
       <GlassCard className="p-6 group cursor-pointer h-full" glow="primary">
@@ -42,7 +43,7 @@ function ServiceCard({ service }: ServiceCardProps) {
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            {service.durationMinutes} мин
+            {service.durationMinutes} {tPages('minutesShort')}
           </span>
         </div>
       </GlassCard>
@@ -53,40 +54,41 @@ function ServiceCard({ service }: ServiceCardProps) {
 export default function ServicesPage() {
   const t = useTranslations('services')
   const tCategories = useTranslations('categories')
+  const tPages = useTranslations('pages.services')
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
-  
-  const filtered = selectedCategory === 'all' 
-    ? SERVICES 
+
+  const filtered = selectedCategory === 'all'
+    ? SERVICES
     : SERVICES.filter(s => s.categoryId === selectedCategory)
 
   return (
     <main className="container mx-auto px-6 py-12">
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-heading mb-4">Наши услуги</h1>
+        <h1 className="text-4xl md:text-5xl font-heading mb-4">{tPages('title')}</h1>
         <p className="text-[#6B7280] text-lg max-w-2xl mx-auto">
-          Профессиональная медицинская помощь для всей семьи в удобное для вас время
+          {tPages('subtitle')}
         </p>
       </div>
-      
+
       {/* Category Filter */}
       <div className="flex flex-wrap gap-2 justify-center mb-10">
         <button
           onClick={() => setSelectedCategory('all')}
           className={`px-5 py-2.5 rounded-full font-medium transition-all ${
-            selectedCategory === 'all' 
-              ? 'bg-[#4A9EE7] text-white shadow-lg' 
+            selectedCategory === 'all'
+              ? 'bg-[#4A9EE7] text-white'
               : 'bg-gray-100 hover:bg-gray-200'
           }`}
         >
-          Все услуги
+          {tPages('allCategories')}
         </button>
         {CATEGORIES.map(cat => (
           <button
             key={cat.id}
             onClick={() => setSelectedCategory(cat.id)}
             className={`px-5 py-2.5 rounded-full font-medium transition-all ${
-              selectedCategory === cat.id 
-                ? 'bg-[#4A9EE7] text-white shadow-lg' 
+              selectedCategory === cat.id
+                ? 'bg-[#4A9EE7] text-white'
                 : 'bg-gray-100 hover:bg-gray-200'
             }`}
           >
@@ -94,16 +96,16 @@ export default function ServicesPage() {
           </button>
         ))}
       </div>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filtered.map(service => (
           <ServiceCard key={service.slug} service={service} />
         ))}
       </div>
-      
+
       {filtered.length === 0 && (
         <div className="text-center py-16">
-          <p className="text-[#6B7280] text-lg">Услуги в этой категории не найдены</p>
+          <p className="text-[#6B7280] text-lg">{tPages('empty')}</p>
         </div>
       )}
     </main>

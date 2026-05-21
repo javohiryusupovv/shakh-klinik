@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 import 'swiper/css'
@@ -8,34 +9,21 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import { ChevronRight } from 'lucide-react'
 
-const heroSlides = [
-  { 
-    title: 'Качественная медицина для всей семьи', 
-    subtitle: 'Современное оборудование и опытные врачи', 
-    cta: 'Записаться',
-    bg: 'from-[#4A9EE7]/30 to-[#A8E6CF]/20'
-  },
-  { 
-    title: 'Диагностика нового поколения', 
-    subtitle: 'Точные результаты за короткое время', 
-    cta: 'Подробнее',
-    bg: 'from-[#A8E6CF]/30 to-[#4A9EE7]/20'
-  },
-  { 
-    title: 'Комфорт и забота о пациенте', 
-    subtitle: 'Без очередей и ожидания', 
-    cta: 'Выбрать услугу',
-    bg: 'from-[#2B7FCC]/30 to-[#A8E6CF]/20'
-  },
-  { 
-    title: 'Ваше здоровье — наш приоритет', 
-    subtitle: 'Индивидуальный подход к каждому', 
-    cta: 'Консультация',
-    bg: 'from-[#4A9EE7]/20 to-[#2B7FCC]/20'
-  },
+const SLIDE_BGS = [
+  'from-[#4A9EE7]/30 to-[#A8E6CF]/20',
+  'from-[#A8E6CF]/30 to-[#4A9EE7]/20',
+  'from-[#2B7FCC]/30 to-[#A8E6CF]/20',
+  'from-[#4A9EE7]/20 to-[#2B7FCC]/20',
 ]
 
+type HeroSlide = { title: string; subtitle: string; cta: string }
+
 export function Hero() {
+  const t = useTranslations('home.hero')
+  const slides = (t.raw('slides') as HeroSlide[]).map((slide, i) => ({
+    ...slide,
+    bg: SLIDE_BGS[i] ?? SLIDE_BGS[0],
+  }))
   const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
@@ -46,7 +34,7 @@ export function Hero() {
   return (
     <section className="relative h-[75vh] min-h-[600px] flex items-center overflow-hidden">
       {/* Animated background elements */}
-      <div className={`absolute inset-0 bg-gradient-to-br ${heroSlides[0].bg} transition-all duration-1000`}>
+      <div className={`absolute inset-0 bg-gradient-to-br ${slides[0].bg} transition-all duration-1000`}>
         {/* Floating shapes */}
         <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-[#4A9EE7]/10 blur-3xl animate-pulse" />
         <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-[#A8E6CF]/15 blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
@@ -62,7 +50,7 @@ export function Hero() {
         className="h-full w-full"
         onSlideChange={() => setLoaded(true)}
       >
-        {heroSlides.map((slide, i) => (
+        {slides.map((slide, i) => (
           <SwiperSlide key={i}>
             <div className={`flex items-center justify-center h-full px-6 bg-gradient-to-br ${slide.bg}`}>
               <div className={`text-center max-w-4xl mx-auto transform transition-all duration-700 ${loaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: `${i * 100}ms` }}>
@@ -72,7 +60,7 @@ export function Hero() {
                 <p className="text-xl md:text-2xl text-[#6B7280] mb-8 max-w-2xl mx-auto">
                   {slide.subtitle}
                 </p>
-                <button className="group px-8 py-4 bg-gradient-to-r from-[#4A9EE7] to-[#2B7FCC] text-white rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2 mx-auto">
+                <button className="group px-8 py-4 bg-gradient-to-r from-[#4A9EE7] to-[#2B7FCC] text-white rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 flex items-center gap-2 mx-auto">
                   {slide.cta}
                   <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>

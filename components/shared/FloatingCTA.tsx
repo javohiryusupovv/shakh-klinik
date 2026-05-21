@@ -14,7 +14,7 @@ export function FloatingCTA() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Telegram"
-        className="flex h-12 w-12 items-center justify-center rounded-full bg-[#229ED9] text-white shadow-lg transition-transform hover:scale-110 hover:shadow-xl"
+        className="flex h-12 w-12 items-center justify-center rounded-full bg-[#229ED9] text-white transition-transform hover:scale-110"
       >
         <Send className="h-5 w-5" />
       </a>
@@ -23,12 +23,12 @@ export function FloatingCTA() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"
-        className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-110 hover:shadow-xl"
+        className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white transition-transform hover:scale-110"
       >
         <MessageCircle className="h-5 w-5" />
       </a>
       <div className="md:hidden">
-        <BookCTAButton className="h-12 px-5 shadow-lg" />
+        <BookCTAButton className="h-12 px-5" />
       </div>
     </div>
   )

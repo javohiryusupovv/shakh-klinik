@@ -18,14 +18,14 @@ export function FAQ() {
         {faqData.items?.map((item, i) => (
           <GlassCard key={i} className="overflow-hidden">
             <button
-              className="w-full flex items-center justify-between p-5 text-left"
+              className="w-full flex items-center justify-between text-left"
               onClick={() => setOpenIndex(openIndex === i ? null : i)}
             >
               <span className="font-semibold pr-4">{item.q}</span>
               <ChevronDown className={`transition-transform ${openIndex === i ? 'rotate-180' : ''}`} />
             </button>
             {openIndex === i && (
-              <div className="px-5 pb-5 text-[var(--color-text-gray)]">{item.a}</div>
+              <div className="pr-5 mt-4 text-[var(--color-text-gray)]">{item.a}</div>
             )}
           </GlassCard>
         ))}

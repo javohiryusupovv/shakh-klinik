@@ -16,11 +16,10 @@ export function BookCTAButton({
     <button
       onClick={() => open()}
       className={`
-        group px-5 py-2.5 
-        bg-gradient-to-r from-[#4A9EE7] via-[#5BB0F0] to-[#2B7FCC] 
-        text-white rounded-full text-sm font-semibold 
+        group px-5 py-2.5
+        bg-gradient-to-r from-[#4A9EE7] via-[#5BB0F0] to-[#2B7FCC]
+        text-white rounded-full text-sm font-semibold
         overflow-hidden transition-all duration-300
-        hover:shadow-[0_0_20px_rgba(74,158,231,0.4)]
         hover:scale-[1.02]
         ${className ?? ''}
       `}

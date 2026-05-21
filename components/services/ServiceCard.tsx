@@ -14,10 +14,11 @@ function formatPrice(min: number, max: number): string {
 
 export function ServiceCard({ service }: ServiceCardProps) {
   const t = useTranslations('services')
-  
+  const tPages = useTranslations('pages.services')
+
   return (
     <a href={`/services/${service.slug}`}>
-      <GlassCard className="p-6 hover:scale-105 transition-transform cursor-pointer h-full">
+      <GlassCard hover={false} className="p-6 cursor-pointer h-full">
         <h3 className="text-xl font-semibold mb-2">
           {t(`${service.slug}.name`)}
         </h3>
@@ -29,7 +30,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
             {formatPrice(service.priceMin, service.priceMax)}
           </span>
           <span className="text-sm text-[var(--color-mint)]">
-            {service.durationMinutes} мин
+            {service.durationMinutes} {tPages('minutesShort')}
           </span>
         </div>
       </GlassCard>

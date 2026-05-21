@@ -32,11 +32,11 @@ export function Header() {
   return (
     <header className={`sticky top-0 z-50 mx-2 mt-2 transition-all duration-300 ${scrolled ? 'top-4' : 'mt-2'}`}>
       <div className="container mx-auto">
-        <div className={`relative rounded-full transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-xl shadow-lg border border-white/20' : 'bg-transparent border-transparent'}`}>
+        <div className={`relative rounded-full transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-xl border border-white/20' : 'bg-transparent border-transparent'}`}>
           <div className="flex items-center justify-between h-14 px-4">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#4A9EE7] to-[#2B7FCC] flex items-center justify-center shadow-md">
+              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#4A9EE7] to-[#2B7FCC] flex items-center justify-center">
                 <span className="text-white font-bold text-xs">S</span>
               </div>
               <span className="font-heading text-lg font-bold text-[#1F2937] hidden sm:block">

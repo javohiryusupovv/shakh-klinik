@@ -12,18 +12,19 @@ interface CategoryFilterProps {
 
 export function CategoryFilter({ categories, selected, onSelect }: CategoryFilterProps) {
   const tCategories = useTranslations('categories')
-  
+  const tCommon = useTranslations('common')
+
   return (
     <div className="flex flex-wrap gap-2">
       <button
         onClick={() => onSelect('all')}
         className={`px-4 py-2 rounded-full transition-colors ${
-          selected === 'all' 
-            ? 'bg-[var(--color-primary)] text-white' 
+          selected === 'all'
+            ? 'bg-[var(--color-primary)] text-white'
             : 'glass hover:bg-[var(--color-primary)]/10'
         }`}
       >
-        Все
+        {tCommon('allFilter')}
       </button>
       {categories.map(cat => (
         <button

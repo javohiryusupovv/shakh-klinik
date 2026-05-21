@@ -8,9 +8,9 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-gradient-to-r from-[#4A9EE7] via-[#5BB0F0] to-[#2B7FCC] text-white hover:shadow-[0_0_25px_rgba(74,158,231,0.5)] hover:scale-[1.02] active:scale-[0.98]",
-        primary: "bg-gradient-to-r from-[#4A9EE7] via-[#5BB0F0] to-[#2B7FCC] text-white hover:shadow-[0_0_25px_rgba(74,158,231,0.5)] hover:scale-[1.02] active:scale-[0.98]",
-        secondary: "bg-[#A8E6CF] text-[#1F2937] hover:bg-[#8ed9b8] hover:shadow-[0_0_20px_rgba(168,230,207,0.4)]",
+        default: "bg-gradient-to-r from-[#4A9EE7] via-[#5BB0F0] to-[#2B7FCC] text-white hover:scale-[1.02] active:scale-[0.98]",
+        primary: "bg-gradient-to-r from-[#4A9EE7] via-[#5BB0F0] to-[#2B7FCC] text-white hover:scale-[1.02] active:scale-[0.98]",
+        secondary: "bg-[#A8E6CF] text-[#1F2937] hover:bg-[#8ed9b8]",
         outline: "border-2 border-[#4A9EE7] text-[#4A9EE7] bg-transparent hover:bg-[#4A9EE7]/10",
         ghost: "bg-transparent text-[#1F2937] hover:bg-gray-100",
         destructive: "bg-red-500 text-white hover:bg-red-600",

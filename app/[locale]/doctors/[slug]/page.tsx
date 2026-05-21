@@ -22,6 +22,7 @@ export default async function DoctorDetailPage({ params }: Props) {
   }
   
   const t = await getTranslations('doctors.' + slug)
+  const tHeadings = await getTranslations('doctorsDetail')
 
   return (
     <main className="container mx-auto px-6 py-12 max-w-3xl">
@@ -31,27 +32,27 @@ export default async function DoctorDetailPage({ params }: Props) {
         </div>
         <h1 className="text-4xl font-heading mb-2">{t('name')}</h1>
         <p className="text-xl text-[var(--color-mint)] mb-2">{t('specialty')}</p>
-        <p className="text-[var(--color-text-gray)]">{doctor.experienceYears} лет опыта</p>
+        <p className="text-[var(--color-text-gray)]">{doctor.experienceYears} {tHeadings('experienceSuffix')}</p>
       </div>
-      
+
       <GlassCard className="p-8 mb-8">
-        <h2 className="text-xl font-semibold mb-4">Образование</h2>
+        <h2 className="text-xl font-semibold mb-4">{tHeadings('educationHeading')}</h2>
         <p className="text-[var(--color-text-dark)] leading-relaxed">{t('education')}</p>
       </GlassCard>
 
       <GlassCard className="p-8 mb-8">
-        <h2 className="text-xl font-semibold mb-4">Достижения</h2>
+        <h2 className="text-xl font-semibold mb-4">{tHeadings('achievementsHeading')}</h2>
         <p className="text-[var(--color-text-dark)] leading-relaxed">{t('achievements')}</p>
       </GlassCard>
 
       <GlassCard className="p-8 mb-8">
-        <h2 className="text-xl font-semibold mb-4">О враче</h2>
+        <h2 className="text-xl font-semibold mb-4">{tHeadings('bioHeading')}</h2>
         <p className="text-[var(--color-text-dark)] leading-relaxed whitespace-pre-line">{t('bio')}</p>
       </GlassCard>
 
       <GlassCard className="p-8 mb-8">
-        <h2 className="text-xl font-semibold mb-4">График работы</h2>
-        <p className="text-lg">{doctor.workingHours}</p>
+        <h2 className="text-xl font-semibold mb-4">{tHeadings('workingHoursHeading')}</h2>
+        <p className="text-lg">{t('workingHours')}</p>
       </GlassCard>
 
       <AppointmentButton doctorSlug={slug} />

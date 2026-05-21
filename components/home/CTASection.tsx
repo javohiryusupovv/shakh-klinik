@@ -1,9 +1,12 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { BookCTAButton } from '@/components/shared/BookCTAButton'
 import { ArrowRight, Phone } from 'lucide-react'
 
 export function CTASection() {
+  const t = useTranslations('home.cta')
+
   return (
     <section className="py-24 bg-gradient-to-r from-[#4A9EE7] via-[#5BB0F0] to-[#2B7FCC] relative overflow-hidden">
       {/* Animated background circles */}
@@ -15,10 +18,10 @@ export function CTASection() {
       
       <div className="container mx-auto px-6 relative text-center">
         <h2 className="text-4xl md:text-5xl font-heading text-white mb-6">
-          Заботьтесь о своём здоровье сегодня
+          {t('heading')}
         </h2>
         <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
-          Запишитесь на консультацию прямо сейчас и получите комплексное обследование со скидкой 20%
+          {t('body')}
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

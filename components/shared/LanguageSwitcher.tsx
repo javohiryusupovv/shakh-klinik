@@ -61,7 +61,7 @@ export function LanguageSwitcher({ direction = 'down', align = 'right' }: Langua
       {isOpen && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
-          <div className={`absolute ${positionClass} py-2 w-52 rounded-2xl bg-white/95 backdrop-blur-xl border border-white/40 shadow-xl z-50 overflow-hidden`}>
+          <div className={`absolute ${positionClass} py-2 w-52 rounded-2xl bg-white/95 backdrop-blur-xl border border-white/40 z-50 overflow-hidden`}>
             {routing.locales.map((loc) => {
               const active = loc === locale
               return (

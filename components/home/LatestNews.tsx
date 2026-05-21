@@ -6,15 +6,16 @@ import { GlassCard } from '@/components/shared/GlassCard'
 
 export function LatestNews() {
   const tNews = useTranslations('news')
+  const tSection = useTranslations('home.latestNews')
   const news = getLatestNews(3)
-  
+
   return (
     <section className="py-16 container mx-auto px-6">
-      <h2 className="text-3xl font-heading text-center mb-12">Новости клиники</h2>
+      <h2 className="text-3xl font-heading text-center mb-12">{tSection('heading')}</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {news.map((article) => (
           <a key={article.slug} href={`/news/${article.slug}`}>
-            <GlassCard className="p-5 hover:scale-105 transition-transform cursor-pointer">
+            <GlassCard hover={false} className="p-5 cursor-pointer">
               <p className="text-sm text-[var(--color-text-gray)] mb-2">{article.date}</p>
               <h3 className="font-semibold text-lg mb-2">
                 {tNews(`${article.slug}.title`)}
