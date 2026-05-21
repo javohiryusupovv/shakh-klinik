@@ -26,12 +26,12 @@ export function CTASection() {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <BookCTAButton className="text-lg px-10 py-5" />
-          <a 
-            href="tel:+998901234567"
+          <a
+            href="tel:+79778531351"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/20 text-white rounded-full text-lg font-semibold hover:bg-white/30 transition-all"
           >
             <Phone className="w-5 h-5" />
-            <span>+998 90 123-45-67</span>
+            <span>+7 (977) 853-13-51</span>
           </a>
         </div>
       </div>

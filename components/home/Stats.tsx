@@ -1,20 +1,25 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { useInView } from 'motion/react'
 import { useTranslations } from 'next-intl'
 import { GlassCard } from '@/components/shared/GlassCard'
 
 type Stat = { value: number; suffix: string; label: string }
 
 function AnimatedNumber({ value, suffix }: { value: number; suffix: string }) {
+  const ref = useRef<HTMLSpanElement>(null)
+  const inView = useInView(ref, { once: true, margin: '-80px' })
   const [count, setCount] = useState(0)
-  
+
   useEffect(() => {
+    if (!inView) return
+
     const duration = 2000
     const steps = 60
     const increment = value / steps
     let current = 0
-    
+
     const timer = setInterval(() => {
       current += increment
       if (current >= value) {
@@ -24,11 +29,11 @@ function AnimatedNumber({ value, suffix }: { value: number; suffix: string }) {
         setCount(Math.floor(current))
       }
     }, duration / steps)
-    
+
     return () => clearInterval(timer)
-  }, [value])
-  
-  return <span>{count.toLocaleString()}{suffix}</span>
+  }, [inView, value])
+
+  return <span ref={ref}>{count.toLocaleString()}{suffix}</span>
 }
 
 export function Stats() {

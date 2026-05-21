@@ -19,7 +19,7 @@ export function FloatingCTA() {
         <Send className="h-5 w-5" />
       </a>
       <a
-        href="https://wa.me/998901234567"
+        href="https://wa.me/79778531351"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"

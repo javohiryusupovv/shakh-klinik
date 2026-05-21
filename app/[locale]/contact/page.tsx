@@ -23,7 +23,7 @@ export default function ContactPage() {
                 <div>
                   <p className="font-semibold">{t('addressLabel')}</p>
                   <a
-                    href="https://yandex.ru/maps/org/shakh_clinic/243929874987/"
+                    href="https://yandex.uz/maps/org/shakh_clinic/243929874987/?from=mapframe&ll=37.551097%2C55.878410&z=16"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[var(--color-text-gray)] hover:text-[var(--color-primary)] underline-offset-2 hover:underline"
@@ -37,8 +37,8 @@ export default function ContactPage() {
                 <Phone className="w-6 h-6 text-[var(--color-primary)] mt-1" />
                 <div>
                   <p className="font-semibold">{t('phonesLabel')}</p>
-                  <a href="tel:+998901234567" className="block text-[var(--color-text-gray)] hover:text-[var(--color-primary)]">+998 90 123-45-67</a>
-                  <p className="text-[var(--color-primary)] font-semibold">{t('emergencyPrefix')}: +998 90 000-00-00</p>
+                  <a href="tel:+79778531351" className="block text-[var(--color-text-gray)] hover:text-[var(--color-primary)]">{t('phonePrimary')}</a>
+                  <p className="text-[var(--color-primary)] font-semibold">{t('emergencyPrefix')}: +7 (977) 853-13-51</p>
                 </div>
               </div>
 
@@ -67,7 +67,7 @@ export default function ContactPage() {
             <h2 className="text-2xl font-semibold mb-6">{t('mapHeading')}</h2>
             <div className="rounded-xl overflow-hidden h-80">
               <iframe
-                src="https://yandex.ru/map-widget/v1/?oid=243929874987&ol=biz&z=16"
+                src="https://yandex.uz/map-widget/v1/?oid=243929874987&ol=biz&ll=37.551097%2C55.878410&z=16"
                 title="Shakh Clinic on Yandex Maps"
                 width="100%"
                 height="100%"

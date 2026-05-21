@@ -651,8 +651,8 @@
       },
       "phone": {
         "label": "Telefon",
-        "placeholder": "+998 90 123-45-67",
-        "helper": "Format: +998 XX XXX-XX-XX"
+        "placeholder": "+7 (977) 853-13-51",
+        "helper": "Format: +7 (XXX) XXX-XX-XX"
       },
       "service": {
         "label": "Xizmat",
@@ -679,7 +679,7 @@
     "errors": {
       "general": "So'rovni yuborib bo'lmadi. Ulanishni tekshiring va yana urinib ko'ring.",
       "rateLimited": "Juda ko'p urinish. Bir daqiqa kuting va yana urinib ko'ring.",
-      "telegramDown": "Xizmat vaqtincha mavjud emas. Bizga +998 90 123-45-67 raqamiga qo'ng'iroq qiling."
+      "telegramDown": "Xizmat vaqtincha mavjud emas. Bizga +7 (977) 853-13-51 raqamiga qo'ng'iroq qiling."
     },
     "prefillNotice": {
       "service": "Xizmat: {name}",
@@ -710,8 +710,9 @@
     "title": "Aloqa",
     "infoHeading": "Ma'lumot",
     "addressLabel": "Manzil",
-    "addressValue": "Toshkent sh., Sergeli tumani, Lutfullo Kamoliddinov ko'chasi, 45",
-    "phonesLabel": "Telefonlar",
+    "addressValue": "Moskva sh., 800-letiya Moskvy ko'chasi, 16",
+    "phonesLabel": "Kontaktlar",
+    "phonePrimary": "+7 (977) 853-13-51",
     "emergencyPrefix": "Sutkalik",
     "hoursLabel": "Ish vaqti",
     "hoursWeekdays": "Du-Sh: 8:00 - 20:00",
@@ -753,5 +754,62 @@
   },
   "newsDetail": {
     "backToNews": "Yangiliklarga"
+  },
+  "seo": {
+    "siteName": "Shax Klinika",
+    "shortName": "ShaxKlinika",
+    "defaultTitle": "Shax Klinika — Toshkentdagi zamonaviy xususiy klinika",
+    "defaultDescription": "Toshkentdagi ko'p tarmoqli xususiy klinika: terapiya, kardiologiya, ginekologiya, pediatriya, stomatologiya, diagnostika. Tajribali shifokorlar, zamonaviy uskunalar, onlayn navbat.",
+    "ogImageAlt": "Shax Klinika — Toshkentdagi zamonaviy xususiy klinika",
+    "keywords": "Toshkentda klinika, xususiy klinika, tibbiy markaz, shifokorga yozilish, terapevt, kardiolog, ginekolog, pediatr, UZI, tahlillar, MRT Toshkent",
+    "home": {
+      "title": "Shax Klinika — Toshkentdagi xususiy klinika",
+      "description": "Toshkentdagi zamonaviy ko'p tarmoqli klinika: 25 dan ortiq xizmat, 15 tajribali shifokor, zamonaviy diagnostika uskunalari. Onlayn yoki telefon orqali navbat oling."
+    },
+    "services": {
+      "title": "Klinika xizmatlari — terapiya, diagnostika, davolanish",
+      "description": "Shax Klinikadagi tibbiy xizmatlarning to'liq spektri: mutaxassis maslahatlari, laboratoriya va asbobiy diagnostika, davolash muolajalari. UZS'da shaffof narxlar."
+    },
+    "doctors": {
+      "title": "Shifokorlarimiz — klinikaning tajribali mutaxassislari",
+      "description": "Shax Klinika jamoasi: terapevtlar, kardiologlar, ginekologlar, pediatrlar, stomatologlar va boshqa mutaxassislar. Ta'lim, ish tajribasi, bemorlar fikrlari, maslahatga yozilish."
+    },
+    "news": {
+      "title": "Yangiliklar va tibbiy maqolalar",
+      "description": "Shax Klinikaning dolzarb yangiliklari, shifokorlarning sog'liq haqidagi maqolalari, kasalliklarning oldini olish bo'yicha tavsiyalar, yangi uskuna va xizmatlar haqida ma'lumot."
+    },
+    "contact": {
+      "title": "Aloqa — Toshkentdagi Shax Klinika",
+      "description": "Toshkentdagi Shax Klinikaning manzili, telefonlari, ish vaqti va yo'l xaritasi. Navbatga yozilish, xaritada yo'nalish, bog'lanish uchun email."
+    },
+    "serviceDetail": {
+      "titleSuffix": "Shax Klinika",
+      "descriptionFallback": "{name} — Toshkentdagi Shax Klinikada: narxlari, muolaja davomiyligi, onlayn navbat olish."
+    },
+    "doctorDetail": {
+      "titleSuffix": "Shax Klinika",
+      "descriptionFallback": "{name} — Toshkentdagi Shax Klinikada {specialty}. Ish tajribasi {years}. Onlayn maslahatga yozilish."
+    },
+    "newsDetail": {
+      "titleSuffix": "Shax Klinika"
+    },
+    "org": {
+      "legalName": "Shax Klinika",
+      "description": "Toshkentdagi zamonaviy ko'p tarmoqli xususiy klinika: terapiya, kardiologiya, ginekologiya, pediatriya, stomatologiya, diagnostika.",
+      "addressLocality": "Toshkent",
+      "addressRegion": "Toshkent viloyati",
+      "addressCountry": "UZ",
+      "streetAddress": "Amir Temur ko'chasi, 108",
+      "postalCode": "100000",
+      "phone": "+998 71 200 00 00",
+      "email": "info@shaxklinika.uz"
+    },
+    "breadcrumb": {
+      "home": "Bosh sahifa",
+      "services": "Xizmatlar",
+      "doctors": "Shifokorlar",
+      "news": "Yangiliklar",
+      "contact": "Aloqa"
+    }
   }
 }

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter, PT_Sans, Geist } from 'next/font/google'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { getLocale } from 'next-intl/server'
+import { SITE_URL } from '@/lib/seo/config'
 import './globals.css'
 import { cn } from "@/lib/utils";
 
@@ -24,21 +26,33 @@ const ptSans = PT_Sans({
 
 // D-16: metadataBase for canonical URLs and OG metadata
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? 'https://shaxklinika.uz'
-  ),
+  metadataBase: new URL(SITE_URL),
+  formatDetection: {
+    telephone: true,
+    email: true,
+    address: true,
+  },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/manifest.webmanifest',
 }
 
-// Root layout: fonts + analytics + metadataBase ONLY (D-07)
-// All visible UI and html lang live under [locale]/layout.tsx
-export default function RootLayout({
+// Root layout: fonts + analytics + metadataBase + html lang via next-intl getLocale
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const locale = await getLocale()
+
   return (
-    // suppressHydrationWarning: locale layout sets lang on html; root layout does not
-    <html className={cn(inter.variable, ptSans.variable, "font-sans", geist.variable)} suppressHydrationWarning>
+    <html
+      lang={locale}
+      dir="ltr"
+      className={cn(inter.variable, ptSans.variable, 'font-sans', geist.variable)}
+    >
       <body>
         {children}
         {/* D-18: GA4 via @next/third-parties, guarded on env var — non-blocking */}

@@ -1,4 +1,5 @@
-import { useTranslations } from 'next-intl'
+import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { HeroWrapper } from '@/components/home/HeroWrapper'
 import { AboutSection } from '@/components/home/AboutSection'
 import { WhyChooseUs } from '@/components/home/WhyChooseUs'
@@ -9,9 +10,45 @@ import { LatestNews } from '@/components/home/LatestNews'
 import { Reviews } from '@/components/home/Reviews'
 import { FAQ } from '@/components/home/FAQ'
 import { CTASection } from '@/components/home/CTASection'
+import { buildMetadata } from '@/lib/seo/metadata'
+import { JsonLd } from '@/lib/seo/JsonLd'
+import { faqJsonLd, breadcrumbJsonLd, type FAQItem } from '@/lib/seo/schemas'
 
-export default function HomePage() {
-  const t = useTranslations('home')
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'seo' })
+  return buildMetadata({
+    locale,
+    path: '',
+    title: t('home.title'),
+    description: t('home.description'),
+    keywords: t('keywords'),
+    siteName: t('siteName'),
+    ogImageAlt: t('ogImageAlt'),
+  })
+}
+
+export default async function HomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  const tFaq = await getTranslations({ locale, namespace: 'home.faq' })
+  const tBc = await getTranslations({ locale, namespace: 'seo.breadcrumb' })
+  const faqItems = tFaq.raw('items') as FAQItem[] | { q: string; a: string }[]
+  const normalized: FAQItem[] = Array.isArray(faqItems)
+    ? faqItems.map((it) =>
+        'q' in it
+          ? { question: it.q, answer: it.a }
+          : it
+      )
+    : []
+
   return (
     <main>
       <HeroWrapper />
@@ -24,6 +61,11 @@ export default function HomePage() {
       <Reviews />
       <FAQ />
       <CTASection />
+      <JsonLd id="ld-home-faq" data={faqJsonLd(normalized)} />
+      <JsonLd
+        id="ld-home-breadcrumb"
+        data={breadcrumbJsonLd(locale, [{ name: tBc('home'), path: '' }])}
+      />
     </main>
   )
 }

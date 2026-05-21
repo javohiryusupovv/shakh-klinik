@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
@@ -21,6 +22,9 @@ import { getServiceBySlug, getAllServices } from '@/lib/services'
 import { AppointmentButton } from '@/components/shared/AppointmentButton'
 import { GlassCard } from '@/components/shared/GlassCard'
 import type { CategoryId } from '@/lib/data/content'
+import { buildMetadata } from '@/lib/seo/metadata'
+import { JsonLd } from '@/lib/seo/JsonLd'
+import { medicalProcedureJsonLd, serviceOfferJsonLd, breadcrumbJsonLd } from '@/lib/seo/schemas'
 
 interface Props {
   params: Promise<{ slug: string; locale: string }>
@@ -29,6 +33,28 @@ interface Props {
 export async function generateStaticParams() {
   const services = getAllServices()
   return services.map(s => ({ slug: s.slug }))
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug, locale } = await params
+  const service = getServiceBySlug(slug)
+  if (!service) return {}
+
+  const tSeo = await getTranslations({ locale, namespace: 'seo' })
+  const tService = await getTranslations({ locale, namespace: 'services.' + slug })
+  const name = tService('name')
+  const description = tService('description')
+  const shortDescription =
+    description.length > 160 ? description.slice(0, 157).trimEnd() + '…' : description
+
+  return buildMetadata({
+    locale,
+    path: `services/${slug}`,
+    title: `${name} — ${tSeo('serviceDetail.titleSuffix')}`,
+    description: shortDescription,
+    siteName: tSeo('siteName'),
+    ogImageAlt: name,
+  })
 }
 
 const CATEGORY_ICONS: Record<CategoryId, LucideIcon> = {
@@ -57,7 +83,11 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   const t = await getTranslations('services.' + slug)
   const tDetail = await getTranslations('servicesDetail')
+  const tBc = await getTranslations({ locale, namespace: 'seo.breadcrumb' })
+  const tSeo = await getTranslations({ locale, namespace: 'seo' })
   const Icon = CATEGORY_ICONS[service.categoryId] ?? Stethoscope
+  const name = t('name')
+  const description = t('description')
 
   function formatPrice(min: number, max: number): string {
     return `${min.toLocaleString()} – ${max.toLocaleString()} UZS`
@@ -118,6 +148,41 @@ export default async function ServiceDetailPage({ params }: Props) {
 
         <AppointmentButton serviceSlug={slug} />
       </div>
+
+      <JsonLd
+        id="ld-service-procedure"
+        data={medicalProcedureJsonLd(locale, {
+          slug,
+          name,
+          description,
+          durationMinutes: service.durationMinutes,
+          priceMin: service.priceMin,
+          priceMax: service.priceMax,
+        })}
+      />
+      <JsonLd
+        id="ld-service-offer"
+        data={serviceOfferJsonLd(
+          locale,
+          {
+            slug,
+            name,
+            description,
+            durationMinutes: service.durationMinutes,
+            priceMin: service.priceMin,
+            priceMax: service.priceMax,
+          },
+          tSeo('siteName')
+        )}
+      />
+      <JsonLd
+        id="ld-service-breadcrumb"
+        data={breadcrumbJsonLd(locale, [
+          { name: tBc('home'), path: '' },
+          { name: tBc('services'), path: 'services' },
+          { name, path: `services/${slug}` },
+        ])}
+      />
     </main>
   )
 }

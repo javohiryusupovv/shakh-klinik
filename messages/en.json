@@ -651,8 +651,8 @@
       },
       "phone": {
         "label": "Phone",
-        "placeholder": "+998 90 123-45-67",
-        "helper": "Format: +998 XX XXX-XX-XX"
+        "placeholder": "+7 (977) 853-13-51",
+        "helper": "Format: +7 (XXX) XXX-XX-XX"
       },
       "service": {
         "label": "Service",
@@ -679,7 +679,7 @@
     "errors": {
       "general": "Couldn't send the request. Please check your connection and try again.",
       "rateLimited": "Too many attempts. Please wait a minute and try again.",
-      "telegramDown": "The service is temporarily unavailable. Please call us at +998 90 123-45-67."
+      "telegramDown": "The service is temporarily unavailable. Please call us at +7 (977) 853-13-51."
     },
     "prefillNotice": {
       "service": "Service: {name}",
@@ -710,8 +710,9 @@
     "title": "Contact",
     "infoHeading": "Information",
     "addressLabel": "Address",
-    "addressValue": "Tashkent, Sergeli district, Lutfullo Kamoliddinov street, 45",
-    "phonesLabel": "Phones",
+    "addressValue": "Moscow, 800-letiya Moskvy Street, 16",
+    "phonesLabel": "Contacts",
+    "phonePrimary": "+7 (977) 853-13-51",
     "emergencyPrefix": "24/7 emergency",
     "hoursLabel": "Working hours",
     "hoursWeekdays": "Mon-Sat: 8:00 - 20:00",
@@ -753,5 +754,62 @@
   },
   "newsDetail": {
     "backToNews": "Back to news"
+  },
+  "seo": {
+    "siteName": "Shakh Clinic",
+    "shortName": "ShakhClinic",
+    "defaultTitle": "Shakh Clinic — modern private medical clinic in Tashkent",
+    "defaultDescription": "Multi-specialty private clinic in Tashkent: therapy, cardiology, gynaecology, paediatrics, dentistry, diagnostics. Experienced doctors, modern equipment, online booking.",
+    "ogImageAlt": "Shakh Clinic — modern private medical clinic in Tashkent",
+    "keywords": "clinic Tashkent, private clinic, medical centre, book a doctor, therapist, cardiologist, gynaecologist, paediatrician, ultrasound, lab tests, MRI Tashkent",
+    "home": {
+      "title": "Shakh Clinic — private medical clinic in Tashkent",
+      "description": "Modern multi-specialty clinic in Tashkent: 25+ services, 15 experienced doctors, modern diagnostic equipment. Book an appointment online or by phone."
+    },
+    "services": {
+      "title": "Clinic services — therapy, diagnostics, treatment",
+      "description": "Full range of medical services at Shakh Clinic: specialist consultations, laboratory and instrumental diagnostics, treatment procedures. Transparent UZS pricing."
+    },
+    "doctors": {
+      "title": "Our doctors — experienced clinic specialists",
+      "description": "The Shakh Clinic team: therapists, cardiologists, gynaecologists, paediatricians, dentists and other specialists. Education, experience, patient reviews, online booking."
+    },
+    "news": {
+      "title": "News and medical articles",
+      "description": "Latest Shakh Clinic news, doctor-written articles on health, disease prevention tips, information about new equipment and services."
+    },
+    "contact": {
+      "title": "Contact — Shakh Clinic in Tashkent",
+      "description": "Address, phone numbers, working hours and directions to Shakh Clinic in Tashkent. Appointment booking, route on the map, contact email."
+    },
+    "serviceDetail": {
+      "titleSuffix": "Shakh Clinic",
+      "descriptionFallback": "{name} at Shakh Clinic in Tashkent: pricing, procedure duration, online booking."
+    },
+    "doctorDetail": {
+      "titleSuffix": "Shakh Clinic",
+      "descriptionFallback": "{name} — {specialty} at Shakh Clinic in Tashkent. {years} of experience. Book a consultation online."
+    },
+    "newsDetail": {
+      "titleSuffix": "Shakh Clinic"
+    },
+    "org": {
+      "legalName": "Shakh Clinic",
+      "description": "Modern multi-specialty private clinic in Tashkent: therapy, cardiology, gynaecology, paediatrics, dentistry, diagnostics.",
+      "addressLocality": "Tashkent",
+      "addressRegion": "Tashkent Region",
+      "addressCountry": "UZ",
+      "streetAddress": "Amir Temur St. 108",
+      "postalCode": "100000",
+      "phone": "+998 71 200 00 00",
+      "email": "info@shaxklinika.uz"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "services": "Services",
+      "doctors": "Doctors",
+      "news": "News",
+      "contact": "Contact"
+    }
   }
 }
