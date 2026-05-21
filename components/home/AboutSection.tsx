@@ -9,8 +9,8 @@ export function AboutSection() {
   return (
     <section className="py-16 container mx-auto px-6">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl font-heading mb-6">{t('heading')}</h2>
-        <GlassCard className="p-8">
+        <h2 className="text-3xl font-heading mb-6" data-aos="fade-up">{t('heading')}</h2>
+        <GlassCard className="p-8" data-aos="fade-up" data-aos-delay="100">
           <p className="text-lg text-[var(--color-text-dark)] leading-relaxed">
             {t('body')}
           </p>

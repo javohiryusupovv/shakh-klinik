@@ -17,10 +17,10 @@ export function CTASection() {
       </div>
       
       <div className="container mx-auto px-6 relative text-center">
-        <h2 className="text-4xl md:text-5xl font-heading text-white mb-6">
+        <h2 className="text-4xl md:text-5xl font-heading text-white mb-6" data-aos="fade-up">
           {t('heading')}
         </h2>
-        <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
+        <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto" data-aos="fade-up" data-aos-delay="80">
           {t('body')}
         </p>
         

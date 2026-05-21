@@ -40,7 +40,7 @@ export function Stats() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {stats.map((stat, i) => (
-            <GlassCard key={i} className="p-6 text-center">
+            <GlassCard key={i} className="p-6 text-center" data-aos="fade-up" data-aos-delay={i * 80}>
               <div className="text-4xl md:text-5xl font-bold text-[var(--color-primary)] mb-2">
                 <AnimatedNumber value={stat.value} suffix={stat.suffix} />
               </div>

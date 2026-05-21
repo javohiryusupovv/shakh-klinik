@@ -9,6 +9,7 @@ import { FloatingCTA } from '@/components/shared/FloatingCTA'
 import { CookieConsent } from '@/components/shared/CookieConsent'
 import { ScrollToTop } from '@/components/shared/ScrollToTop'
 import { SplashScreen } from '@/components/shared/SplashScreen'
+import { AOSInit } from '@/components/shared/AOSInit'
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
@@ -32,6 +33,7 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider messages={messages}>
       <AppointmentModalProvider>
+        <AOSInit />
         <SplashScreen />
         <div className="min-h-screen bg-gradient-to-b from-white via-[#F8FAFC] to-[#E8F4FD]">
           <Header />

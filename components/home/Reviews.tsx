@@ -27,7 +27,7 @@ export function Reviews() {
   return (
     <section className="py-16 bg-gradient-to-r from-[var(--color-primary)]/5 to-[var(--color-mint)]/5">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-heading text-center mb-12">{tSection('heading')}</h2>
+        <h2 className="text-3xl font-heading text-center mb-12" data-aos="fade-up">{tSection('heading')}</h2>
         <Swiper
           modules={[Autoplay, Pagination]}
           autoplay={{ delay: 4000, disableOnInteraction: false }}

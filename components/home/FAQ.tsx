@@ -13,10 +13,10 @@ export function FAQ() {
   
   return (
     <section className="py-16 container mx-auto px-6">
-      <h2 className="text-3xl font-heading text-center mb-12">{faqData.title}</h2>
+      <h2 className="text-3xl font-heading text-center mb-12" data-aos="fade-up">{faqData.title}</h2>
       <div className="max-w-2xl mx-auto space-y-3">
         {faqData.items?.map((item, i) => (
-          <GlassCard key={i} className="overflow-hidden">
+          <GlassCard key={i} className="overflow-hidden" data-aos="fade-up" data-aos-delay={(i % 4) * 60}>
             <button
               className="w-full flex items-center justify-between text-left"
               onClick={() => setOpenIndex(openIndex === i ? null : i)}

@@ -1,6 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
 import { GlassCard } from '@/components/shared/GlassCard'
 import type { Service } from '@/lib/data/content'
 
@@ -17,7 +18,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
   const tPages = useTranslations('pages.services')
 
   return (
-    <a href={`/services/${service.slug}`}>
+    <Link href={`/services/${service.slug}`}>
       <GlassCard hover={false} className="p-6 cursor-pointer h-full">
         <h3 className="text-xl font-semibold mb-2">
           {t(`${service.slug}.name`)}
@@ -34,6 +35,6 @@ export function ServiceCard({ service }: ServiceCardProps) {
           </span>
         </div>
       </GlassCard>
-    </a>
+    </Link>
   )
 }

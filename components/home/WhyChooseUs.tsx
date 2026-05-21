@@ -30,8 +30,8 @@ export function WhyChooseUs() {
 
   return (
     <section className="py-20 container mx-auto px-6">
-      <h2 className="text-4xl font-heading text-center mb-4">{t('heading')}</h2>
-      <p className="text-[#6B7280] text-center text-lg mb-12 max-w-2xl mx-auto">
+      <h2 className="text-4xl font-heading text-center mb-4" data-aos="fade-up">{t('heading')}</h2>
+      <p className="text-[#6B7280] text-center text-lg mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="80">
         {t('subheading')}
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -41,6 +41,8 @@ export function WhyChooseUs() {
             hover={false}
             className="p-7 text-center cursor-pointer"
             glow={reason.color === '#A8E6CF' ? 'mint' : 'primary'}
+            data-aos="fade-up"
+            data-aos-delay={(i % 3) * 100}
           >
             <div
               className="w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center"

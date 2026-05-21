@@ -63,7 +63,7 @@ export default function ServicesPage() {
 
   return (
     <main className="container mx-auto px-6 py-12">
-      <div className="text-center mb-12">
+      <div className="text-center mb-12" data-aos="fade-up">
         <h1 className="text-4xl md:text-5xl font-heading mb-4">{tPages('title')}</h1>
         <p className="text-[#6B7280] text-lg max-w-2xl mx-auto">
           {tPages('subtitle')}
@@ -98,8 +98,14 @@ export default function ServicesPage() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filtered.map(service => (
-          <ServiceCard key={service.slug} service={service} />
+        {filtered.map((service, i) => (
+          <div
+            key={service.slug}
+            data-aos="fade-up"
+            data-aos-delay={(i % 6) * 80}
+          >
+            <ServiceCard service={service} />
+          </div>
         ))}
       </div>
 
