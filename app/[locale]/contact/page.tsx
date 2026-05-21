@@ -22,7 +22,14 @@ export default function ContactPage() {
                 <MapPin className="w-6 h-6 text-[var(--color-primary)] mt-1" />
                 <div>
                   <p className="font-semibold">Адрес</p>
-                  <p className="text-[var(--color-text-gray)]">г. Ташкент, Сергелийский район, ул. Лутфулло Камолиддинова, 45</p>
+                  <a
+                    href="https://yandex.ru/maps/org/shakh_clinic/243929874987/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--color-text-gray)] hover:text-[var(--color-primary)] underline-offset-2 hover:underline"
+                  >
+                    г. Ташкент, Сергелийский район, ул. Лутфулло Камолиддинова, 45
+                  </a>
                 </div>
               </div>
               
@@ -60,7 +67,8 @@ export default function ContactPage() {
             <h2 className="text-2xl font-semibold mb-6">Мы на карте</h2>
             <div className="rounded-xl overflow-hidden h-80">
               <iframe
-                src="https://yandex.ru/maps-widget/v1/?ll=37.550379%2C55.878245&mode=search&text=%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD%20%D0%A8%D0%B0%D0%BA%D1%81%D0%B8%D1%82&z=16"
+                src="https://yandex.ru/map-widget/v1/?oid=243929874987&ol=biz&z=16"
+                title="Shakh Clinic on Yandex Maps"
                 width="100%"
                 height="100%"
                 frameBorder="0"
