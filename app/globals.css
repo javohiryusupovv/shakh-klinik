@@ -450,3 +450,25 @@
     text-wrap: balance;
     }
 }
+/* Reviews — vertical auto-scroll marquee (two columns, opposite directions) */
+@keyframes reviewUp {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
+}
+@keyframes reviewDown {
+  from { transform: translateY(-50%); }
+  to { transform: translateY(0); }
+}
+
+/* Reviews marquee — fade mask + continuous tracks (seamless via -50% with even spacing) */
+.review-col {
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 8%, #000 92%, transparent);
+}
+.review-track-up { animation: reviewUp 40s linear infinite; will-change: transform; }
+.review-track-down { animation: reviewDown 34s linear infinite; will-change: transform; }
+.review-col:hover .review-track-up,
+.review-col:hover .review-track-down { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .review-track-up, .review-track-down { animation: none; }
+}

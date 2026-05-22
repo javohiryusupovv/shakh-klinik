@@ -82,7 +82,7 @@ export async function Footer() {
         {/* Column 1 — About */}
         <div className="space-y-3">
           <p className="font-heading text-xl font-bold tracking-tight">
-            Shakh <span className="text-[var(--color-mint)]">Clinic</span>
+            Shakh <span className="text-[var(--color-bg-lighter)]">Clinic</span>
           </p>
           <p className="text-sm leading-relaxed text-white/80">
             {tFooter('aboutBlurb')}
@@ -99,7 +99,7 @@ export async function Footer() {
               <li key={key}>
                 <Link
                   href={href}
-                  className="text-white/80 transition-colors hover:text-[var(--color-mint)]"
+                  className="text-white/80 transition-colors hover:text-white"
                 >
                   {tNav(key)}
                 </Link>
@@ -115,23 +115,23 @@ export async function Footer() {
           </h3>
           <ul className="space-y-2 text-sm text-white/80">
             <li className="flex items-start gap-2">
-              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-mint)]" />
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-bg-lighter)]" />
               <span>{tFooter('address')}</span>
             </li>
             <li className="flex items-start gap-2">
-              <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-mint)]" />
+              <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-bg-lighter)]" />
               <a href="tel:+79778531351" className="hover:text-white">
                 +7 (977) 853-13-51
               </a>
             </li>
             <li className="flex items-start gap-2">
-              <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-mint)]" />
+              <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-bg-lighter)]" />
               <a href="mailto:info@shaxklinika.uz" className="hover:text-white">
                 info@shaxklinika.uz
               </a>
             </li>
             <li className="flex items-start gap-2">
-              <Clock className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-mint)]" />
+              <Clock className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-bg-lighter)]" />
               <span>{tFooter('hours')}</span>
             </li>
           </ul>
@@ -144,11 +144,11 @@ export async function Footer() {
           </h3>
           <div className="flex items-center gap-3">
             <a
-              href="https://t.me/shaxklinika"
+              href="https://t.me/shaxzod_z"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Telegram"
-              className="rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-[var(--color-mint)] hover:text-[var(--color-primary-deeper)]"
+              className="rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-[var(--color-primary)] hover:text-white"
             >
               <Send className="h-5 w-5" />
             </a>
@@ -157,7 +157,7 @@ export async function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-[var(--color-mint)] hover:text-[var(--color-primary-deeper)]"
+              className="rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-[var(--color-primary)] hover:text-white"
             >
               <InstagramIcon className="h-5 w-5" />
             </a>
@@ -166,7 +166,7 @@ export async function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-[var(--color-mint)] hover:text-[var(--color-primary-deeper)]"
+              className="rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-[var(--color-primary)] hover:text-white"
             >
               <FacebookIcon className="h-5 w-5" />
             </a>
@@ -175,7 +175,7 @@ export async function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"
-              className="rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-[var(--color-mint)] hover:text-[var(--color-primary-deeper)]"
+              className="rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-[var(--color-primary)] hover:text-white"
             >
               <YoutubeIcon className="h-5 w-5" />
             </a>

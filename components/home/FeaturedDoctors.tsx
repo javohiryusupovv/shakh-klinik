@@ -1,9 +1,11 @@
 'use client'
 
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { getFeaturedDoctors } from '@/lib/services'
 import { GlassCard } from '@/components/shared/GlassCard'
+import TestImg from "../../public/testImg.jpg"
 
 export function FeaturedDoctors() {
   const tDoctors = useTranslations('doctors')
@@ -22,8 +24,14 @@ export function FeaturedDoctors() {
             data-aos-delay={(i % 3) * 100}
           >
             <GlassCard hover={false} className="p-5 cursor-pointer text-center">
-              <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-[var(--color-primary)]/20 to-[var(--color-mint)]/20 flex items-center justify-center text-4xl">
-                👨‍⚕️
+              <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                <Image
+                  src={TestImg}
+                  alt={tDoctors(`${doctor.slug}.name`)}
+                  fill
+                  sizes="96px"
+                  className="object-cover object-top scale-125"
+                />
               </div>
               <h3 className="font-semibold text-lg mb-1">
                 {tDoctors(`${doctor.slug}.name`)}

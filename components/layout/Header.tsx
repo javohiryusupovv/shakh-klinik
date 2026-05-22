@@ -3,13 +3,13 @@
 import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { Phone } from 'lucide-react'
-import { Link } from '@/i18n/navigation'
+import { Link, usePathname } from '@/i18n/navigation'
 import { LanguageSwitcher } from '@/components/shared/LanguageSwitcher'
 import { BookCTAButton } from '@/components/shared/BookCTAButton'
 import { MobileMenu } from '@/components/layout/MobileMenu'
 
 const NAV_KEYS = [
-  { key: 'home', href: '/' },
+  { key: 'about', href: '/about' },
   { key: 'services', href: '/services' },
   { key: 'doctors', href: '/doctors' },
   { key: 'news', href: '/news' },
@@ -18,7 +18,11 @@ const NAV_KEYS = [
 
 export function Header() {
   const tNav = useTranslations('nav')
+  const pathname = usePathname()
   const [scrolled, setScrolled] = useState(false)
+
+  const isActive = (href: string) =>
+    href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(`${href}/`)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,15 +50,23 @@ export function Header() {
 
             {/* Desktop nav */}
             <nav className="hidden lg:flex items-center gap-0.5">
-              {NAV_KEYS.map(({ key, href }) => (
-                <Link
-                  key={key}
-                  href={href}
-                  className="px-3 py-1.5 text-sm font-medium text-[#6B7280] hover:text-[#4A9EE7] hover:bg-[#4A9EE7]/10 rounded-full transition-all"
-                >
-                  {tNav(key)}
-                </Link>
-              ))}
+              {NAV_KEYS.map(({ key, href }) => {
+                const active = isActive(href)
+                return (
+                  <Link
+                    key={key}
+                    href={href}
+                    aria-current={active ? 'page' : undefined}
+                    className={`px-3 py-1.5 text-sm font-medium rounded-full transition-all ${
+                      active
+                        ? 'text-[#4A9EE7] bg-[#4A9EE7]/10'
+                        : 'text-[#6B7280] hover:text-[#4A9EE7] hover:bg-[#4A9EE7]/10'
+                    }`}
+                  >
+                    {tNav(key)}
+                  </Link>
+                )
+              })}
             </nav>
 
             {/* Right side */}

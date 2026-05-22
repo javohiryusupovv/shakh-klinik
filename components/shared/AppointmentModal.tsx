@@ -21,7 +21,7 @@ export function AppointmentModal({
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState('')
 
-  const t = useTranslations('header')
+  const t = useTranslations('appointment')
 
   const formatPhone = (value: string) => {
     const digits = value.replace(/\D/g, '').slice(0, 10)
@@ -35,7 +35,7 @@ export function AppointmentModal({
     setPhone(formatted)
     const digits = formatted.replace(/\D/g, '')
     if (digits.length > 0 && digits.length !== 10) {
-      setPhoneError('10 ta raqam kiriting')
+      setPhoneError(t('errors.phoneInvalid'))
     } else {
       setPhoneError('')
     }
@@ -51,7 +51,7 @@ export function AppointmentModal({
     setError('')
 
     if (!isValidPhone(phone)) {
-      setPhoneError('10 ta raqam kiriting')
+      setPhoneError(t('errors.phoneInvalid'))
       return
     }
 
@@ -69,10 +69,8 @@ export function AppointmentModal({
         }),
       })
 
-      const data = await res.json()
-
       if (!res.ok) {
-        setError(data.error || 'Xatolik yuz berdi')
+        setError(t('errors.general'))
         return
       }
 
@@ -85,7 +83,7 @@ export function AppointmentModal({
         onClose()
       }, 2000)
     } catch {
-      setError('Network xatoligi')
+      setError(t('errors.general'))
     } finally {
       setLoading(false)
     }
@@ -95,24 +93,24 @@ export function AppointmentModal({
     <Dialog open={isOpen} onOpenChange={(o) => !o && onClose()}>
       <DialogContent className="glass sm:max-w-lg">
         <DialogHeader>
-          <DialogTitle>{t('ctaBook')}</DialogTitle>
+          <DialogTitle>{t('title')}</DialogTitle>
         </DialogHeader>
 
         {success ? (
           <div className="text-center py-8">
             <p className="text-2xl mb-2">✅</p>
             <p className="text-green-600 font-medium">
-              So'rovingiz qabul qilindi!
+              {t('success.heading')}
             </p>
             <p className="text-sm text-gray-500 mt-1">
-              Tez orada operatorlar bilan bog'lanamiz
+              {t('success.body')}
             </p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label className="block text-sm font-medium mb-1">
-                Ism familiya
+                {t('fields.name.label')}
               </label>
               <input
                 type="text"
@@ -120,13 +118,13 @@ export function AppointmentModal({
                 onChange={(e) => setFullName(e.target.value)}
                 required
                 className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:border-[#4A9EE7] focus:ring-2 focus:ring-[#4A9EE7]/20 outline-none transition-all"
-                placeholder="Ism familiyangiz"
+                placeholder={t('fields.name.placeholder')}
               />
             </div>
 
             <div>
               <label className="block text-sm font-medium mb-1">
-                Telefon raqam
+                {t('fields.phone.label')}
               </label>
               <div className="relative">
                 <div className="absolute left-3 top-1/2 -translate-y-1/2 flex items-center gap-1 text-lg">
@@ -139,8 +137,8 @@ export function AppointmentModal({
                   onChange={handlePhoneChange}
                   required
                   className={`w-full pl-16 pr-4 py-2.5 rounded-xl border transition-all outline-none ${
-                    phoneError 
-                      ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-500/20' 
+                    phoneError
+                      ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-500/20'
                       : 'border-gray-200 focus:border-[#4A9EE7] focus:ring-2 focus:ring-[#4A9EE7]/20'
                   }`}
                   placeholder="495 123-45-67"
@@ -151,9 +149,7 @@ export function AppointmentModal({
               )}
             </div>
 
-            {error && (
-              <p className="text-red-500 text-sm">{error}</p>
-            )}
+            {error && <p className="text-red-500 text-sm">{error}</p>}
 
             <button
               type="submit"
@@ -163,12 +159,12 @@ export function AppointmentModal({
               {loading ? (
                 <>
                   <Loader2 className="w-4 h-4 animate-spin" />
-                  Yuborilmoqda...
+                  {t('submit.submitting')}
                 </>
               ) : (
                 <>
                   <Send className="w-4 h-4" />
-                  Yuborish
+                  {t('submit.idle')}
                 </>
               )}
             </button>

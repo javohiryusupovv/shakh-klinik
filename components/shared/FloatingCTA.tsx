@@ -10,7 +10,7 @@ export function FloatingCTA() {
       aria-label="Quick contact"
     >
       <a
-        href="https://t.me/shaxklinika"
+        href="https://t.me/shaxzod_z"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Telegram"

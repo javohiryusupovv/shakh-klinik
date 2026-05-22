@@ -73,13 +73,13 @@
     "stats": {
       "items": [
         {
-          "value": 15000,
+          "value": 1500,
           "suffix": "+",
           "label": "Bemor"
         },
         {
-          "value": 15,
-          "suffix": " yil",
+          "value": 1,
+          "suffix": "+ yil",
           "label": "Tajriba"
         },
         {
@@ -135,7 +135,9 @@
       "heading": "Bizning mutaxassislarimiz"
     },
     "reviews": {
-      "heading": "Bemorlar sharhlari"
+      "heading": "Bizning mijozlarimiz nima deyishadi",
+      "subtitle": "Mijozlarimiz bizning professionallik, ishonchlilik va yondashuvimizni qadrlashadi. Ularning fikrlari biz uchun eng katta mukofotdir.",
+      "reviewsLabel": "sharh"
     }
   },
   "nav": {
@@ -145,7 +147,8 @@
     "news": "Yangiliklar",
     "reviews": "Sharhlar",
     "gallery": "Galereya",
-    "contacts": "Aloqa"
+    "contacts": "Aloqa",
+    "about": "Klinika haqida"
   },
   "header": {
     "ctaBook": "Yozilish",
@@ -679,7 +682,8 @@
     "errors": {
       "general": "So'rovni yuborib bo'lmadi. Ulanishni tekshiring va yana urinib ko'ring.",
       "rateLimited": "Juda ko'p urinish. Bir daqiqa kuting va yana urinib ko'ring.",
-      "telegramDown": "Xizmat vaqtincha mavjud emas. Bizga +7 (977) 853-13-51 raqamiga qo'ng'iroq qiling."
+      "telegramDown": "Xizmat vaqtincha mavjud emas. Bizga +7 (977) 853-13-51 raqamiga qo'ng'iroq qiling.",
+      "phoneInvalid": "10 ta raqam kiriting"
     },
     "prefillNotice": {
       "service": "Xizmat: {name}",
@@ -809,7 +813,74 @@
       "services": "Xizmatlar",
       "doctors": "Shifokorlar",
       "news": "Yangiliklar",
-      "contact": "Aloqa"
+      "contact": "Aloqa",
+      "about": "Klinika haqida"
+    },
+    "about": {
+      "title": "Klinika haqida — Toshkentdagi Shakh Clinic",
+      "description": "Toshkentdagi zamonaviy xususiy Shakh Clinic klinikasi: qulay sharoitlar, ilg'or uskunalar va tajribali shifokorlar. Klinika haqida ma'lumot, rasmlar va bemorlar uchun sharoitlar bilan tanishing."
+    }
+  },
+  "about": {
+    "intro": {
+      "heading": "Shakh Clinic klinikasi haqida",
+      "subtitle": "Qulay va xavfsiz muhitda zamonaviy tibbiyot",
+      "paragraphs": [
+        "Shakh Clinic — Toshkentdagi zamonaviy xususiy klinika bo'lib, bu yerda salomatlik haqidagi g'amxo'rlik qulaylik va har bir bemorga e'tibor bilan uyg'unlashgan. Biz tajribali shifokorlar, ilg'or diagnostika va davolash texnologiyalari hamda puxta o'ylangan makonlarni birlashtirdik.",
+        "Jamoamiz xalqaro sifat standartlari asosida ishlaydi va malakasini doimiy oshirib boradi. Biz bemor ishonchi halol munosabat, aniq tashxis va insoniy yondashuvdan boshlanishiga ishonamiz."
+      ],
+      "highlights": [
+        {
+          "value": "1+",
+          "label": "yillik tajriba"
+        },
+        {
+          "value": "20+",
+          "label": "shifokorlar"
+        },
+        {
+          "value": "1500+",
+          "label": "bemorlar"
+        },
+        {
+          "value": "24/7",
+          "label": "shoshilinch yordam"
+        }
+      ]
+    },
+    "gallery": {
+      "heading": "Klinika rasmlari",
+      "subtitle": "Shakh Clinic interyerlari, kabinetlari va makonlari"
+    },
+    "facilities": {
+      "heading": "Sharoitlar",
+      "subtitle": "Biz har bir bemor uchun qulay muhit yaratdik",
+      "items": [
+        {
+          "title": "Qulay kutish zonalari",
+          "description": "Keng va shinam kutish xonalari, bemorlar uchun qulay o'rindiqlar."
+        },
+        {
+          "title": "Zamonaviy uskunalar",
+          "description": "Ilg'or diagnostika va davolash uskunalari bilan jihozlangan kabinetlar."
+        },
+        {
+          "title": "Sterillik va xavfsizlik",
+          "description": "Qat'iy sanitariya nazorati va to'liq steril sharoitlar."
+        },
+        {
+          "title": "Bepul avtoturargoh",
+          "description": "Klinika yonida bemorlar uchun qulay avtoturargoh."
+        },
+        {
+          "title": "Bolalar burchagi",
+          "description": "Kichkintoylar uchun maxsus o'yin maydonchasi."
+        },
+        {
+          "title": "Qulay muhit",
+          "description": "Nogironligi bo'lgan bemorlar uchun pandus va qulayliklar."
+        }
+      ]
     }
   }
 }

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 import { HeroWrapper } from '@/components/home/HeroWrapper'
-import { AboutSection } from '@/components/home/AboutSection'
 import { WhyChooseUs } from '@/components/home/WhyChooseUs'
 import { PopularServices } from '@/components/home/PopularServices'
 import { Stats } from '@/components/home/Stats'
@@ -52,7 +51,6 @@ export default async function HomePage({
   return (
     <main>
       <HeroWrapper />
-      <AboutSection />
       <WhyChooseUs />
       <PopularServices />
       <Stats />

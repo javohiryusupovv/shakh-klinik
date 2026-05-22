@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
 import { getDoctorBySlug, getAllDoctors } from '@/lib/services'
 import { AppointmentButton } from '@/components/shared/AppointmentButton'
@@ -13,6 +14,8 @@ import {
   breadcrumbJsonLd,
   type OrgInfo,
 } from '@/lib/seo/schemas'
+import TestImgAvatar from "../../../../public/testImg.jpg"
+
 
 interface Props {
   params: Promise<{ slug: string; locale: string }>
@@ -83,8 +86,15 @@ export default async function DoctorDetailPage({ params }: Props) {
       </Link>
 
       <div className="text-center mb-8">
-        <div className="w-40 h-40 mx-auto mb-6 rounded-full bg-gradient-to-br from-[var(--color-primary)]/20 to-[var(--color-mint)]/20 flex items-center justify-center text-7xl">
-          👨‍⚕️
+        <div className="relative w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden">
+          <Image
+            src={TestImgAvatar}
+            alt={name}
+            fill
+            sizes="160px"
+            priority
+            className="object-cover object-top scale-125"
+          />
         </div>
         <h1 className="text-4xl font-heading mb-2">{name}</h1>
         <p className="text-xl text-[var(--color-mint)] mb-2">{specialty}</p>

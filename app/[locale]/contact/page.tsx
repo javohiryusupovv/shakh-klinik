@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { GlassCard } from '@/components/shared/GlassCard'
 import { BookCTAButton } from '@/components/shared/BookCTAButton'
@@ -7,6 +8,7 @@ import { MapPin, Phone, Clock, Mail } from 'lucide-react'
 
 export default function ContactPage() {
   const t = useTranslations('contact')
+  const [mapLoaded, setMapLoaded] = useState(false)
 
   return (
     <main className="container mx-auto px-6 py-12">
@@ -65,7 +67,14 @@ export default function ContactPage() {
         <div>
           <GlassCard className="p-8">
             <h2 className="text-2xl font-semibold mb-6">{t('mapHeading')}</h2>
-            <div className="rounded-xl overflow-hidden h-80">
+            <div className="relative rounded-xl overflow-hidden h-80">
+              {!mapLoaded && (
+                <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-[var(--color-bg-light)] to-[var(--color-bg-lighter)] animate-pulse">
+                  <MapPin className="w-10 h-10 text-[var(--color-primary)]/40" />
+                  <div className="h-2.5 w-40 rounded-full bg-[var(--color-primary)]/15" />
+                  <div className="h-2.5 w-28 rounded-full bg-[var(--color-primary)]/10" />
+                </div>
+              )}
               <iframe
                 src="https://yandex.uz/map-widget/v1/?oid=243929874987&ol=biz&ll=37.551097%2C55.878410&z=16"
                 title="Shakh Clinic on Yandex Maps"
@@ -74,6 +83,7 @@ export default function ContactPage() {
                 frameBorder="0"
                 className="w-full h-full"
                 allowFullScreen
+                onLoad={() => setMapLoaded(true)}
               />
             </div>
           </GlassCard>

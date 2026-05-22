@@ -1,20 +1,20 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, Pagination, Navigation } from 'swiper/modules'
+import { Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import { ChevronRight } from 'lucide-react'
+import slide1 from '../../public/_slides_original/slide1.jpg'
+import slide2 from '../../public/_slides_original/slide2.jpg'
+import slide3 from '../../public/_slides_original/slide3.jpg'
+import slide4 from '../../public/_slides_original/slide4.jpg'
 
-const SLIDE_BGS = [
-  'from-[#4A9EE7]/30 to-[#A8E6CF]/20',
-  'from-[#A8E6CF]/30 to-[#4A9EE7]/20',
-  'from-[#2B7FCC]/30 to-[#A8E6CF]/20',
-  'from-[#4A9EE7]/20 to-[#2B7FCC]/20',
-]
+const SLIDE_IMAGES = [slide1, slide2, slide3, slide4]
 
 type HeroSlide = { title: string; subtitle: string; cta: string }
 
@@ -22,7 +22,7 @@ export function Hero() {
   const t = useTranslations('home.hero')
   const slides = (t.raw('slides') as HeroSlide[]).map((slide, i) => ({
     ...slide,
-    bg: SLIDE_BGS[i] ?? SLIDE_BGS[0],
+    image: SLIDE_IMAGES[i] ?? SLIDE_IMAGES[0],
   }))
   const [loaded, setLoaded] = useState(false)
 
@@ -33,34 +33,36 @@ export function Hero() {
 
   return (
     <section className="relative h-[75vh] min-h-[600px] flex items-center overflow-hidden">
-      {/* Animated background elements */}
-      <div className={`absolute inset-0 bg-gradient-to-br ${slides[0].bg} transition-all duration-1000`}>
-        {/* Floating shapes */}
-        <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-[#4A9EE7]/10 blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-[#A8E6CF]/15 blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/2 left-1/2 w-40 h-40 rounded-full bg-[#2B7FCC]/10 blur-2xl" />
-      </div>
-
       <Swiper
-        modules={[Autoplay, Pagination, Navigation]}
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
-        pagination={{ clickable: true }}
-        navigation
+        modules={[Autoplay]}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
         loop
         className="h-full w-full"
         onSlideChange={() => setLoaded(true)}
       >
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>
-            <div className={`flex items-center justify-center h-full px-6 bg-gradient-to-br ${slide.bg}`}>
-              <div className={`text-center max-w-4xl mx-auto transform transition-all duration-700 ${loaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: `${i * 100}ms` }}>
-                <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-[#1F2937] leading-tight">
+            <div className="relative flex items-center justify-center h-full px-6 overflow-hidden">
+              {/* Background image */}
+              <Image
+                src={slide.image}
+                alt=""
+                fill
+                priority={i === 0}
+                sizes="100vw"
+                className="object-cover"
+              />
+              {/* Black overlay */}
+              <div className="absolute inset-0 bg-black/50" />
+
+              <div className={`relative z-10 text-center max-w-4xl mx-auto transform transition-all duration-700 ${loaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} style={{ transitionDelay: `${i * 100}ms` }}>
+                <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-white leading-tight drop-shadow-lg">
                   {slide.title}
                 </h1>
-                <p className="text-xl md:text-2xl text-[#6B7280] mb-8 max-w-2xl mx-auto">
+                <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow">
                   {slide.subtitle}
                 </p>
-                <button className="group px-8 py-4 bg-gradient-to-r from-[#4A9EE7] to-[#2B7FCC] text-white rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 flex items-center gap-2 mx-auto">
+                <button className="group px-8 py-4 max-sm:text-[15px] bg-gradient-to-r from-[#4A9EE7] to-[#2B7FCC] text-white rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 flex items-center gap-2 mx-auto">
                   {slide.cta}
                   <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
@@ -71,9 +73,9 @@ export function Hero() {
       </Swiper>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-[#4A9EE7]/50 rounded-full flex justify-center pt-2">
-          <div className="w-1.5 h-3 bg-[#4A9EE7] rounded-full" />
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+        <div className="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center pt-2">
+          <div className="w-1.5 h-3 bg-white rounded-full" />
         </div>
       </div>
     </section>

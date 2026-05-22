@@ -1,10 +1,12 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { DOCTORS, CATEGORIES } from '@/lib/data/content'
 import { GlassCard } from '@/components/shared/GlassCard'
+import TestImgAvatar from "../../../public/testImg.jpg"
 
 export default function DoctorsPage() {
   const t = useTranslations('doctors')
@@ -53,8 +55,14 @@ export default function DoctorsPage() {
             data-aos-delay={(i % 6) * 80}
           >
             <GlassCard hover={false} className="p-6 cursor-pointer text-center">
-              <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-[var(--color-primary)]/20 to-[var(--color-mint)]/20 flex items-center justify-center text-6xl">
-                👨‍⚕️
+              <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                <Image
+                  src={TestImgAvatar}
+                  alt={t(`${doctor.slug}.name`)}
+                  fill
+                  sizes="128px"
+                  className="object-cover object-top scale-125"
+                />
               </div>
               <h3 className="text-xl font-semibold mb-1">{t(`${doctor.slug}.name`)}</h3>
               <p className="text-[var(--color-mint)] mb-2">{t(`${doctor.slug}.specialty`)}</p>

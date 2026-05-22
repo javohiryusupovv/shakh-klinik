@@ -2,15 +2,15 @@
 
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
-import { Menu, Phone, Home, Stethoscope, Users, Newspaper, Star, Camera, Mail } from 'lucide-react'
+import { Menu, Phone, Info, Stethoscope, Users, Newspaper, Star, Camera, Mail } from 'lucide-react'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Button } from '@/components/ui/button'
-import { Link } from '@/i18n/navigation'
+import { Link, usePathname } from '@/i18n/navigation'
 import { LanguageSwitcher } from '@/components/shared/LanguageSwitcher'
 import { BookCTAButton } from '@/components/shared/BookCTAButton'
 
 const NAV_ITEMS = [
-  { key: 'home', href: '/', icon: Home },
+  { key: 'about', href: '/about', icon: Info },
   { key: 'services', href: '/services', icon: Stethoscope },
   { key: 'doctors', href: '/doctors', icon: Users },
   { key: 'news', href: '/news', icon: Newspaper },
@@ -21,7 +21,11 @@ const NAV_ITEMS = [
 
 export function MobileMenu() {
   const tNav = useTranslations('nav')
+  const pathname = usePathname()
   const [open, setOpen] = useState(false)
+
+  const isActive = (href: string) =>
+    href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(`${href}/`)
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -46,17 +50,25 @@ export function MobileMenu() {
 
           <nav className="flex-1 p-4 overflow-y-auto">
             <div className="grid gap-1">
-              {NAV_ITEMS.map(({ key, href, icon: Icon }) => (
-                <Link
-                  key={key}
-                  href={href}
-                  onClick={() => setOpen(false)}
-                  className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#6B7280] hover:bg-[#4A9EE7]/10 hover:text-[#4A9EE7] transition-all font-medium"
-                >
-                  <Icon className="w-5 h-5" />
-                  {tNav(key)}
-                </Link>
-              ))}
+              {NAV_ITEMS.map(({ key, href, icon: Icon }) => {
+                const active = isActive(href)
+                return (
+                  <Link
+                    key={key}
+                    href={href}
+                    onClick={() => setOpen(false)}
+                    aria-current={active ? 'page' : undefined}
+                    className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all font-medium ${
+                      active
+                        ? 'bg-[#4A9EE7]/10 text-[#4A9EE7]'
+                        : 'text-[#6B7280] hover:bg-[#4A9EE7]/10 hover:text-[#4A9EE7]'
+                    }`}
+                  >
+                    <Icon className="w-5 h-5" />
+                    {tNav(key)}
+                  </Link>
+                )
+              })}
             </div>
           </nav>
 
