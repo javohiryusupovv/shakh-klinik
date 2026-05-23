@@ -1,6 +1,6 @@
 {
   "home": {
-    "placeholder": "Welcome to ShaxKlinika — your clinic in Tashkent",
+    "placeholder": "Welcome to ShaxKlinika — your clinic in Moscow",
     "faq": {
       "title": "Frequently asked questions",
       "items": [
@@ -157,11 +157,11 @@
     "menuClose": "Close"
   },
   "footer": {
-    "aboutBlurb": "A modern multi-specialty clinic in Tashkent — European-level care for your health.",
+    "aboutBlurb": "A modern multi-specialty clinic in Moscow — European-level care for your health.",
     "linksTitle": "Links",
     "contactsTitle": "Contacts",
     "socialTitle": "Social",
-    "address": "Tashkent, Amir Temur St. 108",
+    "address": "Moscow, 800-letiya Moskvy Street, 16",
     "hours": "Mon-Sat 8:00-20:00 · Sun 9:00-15:00",
     "rightsReserved": "All rights reserved"
   },
@@ -176,8 +176,8 @@
   },
   "meta": {
     "siteName": "ShaxKlinika",
-    "defaultTitle": "ShaxKlinika — Private Medical Clinic in Tashkent",
-    "defaultDescription": "Modern private clinic in Tashkent, Uzbekistan. Experienced doctors, advanced equipment, affordable prices."
+    "defaultTitle": "ShaxKlinika — Private Medical Clinic in Moscow",
+    "defaultDescription": "Modern private clinic in Moscow, Russia. Experienced doctors, advanced equipment, affordable prices."
   },
   "common": {
     "loading": "Loading...",
@@ -762,13 +762,13 @@
   "seo": {
     "siteName": "Shakh Clinic",
     "shortName": "ShakhClinic",
-    "defaultTitle": "Shakh Clinic — modern private medical clinic in Tashkent",
-    "defaultDescription": "Multi-specialty private clinic in Tashkent: therapy, cardiology, gynaecology, paediatrics, dentistry, diagnostics. Experienced doctors, modern equipment, online booking.",
-    "ogImageAlt": "Shakh Clinic — modern private medical clinic in Tashkent",
-    "keywords": "clinic Tashkent, private clinic, medical centre, book a doctor, therapist, cardiologist, gynaecologist, paediatrician, ultrasound, lab tests, MRI Tashkent",
+    "defaultTitle": "Shakh Clinic — modern private medical clinic in Moscow",
+    "defaultDescription": "Multi-specialty private clinic in Moscow: therapy, cardiology, gynaecology, paediatrics, dentistry, diagnostics. Experienced doctors, modern equipment, online booking.",
+    "ogImageAlt": "Shakh Clinic — modern private medical clinic in Moscow",
+    "keywords": "clinic Moscow, private clinic, medical centre, book a doctor, therapist, cardiologist, gynaecologist, paediatrician, ultrasound, lab tests, MRI Moscow",
     "home": {
-      "title": "Shakh Clinic — private medical clinic in Tashkent",
-      "description": "Modern multi-specialty clinic in Tashkent: 25+ services, 15 experienced doctors, modern diagnostic equipment. Book an appointment online or by phone."
+      "title": "Shakh Clinic — private medical clinic in Moscow",
+      "description": "Modern multi-specialty clinic in Moscow: 25+ services, 15 experienced doctors, modern diagnostic equipment. Book an appointment online or by phone."
     },
     "services": {
       "title": "Clinic services — therapy, diagnostics, treatment",
@@ -783,29 +783,29 @@
       "description": "Latest Shakh Clinic news, doctor-written articles on health, disease prevention tips, information about new equipment and services."
     },
     "contact": {
-      "title": "Contact — Shakh Clinic in Tashkent",
-      "description": "Address, phone numbers, working hours and directions to Shakh Clinic in Tashkent. Appointment booking, route on the map, contact email."
+      "title": "Contact — Shakh Clinic in Moscow",
+      "description": "Address, phone numbers, working hours and directions to Shakh Clinic in Moscow. Appointment booking, route on the map, contact email."
     },
     "serviceDetail": {
       "titleSuffix": "Shakh Clinic",
-      "descriptionFallback": "{name} at Shakh Clinic in Tashkent: pricing, procedure duration, online booking."
+      "descriptionFallback": "{name} at Shakh Clinic in Moscow: pricing, procedure duration, online booking."
     },
     "doctorDetail": {
       "titleSuffix": "Shakh Clinic",
-      "descriptionFallback": "{name} — {specialty} at Shakh Clinic in Tashkent. {years} of experience. Book a consultation online."
+      "descriptionFallback": "{name} — {specialty} at Shakh Clinic in Moscow. {years} of experience. Book a consultation online."
     },
     "newsDetail": {
       "titleSuffix": "Shakh Clinic"
     },
     "org": {
       "legalName": "Shakh Clinic",
-      "description": "Modern multi-specialty private clinic in Tashkent: therapy, cardiology, gynaecology, paediatrics, dentistry, diagnostics.",
-      "addressLocality": "Tashkent",
-      "addressRegion": "Tashkent Region",
-      "addressCountry": "UZ",
-      "streetAddress": "Amir Temur St. 108",
-      "postalCode": "100000",
-      "phone": "+998 71 200 00 00",
+      "description": "Modern multi-specialty private clinic in Moscow: therapy, cardiology, gynaecology, paediatrics, dentistry, diagnostics.",
+      "addressLocality": "Moscow",
+      "addressRegion": "Moscow",
+      "addressCountry": "RU",
+      "streetAddress": "800-letiya Moskvy Street, 16",
+      "postalCode": "127566",
+      "phone": "+7 (977) 853-13-51",
       "email": "info@shaxklinika.uz"
     },
     "breadcrumb": {
@@ -817,8 +817,8 @@
       "about": "About"
     },
     "about": {
-      "title": "About the clinic — Shakh Clinic in Tashkent",
-      "description": "Shakh Clinic is a modern private clinic in Tashkent offering comfortable facilities, advanced equipment and experienced doctors. Learn about the clinic, view photos and patient amenities."
+      "title": "About the clinic — Shakh Clinic in Moscow",
+      "description": "Shakh Clinic is a modern private clinic in Moscow offering comfortable facilities, advanced equipment and experienced doctors. Learn about the clinic, view photos and patient amenities."
     }
   },
   "about": {

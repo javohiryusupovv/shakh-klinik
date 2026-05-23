@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'Shax Klinika',
     short_name: 'ShaxKlinika',
     description:
-      'Современная частная медицинская клиника в Ташкенте — терапия, кардиология, гинекология, педиатрия, стоматология, диагностика.',
+      'Современная частная медицинская клиника в Москве — терапия, кардиология, гинекология, педиатрия, стоматология, диагностика.',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',

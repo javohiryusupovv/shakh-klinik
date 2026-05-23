@@ -1,6 +1,6 @@
 {
   "home": {
-    "placeholder": "ShaxKlinika-ga xush kelibsiz — Toshkentdagi shifoxonangiz",
+    "placeholder": "ShaxKlinika-ga xush kelibsiz — Moskvadagi shifoxonangiz",
     "faq": {
       "title": "Ko'p beriladigan savollar",
       "items": [
@@ -157,11 +157,11 @@
     "menuClose": "Yopish"
   },
   "footer": {
-    "aboutBlurb": "Toshkentdagi zamonaviy ko'p yo'nalishli klinika — sog'lig'ingizga yevropa darajasida g'amxo'rlik.",
+    "aboutBlurb": "Moskvadagi zamonaviy ko'p yo'nalishli klinika — sog'lig'ingizga yevropa darajasida g'amxo'rlik.",
     "linksTitle": "Navigatsiya",
     "contactsTitle": "Aloqa",
     "socialTitle": "Ijtimoiy tarmoqlar",
-    "address": "Toshkent sh., Amir Temur ko'chasi, 108",
+    "address": "Moskva sh., 800-letiya Moskvy ko'chasi, 16",
     "hours": "Du-Sh 8:00-20:00 · Yak 9:00-15:00",
     "rightsReserved": "Barcha huquqlar himoyalangan"
   },
@@ -176,8 +176,8 @@
   },
   "meta": {
     "siteName": "ShaxKlinika",
-    "defaultTitle": "ShaxKlinika — Toshkentdagi xususiy tibbiyot klinikasi",
-    "defaultDescription": "Toshkentdagi zamonaviy xususiy klinika. Tajribali shifokorlar, ilg'or uskunalar, qulay narxlar."
+    "defaultTitle": "ShaxKlinika — Moskvadagi xususiy tibbiyot klinikasi",
+    "defaultDescription": "Moskvadagi zamonaviy xususiy klinika. Tajribali shifokorlar, ilg'or uskunalar, qulay narxlar."
   },
   "common": {
     "loading": "Yuklanmoqda...",
@@ -762,13 +762,13 @@
   "seo": {
     "siteName": "Shax Klinika",
     "shortName": "ShaxKlinika",
-    "defaultTitle": "Shax Klinika — Toshkentdagi zamonaviy xususiy klinika",
-    "defaultDescription": "Toshkentdagi ko'p tarmoqli xususiy klinika: terapiya, kardiologiya, ginekologiya, pediatriya, stomatologiya, diagnostika. Tajribali shifokorlar, zamonaviy uskunalar, onlayn navbat.",
-    "ogImageAlt": "Shax Klinika — Toshkentdagi zamonaviy xususiy klinika",
-    "keywords": "Toshkentda klinika, xususiy klinika, tibbiy markaz, shifokorga yozilish, terapevt, kardiolog, ginekolog, pediatr, UZI, tahlillar, MRT Toshkent",
+    "defaultTitle": "Shax Klinika — Moskvadagi zamonaviy xususiy klinika",
+    "defaultDescription": "Moskvadagi ko'p tarmoqli xususiy klinika: terapiya, kardiologiya, ginekologiya, pediatriya, stomatologiya, diagnostika. Tajribali shifokorlar, zamonaviy uskunalar, onlayn navbat.",
+    "ogImageAlt": "Shax Klinika — Moskvadagi zamonaviy xususiy klinika",
+    "keywords": "Moskvada klinika, xususiy klinika, tibbiy markaz, shifokorga yozilish, terapevt, kardiolog, ginekolog, pediatr, UZI, tahlillar, MRT Moskva",
     "home": {
-      "title": "Shax Klinika — Toshkentdagi xususiy klinika",
-      "description": "Toshkentdagi zamonaviy ko'p tarmoqli klinika: 25 dan ortiq xizmat, 15 tajribali shifokor, zamonaviy diagnostika uskunalari. Onlayn yoki telefon orqali navbat oling."
+      "title": "Shax Klinika — Moskvadagi xususiy klinika",
+      "description": "Moskvadagi zamonaviy ko'p tarmoqli klinika: 25 dan ortiq xizmat, 15 tajribali shifokor, zamonaviy diagnostika uskunalari. Onlayn yoki telefon orqali navbat oling."
     },
     "services": {
       "title": "Klinika xizmatlari — terapiya, diagnostika, davolanish",
@@ -783,29 +783,29 @@
       "description": "Shax Klinikaning dolzarb yangiliklari, shifokorlarning sog'liq haqidagi maqolalari, kasalliklarning oldini olish bo'yicha tavsiyalar, yangi uskuna va xizmatlar haqida ma'lumot."
     },
     "contact": {
-      "title": "Aloqa — Toshkentdagi Shax Klinika",
-      "description": "Toshkentdagi Shax Klinikaning manzili, telefonlari, ish vaqti va yo'l xaritasi. Navbatga yozilish, xaritada yo'nalish, bog'lanish uchun email."
+      "title": "Aloqa — Moskvadagi Shax Klinika",
+      "description": "Moskvadagi Shax Klinikaning manzili, telefonlari, ish vaqti va yo'l xaritasi. Navbatga yozilish, xaritada yo'nalish, bog'lanish uchun email."
     },
     "serviceDetail": {
       "titleSuffix": "Shax Klinika",
-      "descriptionFallback": "{name} — Toshkentdagi Shax Klinikada: narxlari, muolaja davomiyligi, onlayn navbat olish."
+      "descriptionFallback": "{name} — Moskvadagi Shax Klinikada: narxlari, muolaja davomiyligi, onlayn navbat olish."
     },
     "doctorDetail": {
       "titleSuffix": "Shax Klinika",
-      "descriptionFallback": "{name} — Toshkentdagi Shax Klinikada {specialty}. Ish tajribasi {years}. Onlayn maslahatga yozilish."
+      "descriptionFallback": "{name} — Moskvadagi Shax Klinikada {specialty}. Ish tajribasi {years}. Onlayn maslahatga yozilish."
     },
     "newsDetail": {
       "titleSuffix": "Shax Klinika"
     },
     "org": {
       "legalName": "Shax Klinika",
-      "description": "Toshkentdagi zamonaviy ko'p tarmoqli xususiy klinika: terapiya, kardiologiya, ginekologiya, pediatriya, stomatologiya, diagnostika.",
-      "addressLocality": "Toshkent",
-      "addressRegion": "Toshkent viloyati",
-      "addressCountry": "UZ",
-      "streetAddress": "Amir Temur ko'chasi, 108",
-      "postalCode": "100000",
-      "phone": "+998 71 200 00 00",
+      "description": "Moskvadagi zamonaviy ko'p tarmoqli xususiy klinika: terapiya, kardiologiya, ginekologiya, pediatriya, stomatologiya, diagnostika.",
+      "addressLocality": "Moskva",
+      "addressRegion": "Moskva",
+      "addressCountry": "RU",
+      "streetAddress": "800-letiya Moskvy ko'chasi, 16",
+      "postalCode": "127566",
+      "phone": "+7 (977) 853-13-51",
       "email": "info@shaxklinika.uz"
     },
     "breadcrumb": {
@@ -817,8 +817,8 @@
       "about": "Klinika haqida"
     },
     "about": {
-      "title": "Klinika haqida — Toshkentdagi Shakh Clinic",
-      "description": "Toshkentdagi zamonaviy xususiy Shakh Clinic klinikasi: qulay sharoitlar, ilg'or uskunalar va tajribali shifokorlar. Klinika haqida ma'lumot, rasmlar va bemorlar uchun sharoitlar bilan tanishing."
+      "title": "Klinika haqida — Moskvadagi Shakh Clinic",
+      "description": "Moskvadagi zamonaviy xususiy Shakh Clinic klinikasi: qulay sharoitlar, ilg'or uskunalar va tajribali shifokorlar. Klinika haqida ma'lumot, rasmlar va bemorlar uchun sharoitlar bilan tanishing."
     }
   },
   "about": {
