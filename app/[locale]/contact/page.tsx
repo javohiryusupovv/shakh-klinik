@@ -25,7 +25,7 @@ export default function ContactPage() {
                 <div>
                   <p className="font-semibold">{t('addressLabel')}</p>
                   <a
-                    href="https://yandex.uz/maps/org/shakh_clinic/243929874987/?from=mapframe&ll=37.551097%2C55.878410&z=16"
+                    href="https://yandex.ru/maps/?ll=37.551097%2C55.878410&z=16&pt=37.551097%2C55.878410"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[var(--color-text-gray)] hover:text-[var(--color-primary)] underline-offset-2 hover:underline"
@@ -76,7 +76,7 @@ export default function ContactPage() {
                 </div>
               )}
               <iframe
-                src="https://yandex.uz/map-widget/v1/?oid=243929874987&ol=biz&ll=37.551097%2C55.878410&z=16"
+                src="https://yandex.ru/map-widget/v1/?ll=37.551097%2C55.878410&z=16&pt=37.551097%2C55.878410"
                 title="Shakh Clinic on Yandex Maps"
                 width="100%"
                 height="100%"

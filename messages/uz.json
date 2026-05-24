@@ -6,7 +6,7 @@
       "items": [
         {
           "q": "ShaxKlinikaga qanday yozilsa bo'ladi?",
-          "a": "Saytdagi qisqa shaklni to'ldiring — administrator 15 daqiqa ichida qo'ng'iroq qilib, qulay vaqtni kelishadi. Klinika ish soatlarida telefon orqali ham yozilishingiz mumkin: Du–Sh 8:00 dan 20:00 gacha."
+          "a": "Saytdagi qisqa shaklni to'ldiring — administrator 15 daqiqa ichida qo'ng'iroq qilib, qulay vaqtni kelishadi. Klinika telefoniga kunu tun qo'ng'iroq qilishingiz ham mumkin."
         },
         {
           "q": "Tibbiy sug'urta bo'yicha bemorlarni qabul qilasizmi?",
@@ -826,7 +826,7 @@
       "heading": "Shakh Clinic klinikasi haqida",
       "subtitle": "Qulay va xavfsiz muhitda zamonaviy tibbiyot",
       "paragraphs": [
-        "Shakh Clinic — Toshkentdagi zamonaviy xususiy klinika bo'lib, bu yerda salomatlik haqidagi g'amxo'rlik qulaylik va har bir bemorga e'tibor bilan uyg'unlashgan. Biz tajribali shifokorlar, ilg'or diagnostika va davolash texnologiyalari hamda puxta o'ylangan makonlarni birlashtirdik.",
+        "Shakh Clinic — Moskvadagi zamonaviy xususiy klinika bo'lib, bu yerda salomatlik haqidagi g'amxo'rlik qulaylik va har bir bemorga e'tibor bilan uyg'unlashgan. Biz tajribali shifokorlar, ilg'or diagnostika va davolash texnologiyalari hamda puxta o'ylangan makonlarni birlashtirdik.",
         "Jamoamiz xalqaro sifat standartlari asosida ishlaydi va malakasini doimiy oshirib boradi. Biz bemor ishonchi halol munosabat, aniq tashxis va insoniy yondashuvdan boshlanishiga ishonamiz."
       ],
       "highlights": [
