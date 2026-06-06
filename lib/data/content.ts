@@ -55,7 +55,7 @@ export interface Doctor {
   slug: string;
   departmentId: DepartmentId;
   experienceYears: number;
-  photo: string;
+  photo: string | StaticImageData;
 }
 
 export interface NewsArticle {
@@ -388,25 +388,29 @@ export const SERVICES: Service[] = [
 // ---------------------------------------------------------------------------
 // DOCTORS (real clinic team)
 // ---------------------------------------------------------------------------
+import ShaxzodImg from "../../public/shaxzod.webp"
+import MesudImg from "../../public/mesud.webp"
+import LarisaImg from "../../public/larisa.webp"
+import { StaticImageData } from "next/image";
 
 export const DOCTORS: Doctor[] = [
   {
     slug: 'zaripov-shakhzod-zhurakulovich',
     departmentId: 'dental-clinic',
     experienceYears: 7,
-    photo: '/shaxzod.webp',
+    photo: ShaxzodImg,
   },
   {
     slug: 'movsumov-mesud-nizamievich',
     departmentId: 'dental-clinic',
     experienceYears: 4,
-    photo: '/mesud.webp',
+    photo: MesudImg ,
   },
   {
     slug: 'salpagarova-larisa-khadzhimuradovna',
     departmentId: 'dental-clinic',
     experienceYears: 5,
-    photo: '/larisa.webp',
+    photo: LarisaImg,
   },
 ];
 
