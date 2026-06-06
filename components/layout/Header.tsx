@@ -72,11 +72,11 @@ export function Header() {
             {/* Right side */}
             <div className="flex items-center gap-2 flex-nowrap shrink-0">
               <a
-                href="tel:+79778531351"
+                href="tel:+79777120303"
                 className="hidden xl:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-red-500 text-white text-xs font-semibold shrink-0"
               >
                 <Phone className="w-3.5 h-3.5" />
-                <span className="hidden 2xl:inline">+7 (977) 853-13-51</span>
+                <span className="hidden 2xl:inline">+7 (977) 712-03-03</span>
               </a>
 
               <div className="hidden md:block shrink-0">

@@ -379,125 +379,29 @@
     }
   },
   "doctors": {
-    "karimov-sherzod-alisherovich": {
-      "name": "Karimov Sherzod Alisherovich",
-      "specialty": "Cardiologist, top category",
-      "education": "Graduated with honors from the Tashkent Medical Academy in 2003. Completed his clinical residency in cardiology at the Republican Specialized Scientific and Practical Medical Center of Cardiology named after Academician V. Vakhidov. Regularly attends clinical fellowships at hospitals in Turkey and Germany.",
-      "achievements": "Certified specialist in echocardiography and non-invasive cardiac diagnostics. Participant of European Society of Cardiology (ESC) congresses. Author of more than 15 scientific publications in national medical journals.",
-      "bio": "Sherzod Alisherovich is a cardiologist with 22 years of clinical experience. He specializes in the diagnosis and management of ischemic heart disease, arterial hypertension, arrhythmias, and heart failure. He is fluent in echocardiography techniques and Holter monitor interpretation. He treats every patient with focused attention — listening carefully to concerns, explaining test results in plain language, and helping patients understand the cause of their condition. He maintains long-term follow-up with many patients, adjusting therapy as needed over the years. He sees both adult patients with new symptoms and those returning for routine review of blood pressure and heart rhythm. He places particular emphasis on cardiovascular prevention and patient education on self-monitoring.",
-      "workingHours": "Mon-Fri 9:00-18:00, Sat 9:00-13:00"
+    "zaripov-shakhzod-zhurakulovich": {
+      "name": "Zaripov Shakhzod Zhurakulovich",
+      "specialty": "Orthopedic dentist and oral surgeon",
+      "education": "Completed specialized dental training and regularly advances his skills in prosthetic and surgical dentistry.",
+      "achievements": "Focuses on restoring dentition, surgical preparation for prosthetics, and comprehensive treatment planning.",
+      "bio": "Shakhzod Zhurakulovich is an orthopedic dentist and oral surgeon with more than 7 years of experience. He helps patients restore function and smile aesthetics with treatment plans tailored to the clinical case, timing, and comfort. His work emphasizes precise diagnostics, careful surgical tactics, and clear explanation of each treatment stage.",
+      "workingHours": "Mon-Sat 9:00-18:00"
     },
-    "yuldasheva-dilnoza-bahtiyorovna": {
-      "name": "Yuldasheva Dilnoza Bahtiyorovna",
-      "specialty": "Pediatrician, first category",
-      "education": "Graduated from the pediatrics faculty of the Tashkent Pediatric Medical Institute in 2008. Completed residency in pediatrics and additional courses in pediatric allergy and immunology. Regularly attends WHO educational programs on vaccine prevention.",
-      "achievements": "Member of the Pediatric Society of Uzbekistan. Certified specialist in neonatal neurology. Regular speaker at the clinic's parent seminars on vaccination and early childhood development.",
-      "bio": "Dilnoza Bahtiyorovna is a pediatrician with 17 years of experience caring for children from newborns through adolescence. The cornerstone of her approach is patience and building trust with both the young patient and the parents. She takes the time to let the child get comfortable and examines them in a relaxed, unhurried environment. She specializes in the care of infants and toddlers, first-year well-child checks, neuropsychological development assessments, and support for breastfeeding and the introduction of complementary foods. She is actively involved in vaccination, helping parents build an individual schedule that takes the child's health profile into account. She follows children with chronic conditions such as atopic dermatitis and food allergy, and frequently provides additional consultations by phone for the parents of her younger patients.",
-      "workingHours": "Mon-Sat 8:30-15:00"
-    },
-    "nazarov-alisher-rustamovich": {
-      "name": "Nazarov Alisher Rustamovich",
-      "specialty": "Neurologist, top category",
-      "education": "Graduated from the Samarkand State Medical Institute in 1998. Completed clinical residency in neurology and a postgraduate program with a defended PhD thesis on cerebrovascular disease. Trained at hospitals in Moscow and Istanbul.",
-      "achievements": "PhD in Medicine. Member of the Association of Neurologists of Uzbekistan. Specialist in the diagnosis and treatment of cerebrovascular disease and chronic pain syndromes. Author of several scientific papers on post-stroke rehabilitation.",
-      "bio": "Alisher Rustamovich is a neurologist with 25 years of clinical experience. He specializes in the diagnosis and treatment of headaches, vertigo, sleep disorders, post-stroke and post-traumatic conditions, and chronic neck and back pain syndromes. His approach is clinical and evidence-based: each case is worked up without templates, drawing on a complete history and full neurological exam. Alisher Rustamovich rarely orders \"just-in-case\" investigations — only what is genuinely needed for diagnosis. He actively manages patients with chronic migraine, helping them find effective preventive therapy. He regularly speaks at conferences and mentors the clinic's junior specialists. He pays particular attention to post-stroke rehabilitation, designing individual recovery programs for each patient.",
-      "workingHours": "Mon, Wed, Fri 10:00-17:00"
-    },
-    "tursunova-malika-shavkatovna": {
-      "name": "Tursunova Malika Shavkatovna",
-      "specialty": "Obstetrician-gynecologist",
-      "education": "Graduated from the medical faculty of the Tashkent Medical Academy in 2010. Completed residency in obstetrics and gynecology at the Republican Perinatal Center. Earned a certificate in aesthetic gynecology in 2018.",
-      "achievements": "Certified specialist in obstetric and gynecological ultrasound. Member of the Uzbek Association of Obstetricians and Gynecologists. Trained in WHO programs on women's reproductive health.",
-      "bio": "Malika Shavkatovna is an obstetrician-gynecologist with 14 years of experience. She sees women of all ages — from teenagers with their first questions about menstruation to patients in menopause. She creates a comfortable, trusting atmosphere because she understands how sensitive these topics can be. She specializes in pregnancy management, preventive examinations, treatment of inflammatory conditions, menstrual cycle disorders, and hormonal contraception. She places particular emphasis on early detection of cervical pathology and on tailoring follow-up plans to each patient. Malika Shavkatovna performs pelvic ultrasound directly during the appointment, saving patients time. She actively counsels women on family planning and pre-pregnancy preparation.",
-      "workingHours": "Mon-Fri 9:00-17:00, Sat 9:00-13:00"
-    },
-    "ismailov-bobur-uktamovich": {
-      "name": "Ismailov Bobur Uktamovich",
-      "specialty": "Urologist-andrologist",
-      "education": "Graduated from the medical faculty of the Andijan State Medical Institute in 2005. Completed urology residency. In 2015, earned an additional specialization in andrology and reproductive medicine in Almaty.",
-      "achievements": "Member of the European Association of Urology (EAU). Certified specialist in urodynamics and endoscopic surgery. Regular participant in international urology conferences.",
-      "bio": "Bobur Uktamovich is a urologist-andrologist with 19 years of clinical experience. He treats both men and women with disorders of the urinary and reproductive systems — from acute infections to chronic conditions. He specializes in urolithiasis, prostatitis, benign prostatic hyperplasia, male infertility, and erectile dysfunction. His practice is grounded in evidence-based medicine — he avoids unnecessary tests and explains the rationale for each step. He pays particular attention to the psychological side of the visit: he understands that many men delay urological care because of embarrassment, so he keeps the conversation tactful and non-judgmental. In the clinic, Bobur Uktamovich actively uses uroflowmetry and ultrasound diagnostics during the appointment itself, allowing decisions to be made promptly.",
-      "workingHours": "Mon-Fri 10:00-18:00"
-    },
-    "rakhimova-zuhra-azizovna": {
-      "name": "Rakhimova Zuhra Azizovna",
-      "specialty": "Dermatologist-cosmetologist",
-      "education": "Graduated from the Bukhara State Medical Institute in 2014. Completed residency in dermatology and venereology. Earned certificates in aesthetic dermatology and laser technologies in Istanbul and Seoul.",
-      "achievements": "Member of the Uzbek Society of Dermatologists. Certified specialist in dermatoscopy and injectable techniques. Regularly trains under leading Korean and Turkish dermatologists.",
-      "bio": "Zuhra Azizovna is a dermatologist-cosmetologist with 11 years of experience. She combines classical dermatology (treatment of acne, eczema, psoriasis, fungal infections) with aesthetic procedures — laser treatment of vascular networks and pigmentation, post-acne scar resurfacing, and injectable techniques. She places particular emphasis on dermatoscopic monitoring of moles and other skin lesions, allowing early detection of melanoma and other malignant changes. Zuhra Azizovna never prescribes aggressive therapy when it is not warranted — her approach favors stepwise treatment with regular review. She actively manages patients with chronic acne, helping them achieve stable control of breakouts. She also runs educational sessions for teenagers on caring for problematic skin.",
-      "workingHours": "Tue-Sat 10:00-18:00"
-    },
-    "mirzayev-jasur-saidovich": {
-      "name": "Mirzayev Jasur Saidovich",
-      "specialty": "Ophthalmologist",
-      "education": "Graduated from the Tashkent Medical Academy in 2009. Completed residency in ophthalmology and a fellowship in pediatric ophthalmology at the Tashkent Research Institute of Eye Diseases. Regularly takes refresher courses internationally.",
-      "achievements": "Certified specialist in pediatric ophthalmology and orthokeratology lens fitting. Member of the Association of Ophthalmologists of Uzbekistan. Active participant in the annual ophthalmology congress.",
-      "bio": "Jasur Saidovich is an ophthalmologist with 16 years of experience, working with adults and children from age three. He pays particular attention to the early diagnosis of school-age myopia and to selecting the right correction options — glasses, soft contact lenses, or overnight orthokeratology lenses. He sees patients with vision deterioration, headaches, eye dryness, and allergic reactions. Each appointment includes a full exam: visual acuity with refraction, tonometry, slit-lamp biomicroscopy, and fundus examination. Jasur Saidovich explains in simple terms how parents can protect their child's vision, what visual loads are appropriate, and when urgent care is warranted. He also follows patients with age-related vision changes and fits progressive lenses.",
-      "workingHours": "Mon-Fri 9:00-17:00"
-    },
-    "kasymova-feruza-tahirovna": {
-      "name": "Kasymova Feruza Tahirovna",
+    "movsumov-mesud-nizamievich": {
+      "name": "Movsumov Mesud Nizamievich",
       "specialty": "General dentist",
-      "education": "Graduated from the dental faculty of the Tashkent State Dental Institute in 2011. Completed specialization in aesthetic restoration and microscopic dentistry in Moscow and Istanbul.",
-      "achievements": "Certified specialist in dental microscope work. Expert in aesthetic restoration of anterior teeth. Trained in Bioclear direct restoration systems.",
-      "bio": "Feruza Tahirovna is a general dentist with 13 years of experience, specializing in aesthetic dentistry and dental-microscope work. She treats caries and its complications and performs artistic restorations of anterior teeth that reproduce the natural anatomy and shade of enamel. She places particular emphasis on a minimally invasive approach — preserving as much healthy tooth tissue as possible. She is especially careful with patients who have dental anxiety: she explains every step in detail, uses modern anesthesia techniques, and never rushes. She performs professional cleanings with the Air Flow system and fluoridation. She regularly maintains long-term follow-up with patients, with particular attention to oral hygiene and the selection of home-care products.",
-      "workingHours": "Mon-Sat 9:00-19:00"
+      "education": "Completed dental training and continues additional education in modern therapeutic dentistry.",
+      "achievements": "Works with caries treatment, complications, aesthetic restorations, and oral disease prevention.",
+      "bio": "Mesud Nizamievich is a general dentist with more than 4 years of experience. He conducts initial consultations, prepares clear treatment plans, and helps patients preserve their natural teeth as gently as possible. During appointments, he explains the diagnosis, treatment stages, and home-care recommendations in detail.",
+      "workingHours": "Mon-Sat 9:00-18:00"
     },
-    "usmanov-ravshan-makhmudovich": {
-      "name": "Usmanov Ravshan Makhmudovich",
-      "specialty": "Oral surgeon, implantologist",
-      "education": "Graduated from the Tashkent State Dental Institute in 2003. Completed clinical residency in oral surgery and numerous international courses in implantology in Switzerland, South Korea, and Germany.",
-      "achievements": "Certified implantologist for the Straumann, Osstem, and MIS systems. Member of the International Team for Implantology (ITI). Has placed more than 2,000 dental implants in his career.",
-      "bio": "Ravshan Makhmudovich is an oral surgeon and implantologist with 20 years of experience and one of the clinic's leading specialists in dental implantation. He places single implants, performs All-on-4 and All-on-6 protocols for full-arch restoration, and carries out bone augmentation and sinus lifting when bone volume is insufficient. At the initial consultation, Ravshan Makhmudovich explains the treatment plan in detail based on CT imaging and the patient's budget, and he does not insist on the most expensive systems when suitable alternatives exist. He treats every case individually, taking occlusion, soft-tissue condition, and aesthetic preferences into account. He pays particular attention to postoperative follow-up — every patient receives the doctor's direct contact for prompt communication during the early days after implantation.",
-      "workingHours": "Mon-Fri 10:00-19:00"
-    },
-    "nuriddinova-nigora-shavkatovna": {
-      "name": "Nuriddinova Nigora Shavkatovna",
-      "specialty": "Endocrinologist",
-      "education": "Graduated from the Tashkent Medical Academy in 2010. Completed residency in endocrinology at the Republican Specialized Scientific and Practical Medical Center of Endocrinology. Regularly trains under International Diabetes Federation programs.",
-      "achievements": "Member of the Endocrinology Association of Uzbekistan. Certified specialist in insulin pumps and continuous glucose monitoring systems. Expert in thyroidology.",
-      "bio": "Nigora Shavkatovna is an endocrinologist with 15 years of experience. She specializes in the management of patients with type 1 and type 2 diabetes, thyroid disease, lipid metabolism disorders, and reproductive endocrinology. She sees her role not only as choosing medications, but as teaching patients to manage their condition independently — counting carbohydrate units, interpreting glucose readings, and adjusting insulin therapy. During the appointment, she performs thyroid ultrasound herself, which significantly speeds up diagnosis. She devotes considerable time to the educational part of the consultation, explaining biochemical processes in simple language. She pays particular attention to pregnant women with gestational diabetes and to patients with newly diagnosed diabetes — she follows these cases especially closely during the first months of care.",
-      "workingHours": "Mon, Wed, Fri 9:00-16:00"
-    },
-    "tashpulatov-shokhrukh-bakhtiyorovich": {
-      "name": "Tashpulatov Shokhrukh Bakhtiyorovich",
-      "specialty": "Gastroenterologist-endoscopist",
-      "education": "Graduated from the medical faculty of the Tashkent Medical Academy in 2007. Completed residency in internal medicine and specialization in gastroenterology. Completed a fellowship in endoscopy at Seoul National University Hospital.",
-      "achievements": "Certified specialist in endoscopic studies of the digestive tract. Member of the European Society of Gastrointestinal Endoscopy (ESGE). Expert in the diagnosis and treatment of Helicobacter pylori infection.",
-      "bio": "Shokhrukh Bakhtiyorovich is a gastroenterologist-endoscopist with 18 years of experience. He combines a clinical practice with hands-on endoscopy — this lets him see the whole picture of a digestive condition from the first complaint to the final diagnosis. He specializes in the management of gastroesophageal reflux disease, chronic gastritis, peptic ulcer disease, irritable bowel syndrome, and hepatobiliary conditions. He personally performs gastroscopy with biopsy and Helicobacter pylori testing. Shokhrukh Bakhtiyorovich explains examination findings to each patient in detail, showing the images and pointing out what they reveal. He places particular emphasis on dietary recommendations, knowing that half of the success in gastroenterology lies in adjusting nutrition and lifestyle.",
-      "workingHours": "Mon-Fri 9:00-17:00"
-    },
-    "khodjayeva-gulchehra-rustamovna": {
-      "name": "Khodjayeva Gulchehra Rustamovna",
-      "specialty": "Therapist, top category",
-      "education": "Graduated from the medical faculty of the Tashkent State Medical Institute in 1996. Completed clinical residency in internal medicine and many years of practice at major hospitals in the capital. Holds an additional specialization in geriatrics.",
-      "achievements": "Member of the Association of General Practitioners of Uzbekistan. Certified in family medicine. Many years of experience managing complex multimorbid cases in elderly patients.",
-      "bio": "Gulchehra Rustamovna is a general practitioner with 28 years of clinical experience. She is one of the clinic's most experienced specialists in adult medicine across all age groups. She pays particular attention to the management of older patients with multiple chronic conditions — arterial hypertension, diabetes, ischemic heart disease, osteoarthritis, and COPD. At each appointment, she reviews every medication the patient is taking and helps optimize the regimen, eliminating duplications and unwanted interactions. Patients who are tired of being shuttled between specialists often turn to her — Gulchehra Rustamovna takes on the coordinator role and helps build a clear plan of investigation. She has a reputation as an attentive, calm doctor who never rushes a patient.",
-      "workingHours": "Mon-Sat 8:00-14:00"
-    },
-    "pulatov-sardor-anvarovich": {
-      "name": "Pulatov Sardor Anvarovich",
-      "specialty": "Orthopedic and trauma surgeon",
-      "education": "Graduated from the medical faculty of the Tashkent Medical Academy in 2000. Completed clinical residency in orthopedics and trauma surgery at the Republican Scientific and Practical Center of Traumatology. Trained in arthroscopy in Turkey and Germany.",
-      "achievements": "Certified specialist in knee and shoulder arthroscopy. Member of the Uzbek Association of Orthopedic and Trauma Surgeons. Expert in major-joint endoprosthetics.",
-      "bio": "Sardor Anvarovich is an orthopedic and trauma surgeon with 24 years of experience, specializing in both conservative and surgical management of musculoskeletal disorders and injuries. His main areas are diagnosis and treatment of large-joint osteoarthritis, sequelae of sports injuries, chronic neck and back pain, flat feet in children and adults, and postural disorders. During appointments, he personally performs intra-articular injections with hyaluronic acid, platelet-rich plasma therapy, and nerve blocks. Sardor Anvarovich actively uses ultrasound guidance for injections to improve accuracy. Before recommending surgery, he always exhausts the conservative options and discusses risks and expected outcomes with the patient in detail. He treats athletes, office workers with chronic low-back pain, and elderly patients with knee and hip osteoarthritis.",
-      "workingHours": "Mon-Fri 8:00-15:00"
-    },
-    "azimova-shahnoza-davronovna": {
-      "name": "Azimova Shahnoza Davronovna",
-      "specialty": "Radiologist, MRI specialist",
-      "education": "Graduated from the medical faculty of the Tashkent Medical Academy in 2012. Completed residency in radiology at the Tashkent Institute of Postgraduate Medical Education. Regularly trains in new MRI protocols.",
-      "achievements": "Certified specialist in MRI of all body areas. Member of the European Society of Radiology (ESR). Expert in neuroradiology and musculoskeletal imaging.",
-      "bio": "Shahnoza Davronovna is a radiologist with 12 years of experience and the clinic's leading specialist in magnetic resonance imaging. She reports studies of all areas: brain and spinal cord, joints, pelvis, abdomen, and soft tissues. She places particular emphasis on the diagnosis of neuroradiological conditions — multiple sclerosis, brain tumors, and post-stroke changes. She approaches each study thoughtfully: reviewing the history, comparing with prior imaging, and describing findings in detail with their clinical relevance. Shahnoza Davronovna actively consults with the clinic's referring doctors on complex cases and recommends additional protocols when needed. During appointments, she always shows the patient their images and explains the findings in plain terms.",
-      "workingHours": "Mon-Sat 8:00-16:00"
-    },
-    "qosimov-akmal-tolkinovich": {
-      "name": "Qosimov Akmal Tolkinovich",
-      "specialty": "General practitioner",
-      "education": "Graduated from the medical faculty of the Tashkent Medical Academy in 2017. Completed residency in internal medicine. Holds additional specializations in family medicine and sports medicine.",
-      "achievements": "Certified specialist in family medicine. Completed international courses in evidence-based medicine and sports cardiology. Active participant in professional online communities focused on evidence-based medicine.",
-      "bio": "Akmal Tolkinovich is a young, energetic general practitioner with 9 years of clinical experience. His approach is modern and evidence-based: he relies on international clinical guidelines and avoids prescribing medications without proven efficacy. He sees adult patients of all ages and is particularly popular with young working professionals for his structured, detailed consultations and written treatment plans. He specializes in the management of arterial hypertension, metabolic syndrome, dyslipidemia, and seasonal infections. He actively works evening hours, which is convenient for office workers who come in after work. He devotes significant time to non-pharmacological measures — lifestyle modification, nutrition, and physical activity. He builds long-term partnerships with his patients through regular follow-up.",
-      "workingHours": "Mon-Fri 14:00-20:00, Sat 9:00-14:00"
+    "salpagarova-larisa-khadzhimuradovna": {
+      "name": "Salpagarova Larisa Khadzhimuradovna",
+      "specialty": "General dentist",
+      "education": "Completed dental training and develops her expertise in therapeutic dentistry and prevention.",
+      "achievements": "Specializes in therapeutic treatment, tooth restoration, and preventive patient care.",
+      "bio": "Larisa Khadzhimuradovna is a general dentist with more than 5 years of experience. She carefully performs caries treatment, restorations, and preventive procedures. Her approach emphasizes calm communication, attentive examination, and comfortable treatment without unnecessary haste.",
+      "workingHours": "Mon-Sat 9:00-18:00"
     }
   },
   "news": {
@@ -654,7 +558,7 @@
       },
       "phone": {
         "label": "Phone",
-        "placeholder": "+7 (977) 853-13-51",
+        "placeholder": "+7 (977) 712-03-03",
         "helper": "Format: +7 (XXX) XXX-XX-XX"
       },
       "service": {
@@ -682,7 +586,7 @@
     "errors": {
       "general": "Couldn't send the request. Please check your connection and try again.",
       "rateLimited": "Too many attempts. Please wait a minute and try again.",
-      "telegramDown": "The service is temporarily unavailable. Please call us at +7 (977) 853-13-51.",
+      "telegramDown": "The service is temporarily unavailable. Please call us at +7 (977) 712-03-03.",
       "phoneInvalid": "Enter a 10-digit number"
     },
     "prefillNotice": {
@@ -716,7 +620,7 @@
     "addressLabel": "Address",
     "addressValue": "Moscow, 800-letiya Moskvy Street, 16",
     "phonesLabel": "Contacts",
-    "phonePrimary": "+7 (977) 853-13-51",
+    "phonePrimary": "+7 (977) 712-03-03",
     "emergencyPrefix": "24/7 emergency",
     "hoursLabel": "Working hours",
     "hoursWeekdays": "Mon-Sat: 8:00 - 20:00",
@@ -805,7 +709,7 @@
       "addressCountry": "RU",
       "streetAddress": "800-letiya Moskvy Street, 16",
       "postalCode": "127566",
-      "phone": "+7 (977) 853-13-51",
+      "phone": "+7 (977) 712-03-03",
       "email": "info@shaxklinika.uz"
     },
     "breadcrumb": {

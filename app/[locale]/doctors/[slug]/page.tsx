@@ -14,7 +14,6 @@ import {
   breadcrumbJsonLd,
   type OrgInfo,
 } from '@/lib/seo/schemas'
-import TestImgAvatar from "../../../../public/testImg.jpg"
 
 
 interface Props {
@@ -88,12 +87,12 @@ export default async function DoctorDetailPage({ params }: Props) {
       <div className="text-center mb-8">
         <div className="relative w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden">
           <Image
-            src={TestImgAvatar}
+            src={doctor.photo}
             alt={name}
             fill
             sizes="160px"
             priority
-            className="object-cover object-top scale-125"
+            className="object-cover object-top"
           />
         </div>
         <h1 className="text-4xl font-heading mb-2">{name}</h1>

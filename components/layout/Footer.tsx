@@ -120,8 +120,8 @@ export async function Footer() {
             </li>
             <li className="flex items-start gap-2">
               <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-bg-lighter)]" />
-              <a href="tel:+79778531351" className="hover:text-white">
-                +7 (977) 853-13-51
+              <a href="tel:+79777120303" className="hover:text-white">
+                +7 (977) 712-03-03
               </a>
             </li>
             <li className="flex items-start gap-2">

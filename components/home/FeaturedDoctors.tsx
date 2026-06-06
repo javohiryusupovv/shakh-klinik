@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { getFeaturedDoctors } from '@/lib/services'
 import { GlassCard } from '@/components/shared/GlassCard'
-import TestImg from "../../public/testImg.jpg"
 
 export function FeaturedDoctors() {
   const tDoctors = useTranslations('doctors')
@@ -26,11 +25,11 @@ export function FeaturedDoctors() {
             <GlassCard hover={false} className="p-5 cursor-pointer text-center">
               <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
                 <Image
-                  src={TestImg}
+                  src={doctor.photo}
                   alt={tDoctors(`${doctor.slug}.name`)}
                   fill
                   sizes="96px"
-                  className="object-cover object-top scale-125"
+                  className="object-cover object-top"
                 />
               </div>
               <h3 className="font-semibold text-lg mb-1">

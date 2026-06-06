@@ -76,9 +76,9 @@ export function MobileMenu() {
             <div className="flex justify-center mb-4">
               <LanguageSwitcher direction="up" align="center" />
             </div>
-            <a href="tel:+79778531351" className="flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-red-500 text-white font-semibold mb-4">
+            <a href="tel:+79777120303" className="flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-red-500 text-white font-semibold mb-4">
               <Phone className="w-5 h-5" />
-              <span>+7 (977) 853-13-51</span>
+              <span>+7 (977) 712-03-03</span>
             </a>
             <BookCTAButton className="w-full" />
           </div>

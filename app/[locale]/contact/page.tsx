@@ -39,8 +39,8 @@ export default function ContactPage() {
                 <Phone className="w-6 h-6 text-[var(--color-primary)] mt-1" />
                 <div>
                   <p className="font-semibold">{t('phonesLabel')}</p>
-                  <a href="tel:+79778531351" className="block text-[var(--color-text-gray)] hover:text-[var(--color-primary)]">{t('phonePrimary')}</a>
-                  <p className="text-[var(--color-primary)] font-semibold">{t('emergencyPrefix')}: +7 (977) 853-13-51</p>
+                  <a href="tel:+79777120303" className="block text-[var(--color-text-gray)] hover:text-[var(--color-primary)]">{t('phonePrimary')}</a>
+                  <p className="text-[var(--color-primary)] font-semibold">{t('emergencyPrefix')}: +7 (977) 712-03-03</p>
                 </div>
               </div>
 

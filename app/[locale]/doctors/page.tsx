@@ -4,9 +4,8 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
-import { DOCTORS, CATEGORIES } from '@/lib/data/content'
+import { DOCTORS } from '@/lib/data/content'
 import { GlassCard } from '@/components/shared/GlassCard'
-import TestImgAvatar from "../../../public/testImg.jpg"
 
 export default function DoctorsPage() {
   const t = useTranslations('doctors')
@@ -57,11 +56,11 @@ export default function DoctorsPage() {
             <GlassCard hover={false} className="p-6 cursor-pointer text-center">
               <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                 <Image
-                  src={TestImgAvatar}
+                  src={doctor.photo}
                   alt={t(`${doctor.slug}.name`)}
                   fill
                   sizes="128px"
-                  className="object-cover object-top scale-125"
+                  className="object-cover object-top"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-1">{t(`${doctor.slug}.name`)}</h3>
