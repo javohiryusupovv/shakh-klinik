@@ -1,5 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server'
 
+function getTelegramChatIds() {
+  const raw = process.env.TELEGRAM_CHAT_IDS || [
+    process.env.TELEGRAM_CHAT_ID,
+    process.env.TELEGRAM_CHAT_ID_ADMIN,
+  ].filter(Boolean).join(',')
+
+  return raw
+    .split(',')
+    .map((chatId) => chatId.trim())
+    .filter(Boolean)
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
@@ -13,9 +25,9 @@ export async function POST(request: NextRequest) {
     }
 
     const botToken = process.env.TELEGRAM_BOT_TOKEN
-    const chatId = process.env.TELEGRAM_CHAT_ID
+    const chatIds = getTelegramChatIds()
 
-    if (!botToken || !chatId) {
+    if (!botToken || chatIds.length === 0) {
       return NextResponse.json(
         { error: 'Telegram konfiguratsiyasi topilmadi' },
         { status: 500 }
@@ -33,25 +45,35 @@ export async function POST(request: NextRequest) {
 
     const telegramUrl = `https://api.telegram.org/bot${botToken}/sendMessage`
 
-    const response = await fetch(telegramUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: chatId,
-        text: message,
-      }),
-    })
+    const results = await Promise.all(
+      chatIds.map(async (chatId) => {
+        const response = await fetch(telegramUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            chat_id: chatId,
+            text: message,
+          }),
+        })
 
-    if (!response.ok) {
-      const errorData = await response.json()
-      console.error('Telegram error:', errorData)
+        if (!response.ok) {
+          const errorData = await response.json().catch(() => ({ status: response.status }))
+          console.error('Telegram error:', { chatId, error: errorData })
+          return false
+        }
+
+        return true
+      })
+    )
+
+    if (results.some((success) => !success)) {
       return NextResponse.json(
         { error: 'Xabar yuborishda xatolik' },
         { status: 500 }
       )
     }
 
-    return NextResponse.json({ success: true })
+    return NextResponse.json({ success: true, sent: chatIds.length })
   } catch (error) {
     console.error('Appointment error:', error)
     return NextResponse.json(
