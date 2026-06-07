@@ -10,6 +10,7 @@ function getTelegramChatIds() {
     .split(',')
     .map((chatId) => chatId.trim())
     .filter(Boolean)
+    .filter((chatId, index, chatIds) => chatIds.indexOf(chatId) === index)
 }
 
 export async function POST(request: NextRequest) {
@@ -59,21 +60,28 @@ export async function POST(request: NextRequest) {
         if (!response.ok) {
           const errorData = await response.json().catch(() => ({ status: response.status }))
           console.error('Telegram error:', { chatId, error: errorData })
-          return false
+          return { chatId, success: false }
         }
 
-        return true
+        return { chatId, success: true }
       })
     )
 
-    if (results.some((success) => !success)) {
+    const sentCount = results.filter((result) => result.success).length
+    const failedCount = results.length - sentCount
+
+    if (sentCount === 0) {
       return NextResponse.json(
         { error: 'Xabar yuborishda xatolik' },
         { status: 500 }
       )
     }
 
-    return NextResponse.json({ success: true, sent: chatIds.length })
+    if (failedCount > 0) {
+      console.warn('Telegram partial delivery:', { sent: sentCount, failed: failedCount })
+    }
+
+    return NextResponse.json({ success: true, sent: sentCount, failed: failedCount })
   } catch (error) {
     console.error('Appointment error:', error)
     return NextResponse.json(
