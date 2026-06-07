@@ -388,9 +388,9 @@ export const SERVICES: Service[] = [
 // ---------------------------------------------------------------------------
 // DOCTORS (real clinic team)
 // ---------------------------------------------------------------------------
-import ShaxzodImg from "../../public/shaxzod.webp"
-import MesudImg from "../../public/mesud.webp"
-import LarisaImg from "../../public/larisa.webp"
+import ShaxzodImg from "../../public/shahzod1.jpg"
+import MesudImg from "../../public/mesud1.jpg"
+import LarisaImg from "../../public/larisa1.jpg"
 import { StaticImageData } from "next/image";
 
 export const DOCTORS: Doctor[] = [

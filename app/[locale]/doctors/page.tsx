@@ -54,7 +54,7 @@ export default function DoctorsPage() {
             data-aos-delay={(i % 6) * 80}
           >
             <GlassCard hover={false} className="p-6 cursor-pointer text-center">
-              <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+              <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border">
                 <Image
                   src={doctor.photo}
                   alt={t(`${doctor.slug}.name`)}
