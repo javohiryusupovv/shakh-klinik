@@ -5,7 +5,7 @@ milestone_name: milestone
 status: executing
 stopped_at: Phase 3 UI-SPEC approved
 last_updated: "2026-04-25T16:40:22.623Z"
-last_activity: 2026-04-25 -- Phase 03 execution started
+last_activity: 2026-06-11 -- Completed quick task 260611-l43: Switch production domain to shakh-clinics.ru
 progress:
   total_phases: 5
   completed_phases: 2
@@ -78,6 +78,12 @@ None yet.
 - [Phase 3 risk]: `TELEGRAM_BOT_TOKEN` must never reach the client bundle — `import 'server-only'` in `/lib/telegram.ts`
 - [Phase 4 risk]: Swiper must be loaded via `dynamic({ ssr: false })` to avoid hydration mismatch and CLS spike
 - [Phase 4 risk]: `source.unsplash.com` deprecated — all three Unsplash host patterns must be in `remotePatterns`
+
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 260611-l43 | Switch production domain to https://shakh-clinics.ru for SEO and social previews | 2026-06-11 | d163f6a | [260611-l43-switch-production-domain-to-https-shakh-](./quick/260611-l43-switch-production-domain-to-https-shakh-/) |
 
 ## Deferred Items
 
