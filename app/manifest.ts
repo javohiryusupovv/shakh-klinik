@@ -2,8 +2,8 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Shax Klinika',
-    short_name: 'ShaxKlinika',
+    name: 'Shakh Clinics',
+    short_name: 'Shakh Clinics',
     description:
       'Современная частная медицинская клиника в Москве — терапия, кардиология, гинекология, педиатрия, стоматология, диагностика.',
     start_url: '/',

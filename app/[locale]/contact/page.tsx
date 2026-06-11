@@ -57,7 +57,7 @@ export default function ContactPage() {
                 <Mail className="w-6 h-6 text-[var(--color-primary)] mt-1" />
                 <div>
                   <p className="font-semibold">{t('emailLabel')}</p>
-                  <a href="mailto:info@shaxklinika.uz" className="text-[var(--color-text-gray)] hover:text-[var(--color-primary)]">info@shaxklinika.uz</a>
+                  <a href="mailto:shakh.clinic@mail.ru" className="text-[var(--color-text-gray)] hover:text-[var(--color-primary)]">shakh.clinic@mail.ru</a>
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ export default function ContactPage() {
               )}
               <iframe
                 src="https://yandex.ru/map-widget/v1/?ll=37.551097%2C55.878410&z=16&pt=37.551097%2C55.878410"
-                title="Shakh Clinic on Yandex Maps"
+                title="Shakh Clinics on Yandex Maps"
                 width="100%"
                 height="100%"
                 frameBorder="0"
