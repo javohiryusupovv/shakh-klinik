@@ -1,7 +1,7 @@
 import { routing } from '@/i18n/routing'
 
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://shaxklinika.uz'
+  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://shakh-clinics.ru'
 ).replace(/\/$/, '')
 
 export const LOCALES = routing.locales
