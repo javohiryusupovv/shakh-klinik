@@ -3,10 +3,12 @@
 import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { Phone } from 'lucide-react'
+import Image from 'next/image'
 import { Link, usePathname } from '@/i18n/navigation'
 import { LanguageSwitcher } from '@/components/shared/LanguageSwitcher'
 import { BookCTAButton } from '@/components/shared/BookCTAButton'
 import { MobileMenu } from '@/components/layout/MobileMenu'
+import ShakhClinicLogo from "@/public/shakh.png"
 
 const NAV_KEYS = [
   { key: 'about', href: '/about' },
@@ -25,30 +27,34 @@ export function Header() {
     href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(`${href}/`)
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20)
-    }
+    const handleScroll = () => setScrolled(window.scrollY > 20)
     window.addEventListener('scroll', handleScroll)
     handleScroll()
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
-    <header className={`sticky top-0 z-50 mx-2 mt-2 transition-all duration-300 ${scrolled ? 'top-4' : 'mt-2'}`}>
+    <header
+      className={`sticky top-0 z-50 mx-2 mt-2 transition-all duration-300 ${
+        scrolled ? 'top-4' : 'mt-2'
+      }`}
+    >
       <div className="container mx-auto">
-        <div className={`relative rounded-full transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-xl border border-white/20' : 'bg-transparent border-transparent'}`}>
+        <div
+          className={`relative rounded-full transition-all duration-300 ${
+            scrolled
+              ? 'bg-white/92 backdrop-blur-xl border border-[#4A9EE7]/14 shadow-[0_4px_28px_rgba(0,0,0,0.09),0_1px_6px_rgba(74,158,231,0.08)]'
+              : 'bg-transparent border-transparent'
+          }`}
+        >
           <div className="flex items-center justify-between h-14 px-4">
-            {/* Logo */}
-            <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#4A9EE7] to-[#2B7FCC] flex items-center justify-center">
-                <span className="text-white font-bold text-xs">S</span>
-              </div>
-              <span className="font-heading text-lg font-bold text-[#1F2937] hidden sm:block">
-                Shakh <span className="text-[#4A9EE7]">Clinic</span>
-              </span>
-            </Link>
 
-            {/* Desktop nav */}
+            {/* ── Brand logo ─────────────────────────────────────── */}
+          <Link href="/">
+            <Image src={ShakhClinicLogo} width={45} height={45} alt='Shakh Clinics' />
+          </Link>
+
+            {/* ── Desktop nav ────────────────────────────────────── */}
             <nav className="hidden lg:flex items-center gap-0.5">
               {NAV_KEYS.map(({ key, href }) => {
                 const active = isActive(href)
@@ -69,11 +75,16 @@ export function Header() {
               })}
             </nav>
 
-            {/* Right side */}
+            {/* ── Right side ─────────────────────────────────────── */}
             <div className="flex items-center gap-2 flex-nowrap shrink-0">
               <a
                 href="tel:+79777120303"
-                className="hidden xl:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-red-500 text-white text-xs font-semibold shrink-0"
+                className="hidden xl:flex items-center gap-1.5 px-3 py-1.5 rounded-full text-white text-xs font-semibold shrink-0 transition-opacity hover:opacity-85"
+                style={{
+                  background:
+                    'linear-gradient(135deg, #4A9EE7 0%, #1A5A94 100%)',
+                  boxShadow: '0 2px 8px rgba(74,158,231,0.38)',
+                }}
               >
                 <Phone className="w-3.5 h-3.5" />
                 <span className="hidden 2xl:inline">+7 (977) 712-03-03</span>

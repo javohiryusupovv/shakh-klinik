@@ -3,11 +3,13 @@
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { Menu, Phone, Info, Stethoscope, Users, Newspaper, Star, Camera, Mail } from 'lucide-react'
+import Image from 'next/image'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Button } from '@/components/ui/button'
 import { Link, usePathname } from '@/i18n/navigation'
 import { LanguageSwitcher } from '@/components/shared/LanguageSwitcher'
 import { BookCTAButton } from '@/components/shared/BookCTAButton'
+import ShakhLogo from "@/public/shakh.png"
 
 const NAV_ITEMS = [
   { key: 'about', href: '/about', icon: Info },
@@ -38,13 +40,14 @@ export function MobileMenu() {
       <SheetContent side="right" className="w-[350px] bg-white/95 backdrop-blur-xl p-0">
         <div className="flex flex-col h-full">
           <div className="flex items-center p-4 border-b">
-            <Link href="/" onClick={() => setOpen(false)} className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#4A9EE7] to-[#2B7FCC] flex items-center justify-center">
-                <span className="text-white font-bold text-xs">S</span>
+            <Link href="/" onClick={() => setOpen(false)} className="flex items-center gap-2.5">
+              {/* Crown logo — actual clinic PNG */}
+              <div className='w-full h-[90px]'>
+                <Link href="/">
+                  <Image src={ShakhLogo} className='-translate-y-5' width={75} height={75} alt='Shakh Clinics' />
+                </Link>
               </div>
-              <span className="font-heading text-lg font-bold">
-                Shakh <span className="text-[#4A9EE7]">Clinic</span>
-              </span>
+
             </Link>
           </div>
 
@@ -58,11 +61,10 @@ export function MobileMenu() {
                     href={href}
                     onClick={() => setOpen(false)}
                     aria-current={active ? 'page' : undefined}
-                    className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all font-medium ${
-                      active
-                        ? 'bg-[#4A9EE7]/10 text-[#4A9EE7]'
-                        : 'text-[#6B7280] hover:bg-[#4A9EE7]/10 hover:text-[#4A9EE7]'
-                    }`}
+                    className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all font-medium ${active
+                      ? 'bg-[#4A9EE7]/10 text-[#4A9EE7]'
+                      : 'text-[#6B7280] hover:bg-[#4A9EE7]/10 hover:text-[#4A9EE7]'
+                      }`}
                   >
                     <Icon className="w-5 h-5" />
                     {tNav(key)}
@@ -76,7 +78,14 @@ export function MobileMenu() {
             <div className="flex justify-center mb-4">
               <LanguageSwitcher direction="up" align="center" />
             </div>
-            <a href="tel:+79777120303" className="flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-red-500 text-white font-semibold mb-4">
+            <a
+              href="tel:+79777120303"
+              className="flex items-center justify-center gap-2 px-4 py-3 rounded-full text-white font-semibold mb-4"
+              style={{
+                background: 'linear-gradient(135deg, #4A9EE7 0%, #1A5A94 100%)',
+                boxShadow: '0 3px 10px rgba(74,158,231,0.38)',
+              }}
+            >
               <Phone className="w-5 h-5" />
               <span>+7 (977) 712-03-03</span>
             </a>

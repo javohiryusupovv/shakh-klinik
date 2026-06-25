@@ -1,0 +1,40 @@
+<svg viewBox="0 0 340 380" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!--
+    ShaxKlinika full stacked logo — faithful SVG recreation
+    Original: Crown (outer peaks taller) → "Shakh" serif → thick bar → "CLINIC" spaced caps
+  -->
+
+  <!-- Crown: outer peaks TALLEST, center peak shorter, deep V-notches -->
+  <!-- Scaled to fit 340px wide canvas, crown height ~160px -->
+  <path
+    d="M30,162 L30,96 L70,16 L118,110 L170,52 L222,110 L270,16 L310,96 L310,162 Z"
+    fill="#2B7FCC"
+  />
+
+  <!-- "Shakh" — large serif wordmark -->
+  <text
+    x="170"
+    y="232"
+    text-anchor="middle"
+    font-family="Georgia, 'Book Antiqua', Palatino, serif"
+    font-size="88"
+    font-weight="700"
+    fill="#1F2937"
+    letter-spacing="1"
+  >Shakh</text>
+
+  <!-- Thick horizontal separator bar -->
+  <rect x="30" y="250" width="280" height="10" rx="2" fill="#2B7FCC"/>
+
+  <!-- "CLINIC" — spaced uppercase sans-serif -->
+  <text
+    x="170"
+    y="316"
+    text-anchor="middle"
+    font-family="'Helvetica Neue', Arial, sans-serif"
+    font-size="28"
+    font-weight="500"
+    fill="#1F2937"
+    letter-spacing="14"
+  >CLINIC</text>
+</svg>

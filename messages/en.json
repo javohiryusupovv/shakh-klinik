@@ -6,35 +6,35 @@
       "items": [
         {
           "q": "How do I book an appointment at Shakh Clinics?",
-          "a": "Fill in the short form on the website — our administrator will call you back within 15 minutes to confirm a convenient time. You can also reach us by phone around the clock."
+          "a": "Leave a request on the website or call the clinic. Our administrator will clarify your concern, help choose the right doctor, and confirm a convenient appointment time. We will also send a reminder before your visit."
         },
         {
-          "q": "Do you accept patients with medical insurance?",
-          "a": "We work with most major insurance providers in Uzbekistan, including voluntary health insurance plans. Before your visit, please check with our administrator whether your service is covered — we will help you prepare the necessary documentation."
+          "q": "Do you work with voluntary medical insurance?",
+          "a": "Yes, appointments may be available through partner VMI insurance programs. Before your visit, tell our administrator the name of your insurer and plan — we will check coverage and explain which documents are needed."
         },
         {
           "q": "How long does an initial consultation last?",
-          "a": "An initial appointment with a therapist or specialist typically lasts 30 to 40 minutes. This is enough time to take a full history, perform an examination, discuss your concerns, and outline a plan for further investigation or treatment."
+          "a": "An initial consultation usually takes 30 to 40 minutes. The doctor examines you, reviews your concerns and images, explains treatment options, and prepares a clear plan with an estimated cost."
         },
         {
           "q": "Do I need a referral from another doctor?",
-          "a": "No. You can book an appointment with any Shakh Clinics specialist directly, without a referral. If you already have records or test results from other clinics, please bring them along — this will help speed up diagnosis."
+          "a": "No. You can book directly with Shakh Clinics specialists. If you have X-rays, medical records, test results, or a previous treatment plan, please bring them with you — this helps the doctor assess your case faster."
         },
         {
           "q": "Do you see children?",
-          "a": "Yes. We have experienced pediatricians on staff and provide routine vaccinations following the Uzbekistan Ministry of Health schedule, as well as consultations with pediatric specialists. We accept young patients from birth."
+          "a": "Yes, we see children for consultations and dental treatment. The doctor explains each step calmly and without pressure so the child feels comfortable during the appointment."
         },
         {
           "q": "What payment methods do you accept?",
-          "a": "We accept cash (UZS), Visa and Mastercard bank cards, and online transfers via Click and Payme. A receipt is provided after every payment — you will need it for insurance reimbursement."
+          "a": "We accept payment in Russian rubles: cash, bank cards, and bank transfers. After payment we provide a receipt and, if needed, prepare documents for a tax deduction or insurance reimbursement."
         },
         {
           "q": "What are the clinic's working hours?",
           "a": "Our main reception hours are Monday to Saturday from 8:00 to 20:00, and Sunday from 9:00 to 15:00. Individual doctor schedules may differ — please confirm the exact appointment time when you book."
         },
         {
-          "q": "Do you provide 24/7 emergency assistance?",
-          "a": "Our 24-hour emergency line operates every day — call us if you need an urgent consultation or a home visit. For life-threatening emergencies, please dial 103."
+          "q": "Can I come in with acute pain?",
+          "a": "Yes, in case of acute pain we will try to see you in the nearest available slot. Please call ahead so the administrator can assess urgency and prepare the doctor. For life-threatening emergencies, dial 112."
         }
       ]
     },
@@ -68,7 +68,11 @@
     },
     "cta": {
       "heading": "Take care of your health today",
-      "body": "Book a consultation now and receive a comprehensive examination with a 20% discount"
+      "body": "Book a consultation now and receive a comprehensive examination with a 20% discount",
+      "badge": "Booking open",
+      "trustPoint1": "No queue",
+      "trustPoint2": "Reply in 15 min",
+      "trustPoint3": "No referral needed"
     },
     "stats": {
       "items": [
@@ -95,12 +99,17 @@
       ]
     },
     "latestNews": {
-      "heading": "Clinic news"
+      "heading": "Clinic news",
+      "readMore": "Read more",
+      "allNewsCta": "All news"
     },
     "popularServices": {
-      "heading": "Popular services"
+      "badge": "Services",
+      "heading": "Popular services",
+      "allServicesCta": "All services"
     },
     "whyChooseUs": {
+      "badge": "Advantages",
       "heading": "Why patients choose us",
       "subheading": "We care for every patient and deliver high-quality medical care",
       "items": [
@@ -132,12 +141,72 @@
       "allServicesCta": "All services"
     },
     "featuredDoctors": {
-      "heading": "Our specialists"
+      "heading": "Our specialists",
+      "experienceLabel": "years of experience",
+      "allDoctorsCta": "All specialists",
+      "badge": "Our Specialists",
+      "subtitle": "Experienced doctors with international certificates"
     },
     "reviews": {
       "heading": "What our clients say",
       "subtitle": "Our clients value our professionalism, reliability and approach. Their feedback is the greatest reward for us.",
       "reviewsLabel": "reviews"
+    },
+    "implantStages": {
+      "badge": "Implantology",
+      "heading": "Dental implants in 3 stages",
+      "subheading": "Full cycle from diagnostics to placement — in one clinic, turnkey",
+      "stageLabel": "stage",
+      "stages": [
+        {
+          "title": "Consultation",
+          "items": [
+            "Specialist consultation",
+            "CT scan",
+            "3D tomography",
+            "Treatment plan"
+          ],
+          "price": "Free",
+          "oldPrice": "650 000 UZS",
+          "isFree": true
+        },
+        {
+          "title": "Surgical",
+          "items": [
+            "Anaesthesia",
+            "Multi-unit",
+            "Implantologist work",
+            "Osstem implant"
+          ],
+          "price": "2 200 000 UZS",
+          "oldPrice": "3 240 000 UZS",
+          "isFree": false
+        },
+        {
+          "title": "Orthopedic",
+          "items": [
+            "Gum former",
+            "Orthodontist work",
+            "Zirconia crown",
+            "Annual check-ups"
+          ],
+          "price": "2 600 000 UZS",
+          "oldPrice": "3 759 000 UZS",
+          "isFree": false
+        }
+      ],
+      "installmentTitle": "Book Online",
+      "installmentBenefits": [
+        "Book in 1 minute",
+        "Confirmation via Telegram",
+        "Day-before reminder",
+        "Free consultation"
+      ],
+      "installmentMonth1": "Free",
+      "installmentMonth1Label": "Initial visit",
+      "installmentMonth2": "24/7",
+      "installmentMonth2Label": "Online support",
+      "installmentCta": "Book Online"
     }
   },
   "nav": {
@@ -402,7 +471,8 @@
       "achievements": "Specializes in therapeutic treatment, tooth restoration, and preventive patient care.",
       "bio": "Larisa Khadzhimuradovna is a general dentist with more than 5 years of experience. She carefully performs caries treatment, restorations, and preventive procedures. Her approach emphasizes calm communication, attentive examination, and comfortable treatment without unnecessary haste.",
       "workingHours": "Mon-Sat 9:00-18:00"
-    }
+    },
+    "experienceLabel": "years of experience"
   },
   "news": {
     "clinic-opens-new-pediatric-wing": {
@@ -636,6 +706,8 @@
     },
     "doctors": {
       "title": "Doctors",
+      "subtitle": "Our specialists",
+      "countLabel": "specialists",
       "experienceSuffix": "years of experience"
     },
     "services": {
@@ -775,14 +847,6 @@
         {
           "title": "Free parking",
           "description": "Convenient parking for patients right next to the clinic."
-        },
-        {
-          "title": "Children's area",
-          "description": "A dedicated play corner for our youngest visitors."
-        },
-        {
-          "title": "Accessible environment",
-          "description": "Ramps and amenities for patients with disabilities."
         }
       ]
     }

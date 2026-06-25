@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
 
     if (!fullName || !phone) {
       return NextResponse.json(
-        { error: 'Full name va phone number talab qilinadi' },
+        { error: 'Имя и номер телефона обязательны' },
         { status: 400 }
       )
     }
@@ -30,19 +30,19 @@ export async function POST(request: NextRequest) {
 
     if (!botToken || chatIds.length === 0) {
       return NextResponse.json(
-        { error: 'Telegram konfiguratsiyasi topilmadi' },
+        { error: 'Конфигурация Telegram не найдена' },
         { status: 500 }
       )
     }
 
     const serviceName = serviceSlug
-      ? `Xizmat: ${serviceSlug}`
+      ? `Услуга: ${serviceSlug}`
       : ''
     const doctorName = doctorSlug
-      ? `Shifokor: ${doctorSlug}`
+      ? `Врач: ${doctorSlug}`
       : ''
 
-    const message = `📅 Yangi ishga yozilish!\n\n👤 Ism: ${fullName}\n📞 Telefon: ${phone}${serviceName ? `\n${serviceName}` : ''}${doctorName ? `\n${doctorName}` : ''}`
+    const message = `📅 Новая запись на приём!\n\n👤 Имя: ${fullName}\n📞 Телефон: ${phone}${serviceName ? `\n${serviceName}` : ''}${doctorName ? `\n${doctorName}` : ''}`
 
     const telegramUrl = `https://api.telegram.org/bot${botToken}/sendMessage`
 
@@ -72,7 +72,7 @@ export async function POST(request: NextRequest) {
 
     if (sentCount === 0) {
       return NextResponse.json(
-        { error: 'Xabar yuborishda xatolik' },
+        { error: 'Ошибка при отправке сообщения' },
         { status: 500 }
       )
     }
@@ -85,7 +85,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Appointment error:', error)
     return NextResponse.json(
-      { error: 'Ichki server xatoligi' },
+      { error: 'Внутренняя ошибка сервера' },
       { status: 500 }
     )
   }

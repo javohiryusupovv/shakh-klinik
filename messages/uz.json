@@ -6,35 +6,35 @@
       "items": [
         {
           "q": "Shakh Clinicsga qanday yozilsa bo'ladi?",
-          "a": "Saytdagi qisqa shaklni to'ldiring — administrator 15 daqiqa ichida qo'ng'iroq qilib, qulay vaqtni kelishadi. Klinika telefoniga kunu tun qo'ng'iroq qilishingiz ham mumkin."
+          "a": "Saytda ariza qoldiring yoki klinikaga qo'ng'iroq qiling — administrator shikoyatingizni aniqlab, kerakli shifokorni tanlaydi va qulay vaqtni kelishadi. Qabuldan oldin eslatma yuboramiz."
         },
         {
-          "q": "Tibbiy sug'urta bo'yicha bemorlarni qabul qilasizmi?",
-          "a": "O'zbekistonning aksariyat yirik sug'urta kompaniyalari va ixtiyoriy tibbiy sug'urta bilan ishlaymiz. Tashrifdan oldin administratordan xizmatingiz qoplamaga kirishini aniqlang — kerakli hujjatlarni tayyorlashda yordam beramiz."
+          "q": "DMS sug'urta bo'yicha ishlaysizmi?",
+          "a": "Ha, hamkor sug'urta kompaniyalari DMS dasturlari bo'yicha qabul qilish mumkin. Tashrifdan oldin sug'urta nomi va dasturingizni ayting — xizmat qoplanishini tekshirib, kerakli hujjatlarni tushuntiramiz."
         },
         {
           "q": "Birinchi konsultatsiya qancha vaqt davom etadi?",
-          "a": "Terapevt yoki mutaxassisning birinchi qabuli o'rtacha 30–40 daqiqa davom etadi. Bu anamnez to'plash, ko'rik o'tkazish, shikoyatlarni muhokama qilish va tekshirish yoki davolash rejasini tuzish uchun yetarli."
+          "a": "Birinchi konsultatsiya odatda 30–40 daqiqa davom etadi. Shifokor ko'rik o'tkazadi, shikoyat va suratlarni o'rganadi, davolash variantlarini tushuntiradi va taxminiy narx bilan reja tuzadi."
         },
         {
           "q": "Boshqa shifokordan yo'llanma kerakmi?",
-          "a": "Yo'q. Shakh Clinicsning har qanday mutaxassisiga to'g'ridan-to'g'ri, yo'llanmasiz yozilishingiz mumkin. Agar boshqa klinikalardan ko'chirma yoki tahlil natijalaringiz bo'lsa — ularni o'zingiz bilan olib keling, bu tashxis qo'yishni tezlashtiradi."
+          "a": "Yo'q, Shakh Clinics mutaxassislariga to'g'ridan-to'g'ri yozilishingiz mumkin. Agar sizda suratlar, ko'chirmalar, tahlil natijalari yoki oldingi davolash rejasi bo'lsa, o'zingiz bilan olib keling — bu vaziyatni tezroq baholashga yordam beradi."
         },
         {
           "q": "Bolalarni qabul qilasizmi?",
-          "a": "Ha. Bizda tajribali pediatrlar ishlaydi, O'zbekiston Sog'liqni saqlash vazirligi taqvimi bo'yicha rejali emlash o'tkaziladi, shuningdek, bolalar tor mutaxassislari konsultatsiyalari mavjud. Yosh bemorlarni tug'ilganidan boshlab qabul qilamiz."
+          "a": "Ha, bolalarni konsultatsiya va stomatologik davolashga qabul qilamiz. Shifokor har bir bosqichni xotirjam tushuntiradi, shunda bola qabulda o'zini qulay his qiladi."
         },
         {
           "q": "Qaysi to'lov usullarini qabul qilasiz?",
-          "a": "Naqd pul (UZS), Visa va Mastercard bank kartalari, shuningdek, Click va Payme orqali onlayn pul o'tkazmalarini qabul qilamiz. Har bir to'lovdan keyin chek beramiz — u sug'urta qoplamasini olishda kerak bo'ladi."
+          "a": "To'lov rubl hisobida qabul qilinadi: naqd, bank kartasi yoki naqdsiz o'tkazma orqali. To'lovdan keyin chek beramiz va kerak bo'lsa soliq chegirmasi yoki sug'urta kompaniyasi uchun hujjat tayyorlaymiz."
         },
         {
           "q": "Klinika qachon ishlaydi?",
           "a": "Asosiy qabul soatlari: dushanba–shanba 8:00 dan 20:00 gacha, yakshanba 9:00 dan 15:00 gacha. Aniq shifokorning jadvali farq qilishi mumkin — yozilish vaqtida aniq vaqtni aniqlang."
         },
         {
-          "q": "Sizda 24/7 shoshilinch yordam bormi?",
-          "a": "Sutkalik shoshilinch liniya har kuni ishlaydi — agar shoshilinch konsultatsiya yoki shifokorni uyga chaqirish kerak bo'lsa, qo'ng'iroq qiling. Hayotga xavf soluvchi og'ir holatlarda 103 raqamiga murojaat qiling."
+          "q": "O'tkir og'riq bilan murojaat qilish mumkinmi?",
+          "a": "Ha, o'tkir og'riqda sizni eng yaqin bo'sh vaqtga qabul qilishga harakat qilamiz. Oldindan qo'ng'iroq qiling, administrator holatni baholab, shifokorni tayyorlaydi. Hayotga xavf tug'diradigan holatlarda 112 raqamiga qo'ng'iroq qiling."
         }
       ]
     },
@@ -68,7 +68,11 @@
     },
     "cta": {
       "heading": "Bugundan boshlab sog'lig'ingizga g'amxo'rlik qiling",
-      "body": "Hoziroq konsultatsiyaga yoziling va 20% chegirma bilan to'liq tibbiy ko'rikni oling"
+      "body": "Hoziroq konsultatsiyaga yoziling va 20% chegirma bilan to'liq tibbiy ko'rikni oling",
+      "badge": "Yozilish ochiq",
+      "trustPoint1": "Navbatsiz",
+      "trustPoint2": "15 daqiqada javob",
+      "trustPoint3": "Yo'llanmasiz"
     },
     "stats": {
       "items": [
@@ -95,12 +99,17 @@
       ]
     },
     "latestNews": {
-      "heading": "Klinika yangiliklari"
+      "heading": "Klinika yangiliklari",
+      "readMore": "O'qish",
+      "allNewsCta": "Barcha yangiliklar"
     },
     "popularServices": {
-      "heading": "Mashhur xizmatlar"
+      "badge": "Xizmatlar",
+      "heading": "Mashhur xizmatlar",
+      "allServicesCta": "Barcha xizmatlar"
     },
     "whyChooseUs": {
+      "badge": "Afzalliklar",
       "heading": "Nima uchun bizni tanlaydilar",
       "subheading": "Biz har bir bemorga g'amxo'rlik qilamiz va sifatli tibbiy xizmatlar ko'rsatamiz",
       "items": [
@@ -132,12 +141,72 @@
       "allServicesCta": "Barcha xizmatlar"
     },
     "featuredDoctors": {
-      "heading": "Bizning mutaxassislarimiz"
+      "heading": "Bizning mutaxassislarimiz",
+      "experienceLabel": "yil tajriba",
+      "allDoctorsCta": "Barcha mutaxassislar",
+      "badge": "Mutaxassislarimiz",
+      "subtitle": "Xalqaro sertifikatlarga ega tajribali shifokorlar"
     },
     "reviews": {
       "heading": "Bizning mijozlarimiz nima deyishadi",
       "subtitle": "Mijozlarimiz bizning professionallik, ishonchlilik va yondashuvimizni qadrlashadi. Ularning fikrlari biz uchun eng katta mukofotdir.",
       "reviewsLabel": "sharh"
+    },
+    "implantStages": {
+      "badge": "Implantologiya",
+      "heading": "3 bosqichda implantatsiya",
+      "subheading": "Diagnostikadan o'rnatishgacha to'liq tsikl — bitta klinikada, kalit ostida",
+      "stageLabel": "bosqich",
+      "stages": [
+        {
+          "title": "Konsultatsiya",
+          "items": [
+            "Mutaxassis konsultatsiyasi",
+            "KT-surat",
+            "3D-tomografiya",
+            "Davolash rejasi"
+          ],
+          "price": "Bepul",
+          "oldPrice": "650 000 so'm",
+          "isFree": true
+        },
+        {
+          "title": "Jarrohlik",
+          "items": [
+            "Anesteziya",
+            "Multiunit",
+            "Implantolog ishi",
+            "Osstem implanti"
+          ],
+          "price": "2 200 000 so'm",
+          "oldPrice": "3 240 000 so'm",
+          "isFree": false
+        },
+        {
+          "title": "Ortopedik",
+          "items": [
+            "Milk formatori",
+            "Ortoped ishi",
+            "Zirkoniy toj",
+            "Yillik ko'riklar"
+          ],
+          "price": "2 600 000 so'm",
+          "oldPrice": "3 759 000 so'm",
+          "isFree": false
+        }
+      ],
+      "installmentTitle": "Onlayn yozilish",
+      "installmentBenefits": [
+        "1 daqiqada yozilish",
+        "Telegram orqali tasdiqlash",
+        "Bir kun oldin eslatma",
+        "Bepul konsultatsiya"
+      ],
+      "installmentMonth1": "Bepul",
+      "installmentMonth1Label": "Dastlabki qabul",
+      "installmentMonth2": "24/7",
+      "installmentMonth2Label": "Onlayn qo'llab-quvvatlash",
+      "installmentCta": "Onlayn yozilish"
     }
   },
   "nav": {
@@ -402,7 +471,8 @@
       "achievements": "Terapevtik davolash, tishlarni tiklash va bemorlarni profilaktik kuzatib borishga ixtisoslashgan.",
       "bio": "Larisa Xadjimuradovna — 5 yildan ortiq tajribaga ega terapevt shifokor. Kariesni davolash, restavratsiya va profilaktik muolajalarni puxta bajaradi. Ishida sokin muloqot, diqqatli ko'rik va ortiqcha shoshilmasdan qulay davolashga e'tibor beradi.",
       "workingHours": "Du-Sh 9:00-18:00"
-    }
+    },
+    "experienceLabel": "yil tajriba"
   },
   "news": {
     "clinic-opens-new-pediatric-wing": {
@@ -636,6 +706,8 @@
     },
     "doctors": {
       "title": "Shifokorlar",
+      "subtitle": "Bizning mutaxassislarimiz",
+      "countLabel": "mutaxassis",
       "experienceSuffix": "yillik tajriba"
     },
     "services": {
@@ -775,14 +847,6 @@
         {
           "title": "Bepul avtoturargoh",
           "description": "Klinika yonida bemorlar uchun qulay avtoturargoh."
-        },
-        {
-          "title": "Bolalar burchagi",
-          "description": "Kichkintoylar uchun maxsus o'yin maydonchasi."
-        },
-        {
-          "title": "Qulay muhit",
-          "description": "Nogironligi bo'lgan bemorlar uchun pandus va qulayliklar."
         }
       ]
     }

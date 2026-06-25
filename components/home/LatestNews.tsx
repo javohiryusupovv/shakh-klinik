@@ -3,7 +3,9 @@
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { getLatestNews } from '@/lib/services'
-import { GlassCard } from '@/components/shared/GlassCard'
+import { NewsCard } from '@/components/shared/NewsCard'
+import { SectionHeading } from '@/components/shared/SectionHeading'
+import { ArrowRight } from 'lucide-react'
 
 export function LatestNews() {
   const tNews = useTranslations('news')
@@ -11,27 +13,34 @@ export function LatestNews() {
   const news = getLatestNews(3)
 
   return (
-    <section className="py-16 container mx-auto px-6">
-      <h2 className="text-3xl font-heading text-center mb-12" data-aos="fade-up">{tSection('heading')}</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {news.map((article, i) => (
+    <section className="py-16 bg-gradient-to-b from-[var(--color-bg-lightest)] to-white">
+      <div className="container mx-auto px-6">
+        <SectionHeading title={tSection('heading')} />
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {news.map((article, i) => (
+            <NewsCard
+              key={article.slug}
+              slug={article.slug}
+              date={article.date}
+              title={tNews(`${article.slug}.title`)}
+              excerpt={tNews(`${article.slug}.excerpt`)}
+              readMoreLabel={tSection('readMore')}
+              delay={i * 100}
+            />
+          ))}
+        </div>
+
+        {/* Barcha yangiliklar linki */}
+        <div className="text-center mt-10">
           <Link
-            key={article.slug}
-            href={`/news/${article.slug}`}
-            data-aos="fade-up"
-            data-aos-delay={i * 100}
+            href="/news"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-semibold text-sm hover:bg-[var(--color-primary)] hover:text-white transition-all duration-300"
           >
-            <GlassCard hover={false} className="p-5 cursor-pointer">
-              <p className="text-sm text-[var(--color-text-gray)] mb-2">{article.date}</p>
-              <h3 className="font-semibold text-lg mb-2">
-                {tNews(`${article.slug}.title`)}
-              </h3>
-              <p className="text-[var(--color-text-gray)] text-sm line-clamp-2">
-                {tNews(`${article.slug}.excerpt`)}
-              </p>
-            </GlassCard>
+            {tSection('allNewsCta')}
+            <ArrowRight className="w-4 h-4" />
           </Link>
-        ))}
+        </div>
       </div>
     </section>
   )

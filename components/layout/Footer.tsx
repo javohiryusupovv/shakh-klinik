@@ -5,7 +5,9 @@
 // DEVIATION: plan said "Lucide icons: Send, Instagram, Facebook, Youtube" — see SUMMARY.
 import { getTranslations } from 'next-intl/server'
 import { Send, Phone, Mail, MapPin, Clock } from 'lucide-react'
+import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
+import ShakhLogo from "@/public/shakh.png"
 
 const NAV_KEYS = [
   { key: 'home', href: '/' },
@@ -81,10 +83,19 @@ export async function Footer() {
       <div className="container mx-auto grid gap-10 px-6 py-12 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
         {/* Column 1 — About */}
         <div className="space-y-3">
-          <p className="font-heading text-xl font-bold tracking-tight">
-            Shakh <span className="text-[var(--color-bg-lighter)]">Clinic</span>
-          </p>
-          <p className="text-sm leading-relaxed text-white/80">
+          {/* Crown logo — actual PNG, inverted to white on dark bg */}
+          <div className="flex items-center gap-3">
+            <Image
+              src={ShakhLogo}
+              alt="Shakh Clinic"
+              width={70}
+              height={70}
+              className="object-contain"
+              style={{ filter: 'brightness(0) invert(1)' }}
+            />
+          </div>
+
+          <p className="text-sm leading-relaxed text-white/80 -translate-y-7">
             {tFooter('aboutBlurb')}
           </p>
         </div>

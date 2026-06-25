@@ -9,6 +9,7 @@ import { LatestNews } from '@/components/home/LatestNews'
 import { Reviews } from '@/components/home/Reviews'
 import { FAQ } from '@/components/home/FAQ'
 import { CTASection } from '@/components/home/CTASection'
+import { ImplantStages } from '@/components/home/ImplantStages'
 import { buildMetadata } from '@/lib/seo/metadata'
 import { JsonLd } from '@/lib/seo/JsonLd'
 import { faqJsonLd, breadcrumbJsonLd, type FAQItem } from '@/lib/seo/schemas'
@@ -52,6 +53,7 @@ export default async function HomePage({
     <main>
       <HeroWrapper />
       <WhyChooseUs />
+      <ImplantStages />
       <PopularServices />
       <Stats />
       <FeaturedDoctors />

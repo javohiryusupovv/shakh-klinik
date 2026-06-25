@@ -8,12 +8,10 @@ import {
   Microscope,
   ShieldCheck,
   Car,
-  Baby,
-  Accessibility,
   type LucideIcon,
 } from 'lucide-react'
 
-const ICONS: LucideIcon[] = [Armchair, Microscope, ShieldCheck, Car, Baby, Accessibility]
+const ICONS: LucideIcon[] = [Armchair, Microscope, ShieldCheck, Car]
 
 type FacilityItem = { title: string; description: string }
 
@@ -31,7 +29,7 @@ export function Facilities() {
           <p className="text-lg text-[var(--color-text-gray)]">{t('subtitle')}</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {items.map((item, i) => {
             const Icon = ICONS[i] ?? ICONS[0]
             return (
